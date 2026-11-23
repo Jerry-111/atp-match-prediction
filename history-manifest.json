@@ -1,0 +1,131 @@
+{
+  "source": "https://stats.tennismylife.org/tennis-match-database",
+  "snapshot_date": "2026-11-23",
+  "files": [
+    {
+      "season": 1990,
+      "url": "https://stats.tennismylife.org/data/1990.csv",
+      "sha256": "9f0197ba13baf4cb18c50072e2fe6a598b84b9c309ee8eb1b258bfcdb1283275"
+    },
+    {
+      "season": 1991,
+      "url": "https://stats.tennismylife.org/data/1991.csv",
+      "sha256": "870cd36f77cf08b962a6f2e804997b535d87c79d41974648b1fe59fb7a456085"
+    },
+    {
+      "season": 1992,
+      "url": "https://stats.tennismylife.org/data/1992.csv",
+      "sha256": "cba939da445960c2f0d91755754c3b62c75bafd96abac7745291672bb2c90ecd"
+    },
+    {
+      "season": 1993,
+      "url": "https://stats.tennismylife.org/data/1993.csv",
+      "sha256": "d9756bc853242c0ee77e9f7fc147da934a866f6f062a15c3052df98283ea47d9"
+    },
+    {
+      "season": 1994,
+      "url": "https://stats.tennismylife.org/data/1994.csv",
+      "sha256": "e393b7d7114d95f2452bda78eaaa66af3a5bef3005159f136b7da119ae0201aa"
+    },
+    {
+      "season": 1995,
+      "url": "https://stats.tennismylife.org/data/1995.csv",
+      "sha256": "25ba29c1c2f4e61c07b5feca9780983cc22859dfc222d088d066a819d67cfeea"
+    },
+    {
+      "season": 1996,
+      "url": "https://stats.tennismylife.org/data/1996.csv",
+      "sha256": "5ed06f48ef06eb1e4aa3ff260b819f4f84db965dd9bb2773065526e9cefe1e59"
+    },
+    {
+      "season": 1997,
+      "url": "https://stats.tennismylife.org/data/1997.csv",
+      "sha256": "6daf06ddd303cfb005a071c9cccb74c41b85854a38ccccb3542b0915ad04f5d6"
+    },
+    {
+      "season": 1998,
+      "url": "https://stats.tennismylife.org/data/1998.csv",
+      "sha256": "75641c964ef849b89b56570a986f3193819d57fb19332db8b03584ad0776ebb3"
+    },
+    {
+      "season": 1999,
+      "url": "https://stats.tennismylife.org/data/1999.csv",
+      "sha256": "f9bdbefaac6947ca0709bb054974e552d56363a9d3de1183d49acd755ddbcaaa"
+    },
+    {
+      "season": 2000,
+      "url": "https://stats.tennismylife.org/data/2000.csv",
+      "sha256": "1ae2f8e793853927b44e4093d5fb6712005655c0fb383e6a03ee25a7633908c8"
+    },
+    {
+      "season": 2001,
+      "url": "https://stats.tennismylife.org/data/2001.csv",
+      "sha256": "9b4de4721103e6a2bfcffab124ce17c095c4074d117f3a5af7b3ea8aa92cae6e"
+    },
+    {
+      "season": 2002,
+      "url": "https://stats.tennismylife.org/data/2002.csv",
+      "sha256": "bd5e665341d34dfc26e944ad66c65f2b269ad599bcebbb3f905737fb70639bcc"
+    },
+    {
+      "season": 2003,
+      "url": "https://stats.tennismylife.org/data/2003.csv",
+      "sha256": "d3188db49a90f395da8695e250a42cec14efefb6505493a4d99648bc6b9e840d"
+    },
+    {
+      "season": 2004,
+      "url": "https://stats.tennismylife.org/data/2004.csv",
+      "sha256": "f643048815ed56ed504335063cd0490e4fa64d1ac13b82d940ec6e86f0dac269"
+    },
+    {
+      "season": 2005,
+      "url": "https://stats.tennismylife.org/data/2005.csv",
+      "sha256": "033159fad0f173b8abf4a69a71d4836a8f165df2ada5cf1734203dd3ffcc1b0a"
+    },
+    {
+      "season": 2006,
+      "url": "https://stats.tennismylife.org/data/2006.csv",
+      "sha256": "ba376218f92ff132822e991d90c7769325e9c3dc7ed23eaa9b0c9b7a615d196d"
+    },
+    {
+      "season": 2007,
+      "url": "https://stats.tennismylife.org/data/2007.csv",
+      "sha256": "f2b61a1186ad0b22b519855fcd85d3893627dc16cef7087e6e1476370013f43d"
+    },
+    {
+      "season": 2008,
+      "url": "https://stats.tennismylife.org/data/2008.csv",
+      "sha256": "3f989026653856a2184a9a3af6e34df77b67b9c9eefaef7033e50b47d330985d"
+    },
+    {
+      "season": 2009,
+      "url": "https://stats.tennismylife.org/data/2009.csv",
+      "sha256": "a0e89d7be77ab799786d7c62877b5302e0ce2932cb295ce5a6019e5acf5a34b9"
+    },
+    {
+      "season": 2010,
+      "url": "https://stats.tennismylife.org/data/2010.csv",
+      "sha256": "4e7194c8d152ffd1d05eed290b4f0b37afe649b58b20c786117eb5bfac1e5e97"
+    },
+    {
+      "season": 2011,
+      "url": "https://stats.tennismylife.org/data/2011.csv",
+      "sha256": "85da1df99ac8a192ccafd5a42514f10561d7afcd01f3260174e6722a9d8b90cf"
+    },
+    {
+      "season": 2012,
+      "url": "https://stats.tennismylife.org/data/2012.csv",
+      "sha256": "c3f7711c0a9607774a6f11c35d2137aaba2e5f547d495810d0ba4031259359da"
+    },
+    {
+      "season": 2013,
+      "url": "https://stats.tennismylife.org/data/2013.csv",
+      "sha256": "e57b7e0febec6506d91972bfe1bf48d974785bc77d60a01a5c25deca3fee9249"
+    },
+    {
+      "season": 2014,
+      "url": "https://stats.tennismylife.org/data/2014.csv",
+      "sha256": "9375237531f4a42bce6969ea141daa941d5672db796c84d0055e971042bd7b02"
+    }
+  ]
+}

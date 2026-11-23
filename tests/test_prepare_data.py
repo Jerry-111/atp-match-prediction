@@ -1,12 +1,43 @@
 """Regression checks for information available at the tournament start."""
 
+import tempfile
 import unittest
 from datetime import date, timedelta
 
-from scripts.prepare_data import build_model_rows
+from scripts.prepare_data import build_model_rows, write_model_csv
 
 
 class ModelInputTest(unittest.TestCase):
+    def test_historical_cohort_warmup_and_export(self):
+        def match(season, number, start):
+            return {
+                "season": season, "tourney_date": start, "tourney_id": "T",
+                "match_num": number, "round": "R32", "surface": "Hard",
+                "winner_id": "A100", "loser_id": "Z900", "winner_name": "A",
+                "loser_name": "Z", "winner_rank": 5, "loser_rank": 9,
+            }
+
+        matches = [
+            {"season": 1999},  # Outside the chosen cohort.
+            match(2000, 1, date(2000, 12, 1)),
+            match(2001, 2, date(2001, 1, 5)),
+            match(2015, 3, date(2015, 10, 1)),
+            match(2023, 4, date(2023, 8, 1)),
+            {"season": 2024},
+            {"season": 2025},
+        ]
+        rows = build_model_rows(matches, first_season=2000)
+        self.assertEqual([row["split"] for row in rows], ["train", "train", "validation"])
+        self.assertEqual([row["season"] for row in rows], [2001, 2015, 2023])
+        self.assertEqual(rows[0]["surface_wins_a"], 1)
+        with tempfile.TemporaryDirectory() as directory:
+            base = write_model_csv(build_model_rows(matches), directory)
+            base_contents = base.read_bytes()
+            extended = write_model_csv(rows, directory, first_season=2000)
+            self.assertEqual(base.name, "model_input.csv")
+            self.assertEqual(extended.name, "model_input_2000.csv")
+            self.assertEqual(base.read_bytes(), base_contents)
+
     def test_window_endpoints_and_player_orientation(self):
         target_date = date(2016, 1, 4)
 

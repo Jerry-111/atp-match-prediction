@@ -25,6 +25,30 @@ The retained event levels are 250, 500, Masters and Grand Slam, on hard, clay or
 
 The [loader](scripts/baseline.py) assigns each exclusion to its first failed check. Its counts in order are 3,303 outside event scope, zero additional surface or ID exclusions, 70 invalid or missing rankings, and 971 score exclusions. These counts describe this pinned snapshot. The [outcome audit](OUTCOMES.md) also shows what the ranking requirement removes from each result category. Scope is limited to the included tour levels. Earlier challenger, qualifying or lower-tour wins are outside the players' recorded histories here.
 
+## Expand the training history
+
+The historical audit covers 36 annual files from 1990 through 2025. It applies the same event levels, surfaces, player ID checks, rankings and completion rule as the starter analysis. Each option uses its first season for player history, the following seasons through 2022 for training, 2023 for validation and 2024–2025 for final evaluation. The local modeling CSV includes training and validation only. All 2,588 validation rows were checked field by field across the five exports and match exactly.
+
+| First season | Raw records through 2025 | Eligible matches, all splits | Training matches | Model CSV rows incl. 2023 |
+| --- | ---: | ---: | ---: | ---: |
+| 2015 (starter) | 30,716 | 26,372 | 16,188 | 18,776 |
+| 2010 | 45,615 | 38,919 | 28,694 | 31,282 |
+| 2009 | 48,700 | 41,512 | 31,243 | 33,831 |
+| 2000 | 77,953 | 64,896 | 54,509 | 57,097 |
+| 1990 | 115,105 | 92,337 | 82,050 | 84,638 |
+
+To build the largest modeling table, run:
+
+```bash
+python3 -m scripts.prepare_data --first-season 1990
+```
+
+The file is `data/processed/model_input_1990.csv`. Substitute `2009` to build the modern-era comparison. All exports use the existing feature definitions and pinned source snapshots. [Historical file checksums](history-manifest.json) · [1990 source CSV](https://stats.tennismylife.org/data/1990.csv)
+
+**Coverage and comparability.** The full eligible pool covers 2,261 players across 2,262 tournament editions, with 49,752 hard-court, 32,245 clay-court and 10,340 grass-court matches. All 36 headers match and the eligible match keys are unique. Among the selected tiers, the surface filter drops 6,428 historical carpet-court rows. The provider assigns the codes `250`, `500`, `M` and `G` to older editions retrospectively. ATP formally introduced the current tier names in 2009. For example, the source codes Hamburg as `M` in 2008 and `500` in 2009. Use the edition's recorded level. [ATP tour timeline](https://www.atptour.com/-/media/files/media-guide/2026/2026-atp-media-guide-full.pdf) · [Hamburg tournament history](https://hamburgopenatp500.com/en/history)
+
+**How to use the extra data.** A sensible first comparison uses 2009 for warm-up and 2010–2022 for training. Repeat with 1990 as warm-up and 1991–2022 for training, against the same 2,588 validation matches from 2023. Keep feature windows, models, settings and evaluation rows comparable. Report accuracy and log loss for each model and training span. This tests whether older matches help the model predict recent tennis. The longer history adds training examples. Each player's form at prediction time still draws on the prior 52 weeks. The existing 2024–2025 holdout remains reserved for final evaluation after choosing the training span.
+
 ## Read one row
 
 | CSV columns | Meaning and use |

@@ -10,7 +10,7 @@ from collections import defaultdict
 from datetime import timedelta
 from pathlib import Path
 
-from scripts.baseline import DEFAULT_CACHE, ROOT, load_matches, split_name
+from scripts.baseline import DEFAULT_CACHE, FIRST_SEASONS, ROOT, load_matches, split_name
 
 
 DEFAULT_OUTPUT = ROOT / "data" / "processed"
@@ -45,9 +45,9 @@ class SurfaceHistory:
         return played, wins, (wins + 1) / (played + 2), last_date
 
 
-def build_model_rows(matches):
-    """Build the model rows from eligible baseline records, with warmup for history."""
-    eligible = (m for m in matches if split_name(m["season"]) != "test")
+def build_model_rows(matches, first_season=2015):
+    """Build model rows using the selected first season only for warmup history."""
+    eligible = (m for m in matches if first_season <= m["season"] <= 2023)
     ordered = sorted(eligible, key=lambda m: (m["tourney_date"], m["tourney_id"], m["match_num"]))
     histories = defaultdict(SurfaceHistory)
     rows = []
@@ -56,7 +56,7 @@ def build_model_rows(matches):
         surface = match["surface"]
         winner = match["winner_id"]
         loser = match["loser_id"]
-        split = split_name(match["season"])
+        split = split_name(match["season"], first_season)
         if split != "warmup":
             a_won = winner < loser
             source_a, source_b = ("winner", "loser") if a_won else ("loser", "winner")
@@ -95,11 +95,12 @@ def build_model_rows(matches):
     return rows
 
 
-def write_model_csv(rows, output_dir=DEFAULT_OUTPUT):
+def write_model_csv(rows, output_dir=DEFAULT_OUTPUT, first_season=2015):
     """Replace the local modeling CSV only after the entire file was written."""
     output_dir = Path(output_dir)
     output_dir.mkdir(parents=True, exist_ok=True)
-    destination = output_dir / FILENAME
+    filename = FILENAME if first_season == 2015 else f"model_input_{first_season}.csv"
+    destination = output_dir / filename
     output = tempfile.NamedTemporaryFile(
         mode="w", encoding="utf-8", newline="", dir=output_dir, delete=False
     )
@@ -119,10 +120,20 @@ def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--cache-dir", type=Path, default=DEFAULT_CACHE)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT)
+    parser.add_argument(
+        "--first-season", type=int, choices=FIRST_SEASONS, default=2015,
+        help="First season of the cohort, reserved for initializing player history (default: 2015)."
+    )
     args = parser.parse_args()
-    matches, _ = load_matches(args.cache_dir)
-    rows = build_model_rows(matches)
-    path = write_model_csv(rows, args.output_dir)
+    matches, audit = load_matches(args.cache_dir, args.first_season)
+    rows = build_model_rows(matches, args.first_season)
+    path = write_model_csv(rows, args.output_dir, args.first_season)
+    if args.first_season != 2015:
+        raw = sum(counts["raw"] for counts in audit.values())
+        warmup = audit[args.first_season]["eligible"]
+        test = audit[2024]["eligible"] + audit[2025]["eligible"]
+        print(f"Cohort {args.first_season}–2025: {raw:,} raw, {len(matches):,} eligible.")
+        print(f"Eligible warmup: {warmup:,}. Reserved test: {test:,}.")
     train_count = sum(row["split"] == "train" for row in rows)
     print(f"Wrote {len(rows):,} rows to {path}")
     print(f"Train: {train_count:,}; validation: {len(rows) - train_count:,}.")

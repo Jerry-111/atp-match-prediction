@@ -17,15 +17,19 @@ from urllib.request import Request, urlopen
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CACHE = ROOT / "data" / "raw"
 MANIFEST = ROOT / "data-manifest.json"
+HISTORY_MANIFEST = ROOT / "history-manifest.json"
+FIRST_SEASONS = (1990, 2000, 2009, 2010, 2015)
 LEVELS = {"G", "M", "500", "250"}
 SURFACES = {"Hard", "Clay", "Grass"}
 SCORE_MARKERS = {"W/O": "walkover", "RET": "retirement", "DEF": "default"}
 
 
-def split_name(season):
-    if season == 2015:
+def split_name(season, first_season=2015):
+    if first_season not in FIRST_SEASONS:
+        raise ValueError(f"Unsupported first season {first_season}; choose one of {FIRST_SEASONS}.")
+    if season == first_season:
         return "warmup"
-    if 2016 <= season <= 2022:
+    if first_season < season <= 2022:
         return "train"
     if season == 2023:
         return "validation"
@@ -90,15 +94,22 @@ def exclusion_reason(row):
     return None
 
 
-def load_matches(cache_dir=DEFAULT_CACHE):
+def load_matches(cache_dir=DEFAULT_CACHE, first_season=2015):
     """Return eligible matches and first-failure counts by season.
 
     The score count includes its walkover, retirement, default and other_score
     subtotals. Match records retain outcomes for downstream supervised analysis.
     """
+    if first_season not in FIRST_SEASONS:
+        raise ValueError(f"Unsupported first season {first_season}; choose one of {FIRST_SEASONS}.")
     cache_dir = Path(cache_dir)
     cache_dir.mkdir(parents=True, exist_ok=True)
     entries = json.loads(MANIFEST.read_text(encoding="utf-8"))["files"]
+    if first_season < 2015:
+        historical = json.loads(HISTORY_MANIFEST.read_text(encoding="utf-8"))["files"]
+        entries = [entry for entry in historical if entry["season"] >= first_season] + entries
+    if [entry["season"] for entry in entries] != list(range(first_season, 2026)):
+        raise ValueError(f"The manifests must cover each season from {first_season} to 2025 once, in order.")
     matches = []
     audit = {}
     seen = set()

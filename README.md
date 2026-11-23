@@ -6,6 +6,8 @@ We are testing whether a player's past results on the current surface improve pr
 
 For the dataset everyone should use, start with the [shared match table and metrics](DATA.md). Run `python3 -m scripts.prepare_data` to generate the training and validation CSV. The [retirement and walkover audit](OUTCOMES.md) explains when a loss enters this table and how an alternative definition affects the ranking benchmark.
 
+A separate export extends the history to 1990. Run `python3 -m scripts.prepare_data --first-season 1990` to build 84,638 training and validation rows. A 2009 start supports a comparison limited to the modern tournament tiers. See [historical sample sizes and comparability](DATA.md#expand-the-training-history).
+
 Start with the [team handoff](HANDOFF.md) for the current task, verified results and ideas under discussion. Coding agents should also read [AGENTS.md](AGENTS.md). To pick up a teammate's branch or carry a new research decision into the repo, follow the [collaboration workflow](WORKFLOW.md).
 
 ## Reproduce the benchmark
