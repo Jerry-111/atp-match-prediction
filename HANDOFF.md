@@ -1,15 +1,16 @@
 # Team handoff
 
-**Next task:** Implement the two probability models and compare them on 2023 validation. The issue carries the claim, working branch and acceptance criteria as work progresses. [Pick up issue #1](https://github.com/Jerry-111/atp-match-prediction/issues/1)
+**Current focus:** Data collection, outcome definitions and a common table for future experiments. [Data and metric definitions](DATA.md) · [Retirement sensitivity](OUTCOMES.md)
 
-## What can be reproduced on main
+## What can be reproduced in this version
 
 | Evidence | Where to look |
 | --- | --- |
 | The loader retains 26,372 eligible matches across 11 seasons. The higher-ranked player won **1,640 / 2,588** validation matches in 2023 (**63.37%**). | Run `python3 scripts/baseline.py` from the repo root. [Loader and ranking rule](scripts/baseline.py) |
 | Training figures show how often the favorite wins as the rank gap grows, and how much prior surface history is available. With the adopted window, 77.5% of grass-court player appearances have fewer than five eligible prior matches, compared with 29.4% on clay and 13.8% on hard courts. | [Executed notebook, section 2](analysis.ipynb) |
+| A shared feature table contains 18,776 training and validation matches. An independent source-row calculation replicates both players' prior hard-court records for the 2023 Cincinnati final. | Run `python3 -m scripts.prepare_data`. [Schema and population](DATA.md) · [Worked match](analysis.ipynb) |
 
-The notebook currently measures history **counts**. The model task adds history **wins**, an outcome-independent A/B ordering, and the two fitted regressions. The effect of adding surface history is an open question. The test set has **5,088 eligible matches** across 2024–2025. Its final model scores, the result-based literature discussion, submission HTML and video are pending.
+The table includes prior same-surface matches and wins, smoothed rates, a deterministic A/B ordering and the outcome in its own column. Model fitting is pending. The effect of adding surface history is an open question. The test set has **5,088 eligible matches** across 2024–2025. Its final model scores, the result-based literature discussion, submission HTML and video are pending.
 
 ## What the next agent should deliver
 

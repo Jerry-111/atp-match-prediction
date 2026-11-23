@@ -11,6 +11,7 @@ This is a four-person course project about predicting ATP singles winners. The s
 ## Work with the evidence
 
 - Reuse `load_matches`, `split_name` and `ranking_result` from [scripts/baseline.py](scripts/baseline.py). The source manifest pins the annual files. Each collaborator downloads the provider's raw CSVs locally through the loader.
+- Use `python3 -m scripts.prepare_data` or `build_model_rows` for the shared training/validation table. [DATA.md](DATA.md) defines its columns and metric denominators. The [outcome audit](OUTCOMES.md) documents what changes when a mid-match retirement counts as a loss.
 - Use the season splits defined by the loader. Treat the tournament start week as the prediction cutoff. The plan defines the lag for past results. Assign player A/B independently of the winner/loser columns before fitting a model.
 - Keep model selection on 2023. The evaluation teammate scores 2024–2025 after the validation settings are frozen. Label dataset counts, validation measurements and final test measurements explicitly.
 - When a change affects results, rerun the affected computation and refresh saved notebook outputs before quoting numbers. For a documentation change, verify the links and claims it touches.
