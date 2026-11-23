@@ -1,0 +1,61 @@
+{
+  "source": "https://stats.tennismylife.org/tennis-match-database",
+  "snapshot_date": "2026-11-23",
+  "files": [
+    {
+      "season": 2015,
+      "url": "https://stats.tennismylife.org/data/2015.csv",
+      "sha256": "fb6329e3cb04cfc51f5666608f45b0d48f6b262cc417e8279db303f82af39ebf"
+    },
+    {
+      "season": 2016,
+      "url": "https://stats.tennismylife.org/data/2016.csv",
+      "sha256": "ae88fa5107343c1b66c0bc73002c3b7ba91fa4ef4957b863a58fff0043532e88"
+    },
+    {
+      "season": 2017,
+      "url": "https://stats.tennismylife.org/data/2017.csv",
+      "sha256": "8401b7175bf116d2dc7ba15db834fa58e2a390d2a64dbbf17d3649e174877546"
+    },
+    {
+      "season": 2018,
+      "url": "https://stats.tennismylife.org/data/2018.csv",
+      "sha256": "28de0e46489a8b85d252dce8fbeefbf8b503de69023d732e7f6c0c0058a30ae6"
+    },
+    {
+      "season": 2019,
+      "url": "https://stats.tennismylife.org/data/2019.csv",
+      "sha256": "e582e8ab570a8e6d16ddb9e2892d94d05d360af8bcb9bacfc05856b25359f3e2"
+    },
+    {
+      "season": 2020,
+      "url": "https://stats.tennismylife.org/data/2020.csv",
+      "sha256": "357fdba3f6c75d09f5b9d223fdb4c5eaa508e6cc4362830d5ab16cc40e392325"
+    },
+    {
+      "season": 2021,
+      "url": "https://stats.tennismylife.org/data/2021.csv",
+      "sha256": "74a0ed7fb4b22a17d1a666d4a5de010dd4766e8ce9862690df8d8aca182e604e"
+    },
+    {
+      "season": 2022,
+      "url": "https://stats.tennismylife.org/data/2022.csv",
+      "sha256": "927a86c0a058861df9a9959c2bb9582a4189f4d26be9b5f9db5f31f739c2d70d"
+    },
+    {
+      "season": 2023,
+      "url": "https://stats.tennismylife.org/data/2023.csv",
+      "sha256": "fb4ad5ed014945bb7270dd073fc3319dde6e1ca18cd5cbc80f2823f0abc344c5"
+    },
+    {
+      "season": 2024,
+      "url": "https://stats.tennismylife.org/data/2024.csv",
+      "sha256": "091fd4e8ea984dcd8b801ca69bb999110450df7f91b226eef8fdda317a02a51d"
+    },
+    {
+      "season": 2025,
+      "url": "https://stats.tennismylife.org/data/2025.csv",
+      "sha256": "5ccf52d912085d6a5ba3effdc5f2f216f170aabfd8850086b5f92c7ccedfd53e"
+    }
+  ]
+}
