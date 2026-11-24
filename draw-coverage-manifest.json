@@ -1,0 +1,205 @@
+{
+  "source": "https://stats.tennismylife.org/tennis-match-database",
+  "snapshot_date": "2026-11-23",
+  "series": {
+    "challenger": [
+      {
+        "season": 2006,
+        "url": "https://stats.tennismylife.org/data/2006_challenger.csv",
+        "sha256": "b339d9ebc3c2dbf2f6c36460726759a7bff09304e24537cb7e6b24586fe41640"
+      },
+      {
+        "season": 2007,
+        "url": "https://stats.tennismylife.org/data/2007_challenger.csv",
+        "sha256": "76957e15fa76445bbb40b47c09bceed053d655bd88073478924c6540d0316462"
+      },
+      {
+        "season": 2008,
+        "url": "https://stats.tennismylife.org/data/2008_challenger.csv",
+        "sha256": "b719a93a6d4020edfd38d5c40e37035077e9a4f79e3acba7f55e346d61e6b376"
+      },
+      {
+        "season": 2009,
+        "url": "https://stats.tennismylife.org/data/2009_challenger.csv",
+        "sha256": "747e40527581535f5864c1f18f7c60abba21a17d0884bd1a1373ba12056ae634"
+      },
+      {
+        "season": 2010,
+        "url": "https://stats.tennismylife.org/data/2010_challenger.csv",
+        "sha256": "c5fb2807bc7d53f2dc64a9efe6aff094feb392ce1e07912c24214858e5e4a33d"
+      },
+      {
+        "season": 2011,
+        "url": "https://stats.tennismylife.org/data/2011_challenger.csv",
+        "sha256": "d7f1ddf7ea845859f215ab8a9d8a8d5b3066025ea166dae2eb6d3c4cd675f66c"
+      },
+      {
+        "season": 2012,
+        "url": "https://stats.tennismylife.org/data/2012_challenger.csv",
+        "sha256": "8122c36ca7d59c24cacdd409e49617b548416a9193aeae3e1fb37c2a7560c489"
+      },
+      {
+        "season": 2013,
+        "url": "https://stats.tennismylife.org/data/2013_challenger.csv",
+        "sha256": "95f1a1c403490f86dd13e2370f95e99455f78b6650a38dab521c968da1e505a0"
+      },
+      {
+        "season": 2014,
+        "url": "https://stats.tennismylife.org/data/2014_challenger.csv",
+        "sha256": "4ad2ab1a94c43b09b2f5d5184da86d42c49b6ebe3263d3ff10514370ce8b81ca"
+      },
+      {
+        "season": 2015,
+        "url": "https://stats.tennismylife.org/data/2015_challenger.csv",
+        "sha256": "e61c435f4d1bcfe6bc00c719690eade107b121e0d7dbd5f0e56d1bdae677f86d"
+      },
+      {
+        "season": 2016,
+        "url": "https://stats.tennismylife.org/data/2016_challenger.csv",
+        "sha256": "33a82cae28c8adea4b98a4e181a9c2873089b990bcc22e4852273dd2193500ca"
+      },
+      {
+        "season": 2017,
+        "url": "https://stats.tennismylife.org/data/2017_challenger.csv",
+        "sha256": "4b3f211ee1d70a64498a4d7453313d740c8e4f8285668037665c2b2b4a131a74"
+      },
+      {
+        "season": 2018,
+        "url": "https://stats.tennismylife.org/data/2018_challenger.csv",
+        "sha256": "b06c62afd80075d7f9a43fc94a69ed5b208eef65bef8f5ed9d59be730d3673d5"
+      },
+      {
+        "season": 2019,
+        "url": "https://stats.tennismylife.org/data/2019_challenger.csv",
+        "sha256": "641e12bd6c5c2f06f0e1ba710026f2a4a4f89d8e25f2fce4c6643c8a08590eba"
+      },
+      {
+        "season": 2020,
+        "url": "https://stats.tennismylife.org/data/2020_challenger.csv",
+        "sha256": "c007f141a12ca0575ad05b8a651ee8113ffd5a04f13455c6d2f4898202b4af75"
+      },
+      {
+        "season": 2021,
+        "url": "https://stats.tennismylife.org/data/2021_challenger.csv",
+        "sha256": "8b7585c081d2391ba174c87811d46458c5018e1c214e5e338e0afb002a92d45d"
+      },
+      {
+        "season": 2022,
+        "url": "https://stats.tennismylife.org/data/2022_challenger.csv",
+        "sha256": "d95fa0a4bf8a1986394d4083a932ed6ca86eee14bfb741519a209a022ebcdc6d"
+      },
+      {
+        "season": 2023,
+        "url": "https://stats.tennismylife.org/data/2023_challenger.csv",
+        "sha256": "ee3a2128d89a1946537102afbf779a0dd2953cc48488e43c7e663d2c2fae74a4"
+      },
+      {
+        "season": 2024,
+        "url": "https://stats.tennismylife.org/data/2024_challenger.csv",
+        "sha256": "574c1a80c00c9fe1d6acd3cc86fc80ff503d1cdd7cc98cd8d5b8a7c46efc161c"
+      },
+      {
+        "season": 2025,
+        "url": "https://stats.tennismylife.org/data/2025_challenger.csv",
+        "sha256": "f5a0fba77cd82e9f039c9f646c0b53629e94bc9f80f0a50bb1ea095f21669b66"
+      }
+    ],
+    "qualifying": [
+      {
+        "season": 2007,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2007_atp_quali.csv",
+        "sha256": "311ea1f893d18a4d00a0c0226a9e5e17f068b83d60e80957e4f7a33633c16cc3"
+      },
+      {
+        "season": 2008,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2008_atp_quali.csv",
+        "sha256": "91b295fbe21ae3fe0be4a77c4436213fcac32933246d6abb09657ba61c2ac93c"
+      },
+      {
+        "season": 2009,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2009_atp_quali.csv",
+        "sha256": "fe38e7c9adf1a2f8c0c4f0c1d5b1fd70e4b15553992e0b6708b9bafa47ba870a"
+      },
+      {
+        "season": 2010,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2010_atp_quali.csv",
+        "sha256": "bfa7c13c4d3571f189627a3c90e3315f6135ba630c5f9057350207ac9ec12076"
+      },
+      {
+        "season": 2011,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2011_atp_quali.csv",
+        "sha256": "67d239bf40ffd609f509c1b1db6164afe6bbde27f9958cf9bbb4db22b01b3268"
+      },
+      {
+        "season": 2012,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2012_atp_quali.csv",
+        "sha256": "fc14ae0ac234155a140c4d4f33f8241cc0fda97521931bbd0deda768d3bf8f0a"
+      },
+      {
+        "season": 2013,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2013_atp_quali.csv",
+        "sha256": "e4d8c9522e40c6be133739e50aa890fe76806ef6af59705ee4c5818686ca23c9"
+      },
+      {
+        "season": 2014,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2014_atp_quali.csv",
+        "sha256": "33e038c9b9e9fbf09fddf6d7a7a41d09152c437ea7a237e661310e372d486238"
+      },
+      {
+        "season": 2015,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2015_atp_quali.csv",
+        "sha256": "86768dfdc872eee80912d1251c3d7e184064806f9e5e860745dd1f38fab97b8a"
+      },
+      {
+        "season": 2016,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2016_atp_quali.csv",
+        "sha256": "b4fa43ab11348b8f86e867ccfc1378067ab37a0250aaca27f6b098dbf427e5aa"
+      },
+      {
+        "season": 2017,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2017_atp_quali.csv",
+        "sha256": "1271a83183ce527271486dfb2e981c5db56aa428f845675e2fb236006a40a01f"
+      },
+      {
+        "season": 2018,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2018_atp_quali.csv",
+        "sha256": "80f75083c87bde97f74980ae2ee21e7aa7fabda25f9096126369f3e41309ab4e"
+      },
+      {
+        "season": 2019,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2019_atp_quali.csv",
+        "sha256": "319ab555cefdc48903028b5d3c8a9c028d0b4c992484c92cb36cfd43ce3133b5"
+      },
+      {
+        "season": 2020,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2020_atp_quali.csv",
+        "sha256": "dba0d1dc3dd2e182a4996b65eb066d1b31989da4fcf2cc25ff5c86680c80a916"
+      },
+      {
+        "season": 2021,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2021_atp_quali.csv",
+        "sha256": "7e81f8746e1f86b6b76ccec17f24901022d91010bad3d61486d8cb383ae3395f"
+      },
+      {
+        "season": 2022,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2022_atp_quali.csv",
+        "sha256": "d634a31ac9ff06be7b2704f1fb3e63fb9344455a3da3fbb747b7d4dacc47f2cd"
+      },
+      {
+        "season": 2023,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2023_atp_quali.csv",
+        "sha256": "5cb6c716ace208dd6705a1763484478dc0202bcbbbc939849947199208c107d7"
+      },
+      {
+        "season": 2024,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2024_atp_quali.csv",
+        "sha256": "ffb9ad0b9b4b6886057118726a37f49628dac1363a69723b601924ed399dd24a"
+      },
+      {
+        "season": 2025,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2025_atp_quali.csv",
+        "sha256": "bcba9fecdba4897dc06fda668e59550ff02ffe43095172253263189c90bee0b8"
+      }
+    ]
+  }
+}
