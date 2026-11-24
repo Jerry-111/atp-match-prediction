@@ -1,6 +1,6 @@
 # Men's singles data and evaluation
 
-The published modeling table supplies two pre-match predictors, ranking and same-surface form, for 18,774 training and validation matches. The planned four-group experiment adds two more predictors derived from the published inventory. [First modeling table](data/processed/model_input.csv) · [Data processing guide (中文)](docs/data-processing.md)
+The [four-feature modeling table](data/processed/model_features.csv) includes ranking, recent overall form, same-surface form and prior head-to-head for 18,774 training and validation matches. Run `python3 -m scripts.prepare_features` to rebuild it offline from the published inventory and starter table. [Starter table](data/processed/model_input.csv) · [Data processing guide (中文)](docs/data-processing.md)
 
 ## Combined men's singles inventory
 
@@ -92,7 +92,7 @@ The command downloads or verifies 11 annual CSVs in `data/raw/` and writes `data
 | Primary population across all 11 seasons | 26,369 | Completed matches, 768 distinct players and 672 tournament editions. |
 | Modeling table generated at this stage | 18,774 | 16,186 training matches from 2016–2022 and 2,588 validation matches from 2023. |
 
-The pinned input files and current exporter produce SHA-256 `b61a52744fd337eede9c5cc03203287c1a284df847ace3908cfb41882ea3fadf` for `model_input.csv`. Matching row counts and this digest confirm that two teammates have the same table.
+The pinned input files and current exporter produce SHA-256 `b61a52744fd337eede9c5cc03203287c1a284df847ace3908cfb41882ea3fadf` for `model_input.csv`. Matching row counts and this digest confirm that two teammates have the same table. The four-feature export, `model_features.csv`, contains the same 18,774 match IDs and has SHA-256 `6291a9b51f5aac5d12cf1611c1d89df34350a4f2111d20997ab007c496207d27`. Its six new count columns give each player’s recent wins and matches, the number of prior meetings, and A’s wins in those meetings.
 
 The retained event levels are 250, 500, Masters and Grand Slam, on hard, clay or grass. The 2015 season supplies 2,507 warm-up matches for player history. The 5,088 eligible 2024–2025 matches are reserved for final evaluation. The complete population contains 15,127 hard-court, 8,172 clay-court and 3,070 grass-court matches. Double counting players across seasons or tournaments would inflate a coverage figure, so player and tournament counts above use distinct IDs.
 
@@ -143,13 +143,13 @@ The higher-ranked-player rule gives a pick when ranks differ. All 2,588 validati
 | Group | Column | Definition for a match with tournament start date T |
 | --- | --- | --- |
 | Ranking | `log_rank_diff` (published) | Log rank of B minus log rank of A. |
-| Recent overall form | `overall_rate_diff` (planned) | Across all surfaces and opponents, use eligible matches from T−90 through T−21 days inclusive. Compute each player's smoothed win rate and subtract B's from A's. |
+| Recent overall form | `overall_rate_diff` (published) | Across all surfaces and opponents, use eligible matches from T−90 through T−21 days inclusive. Compute each player's smoothed win rate and subtract B's from A's. |
 | Same-surface form | `surface_rate_diff` (published) | On the current surface, use eligible matches from T−364 through T−21 days inclusive. Subtract B's smoothed win rate from A's. |
-| Prior head-to-head | `h2h_rate_diff` (planned) | Across all surfaces, count direct meetings between these players from the 2006 season through T−21 days inclusive. Compute twice A's smoothed win rate against B minus one. Zero prior meetings gives zero. |
+| Prior head-to-head | `h2h_rate_diff` (published) | Across all surfaces, count direct meetings between these players from the 2006 season through T−21 days inclusive. Compute twice A's smoothed win rate against B minus one. Zero prior meetings gives zero. |
 
 For each rate use `(wins + 1) / (matches + 2)`. Use only eligible Tour and major main draws (`source == "tour"`) to compute the histories. For each target in the baseline table, look up `"tour:" + match_id` in the inventory and verify both player IDs. Calculate each new value using earlier results available by its cutoff, then left-join the two derived columns back to the target rows. Preserve the A/B orientation and all 18,774 matches, including pairs with no previous meeting. IDs and names identify the participants, and `a_won` supplies the outcome.
 
-Use identical 2016–2022 training rows and 2023 validation rows for all eight prespecified logistic regressions. Each includes ranking. The optional groups are (1) none, (2) overall, (3) surface, (4) head-to-head, (5) overall and surface, (6) overall and head-to-head, (7) surface and head-to-head, and (8) all three. Compare the rank-only regression with the full four-group regression as planned. Report all eight validation results and select the subset with the lowest 2023 mean log loss. Freeze the choices before evaluating 2024–2025. The fits and validation comparison are pending.
+Use identical 2016–2022 training rows and 2023 validation rows for all eight prespecified logistic regressions. Each includes ranking. The optional groups are (1) none, (2) overall, (3) surface, (4) head-to-head, (5) overall and surface, (6) overall and head-to-head, (7) surface and head-to-head, and (8) all three. Compare the rank-only regression with the full four-group regression as planned. Report all eight validation results and select the subset with the lowest 2023 mean log loss. Freeze the choices before evaluating 2024–2025. Score a separate overall Elo baseline on the same validation matches using the same historical cutoff. The fits and probability comparisons are pending.
 
 ## How to read the metrics
 

@@ -25,8 +25,8 @@ FIELDS = (
 )
 
 
-class SurfaceHistory:
-    """One player's cumulative wins on one surface, ordered by tournament start."""
+class WinHistory:
+    """Cumulative wins for an ordered series of tournament start dates."""
 
     def __init__(self):
         self.dates = []
@@ -43,6 +43,9 @@ class SurfaceHistory:
         wins = self.cumulative_wins[end] - self.cumulative_wins[start]
         last_date = self.dates[end - 1].isoformat() if played else ""
         return played, wins, (wins + 1) / (played + 2), last_date
+
+
+SurfaceHistory = WinHistory
 
 
 def build_model_rows(matches, first_season=2015):
@@ -96,18 +99,20 @@ def build_model_rows(matches, first_season=2015):
 
 
 def write_model_csv(rows, output_dir=DEFAULT_OUTPUT, first_season=2015):
-    """Replace the local modeling CSV only after the entire file was written."""
-    output_dir = Path(output_dir)
-    output_dir.mkdir(parents=True, exist_ok=True)
     filename = FILENAME if first_season == 2015 else f"model_input_{first_season}.csv"
-    destination = output_dir / filename
+    return write_csv(rows, FIELDS, Path(output_dir) / filename)
+
+
+def write_csv(rows, fields, destination):
+    """Replace a modeling CSV only after the entire file was written."""
+    destination.parent.mkdir(parents=True, exist_ok=True)
     output = tempfile.NamedTemporaryFile(
-        mode="w", encoding="utf-8", newline="", dir=output_dir, delete=False
+        mode="w", encoding="utf-8", newline="", dir=destination.parent, delete=False
     )
     temporary = Path(output.name)
     try:
         with output:
-            writer = csv.DictWriter(output, fieldnames=FIELDS, lineterminator="\n")
+            writer = csv.DictWriter(output, fieldnames=fields, lineterminator="\n")
             writer.writeheader()
             writer.writerows(rows)
         temporary.replace(destination)
