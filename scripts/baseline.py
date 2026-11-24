@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CACHE = ROOT / "data" / "raw"
 MANIFEST = ROOT / "data-manifest.json"
 HISTORY_MANIFEST = ROOT / "history-manifest.json"
-FIRST_SEASONS = (1990, 2000, 2009, 2010, 2015)
+FIRST_SEASONS = (1990, 2000, 2009, 2010, 2011, 2015, 2016)
 LEVELS = {"G", "M", "500", "250"}
 SURFACES = {"Hard", "Clay", "Grass"}
 SCORE_MARKERS = {"W/O": "walkover", "RET": "retirement", "DEF": "default"}
@@ -78,9 +78,9 @@ def fetch_csv(cache_dir, entry):
     return path
 
 
-def exclusion_reason(row):
+def exclusion_reason(row, levels=LEVELS):
     """Assign each excluded row to the first filter it fails."""
-    if row["tourney_level"] not in LEVELS:
+    if row["tourney_level"] not in levels:
         return "level"
     if row["surface"] not in SURFACES:
         return "surface"
@@ -108,6 +108,7 @@ def load_matches(cache_dir=DEFAULT_CACHE, first_season=2015):
     if first_season < 2015:
         historical = json.loads(HISTORY_MANIFEST.read_text(encoding="utf-8"))["files"]
         entries = [entry for entry in historical if entry["season"] >= first_season] + entries
+    entries = [entry for entry in entries if entry["season"] >= first_season]
     if [entry["season"] for entry in entries] != list(range(first_season, 2026)):
         raise ValueError(f"The manifests must cover each season from {first_season} to 2025 once, in order.")
     matches = []

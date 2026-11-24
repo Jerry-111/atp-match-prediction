@@ -25,9 +25,29 @@ The retained event levels are 250, 500, Masters and Grand Slam, on hard, clay or
 
 The [loader](scripts/baseline.py) assigns each exclusion to its first failed check. Its counts in order are 3,303 outside event scope, zero additional surface or ID exclusions, 70 invalid or missing rankings, and 971 score exclusions. These counts describe this pinned snapshot. The [outcome audit](OUTCOMES.md) also shows what the ranking requirement removes from each result category. Scope is limited to the included tour levels. Earlier challenger, qualifying or lower-tour wins are outside the players' recorded histories here.
 
+## Coverage of recent draws
+
+The preferred collection window is **2011–2025**, with **2016–2025** as the ten-season comparison. The saved starter notebook uses 2015–2025. For either new window, generate the four-tier main-draw modeling table with the chosen first season, for example `python3 -m scripts.prepare_data --first-season 2011`. The file is `data/processed/model_input_2011.csv`.
+
+| Source series | 2011–2025 raw | 2011–2025 eligible | 2016–2025 raw | 2016–2025 eligible |
+| --- | ---: | ---: | ---: | ---: |
+| Tour annual singles files | 42,585 | 36,370 | 27,771 | 23,864 |
+| Challenger singles main draws | 69,036 | 64,969 | 47,278 | 44,766 |
+| Tour-level singles qualifying | 21,636 | 19,907 | 12,411 | 11,728 |
+
+The Tour source contains additional competitions. Its eligible column keeps ATP 250, 500, Masters and Grand Slam main draws. Out of 42,585 records, this removes 4,719 other-level matches (including Davis Cup, Olympics and tour finals), 89 for rankings and 1,407 for incomplete or exceptional endings. A qualifier who advances into the main draw counts normally. The other two series live in separate files. Challenger eligibility uses level C, and qualifying eligibility uses the four selected Tour levels. All three apply the same hard/clay/grass, distinct ID, positive ranking and completion filters. The table counts **available records**, and only Tour main-draw rows are modeling targets. Challenger qualifying, ITF, doubles and women's matches are outside these counts.
+
+**What was cross-checked.** The 2019 Challenger file contains 69 editions and its latest recorded tournament date is June 16. ATP reports 147 events in 2021, eleven fewer than 2019, implying 158 in 2019. A pinned independent results archive contains 3,981 additional Challenger main-draw rows across 85 editions starting after June 16, including the November Ortisei final won by Jannik Sinner. These rows serve as a cross-check and are outside the table above. In 2024 the source contains 192 Challenger editions, while ATP reports 207 tournaments. For a confirmed 2024 gap, the Knoxville draw records Christopher Eubanks defeating Learner Tien in the final. The source has no Knoxville edition (ID 2024-363) or match between these players that season. [Official Knoxville draw](https://www.protennislive.com/posting/2024/363/mds.pdf) [ATP season totals for 2019 and 2021](https://www.atptour.com/en/news/atp-chairman-update-january-2022) · [2024 ATP count](https://www.atptour.com/en/news/challenger-2024-tournament-of-the-year) · [Ortisei final](https://www.atptour.com/en/news/sinner-2019-ortisei-challenger-title) · [Independent 2019 snapshot](https://github.com/Aneeshers/tennis-sackmann-archive/blob/83733587353df8a41f2fd4f516147d5aa83f5a8d/atp/atp_matches_qual_chall_2019.csv)
+
+Official draws provide smaller, match-level checks. All 64 first-round pairings at Wimbledon 2012, all 24 played first-round pairings at Cincinnati 2023 (eight byes), and all 16 at the 2024 Mexico City Challenger match the source after accounting for name variants. Their raw draw record counts were 127, 55 and 31. This spot check establishes coverage for those comparisons only. [Wimbledon draw](https://assets.wimbledon.com/archive/draws/pdfs/draws/2012_MS_A4.pdf) · [Cincinnati draw](https://www.protennislive.com/posting/2023/422/mds.pdf) · [Mexico City draw](https://www.protennislive.com/posting/2024/8375/mds.pdf)
+
+**Why keep draw types separate.** The Challenger file records the 2024 Nottingham grass event (ID 2024-7740) on February 11, the date it also gives a separate hard-court event. The official grass draw ran June 10–16. An uncorrected date could place June results into a player's spring history. For a future history-only feature, first reconcile missing event editions, tournament dates and player IDs, and carry the draw type in the match key because main and qualifying draws reuse match numbers. Until then describe the current feature as **prior covered Tour main-draw results on this surface**. [LTA Nottingham draw](https://www.lta.org.uk/49ca7a/siteassets/events/nottingham/media/atp-challenger-draw---june-11.pdf)
+
+Run `python3 -m scripts.audit_draw_coverage --annual` to reproduce source totals from all 45 season files with local checksum verification. [ATP and Challenger file catalog](https://stats.tennismylife.org/tennis-match-database) · [Supplemental file URLs and checksums](draw-coverage-manifest.json)
+
 ## Expand the training history
 
-The historical audit covers 36 annual files from 1990 through 2025. It applies the same event levels, surfaces, player ID checks, rankings and completion rule as the starter analysis. Each option uses its first season for player history, the following seasons through 2022 for training, 2023 for validation and 2024–2025 for final evaluation. The local modeling CSV includes training and validation only. All 2,588 validation rows were checked field by field across the five exports and match exactly.
+The historical audit covers 36 annual files from 1990 through 2025. It applies the same event levels, surfaces, player ID checks, rankings and completion rule as the starter analysis. Each option uses its first season for player history, the following seasons through 2022 for training, 2023 for validation and 2024–2025 for final evaluation. The local modeling CSV includes training and validation only. All windows retain the same 2,588 validation matches.
 
 | First season | Raw records through 2025 | Eligible matches, all splits | Training matches | Model CSV rows incl. 2023 |
 | --- | ---: | ---: | ---: | ---: |
@@ -47,7 +67,7 @@ The file is `data/processed/model_input_1990.csv`. Substitute `2009` to build th
 
 **Coverage and comparability.** The full eligible pool covers 2,261 players across 2,262 tournament editions, with 49,752 hard-court, 32,245 clay-court and 10,340 grass-court matches. All 36 headers match and the eligible match keys are unique. Among the selected tiers, the surface filter drops 6,428 historical carpet-court rows. The provider assigns the codes `250`, `500`, `M` and `G` to older editions retrospectively. ATP formally introduced the current tier names in 2009. For example, the source codes Hamburg as `M` in 2008 and `500` in 2009. Use the edition's recorded level. [ATP tour timeline](https://www.atptour.com/-/media/files/media-guide/2026/2026-atp-media-guide-full.pdf) · [Hamburg tournament history](https://hamburgopenatp500.com/en/history)
 
-**How to use the extra data.** A sensible first comparison uses 2009 for warm-up and 2010–2022 for training. Repeat with 1990 as warm-up and 1991–2022 for training, against the same 2,588 validation matches from 2023. Keep feature windows, models, settings and evaluation rows comparable. Report accuracy and log loss for each model and training span. This tests whether older matches help the model predict recent tennis. The longer history adds training examples. Each player's form at prediction time still draws on the prior 52 weeks. The existing 2024–2025 holdout remains reserved for final evaluation after choosing the training span.
+The longer historical exports are archived alternatives. The active collection work focuses on draw coverage within the recent 10–15 seasons.
 
 ## Read one row
 
