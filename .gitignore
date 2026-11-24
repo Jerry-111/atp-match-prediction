@@ -5,3 +5,4 @@ __pycache__/
 data/raw/
 data/processed/*
 !data/processed/mens_singles_2006_2025.csv
+!data/processed/model_input.csv

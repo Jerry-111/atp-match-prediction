@@ -34676,53 +34676,53 @@ tour:2019-6116:24,tour,2019,train,2019-6116,Atlanta,250,main,20190722,Hard,QF,24
 tour:2019-6116:25,tour,2019,train,2019-6116,Atlanta,250,main,20190722,Hard,SF,25,DH58,O522,Alex de Minaur,Reilly Opelka,34,57,1
 tour:2019-6116:26,tour,2019,train,2019-6116,Atlanta,250,main,20190722,Hard,SF,26,FB98,N771,Taylor Fritz,Cameron Norrie,32,54,1
 tour:2019-6116:27,tour,2019,train,2019-6116,Atlanta,250,main,20190722,Hard,F,27,DH58,FB98,Alex de Minaur,Taylor Fritz,34,32,1
-tour:2019-418:1,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,1,SP24,T786,Brayden Schnur,Jo-Wilfried Tsonga,97,68,0
-tour:2019-418:2,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,2,SM25,TC61,Jack Sock,Jordan Thompson,180,43,0
-tour:2019-418:3,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,3,E690,SF62,Matthew Ebden,Tim Smyczek,100,282,0
-tour:2019-418:4,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,4,J267,PG94,Malek Jaziri,Marc Polmans,103,179,0
-tour:2019-418:5,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,5,KB09,PL56,Denis Kudla,Tommy Paul,101,128,0
-tour:2019-418:6,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,6,E865,O522,Christopher Eubanks,Reilly Opelka,184,57,0
-tour:2019-418:7,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,7,E687,N732,Daniel Evans,Yoshihito Nishioka,55,73,0
-tour:2019-418:8,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,8,I305,ME82,Ilya Ivashka,Adrian Mannarino,126,64,0
-tour:2019-418:9,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,9,KD35,KE17,Thai-Son Kwiatkowski,Nick Kyrgios,208,48,0
-tour:2019-418:10,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,10,KI95,P09Z,Miomir Kecmanovic,Alexei Popyrin,66,95,1
-tour:2019-418:11,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,11,HB71,Y124,Hubert Hurkacz,Donald Young,44,190,1
-tour:2019-418:12,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,12,BE90,HG86,Ricardas Berankis,Lloyd Harris,75,82,0
-tour:2019-418:13,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,13,G967,RE44,Peter Gojowczyk,Andrey Rublev,122,78,1
-tour:2019-418:14,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,14,F811,K336,Bjorn Fratangelo,Ivo Karlovic,123,81,1
-tour:2019-418:15,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,15,CA99,TC12,Marius Copil,Mikael Torpegaard,84,177,1
-tour:2019-418:16,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R64,16,BK92,KA98,Alexander Bublik,Bradley Klahn,71,94,1
-tour:2019-418:17,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,17,GB93,ME82,Norbert Gombos,Adrian Mannarino,132,64,1
-tour:2019-418:18,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,18,BK92,TD51,Alexander Bublik,Frances Tiafoe,71,41,0
-tour:2019-418:19,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,19,H996,KI95,Pierre-Hugues Herbert,Miomir Kecmanovic,39,66,0
-tour:2019-418:20,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,20,SL28,TC61,Jan-Lennard Struff,Jordan Thompson,36,43,0
-tour:2019-418:21,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,21,E831,HG86,Kyle Edmund,Lloyd Harris,35,82,1
-tour:2019-418:22,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,22,DH58,G967,Alex de Minaur,Peter Gojowczyk,34,122,0
-tour:2019-418:23,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,23,KE17,SD32,Nick Kyrgios,Gilles Simon,48,33,1
-tour:2019-418:24,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,24,PD31,PG94,Benoit Paire,Marc Polmans,28,179,1
-tour:2019-418:25,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,25,AG37,O522,Felix Auger-Aliassime,Reilly Opelka,23,57,1
-tour:2019-418:26,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,26,R975,SF62,Milos Raonic,Tim Smyczek,21,282,1
-tour:2019-418:27,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,27,GB88,N732,David Goffin,Yoshihito Nishioka,18,73,0
-tour:2019-418:28,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,28,C977,CA99,Marin Cilic,Marius Copil,17,84,1
-tour:2019-418:29,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,29,HB71,I186,Hubert Hurkacz,John Isner,44,14,0
-tour:2019-418:30,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,30,F811,MM58,Bjorn Fratangelo,Daniil Medvedev,123,9,0
-tour:2019-418:31,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,31,KE29,T786,Karen Khachanov,Jo-Wilfried Tsonga,8,68,0
-tour:2019-418:32,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R32,32,PL56,TE51,Tommy Paul,Stefanos Tsitsipas,128,6,0
-tour:2019-418:33,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R16,33,GB93,KI95,Norbert Gombos,Miomir Kecmanovic,132,66,1
-tour:2019-418:34,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R16,34,E831,T786,Kyle Edmund,Jo-Wilfried Tsonga,35,68,1
-tour:2019-418:35,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R16,35,G967,R975,Peter Gojowczyk,Milos Raonic,122,21,1
-tour:2019-418:36,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R16,36,AG37,C977,Felix Auger-Aliassime,Marin Cilic,23,17,0
-tour:2019-418:37,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R16,37,I186,PD31,John Isner,Benoit Paire,14,28,0
-tour:2019-418:38,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R16,38,MM58,TD51,Daniil Medvedev,Frances Tiafoe,9,41,1
-tour:2019-418:39,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R16,39,TC61,TE51,Jordan Thompson,Stefanos Tsitsipas,43,6,0
-tour:2019-418:40,tour,2019,train,2019-418,Washington,500,main,20190727,Hard,R16,40,KE17,N732,Nick Kyrgios,Yoshihito Nishioka,48,73,1
-tour:2019-418:41,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,QF,41,PD31,TE51,Benoit Paire,Stefanos Tsitsipas,30,6,0
-tour:2019-418:42,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,QF,42,GB93,KE17,Norbert Gombos,Nick Kyrgios,137,52,0
-tour:2019-418:43,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,QF,43,C977,MM58,Marin Cilic,Daniil Medvedev,17,10,0
-tour:2019-418:44,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,QF,44,E831,G967,Kyle Edmund,Peter Gojowczyk,34,122,0
-tour:2019-418:45,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,SF,45,KE17,TE51,Nick Kyrgios,Stefanos Tsitsipas,52,6,1
-tour:2019-418:46,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,SF,46,G967,MM58,Peter Gojowczyk,Daniil Medvedev,122,10,0
-tour:2019-418:47,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,F,47,KE17,MM58,Nick Kyrgios,Daniil Medvedev,52,10,1
+tour:2019-418:1,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,1,SP24,T786,Brayden Schnur,Jo-Wilfried Tsonga,97,68,0
+tour:2019-418:2,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,2,SM25,TC61,Jack Sock,Jordan Thompson,180,43,0
+tour:2019-418:3,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,3,E690,SF62,Matthew Ebden,Tim Smyczek,100,282,0
+tour:2019-418:4,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,4,J267,PG94,Malek Jaziri,Marc Polmans,103,179,0
+tour:2019-418:5,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,5,KB09,PL56,Denis Kudla,Tommy Paul,101,128,0
+tour:2019-418:6,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,6,E865,O522,Christopher Eubanks,Reilly Opelka,184,57,0
+tour:2019-418:7,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,7,E687,N732,Daniel Evans,Yoshihito Nishioka,55,73,0
+tour:2019-418:8,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,8,I305,ME82,Ilya Ivashka,Adrian Mannarino,126,64,0
+tour:2019-418:9,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,9,KD35,KE17,Thai-Son Kwiatkowski,Nick Kyrgios,208,48,0
+tour:2019-418:10,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,10,KI95,P09Z,Miomir Kecmanovic,Alexei Popyrin,66,95,1
+tour:2019-418:11,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,11,HB71,Y124,Hubert Hurkacz,Donald Young,44,190,1
+tour:2019-418:12,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,12,BE90,HG86,Ricardas Berankis,Lloyd Harris,75,82,0
+tour:2019-418:13,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,13,G967,RE44,Peter Gojowczyk,Andrey Rublev,122,78,1
+tour:2019-418:14,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,14,F811,K336,Bjorn Fratangelo,Ivo Karlovic,123,81,1
+tour:2019-418:15,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,15,CA99,TC12,Marius Copil,Mikael Torpegaard,84,177,1
+tour:2019-418:16,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R64,16,BK92,KA98,Alexander Bublik,Bradley Klahn,71,94,1
+tour:2019-418:17,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,17,GB93,ME82,Norbert Gombos,Adrian Mannarino,132,64,1
+tour:2019-418:18,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,18,BK92,TD51,Alexander Bublik,Frances Tiafoe,71,41,0
+tour:2019-418:19,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,19,H996,KI95,Pierre-Hugues Herbert,Miomir Kecmanovic,39,66,0
+tour:2019-418:20,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,20,SL28,TC61,Jan-Lennard Struff,Jordan Thompson,36,43,0
+tour:2019-418:21,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,21,E831,HG86,Kyle Edmund,Lloyd Harris,35,82,1
+tour:2019-418:22,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,22,DH58,G967,Alex de Minaur,Peter Gojowczyk,34,122,0
+tour:2019-418:23,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,23,KE17,SD32,Nick Kyrgios,Gilles Simon,48,33,1
+tour:2019-418:24,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,24,PD31,PG94,Benoit Paire,Marc Polmans,28,179,1
+tour:2019-418:25,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,25,AG37,O522,Felix Auger-Aliassime,Reilly Opelka,23,57,1
+tour:2019-418:26,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,26,R975,SF62,Milos Raonic,Tim Smyczek,21,282,1
+tour:2019-418:27,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,27,GB88,N732,David Goffin,Yoshihito Nishioka,18,73,0
+tour:2019-418:28,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,28,C977,CA99,Marin Cilic,Marius Copil,17,84,1
+tour:2019-418:29,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,29,HB71,I186,Hubert Hurkacz,John Isner,44,14,0
+tour:2019-418:30,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,30,F811,MM58,Bjorn Fratangelo,Daniil Medvedev,123,9,0
+tour:2019-418:31,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,31,KE29,T786,Karen Khachanov,Jo-Wilfried Tsonga,8,68,0
+tour:2019-418:32,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R32,32,PL56,TE51,Tommy Paul,Stefanos Tsitsipas,128,6,0
+tour:2019-418:33,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R16,33,GB93,KI95,Norbert Gombos,Miomir Kecmanovic,132,66,1
+tour:2019-418:34,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R16,34,E831,T786,Kyle Edmund,Jo-Wilfried Tsonga,35,68,1
+tour:2019-418:35,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R16,35,G967,R975,Peter Gojowczyk,Milos Raonic,122,21,1
+tour:2019-418:36,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R16,36,AG37,C977,Felix Auger-Aliassime,Marin Cilic,23,17,0
+tour:2019-418:37,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R16,37,I186,PD31,John Isner,Benoit Paire,14,28,0
+tour:2019-418:38,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R16,38,MM58,TD51,Daniil Medvedev,Frances Tiafoe,9,41,1
+tour:2019-418:39,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R16,39,TC61,TE51,Jordan Thompson,Stefanos Tsitsipas,43,6,0
+tour:2019-418:40,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,R16,40,KE17,N732,Nick Kyrgios,Yoshihito Nishioka,48,73,1
+tour:2019-418:41,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,QF,41,PD31,TE51,Benoit Paire,Stefanos Tsitsipas,28,6,0
+tour:2019-418:42,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,QF,42,GB93,KE17,Norbert Gombos,Nick Kyrgios,132,48,0
+tour:2019-418:43,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,QF,43,C977,MM58,Marin Cilic,Daniil Medvedev,17,9,0
+tour:2019-418:44,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,QF,44,E831,G967,Kyle Edmund,Peter Gojowczyk,35,122,0
+tour:2019-418:45,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,SF,45,KE17,TE51,Nick Kyrgios,Stefanos Tsitsipas,48,6,1
+tour:2019-418:46,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,SF,46,G967,MM58,Peter Gojowczyk,Daniil Medvedev,122,9,0
+tour:2019-418:47,tour,2019,train,2019-418,Washington,500,main,20190729,Hard,F,47,KE17,MM58,Nick Kyrgios,Daniil Medvedev,48,9,1
 tour:2019-319:1,tour,2019,train,2019-319,Kitzbuhel,250,main,20190729,Clay,R32,1,MO55,O513,Lucas Miedler,Sebastian Ofner,258,167,0
 tour:2019-319:2,tour,2019,train,2019-319,Kitzbuhel,250,main,20190729,Clay,R32,2,G628,K435,Richard Gasquet,Philipp Kohlschreiber,68,73,0
 tour:2019-319:3,tour,2019,train,2019-319,Kitzbuhel,250,main,20190729,Clay,R32,3,A596,MD56,Pablo Andujar,Leonardo Mayer,75,81,1
@@ -46139,51 +46139,51 @@ tour:2024-422:52,tour,2024,test,2024-422,Cincinnati Masters,M,main,20240812,Hard
 tour:2024-422:53,tour,2024,test,2024-422,Cincinnati Masters,M,main,20240812,Hard,SF,53,S0AG,Z355,Jannik Sinner,Alexander Zverev,1,4,
 tour:2024-422:54,tour,2024,test,2024-422,Cincinnati Masters,M,main,20240812,Hard,SF,54,R0DG,TD51,Holger Rune,Frances Tiafoe,16,27,
 tour:2024-422:55,tour,2024,test,2024-422,Cincinnati Masters,M,main,20240812,Hard,F,55,S0AG,TD51,Jannik Sinner,Frances Tiafoe,1,27,
-tour:2024-6242:1,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,1,E687,V832,Daniel Evans,Aleksandar Vukic,186,94,
-tour:2024-6242:2,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,2,CG80,N897,Borna Coric,Sumit Nagal,87,72,
-tour:2024-6242:3,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,3,DA81,F724,Taro Daniel,Marton Fucsovics,88,79,
-tour:2024-6242:4,tour,2024,test,2024-6242,Winston-Salem,250,main,20240819,Hard,R64,4,C0H0,V812,Arthur Cazaux,Botic van de Zandschulp,97,73,
+tour:2024-6242:1,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,1,E687,V832,Daniel Evans,Aleksandar Vukic,178,97,
+tour:2024-6242:2,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,2,CG80,N897,Borna Coric,Sumit Nagal,83,74,
+tour:2024-6242:3,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,3,DA81,F724,Taro Daniel,Marton Fucsovics,90,84,
+tour:2024-6242:4,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,4,C0H0,V812,Arthur Cazaux,Botic van de Zandschulp,93,75,
 tour:2024-6242:5,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,5,BU13,O522,Zizou Bergs,Reilly Opelka,85,322,
-tour:2024-6242:6,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,6,D994,SX91,James Duckworth,Thiago Seyboth Wild,70,69,
-tour:2024-6242:7,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,7,E865,W09E,Christopher Eubanks,Adam Walton,120,96,
-tour:2024-6242:8,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,8,LB66,MP20,Constant Lestienne,Alexandre Muller,110,76,
-tour:2024-6242:9,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,9,C0DF,S0RE,Francisco Comesana,Juncheng Shang,108,77,
-tour:2024-6242:10,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,10,CE77,S0LA,Federico Coria,Dominic Stricker,78,181,
-tour:2024-6242:11,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,11,DB63,S0K7,Laslo Djere,Zachary Svajda,100,107,
-tour:2024-6242:12,tour,2024,test,2024-6242,Winston-Salem,250,main,20240819,Hard,R64,12,KG27,O483,Strong Kirchheimer,Christopher O'Connell,511,86,
-tour:2024-6242:13,tour,2024,test,2024-6242,Winston-Salem,250,main,20240819,Hard,R64,13,S0N0,T0HA,Tristan Schoolkate,Learner Tien,195,230,
-tour:2024-6242:14,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,14,GB88,MU94,David Goffin,Jaume Munar,90,82,
-tour:2024-6242:15,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,15,CD85,K0EE,Pablo Carreno Busta,Omni Kumar,299,433,
-tour:2024-6242:16,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,16,M0AW,MW02,Nicolas Mejia,Corentin Moutet,235,68,
-tour:2024-6242:17,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,17,C0H0,H0BH,Arthur Cazaux,Rinky Hijikata,97,65,
-tour:2024-6242:18,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,18,ME82,V832,Adrian Mannarino,Aleksandar Vukic,42,94,
-tour:2024-6242:19,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,19,BT72,SX91,Nuno Borges,Thiago Seyboth Wild,35,69,
-tour:2024-6242:20,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,20,C0AU,S0K7,Francisco Cerundolo,Zachary Svajda,29,107,
-tour:2024-6242:21,tour,2024,test,2024-6242,Winston-Salem,250,main,20240819,Hard,R32,21,O483,RC91,Christopher O'Connell,Arthur Rinderknech,86,56,
-tour:2024-6242:22,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,22,K09F,MP20,Pavel Kotov,Alexandre Muller,63,76,
-tour:2024-6242:23,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,23,D0FJ,GB88,Luciano Darderi,David Goffin,38,90,
-tour:2024-6242:24,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,24,S0LA,SU87,Dominic Stricker,Lorenzo Sonego,181,58,
-tour:2024-6242:25,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,25,B0BI,CG80,Sebastian Baez,Borna Coric,21,87,
-tour:2024-6242:26,tour,2024,test,2024-6242,Winston-Salem,250,main,20240819,Hard,R32,26,M0CI,T0HA,Fabian Marozsan,Learner Tien,49,230,
-tour:2024-6242:27,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,27,CD85,S0H2,Pablo Carreno Busta,Alexander Shevchenko,299,60,
-tour:2024-6242:28,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,28,N0BS,S0RE,Mariano Navone,Juncheng Shang,37,77,
-tour:2024-6242:29,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,29,E865,G09O,Christopher Eubanks,Hugo Gaston,120,61,
-tour:2024-6242:30,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,30,BU13,EA24,Zizou Bergs,Tomas Martin Etcheverry,85,34,
-tour:2024-6242:31,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,31,F724,M0QI,Marton Fucsovics,Alex Michelsen,79,52,
-tour:2024-6242:32,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,32,MW02,SX50,Corentin Moutet,Roman Safiullin,68,59,
-tour:2024-6242:33,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,33,K09F,S0K7,Pavel Kotov,Zachary Svajda,63,107,
-tour:2024-6242:34,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,34,GB88,RC91,David Goffin,Arthur Rinderknech,90,56,
-tour:2024-6242:36,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,36,CG80,H0BH,Borna Coric,Rinky Hijikata,87,65,
-tour:2024-6242:37,tour,2024,test,2024-6242,Winston-Salem,250,main,20240819,Hard,R16,37,SX91,T0HA,Thiago Seyboth Wild,Learner Tien,69,230,
-tour:2024-6242:38,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,38,E865,SX50,Christopher Eubanks,Roman Safiullin,120,59,
-tour:2024-6242:39,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,39,BU13,M0QI,Zizou Bergs,Alex Michelsen,85,52,
-tour:2024-6242:40,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,40,CD85,V832,Pablo Carreno Busta,Aleksandar Vukic,299,94,
-tour:2024-6242:41,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,QF,41,K09F,SU87,Pavel Kotov,Lorenzo Sonego,63,58,
-tour:2024-6242:42,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,QF,42,GB88,H0BH,David Goffin,Rinky Hijikata,90,65,
-tour:2024-6242:43,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,QF,43,E865,M0QI,Christopher Eubanks,Alex Michelsen,120,52,
-tour:2024-6242:44,tour,2024,test,2024-6242,Winston-Salem,250,main,20240819,Hard,QF,44,CD85,T0HA,Pablo Carreno Busta,Learner Tien,299,230,
-tour:2024-6242:45,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,SF,45,GB88,SU87,David Goffin,Lorenzo Sonego,90,58,
-tour:2024-6242:47,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,F,47,M0QI,SU87,Alex Michelsen,Lorenzo Sonego,52,58,
+tour:2024-6242:6,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,6,D994,SX91,James Duckworth,Thiago Seyboth Wild,67,70,
+tour:2024-6242:7,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,7,E865,W09E,Christopher Eubanks,Adam Walton,123,95,
+tour:2024-6242:8,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,8,LB66,MP20,Constant Lestienne,Alexandre Muller,88,77,
+tour:2024-6242:9,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,9,C0DF,S0RE,Francisco Comesana,Juncheng Shang,108,78,
+tour:2024-6242:10,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,10,CE77,S0LA,Federico Coria,Dominic Stricker,80,190,
+tour:2024-6242:11,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,11,DB63,S0K7,Laslo Djere,Zachary Svajda,106,110,
+tour:2024-6242:12,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,12,KG27,O483,Strong Kirchheimer,Christopher O'Connell,495,86,
+tour:2024-6242:13,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,13,S0N0,T0HA,Tristan Schoolkate,Learner Tien,198,232,
+tour:2024-6242:14,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,14,GB88,MU94,David Goffin,Jaume Munar,92,89,
+tour:2024-6242:15,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,15,CD85,K0EE,Pablo Carreno Busta,Omni Kumar,513,429,
+tour:2024-6242:16,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R64,16,M0AW,MW02,Nicolas Mejia,Corentin Moutet,236,71,
+tour:2024-6242:17,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,17,C0H0,H0BH,Arthur Cazaux,Rinky Hijikata,93,65,
+tour:2024-6242:18,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,18,ME82,V832,Adrian Mannarino,Aleksandar Vukic,33,97,
+tour:2024-6242:19,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,19,BT72,SX91,Nuno Borges,Thiago Seyboth Wild,39,70,
+tour:2024-6242:20,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,20,C0AU,S0K7,Francisco Cerundolo,Zachary Svajda,28,110,
+tour:2024-6242:21,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,21,O483,RC91,Christopher O'Connell,Arthur Rinderknech,86,59,
+tour:2024-6242:22,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,22,K09F,MP20,Pavel Kotov,Alexandre Muller,63,77,
+tour:2024-6242:23,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,23,D0FJ,GB88,Luciano Darderi,David Goffin,34,92,
+tour:2024-6242:24,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,24,S0LA,SU87,Dominic Stricker,Lorenzo Sonego,190,56,
+tour:2024-6242:25,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,25,B0BI,CG80,Sebastian Baez,Borna Coric,20,83,
+tour:2024-6242:26,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,26,M0CI,T0HA,Fabian Marozsan,Learner Tien,50,232,
+tour:2024-6242:27,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,27,CD85,S0H2,Pablo Carreno Busta,Alexander Shevchenko,513,60,
+tour:2024-6242:28,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,28,N0BS,S0RE,Mariano Navone,Juncheng Shang,38,78,
+tour:2024-6242:29,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,29,E865,G09O,Christopher Eubanks,Hugo Gaston,123,61,
+tour:2024-6242:30,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,30,BU13,EA24,Zizou Bergs,Tomas Martin Etcheverry,85,37,
+tour:2024-6242:31,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,31,F724,M0QI,Marton Fucsovics,Alex Michelsen,84,57,
+tour:2024-6242:32,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R32,32,MW02,SX50,Corentin Moutet,Roman Safiullin,71,66,
+tour:2024-6242:33,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,33,K09F,S0K7,Pavel Kotov,Zachary Svajda,63,110,
+tour:2024-6242:34,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,34,GB88,RC91,David Goffin,Arthur Rinderknech,92,59,
+tour:2024-6242:36,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,36,CG80,H0BH,Borna Coric,Rinky Hijikata,83,65,
+tour:2024-6242:37,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,37,SX91,T0HA,Thiago Seyboth Wild,Learner Tien,70,232,
+tour:2024-6242:38,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,38,E865,SX50,Christopher Eubanks,Roman Safiullin,123,66,
+tour:2024-6242:39,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,39,BU13,M0QI,Zizou Bergs,Alex Michelsen,85,57,
+tour:2024-6242:40,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,R16,40,CD85,V832,Pablo Carreno Busta,Aleksandar Vukic,513,97,
+tour:2024-6242:41,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,QF,41,K09F,SU87,Pavel Kotov,Lorenzo Sonego,63,56,
+tour:2024-6242:42,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,QF,42,GB88,H0BH,David Goffin,Rinky Hijikata,92,65,
+tour:2024-6242:43,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,QF,43,E865,M0QI,Christopher Eubanks,Alex Michelsen,123,57,
+tour:2024-6242:44,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,QF,44,CD85,T0HA,Pablo Carreno Busta,Learner Tien,513,232,
+tour:2024-6242:45,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,SF,45,GB88,SU87,David Goffin,Lorenzo Sonego,92,56,
+tour:2024-6242:47,tour,2024,test,2024-6242,Winston-Salem,250,main,20240818,Hard,F,47,M0QI,SU87,Alex Michelsen,Lorenzo Sonego,57,56,
 tour:2024-560:1,tour,2024,test,2024-560,US Open,G,main,20240826,Hard,R128,1,MN13,Z355,Maximilian Marterer,Alexander Zverev,100,4,
 tour:2024-560:2,tour,2024,test,2024-560,US Open,G,main,20240826,Hard,R128,2,BD06,N0BG,Roberto Bautista Agut,Luca Nardi,67,90,
 tour:2024-560:3,tour,2024,test,2024-560,US Open,G,main,20240826,Hard,R128,3,C0DF,S0LA,Francisco Comesana,Dominic Stricker,108,169,
@@ -46701,58 +46701,58 @@ tour:2024-352:52,tour,2024,test,2024-352,Paris Masters,M,main,20241028,Hard,QF,5
 tour:2024-352:53,tour,2024,test,2024-352,Paris Masters,M,main,20241028,Hard,SF,53,R0DG,Z355,Holger Rune,Alexander Zverev,13,3,
 tour:2024-352:54,tour,2024,test,2024-352,Paris Masters,M,main,20241028,Hard,SF,54,HH26,KE29,Ugo Humbert,Karen Khachanov,18,21,
 tour:2024-352:55,tour,2024,test,2024-352,Paris Masters,M,main,20241028,Hard,F,55,HH26,Z355,Ugo Humbert,Alexander Zverev,18,3,
-tour:2024-4787:1,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,1,M0CI,S0RE,Fabian Marozsan,Juncheng Shang,59,50,
-tour:2024-4787:2,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,2,M0JF,N0AE,Hamad Medjedovic,Brandon Nakashima,156,37,
-tour:2024-4787:3,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,3,AE14,D0FJ,Daniel Altmaier,Luciano Darderi,93,43,
-tour:2024-4787:4,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,4,C977,MP20,Marin Cilic,Alexandre Muller,196,68,
-tour:2024-4787:5,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,5,EA24,K09F,Tomas Martin Etcheverry,Pavel Kotov,39,75,
-tour:2024-4787:6,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,6,D0HJ,K0AZ,Branko Djuric,Aleksandar Kovacevic,781,101,
-tour:2024-4787:7,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,7,D994,KI63,James Duckworth,Lukas Klein,77,153,
-tour:2024-4787:8,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,8,L987,N0BS,Dusan Lajovic,Mariano Navone,86,45,
-tour:2024-4787:9,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,9,F724,SU55,Marton Fucsovics,Denis Shapovalov,91,78,
-tour:2024-4787:10,tour,2024,test,2024-4787,Belgrade,250,main,20241104,Hard,R32,10,KI95,O483,Miomir Kecmanovic,Christopher O'Connell,53,71,
-tour:2024-4787:11,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,11,F510,SX50,Fabio Fognini,Roman Safiullin,74,60,
-tour:2024-4787:12,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,12,DB63,W367,Laslo Djere,Stan Wawrinka,141,148,
-tour:2024-4787:13,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,13,K0AZ,M0JF,Aleksandar Kovacevic,Hamad Medjedovic,101,156,
-tour:2024-4787:14,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,14,EA24,KI63,Tomas Martin Etcheverry,Lukas Klein,39,153,
-tour:2024-4787:15,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,15,C977,L0BV,Marin Cilic,Jiri Lehecka,196,31,
-tour:2024-4787:16,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,16,C0AU,SX50,Francisco Cerundolo,Roman Safiullin,29,60,
-tour:2024-4787:17,tour,2024,test,2024-4787,Belgrade,250,main,20241104,Hard,R16,17,AE14,O483,Daniel Altmaier,Christopher O'Connell,93,71,
-tour:2024-4787:18,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,18,BT72,SU55,Nuno Borges,Denis Shapovalov,33,78,
-tour:2024-4787:19,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,19,L987,M0CI,Dusan Lajovic,Fabian Marozsan,86,59,
-tour:2024-4787:20,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,20,A0CJ,DB63,Duje Ajdukovic,Laslo Djere,115,141,
-tour:2024-4787:21,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,QF,21,KI63,L0BV,Lukas Klein,Jiri Lehecka,153,31,
-tour:2024-4787:22,tour,2024,test,2024-4787,Belgrade,250,main,20241104,Hard,QF,22,O483,SU55,Christopher O'Connell,Denis Shapovalov,71,78,
-tour:2024-4787:23,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,QF,23,DB63,M0CI,Laslo Djere,Fabian Marozsan,141,59,
-tour:2024-4787:24,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,QF,24,C0AU,M0JF,Francisco Cerundolo,Hamad Medjedovic,29,156,
-tour:2024-4787:25,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,SF,25,L0BV,SU55,Jiri Lehecka,Denis Shapovalov,31,78,
-tour:2024-4787:26,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,SF,26,DB63,M0JF,Laslo Djere,Hamad Medjedovic,141,156,
-tour:2024-4787:27,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,F,27,M0JF,SU55,Hamad Medjedovic,Denis Shapovalov,156,78,
+tour:2024-4787:1,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,1,M0CI,S0RE,Fabian Marozsan,Juncheng Shang,57,51,
+tour:2024-4787:2,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,2,M0JF,N0AE,Hamad Medjedovic,Brandon Nakashima,158,35,
+tour:2024-4787:3,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,3,AE14,D0FJ,Daniel Altmaier,Luciano Darderi,82,43,
+tour:2024-4787:4,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,4,C977,MP20,Marin Cilic,Alexandre Muller,201,68,
+tour:2024-4787:5,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,5,EA24,K09F,Tomas Martin Etcheverry,Pavel Kotov,40,73,
+tour:2024-4787:6,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,6,D0HJ,K0AZ,Branko Djuric,Aleksandar Kovacevic,779,99,
+tour:2024-4787:7,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,7,D994,KI63,James Duckworth,Lukas Klein,77,146,
+tour:2024-4787:8,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,8,L987,N0BS,Dusan Lajovic,Mariano Navone,72,45,
+tour:2024-4787:9,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,9,F724,SU55,Marton Fucsovics,Denis Shapovalov,88,80,
+tour:2024-4787:10,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,10,KI95,O483,Miomir Kecmanovic,Christopher O'Connell,55,71,
+tour:2024-4787:11,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,11,F510,SX50,Fabio Fognini,Roman Safiullin,79,59,
+tour:2024-4787:12,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R32,12,DB63,W367,Laslo Djere,Stan Wawrinka,129,149,
+tour:2024-4787:13,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,13,K0AZ,M0JF,Aleksandar Kovacevic,Hamad Medjedovic,99,158,
+tour:2024-4787:14,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,14,EA24,KI63,Tomas Martin Etcheverry,Lukas Klein,40,146,
+tour:2024-4787:15,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,15,C977,L0BV,Marin Cilic,Jiri Lehecka,201,30,
+tour:2024-4787:16,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,16,C0AU,SX50,Francisco Cerundolo,Roman Safiullin,29,59,
+tour:2024-4787:17,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,17,AE14,O483,Daniel Altmaier,Christopher O'Connell,82,71,
+tour:2024-4787:18,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,18,BT72,SU55,Nuno Borges,Denis Shapovalov,34,80,
+tour:2024-4787:19,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,19,L987,M0CI,Dusan Lajovic,Fabian Marozsan,72,57,
+tour:2024-4787:20,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,R16,20,A0CJ,DB63,Duje Ajdukovic,Laslo Djere,117,129,
+tour:2024-4787:21,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,QF,21,KI63,L0BV,Lukas Klein,Jiri Lehecka,146,30,
+tour:2024-4787:22,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,QF,22,O483,SU55,Christopher O'Connell,Denis Shapovalov,71,80,
+tour:2024-4787:23,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,QF,23,DB63,M0CI,Laslo Djere,Fabian Marozsan,129,57,
+tour:2024-4787:24,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,QF,24,C0AU,M0JF,Francisco Cerundolo,Hamad Medjedovic,29,158,
+tour:2024-4787:25,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,SF,25,L0BV,SU55,Jiri Lehecka,Denis Shapovalov,30,80,
+tour:2024-4787:26,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,SF,26,DB63,M0JF,Laslo Djere,Hamad Medjedovic,129,158,
+tour:2024-4787:27,tour,2024,test,2024-4787,Belgrade,250,main,20241103,Hard,F,27,M0JF,SU55,Hamad Medjedovic,Denis Shapovalov,158,80,
 tour:2024-341:2,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,2,M0G4,M0QI,Harold Mayot,Alex Michelsen,107,44,
-tour:2024-341:3,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,3,BK24,SU87,Gregoire Barrere,Lorenzo Sonego,166,51,
-tour:2024-341:4,tour,2024,test,2024-341,Metz,250,main,20241104,Hard,R32,4,S0H2,SL28,Alexander Shevchenko,Jan-Lennard Struff,64,40,
-tour:2024-341:5,tour,2024,test,2024-341,Metz,250,main,20241104,Hard,R32,5,H996,MO44,Pierre-Hugues Herbert,Pedro Martinez,127,42,
-tour:2024-341:6,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,6,HB64,P0K5,Quentin Halys,Theo Papamalamis,84,721,
+tour:2024-341:3,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,3,BK24,SU87,Gregoire Barrere,Lorenzo Sonego,155,52,
+tour:2024-341:4,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,4,S0H2,SL28,Alexander Shevchenko,Jan-Lennard Struff,63,42,
+tour:2024-341:5,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,5,H996,MO44,Pierre-Hugues Herbert,Pedro Martinez,124,41,
+tour:2024-341:6,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,6,HB64,P0K5,Quentin Halys,Theo Papamalamis,90,715,
 tour:2024-341:7,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,7,G628,MJ08,Richard Gasquet,Thiago Monteiro,133,100,
-tour:2024-341:8,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,8,CF59,N771,Roberto Carballes Baena,Cameron Norrie,56,57,
-tour:2024-341:9,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,9,BU13,GH33,Zizou Bergs,Manuel Guinard,61,264,
-tour:2024-341:10,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,10,D0DW,G09O,Titouan Droguet,Hugo Gaston,174,81,
-tour:2024-341:11,tour,2024,test,2024-341,Metz,250,main,20241104,Hard,R32,11,ME82,Y09V,Adrian Mannarino,Yunchaokete Bu,54,72,
-tour:2024-341:12,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,12,BD06,BM95,Roberto Bautista Agut,Benjamin Bonzi,47,124,
-tour:2024-341:13,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,13,RE44,SU87,Andrey Rublev,Lorenzo Sonego,9,51,
+tour:2024-341:8,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,8,CF59,N771,Roberto Carballes Baena,Cameron Norrie,54,56,
+tour:2024-341:9,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,9,BU13,GH33,Zizou Bergs,Manuel Guinard,65,260,
+tour:2024-341:10,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,10,D0DW,G09O,Titouan Droguet,Hugo Gaston,173,81,
+tour:2024-341:11,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,11,ME82,Y09V,Adrian Mannarino,Yunchaokete Bu,58,74,
+tour:2024-341:12,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R32,12,BD06,BM95,Roberto Bautista Agut,Benjamin Bonzi,46,126,
+tour:2024-341:13,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,13,RE44,SU87,Andrey Rublev,Lorenzo Sonego,7,52,
 tour:2024-341:14,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,14,G628,M0QI,Richard Gasquet,Alex Michelsen,133,44,
-tour:2024-341:15,tour,2024,test,2024-341,Metz,250,main,20241104,Hard,R16,15,MW02,SL28,Corentin Moutet,Jan-Lennard Struff,66,40,
-tour:2024-341:16,tour,2024,test,2024-341,Metz,250,main,20241104,Hard,R16,16,H996,HB64,Pierre-Hugues Herbert,Quentin Halys,127,84,
-tour:2024-341:17,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,17,BU13,G09O,Zizou Bergs,Hugo Gaston,61,81,
-tour:2024-341:18,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,18,N771,V0DZ,Cameron Norrie,Luca Van Assche,57,112,
-tour:2024-341:19,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,19,BM95,RH16,Benjamin Bonzi,Casper Ruud,124,7,
-tour:2024-341:20,tour,2024,test,2024-341,Metz,250,main,20241104,Hard,R16,20,D0C1,Y09V,Jesper de Jong,Yunchaokete Bu,109,72,
-tour:2024-341:22,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,QF,22,BU13,N771,Zizou Bergs,Cameron Norrie,61,57,
-tour:2024-341:23,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,QF,23,BM95,HB64,Benjamin Bonzi,Quentin Halys,124,84,
-tour:2024-341:24,tour,2024,test,2024-341,Metz,250,main,20241104,Hard,QF,24,M0QI,Y09V,Alex Michelsen,Yunchaokete Bu,44,72,
-tour:2024-341:25,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,SF,25,MW02,N771,Corentin Moutet,Cameron Norrie,66,57,
-tour:2024-341:26,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,SF,26,BM95,M0QI,Benjamin Bonzi,Alex Michelsen,124,44,
-tour:2024-341:27,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,F,27,BM95,N771,Benjamin Bonzi,Cameron Norrie,124,57,
+tour:2024-341:15,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,15,MW02,SL28,Corentin Moutet,Jan-Lennard Struff,70,42,
+tour:2024-341:16,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,16,H996,HB64,Pierre-Hugues Herbert,Quentin Halys,124,90,
+tour:2024-341:17,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,17,BU13,G09O,Zizou Bergs,Hugo Gaston,65,81,
+tour:2024-341:18,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,18,N771,V0DZ,Cameron Norrie,Luca Van Assche,56,114,
+tour:2024-341:19,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,19,BM95,RH16,Benjamin Bonzi,Casper Ruud,126,8,
+tour:2024-341:20,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,R16,20,D0C1,Y09V,Jesper de Jong,Yunchaokete Bu,109,74,
+tour:2024-341:22,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,QF,22,BU13,N771,Zizou Bergs,Cameron Norrie,65,56,
+tour:2024-341:23,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,QF,23,BM95,HB64,Benjamin Bonzi,Quentin Halys,126,90,
+tour:2024-341:24,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,QF,24,M0QI,Y09V,Alex Michelsen,Yunchaokete Bu,44,74,
+tour:2024-341:25,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,SF,25,MW02,N771,Corentin Moutet,Cameron Norrie,70,56,
+tour:2024-341:26,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,SF,26,BM95,M0QI,Benjamin Bonzi,Alex Michelsen,126,44,
+tour:2024-341:27,tour,2024,test,2024-341,Metz,250,main,20241103,Hard,F,27,BM95,N771,Benjamin Bonzi,Cameron Norrie,126,56,
 tour:2025-339:1,tour,2025,test,2025-339,Brisbane,250,main,20241229,Hard,R32,1,GB88,V832,David Goffin,Aleksandar Vukic,52,68,
 tour:2025-339:2,tour,2025,test,2025-339,Brisbane,250,main,20241229,Hard,R32,2,M0QI,O483,Alex Michelsen,Christopher O'Connell,41,64,
 tour:2025-339:3,tour,2025,test,2025-339,Brisbane,250,main,20241229,Hard,R32,3,BM95,TE30,Benjamin Bonzi,Alejandro Tabilo,75,23,
@@ -110382,34 +110382,34 @@ challenger:2021-9188:27,challenger,2021,train,2021-9188,Little Rock,C,main,20210
 challenger:2021-9188:29,challenger,2021,train,2021-9188,Little Rock,C,main,20210531,Hard,SF,29,GA36,O482,Emilio Gomez,Gonzalo Oliveira,179,317,1
 challenger:2021-9188:30,challenger,2021,train,2021-9188,Little Rock,C,main,20210531,Hard,SF,30,KC12,SM25,Mitchell Krueger,Jack Sock,207,248,0
 challenger:2021-9188:31,challenger,2021,train,2021-9188,Little Rock,C,main,20210531,Hard,F,31,GA36,SM25,Emilio Gomez,Jack Sock,179,248,0
-challenger:2021-444:1,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,1,KH56,TA12,Zdenek Kolar,Stefano Travaglia,232,78,0
-challenger:2021-444:3,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,3,SN54,TE16,Frederico Ferreira Silva,Carlos Taberner,168,137,1
-challenger:2021-444:4,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,4,D923,GB93,Damir Dzumhur,Norbert Gombos,125,81,1
-challenger:2021-444:5,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,5,MV14,RB56,Alex Molcan,Ramkumar Ramanathan,181,216,1
-challenger:2021-444:6,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,6,BI23,ME89,Liam Broady,Illya Marchenko,146,161,1
-challenger:2021-444:7,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,7,M0FH,P09O,Tomas Machac,Zsombor Piros,144,438,0
-challenger:2021-444:8,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,8,CH05,SH90,Altug Celikbilek,Joao Sousa,239,114,1
-challenger:2021-444:9,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,9,I306,S0H2,Cem Ilkel,Alexander Shevchenko,199,530,1
-challenger:2021-444:10,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,10,KE05,P0FF,Danylo Kalenichenko,Lukas Palovic,529,1879,1
-challenger:2021-444:11,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,11,F0BT,K839,Jonas Forejtek,Tobias Kamke,320,240,0
-challenger:2021-444:13,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,13,L0BV,SC77,Jiri Lehecka,Sergiy Stakhovsky,278,210,1
-challenger:2021-444:14,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,14,MN13,R09X,Maximilian Marterer,Jurij Rodionov,215,142,1
-challenger:2021-444:15,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,15,HA28,S0GD,Filip Horansky,Dalibor Svrcina,187,746,0
-challenger:2021-444:16,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R32,16,M0HU,Z09D,Shintaro Mochizuki,Kacper Zuk,497,173,0
-challenger:2021-444:17,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R16,17,I306,TA12,Cem Ilkel,Stefano Travaglia,199,78,0
-challenger:2021-444:18,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R16,18,GJ37,KE05,Tallon Griekspoor,Danylo Kalenichenko,131,529,1
-challenger:2021-444:19,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R16,19,K839,MV14,Tobias Kamke,Alex Molcan,240,181,0
-challenger:2021-444:20,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R16,20,BI23,MN13,Liam Broady,Maximilian Marterer,146,215,0
-challenger:2021-444:21,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R16,21,CH05,D923,Altug Celikbilek,Damir Dzumhur,239,125,0
-challenger:2021-444:22,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R16,22,S0GD,SN54,Dalibor Svrcina,Frederico Ferreira Silva,746,168,0
-challenger:2021-444:23,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R16,23,L0BV,Z09D,Jiri Lehecka,Kacper Zuk,278,173,1
-challenger:2021-444:24,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,R16,24,L797,P09O,Lukas Lacko,Zsombor Piros,213,438,0
-challenger:2021-444:25,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,QF,25,MN13,TA12,Maximilian Marterer,Stefano Travaglia,215,78,0
-challenger:2021-444:26,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,QF,26,GJ37,L0BV,Tallon Griekspoor,Jiri Lehecka,131,278,1
-challenger:2021-444:27,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,QF,27,D923,MV14,Damir Dzumhur,Alex Molcan,125,181,0
-challenger:2021-444:28,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,QF,28,P09O,SN54,Zsombor Piros,Frederico Ferreira Silva,438,168,1
-challenger:2021-444:30,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,SF,30,GJ37,MV14,Tallon Griekspoor,Alex Molcan,131,181,1
-challenger:2021-444:31,challenger,2021,train,2021-444,Bratislava,C,main,20210613,Clay,F,31,GJ37,P09O,Tallon Griekspoor,Zsombor Piros,131,438,1
+challenger:2021-444:1,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,1,KH56,TA12,Zdenek Kolar,Stefano Travaglia,232,78,0
+challenger:2021-444:3,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,3,SN54,TE16,Frederico Ferreira Silva,Carlos Taberner,168,137,1
+challenger:2021-444:4,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,4,D923,GB93,Damir Dzumhur,Norbert Gombos,125,81,1
+challenger:2021-444:5,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,5,MV14,RB56,Alex Molcan,Ramkumar Ramanathan,181,216,1
+challenger:2021-444:6,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,6,BI23,ME89,Liam Broady,Illya Marchenko,146,161,1
+challenger:2021-444:7,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,7,M0FH,P09O,Tomas Machac,Zsombor Piros,144,438,0
+challenger:2021-444:8,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,8,CH05,SH90,Altug Celikbilek,Joao Sousa,239,114,1
+challenger:2021-444:9,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,9,I306,S0H2,Cem Ilkel,Alexander Shevchenko,199,530,1
+challenger:2021-444:10,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,10,KE05,P0FF,Danylo Kalenichenko,Lukas Palovic,529,1879,1
+challenger:2021-444:11,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,11,F0BT,K839,Jonas Forejtek,Tobias Kamke,320,240,0
+challenger:2021-444:13,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,13,L0BV,SC77,Jiri Lehecka,Sergiy Stakhovsky,278,210,1
+challenger:2021-444:14,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,14,MN13,R09X,Maximilian Marterer,Jurij Rodionov,215,142,1
+challenger:2021-444:15,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,15,HA28,S0GD,Filip Horansky,Dalibor Svrcina,187,746,0
+challenger:2021-444:16,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R32,16,M0HU,Z09D,Shintaro Mochizuki,Kacper Zuk,497,173,0
+challenger:2021-444:17,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R16,17,I306,TA12,Cem Ilkel,Stefano Travaglia,199,78,0
+challenger:2021-444:18,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R16,18,GJ37,KE05,Tallon Griekspoor,Danylo Kalenichenko,131,529,1
+challenger:2021-444:19,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R16,19,K839,MV14,Tobias Kamke,Alex Molcan,240,181,0
+challenger:2021-444:20,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R16,20,BI23,MN13,Liam Broady,Maximilian Marterer,146,215,0
+challenger:2021-444:21,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R16,21,CH05,D923,Altug Celikbilek,Damir Dzumhur,239,125,0
+challenger:2021-444:22,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R16,22,S0GD,SN54,Dalibor Svrcina,Frederico Ferreira Silva,746,168,0
+challenger:2021-444:23,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R16,23,L0BV,Z09D,Jiri Lehecka,Kacper Zuk,278,173,1
+challenger:2021-444:24,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,R16,24,L797,P09O,Lukas Lacko,Zsombor Piros,213,438,0
+challenger:2021-444:25,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,QF,25,MN13,TA12,Maximilian Marterer,Stefano Travaglia,215,78,0
+challenger:2021-444:26,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,QF,26,GJ37,L0BV,Tallon Griekspoor,Jiri Lehecka,131,278,1
+challenger:2021-444:27,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,QF,27,D923,MV14,Damir Dzumhur,Alex Molcan,125,181,0
+challenger:2021-444:28,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,QF,28,P09O,SN54,Zsombor Piros,Frederico Ferreira Silva,438,168,1
+challenger:2021-444:30,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,SF,30,GJ37,MV14,Tallon Griekspoor,Alex Molcan,131,181,1
+challenger:2021-444:31,challenger,2021,train,2021-444,Bratislava,C,main,20211108,Hard,F,31,GJ37,P09O,Tallon Griekspoor,Zsombor Piros,131,438,1
 challenger:2021-7536:1,challenger,2021,train,2021-7536,Lyon,C,main,20210613,Clay,R32,1,C882,CG04,Pablo Cuevas,Pedro Cachin,92,287,1
 challenger:2021-7536:2,challenger,2021,train,2021-7536,Lyon,C,main,20210613,Clay,R32,2,N897,V306,Sumit Nagal,Fernando Verdasco,143,99,0
 challenger:2021-7536:3,challenger,2021,train,2021-7536,Lyon,C,main,20210613,Clay,R32,3,BF23,V717,Facundo Bagnis,Alexey Vatutin,104,285,1
@@ -120335,37 +120335,37 @@ challenger:2023-2875:28,challenger,2023,validation,2023-2875,Palmas del Mar,C,ma
 challenger:2023-2875:29,challenger,2023,validation,2023-2875,Palmas del Mar,C,main,20230618,Hard,SF,29,H0DU,N552,Gustavo Heide,Kei Nishikori,423,759,0
 challenger:2023-2875:30,challenger,2023,validation,2023-2875,Palmas del Mar,C,main,20230618,Hard,SF,30,Z09Z,Z0BZ,Beibit Zhukayev,Michael Zheng,256,1118,0
 challenger:2023-2875:31,challenger,2023,validation,2023-2875,Palmas del Mar,C,main,20230618,Hard,F,31,N552,Z0BZ,Kei Nishikori,Michael Zheng,759,1118,1
-challenger:2023-444:1,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,1,SS25,TB69,Vitaliy Sachko,Dominic Thiem,266,89,0
-challenger:2023-444:2,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,2,N0BG,S0LA,Luca Nardi,Dominic Stricker,154,117,1
-challenger:2023-444:3,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,3,BM95,GB93,Benjamin Bonzi,Norbert Gombos,76,150,0
-challenger:2023-444:4,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,4,BI23,V0AM,Liam Broady,Otto Virtanen,151,131,0
-challenger:2023-444:5,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,5,M0JZ,P09O,Filip Misolic,Zsombor Piros,140,123,0
-challenger:2023-444:6,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,6,C0BC,P0HP,Maxime Cressy,Lukas Pokorny,40,601,1
-challenger:2023-444:7,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,7,DA86,MV14,Joris De Loore,Alex Molcan,194,80,1
-challenger:2023-444:8,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,8,D0DT,SQ80,Martin Damm,Akira Santillan,434,393,1
-challenger:2023-444:9,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,9,D0F6,F0DM,Gabriel Diallo,Arthur Fery,139,409,1
-challenger:2023-444:10,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,10,D923,Z0A1,Damir Dzumhur,Giulio Zeppieri,167,128,1
-challenger:2023-444:11,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,11,HG94,TA12,Benjamin Hassan,Stefano Travaglia,295,260,1
-challenger:2023-444:12,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,12,G967,I0AP,Peter Gojowczyk,Kalin Ivanovski,302,412,0
-challenger:2023-444:13,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,13,KI63,P0HW,Lukas Klein,Dino Prizmic,153,293,1
-challenger:2023-444:14,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,14,DB59,ME89,Dennis Novak,Illya Marchenko,160,345,0
-challenger:2023-444:15,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,15,M0NI,MW76,Jakub Mensik,Matteo Martineau,228,385,0
-challenger:2023-444:16,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R32,16,B0C0,P0EV,Gabi Adrian Boitan,Andrew Paulson,495,458,0
-challenger:2023-444:17,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R16,17,D0F6,TB69,Gabriel Diallo,Dominic Thiem,139,89,1
-challenger:2023-444:18,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R16,18,D923,P09O,Damir Dzumhur,Zsombor Piros,167,123,1
-challenger:2023-444:19,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R16,19,C0BC,MW76,Maxime Cressy,Matteo Martineau,40,385,1
-challenger:2023-444:20,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R16,20,D0DT,I0AP,Martin Damm,Kalin Ivanovski,434,412,1
-challenger:2023-444:21,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R16,21,DA86,HG94,Joris De Loore,Benjamin Hassan,194,295,1
-challenger:2023-444:22,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R16,22,KI63,V0AM,Lukas Klein,Otto Virtanen,153,131,1
-challenger:2023-444:23,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R16,23,GB93,ME89,Norbert Gombos,Illya Marchenko,150,345,0
-challenger:2023-444:24,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,R16,24,N0BG,P0EV,Luca Nardi,Andrew Paulson,154,458,1
-challenger:2023-444:25,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,QF,25,C0BC,D0DT,Maxime Cressy,Martin Damm,40,434,0
-challenger:2023-444:26,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,QF,26,DA86,ME89,Joris De Loore,Illya Marchenko,194,345,1
-challenger:2023-444:27,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,QF,27,D0F6,KI63,Gabriel Diallo,Lukas Klein,139,153,1
-challenger:2023-444:28,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,QF,28,D923,N0BG,Damir Dzumhur,Luca Nardi,167,154,0
-challenger:2023-444:29,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,SF,29,DA86,N0BG,Joris De Loore,Luca Nardi,194,154,1
-challenger:2023-444:30,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,SF,30,D0DT,D0F6,Martin Damm,Gabriel Diallo,434,139,0
-challenger:2023-444:31,challenger,2023,validation,2023-444,Bratislava 1,C,main,20230618,Hard,F,31,D0F6,DA86,Gabriel Diallo,Joris De Loore,139,194,1
+challenger:2023-444:1,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,1,SS25,TB69,Vitaliy Sachko,Dominic Thiem,266,89,0
+challenger:2023-444:2,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,2,N0BG,S0LA,Luca Nardi,Dominic Stricker,154,117,1
+challenger:2023-444:3,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,3,BM95,GB93,Benjamin Bonzi,Norbert Gombos,76,150,0
+challenger:2023-444:4,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,4,BI23,V0AM,Liam Broady,Otto Virtanen,151,131,0
+challenger:2023-444:5,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,5,M0JZ,P09O,Filip Misolic,Zsombor Piros,140,123,0
+challenger:2023-444:6,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,6,C0BC,P0HP,Maxime Cressy,Lukas Pokorny,40,601,1
+challenger:2023-444:7,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,7,DA86,MV14,Joris De Loore,Alex Molcan,194,80,1
+challenger:2023-444:8,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,8,D0DT,SQ80,Martin Damm,Akira Santillan,434,393,1
+challenger:2023-444:9,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,9,D0F6,F0DM,Gabriel Diallo,Arthur Fery,139,409,1
+challenger:2023-444:10,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,10,D923,Z0A1,Damir Dzumhur,Giulio Zeppieri,167,128,1
+challenger:2023-444:11,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,11,HG94,TA12,Benjamin Hassan,Stefano Travaglia,295,260,1
+challenger:2023-444:12,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,12,G967,I0AP,Peter Gojowczyk,Kalin Ivanovski,302,412,0
+challenger:2023-444:13,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,13,KI63,P0HW,Lukas Klein,Dino Prizmic,153,293,1
+challenger:2023-444:14,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,14,DB59,ME89,Dennis Novak,Illya Marchenko,160,345,0
+challenger:2023-444:15,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,15,M0NI,MW76,Jakub Mensik,Matteo Martineau,228,385,0
+challenger:2023-444:16,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R32,16,B0C0,P0EV,Gabi Adrian Boitan,Andrew Paulson,495,458,0
+challenger:2023-444:17,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R16,17,D0F6,TB69,Gabriel Diallo,Dominic Thiem,139,89,1
+challenger:2023-444:18,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R16,18,D923,P09O,Damir Dzumhur,Zsombor Piros,167,123,1
+challenger:2023-444:19,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R16,19,C0BC,MW76,Maxime Cressy,Matteo Martineau,40,385,1
+challenger:2023-444:20,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R16,20,D0DT,I0AP,Martin Damm,Kalin Ivanovski,434,412,1
+challenger:2023-444:21,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R16,21,DA86,HG94,Joris De Loore,Benjamin Hassan,194,295,1
+challenger:2023-444:22,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R16,22,KI63,V0AM,Lukas Klein,Otto Virtanen,153,131,1
+challenger:2023-444:23,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R16,23,GB93,ME89,Norbert Gombos,Illya Marchenko,150,345,0
+challenger:2023-444:24,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,R16,24,N0BG,P0EV,Luca Nardi,Andrew Paulson,154,458,1
+challenger:2023-444:25,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,QF,25,C0BC,D0DT,Maxime Cressy,Martin Damm,40,434,0
+challenger:2023-444:26,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,QF,26,DA86,ME89,Joris De Loore,Illya Marchenko,194,345,1
+challenger:2023-444:27,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,QF,27,D0F6,KI63,Gabriel Diallo,Lukas Klein,139,153,1
+challenger:2023-444:28,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,QF,28,D923,N0BG,Damir Dzumhur,Luca Nardi,167,154,0
+challenger:2023-444:29,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,SF,29,DA86,N0BG,Joris De Loore,Luca Nardi,194,154,1
+challenger:2023-444:30,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,SF,30,D0DT,D0F6,Martin Damm,Gabriel Diallo,434,139,0
+challenger:2023-444:31,challenger,2023,validation,2023-444,Bratislava 1,C,main,20231009,Hard,F,31,D0F6,DA86,Gabriel Diallo,Joris De Loore,139,194,1
 challenger:2023-7536:1,challenger,2023,validation,2023-7536,Lyon,C,main,20230618,Clay,R32,1,HB64,L0CX,Quentin Halys,Pablo Llamas Ruiz,84,193,0
 challenger:2023-7536:2,challenger,2023,validation,2023-7536,Lyon,C,main,20230618,Clay,R32,2,D0HD,MO44,Gabriel Debru,Pedro Martinez,522,120,1
 challenger:2023-7536:4,challenger,2023,validation,2023-7536,Lyon,C,main,20230618,Clay,R32,4,A0GC,S0GR,Terence Atmane,Timofey Skatov,239,135,1
@@ -123956,36 +123956,36 @@ challenger:2024-2907:28,challenger,2024,test,2024-2907,Nottingham,C,main,2024021
 challenger:2024-2907:29,challenger,2024,test,2024-2907,Nottingham,C,main,20240211,Hard,SF,29,K926,MW76,Mikhail Kukushkin,Matteo Martineau,247,250,
 challenger:2024-2907:30,challenger,2024,test,2024-2907,Nottingham,C,main,20240211,Hard,SF,30,B0PG,M0GZ,Alexander Blockx,Giovanni Mpetshi Perricard,338,198,
 challenger:2024-2907:31,challenger,2024,test,2024-2907,Nottingham,C,main,20240211,Hard,F,31,M0GZ,MW76,Giovanni Mpetshi Perricard,Matteo Martineau,198,250,
-challenger:2024-7740:1,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,1,N771,SY67,Cameron Norrie,Sho Shimabukuro,39,165,
-challenger:2024-7740:2,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,2,E687,S0LA,Daniel Evans,Dominic Stricker,42,96,
-challenger:2024-7740:3,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,3,BS86,S0RE,Tomas Barrios Vera,Juncheng Shang,155,96,
-challenger:2024-7740:4,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,4,M0G4,PG94,Harold Mayot,Marc Polmans,132,212,
-challenger:2024-7740:5,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,5,N0AM,R0FS,Emilio Nava,Leandro Riedi,149,138,
-challenger:2024-7740:6,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,6,D923,F0FV,Damir Dzumhur,Joao Fonseca,111,224,
-challenger:2024-7740:7,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,7,A0CJ,J0A4,Duje Ajdukovic,Paul Jubb,136,298,
-challenger:2024-7740:8,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,8,HG86,Z09Z,Lloyd Harris,Beibit Zhukayev,181,191,
-challenger:2024-7740:9,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,9,B0GG,D0F6,Mattia Bellucci,Gabriel Diallo,160,165,
-challenger:2024-7740:10,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,10,BI81,CH12,Alex Bolt,Jan Choinski,241,176,
-challenger:2024-7740:11,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,11,BV21,M0HU,Charles Broom,Shintaro Mochizuki,283,142,
-challenger:2024-7740:12,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,12,F0BY,Y09V,Jacob Fearnley,Yunchaokete Bu,525,192,
-challenger:2024-7740:13,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,13,HD68,W0BH,Billy Harris,Coleman Wong,183,170,
-challenger:2024-7740:14,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,14,K0A3,K926,Patrick Kypson,Mikhail Kukushkin,141,247,
-challenger:2024-7740:15,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,15,F0DM,P0HT,Arthur Fery,Jack Pinnington Jones,272,753,
-challenger:2024-7740:16,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R32,16,KB09,S0TX,Denis Kudla,Henry Searle,174,868,
-challenger:2024-7740:17,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R16,17,N771,P0HT,Cameron Norrie,Jack Pinnington Jones,19,753,
-challenger:2024-7740:18,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R16,18,E687,S0TX,Daniel Evans,Henry Searle,42,868,
-challenger:2024-7740:19,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R16,19,BI81,S0RE,Alex Bolt,Juncheng Shang,241,96,
-challenger:2024-7740:20,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R16,20,K926,M0G4,Mikhail Kukushkin,Harold Mayot,135,127,
-challenger:2024-7740:21,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R16,21,B0GG,N0AM,Mattia Bellucci,Emilio Nava,160,137,
-challenger:2024-7740:22,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R16,22,BV21,HG86,Charles Broom,Lloyd Harris,337,181,
-challenger:2024-7740:23,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R16,23,F0BY,J0A4,Jacob Fearnley,Paul Jubb,525,298,
-challenger:2024-7740:24,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,R16,24,F0FV,HD68,Joao Fonseca,Billy Harris,224,183,
-challenger:2024-7740:25,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,QF,25,BV21,E687,Charles Broom,Daniel Evans,337,42,
-challenger:2024-7740:26,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,QF,26,F0BY,S0RE,Jacob Fearnley,Juncheng Shang,525,96,
-challenger:2024-7740:27,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,QF,27,B0GG,P0HT,Mattia Bellucci,Jack Pinnington Jones,200,773,
-challenger:2024-7740:29,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,SF,29,BV21,HD68,Charles Broom,Billy Harris,283,196,
-challenger:2024-7740:30,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,SF,30,B0GG,F0BY,Mattia Bellucci,Jacob Fearnley,160,525,
-challenger:2024-7740:31,challenger,2024,test,2024-7740,Nottingham,C,main,20240211,Grass,F,31,BV21,F0BY,Charles Broom,Jacob Fearnley,283,514,
+challenger:2024-7740:1,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,1,N771,SY67,Cameron Norrie,Sho Shimabukuro,39,165,
+challenger:2024-7740:2,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,2,E687,S0LA,Daniel Evans,Dominic Stricker,42,96,
+challenger:2024-7740:3,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,3,BS86,S0RE,Tomas Barrios Vera,Juncheng Shang,155,96,
+challenger:2024-7740:4,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,4,M0G4,PG94,Harold Mayot,Marc Polmans,132,212,
+challenger:2024-7740:5,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,5,N0AM,R0FS,Emilio Nava,Leandro Riedi,149,138,
+challenger:2024-7740:6,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,6,D923,F0FV,Damir Dzumhur,Joao Fonseca,111,224,
+challenger:2024-7740:7,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,7,A0CJ,J0A4,Duje Ajdukovic,Paul Jubb,136,298,
+challenger:2024-7740:8,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,8,HG86,Z09Z,Lloyd Harris,Beibit Zhukayev,181,191,
+challenger:2024-7740:9,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,9,B0GG,D0F6,Mattia Bellucci,Gabriel Diallo,160,165,
+challenger:2024-7740:10,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,10,BI81,CH12,Alex Bolt,Jan Choinski,241,176,
+challenger:2024-7740:11,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,11,BV21,M0HU,Charles Broom,Shintaro Mochizuki,283,142,
+challenger:2024-7740:12,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,12,F0BY,Y09V,Jacob Fearnley,Yunchaokete Bu,525,192,
+challenger:2024-7740:13,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,13,HD68,W0BH,Billy Harris,Coleman Wong,183,170,
+challenger:2024-7740:14,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,14,K0A3,K926,Patrick Kypson,Mikhail Kukushkin,141,247,
+challenger:2024-7740:15,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,15,F0DM,P0HT,Arthur Fery,Jack Pinnington Jones,272,753,
+challenger:2024-7740:16,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R32,16,KB09,S0TX,Denis Kudla,Henry Searle,174,868,
+challenger:2024-7740:17,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R16,17,N771,P0HT,Cameron Norrie,Jack Pinnington Jones,19,753,
+challenger:2024-7740:18,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R16,18,E687,S0TX,Daniel Evans,Henry Searle,42,868,
+challenger:2024-7740:19,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R16,19,BI81,S0RE,Alex Bolt,Juncheng Shang,241,96,
+challenger:2024-7740:20,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R16,20,K926,M0G4,Mikhail Kukushkin,Harold Mayot,135,127,
+challenger:2024-7740:21,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R16,21,B0GG,N0AM,Mattia Bellucci,Emilio Nava,160,137,
+challenger:2024-7740:22,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R16,22,BV21,HG86,Charles Broom,Lloyd Harris,337,181,
+challenger:2024-7740:23,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R16,23,F0BY,J0A4,Jacob Fearnley,Paul Jubb,525,298,
+challenger:2024-7740:24,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,R16,24,F0FV,HD68,Joao Fonseca,Billy Harris,224,183,
+challenger:2024-7740:25,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,QF,25,BV21,E687,Charles Broom,Daniel Evans,337,42,
+challenger:2024-7740:26,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,QF,26,F0BY,S0RE,Jacob Fearnley,Juncheng Shang,525,96,
+challenger:2024-7740:27,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,QF,27,B0GG,P0HT,Mattia Bellucci,Jack Pinnington Jones,200,773,
+challenger:2024-7740:29,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,SF,29,BV21,HD68,Charles Broom,Billy Harris,283,196,
+challenger:2024-7740:30,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,SF,30,B0GG,F0BY,Mattia Bellucci,Jacob Fearnley,160,525,
+challenger:2024-7740:31,challenger,2024,test,2024-7740,Nottingham,C,main,20240610,Grass,F,31,BV21,F0BY,Charles Broom,Jacob Fearnley,283,514,
 challenger:2024-7849:1,challenger,2024,test,2024-7849,Chennai,C,main,20240211,Hard,R32,1,N0BG,V0D4,Luca Nardi,Eric Vanshelboim,114,368,
 challenger:2024-7849:2,challenger,2024,test,2024-7849,Chennai,C,main,20240211,Hard,R32,2,DH23,N897,S D Prajwal Dev,Sumit Nagal,611,121,
 challenger:2024-7849:3,challenger,2024,test,2024-7849,Chennai,C,main,20240211,Hard,R32,3,BM05,S0GD,Bogdan Bobrov,Dalibor Svrcina,390,186,
@@ -126002,37 +126002,37 @@ challenger:2024-2963:28,challenger,2024,test,2024-2963,Lyon,C,main,20240616,Hard
 challenger:2024-2963:29,challenger,2024,test,2024-2963,Lyon,C,main,20240616,Hard,SF,29,BK24,C0JP,Gregoire Barrere,Raphael Collignon,103,142,
 challenger:2024-2963:30,challenger,2024,test,2024-2963,Lyon,C,main,20240616,Hard,SF,30,F0FV,HB48,Joao Fonseca,Calvin Hemery,149,237,
 challenger:2024-2963:31,challenger,2024,test,2024-2963,Lyon,C,main,20240616,Hard,F,31,C0JP,HB48,Raphael Collignon,Calvin Hemery,142,213,
-challenger:2024-444:1,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,1,K0HG,SX50,Milos Karol,Roman Safiullin,540,43,
-challenger:2024-444:2,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,2,D0F6,P09O,Gabriel Diallo,Zsombor Piros,165,248,
-challenger:2024-444:3,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,3,F724,N552,Marton Fucsovics,Kei Nishikori,55,286,
-challenger:2024-444:4,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,4,F0BY,P0HP,Jacob Fearnley,Lukas Pokorny,525,472,
-challenger:2024-444:5,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,5,N0BG,P0HW,Luca Nardi,Dino Prizmic,73,380,
-challenger:2024-444:6,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,6,D923,N0AM,Damir Dzumhur,Emilio Nava,103,204,
-challenger:2024-444:7,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,7,KC56,RC04,Aslan Karatsev,Alexander Ritschard,313,152,
-challenger:2024-444:8,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,8,F0FV,K926,Joao Fonseca,Mikhail Kukushkin,151,110,
-challenger:2024-444:9,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,9,C0JP,M0JF,Raphael Collignon,Hamad Medjedovic,167,131,
-challenger:2024-444:10,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,10,H996,T0A1,Pierre-Hugues Herbert,Thiago Agustin Tirante,124,121,
-challenger:2024-444:11,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,11,B0OU,HH06,Hynek Barton,Marc-Andrea Huesler,413,201,
-challenger:2024-444:12,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,12,HD68,K0E6,Billy Harris,Alibek Kachmazov,113,186,
-challenger:2024-444:13,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,13,KI63,V0AM,Lukas Klein,Otto Virtanen,146,96,
-challenger:2024-444:14,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,14,KC04,V0DZ,Jozef Kovalik,Luca Van Assche,128,105,
-challenger:2024-444:15,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,15,DB63,LB66,Laslo Djere,Constant Lestienne,129,196,
-challenger:2024-444:16,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R32,16,MN13,W367,Maximilian Marterer,Stan Wawrinka,86,149,
-challenger:2024-444:17,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R16,17,HH06,SX50,Marc-Andrea Huesler,Roman Safiullin,148,59,
-challenger:2024-444:18,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R16,18,D0F6,H996,Gabriel Diallo,Pierre-Hugues Herbert,89,124,
-challenger:2024-444:19,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R16,19,F0BY,K0E6,Jacob Fearnley,Alibek Kachmazov,98,186,
-challenger:2024-444:20,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R16,20,K926,LB66,Mikhail Kukushkin,Constant Lestienne,110,196,
-challenger:2024-444:21,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R16,21,C0JP,N0AM,Raphael Collignon,Emilio Nava,167,137,
-challenger:2024-444:22,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R16,22,KC04,KC56,Jozef Kovalik,Aslan Karatsev,119,92,
-challenger:2024-444:23,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R16,23,KI63,N552,Lukas Klein,Kei Nishikori,129,140,
-challenger:2024-444:24,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,R16,24,P0HW,W367,Dino Prizmic,Stan Wawrinka,200,93,
-challenger:2024-444:25,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,QF,25,KC56,SX50,Aslan Karatsev,Roman Safiullin,313,43,
-challenger:2024-444:26,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,QF,26,C0JP,D0F6,Raphael Collignon,Gabriel Diallo,167,165,
-challenger:2024-444:27,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,QF,27,F0BY,P0HW,Jacob Fearnley,Dino Prizmic,525,380,
-challenger:2024-444:28,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,QF,28,LB66,N552,Constant Lestienne,Kei Nishikori,90,140,
-challenger:2024-444:29,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,SF,29,N552,SX50,Kei Nishikori,Roman Safiullin,140,43,
-challenger:2024-444:30,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,SF,30,C0JP,P0HW,Raphael Collignon,Dino Prizmic,413,200,
-challenger:2024-444:31,challenger,2024,test,2024-444,Bratislava 1,C,main,20240616,Hard,F,31,C0JP,SX50,Raphael Collignon,Roman Safiullin,167,43,
+challenger:2024-444:1,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,1,K0HG,SX50,Milos Karol,Roman Safiullin,540,43,
+challenger:2024-444:2,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,2,D0F6,P09O,Gabriel Diallo,Zsombor Piros,165,248,
+challenger:2024-444:3,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,3,F724,N552,Marton Fucsovics,Kei Nishikori,55,286,
+challenger:2024-444:4,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,4,F0BY,P0HP,Jacob Fearnley,Lukas Pokorny,525,472,
+challenger:2024-444:5,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,5,N0BG,P0HW,Luca Nardi,Dino Prizmic,73,380,
+challenger:2024-444:6,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,6,D923,N0AM,Damir Dzumhur,Emilio Nava,103,204,
+challenger:2024-444:7,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,7,KC56,RC04,Aslan Karatsev,Alexander Ritschard,313,152,
+challenger:2024-444:8,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,8,F0FV,K926,Joao Fonseca,Mikhail Kukushkin,151,110,
+challenger:2024-444:9,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,9,C0JP,M0JF,Raphael Collignon,Hamad Medjedovic,167,131,
+challenger:2024-444:10,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,10,H996,T0A1,Pierre-Hugues Herbert,Thiago Agustin Tirante,124,121,
+challenger:2024-444:11,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,11,B0OU,HH06,Hynek Barton,Marc-Andrea Huesler,413,201,
+challenger:2024-444:12,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,12,HD68,K0E6,Billy Harris,Alibek Kachmazov,113,186,
+challenger:2024-444:13,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,13,KI63,V0AM,Lukas Klein,Otto Virtanen,146,96,
+challenger:2024-444:14,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,14,KC04,V0DZ,Jozef Kovalik,Luca Van Assche,128,105,
+challenger:2024-444:15,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,15,DB63,LB66,Laslo Djere,Constant Lestienne,129,196,
+challenger:2024-444:16,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R32,16,MN13,W367,Maximilian Marterer,Stan Wawrinka,86,149,
+challenger:2024-444:17,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R16,17,HH06,SX50,Marc-Andrea Huesler,Roman Safiullin,148,59,
+challenger:2024-444:18,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R16,18,D0F6,H996,Gabriel Diallo,Pierre-Hugues Herbert,89,124,
+challenger:2024-444:19,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R16,19,F0BY,K0E6,Jacob Fearnley,Alibek Kachmazov,98,186,
+challenger:2024-444:20,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R16,20,K926,LB66,Mikhail Kukushkin,Constant Lestienne,110,196,
+challenger:2024-444:21,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R16,21,C0JP,N0AM,Raphael Collignon,Emilio Nava,167,137,
+challenger:2024-444:22,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R16,22,KC04,KC56,Jozef Kovalik,Aslan Karatsev,119,92,
+challenger:2024-444:23,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R16,23,KI63,N552,Lukas Klein,Kei Nishikori,129,140,
+challenger:2024-444:24,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,R16,24,P0HW,W367,Dino Prizmic,Stan Wawrinka,200,93,
+challenger:2024-444:25,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,QF,25,KC56,SX50,Aslan Karatsev,Roman Safiullin,313,43,
+challenger:2024-444:26,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,QF,26,C0JP,D0F6,Raphael Collignon,Gabriel Diallo,167,165,
+challenger:2024-444:27,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,QF,27,F0BY,P0HW,Jacob Fearnley,Dino Prizmic,525,380,
+challenger:2024-444:28,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,QF,28,LB66,N552,Constant Lestienne,Kei Nishikori,90,140,
+challenger:2024-444:29,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,SF,29,N552,SX50,Kei Nishikori,Roman Safiullin,140,43,
+challenger:2024-444:30,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,SF,30,C0JP,P0HW,Raphael Collignon,Dino Prizmic,413,200,
+challenger:2024-444:31,challenger,2024,test,2024-444,Bratislava 1,C,main,20241028,Hard,F,31,C0JP,SX50,Raphael Collignon,Roman Safiullin,167,43,
 challenger:2024-6579:1,challenger,2024,test,2024-6579,Lima 1,C,main,20240616,Clay,R32,1,B0EJ,C0DF,Tristan Boyer,Francisco Comesana,160,99,
 challenger:2024-6579:2,challenger,2024,test,2024-6579,Lima 1,C,main,20240616,Clay,R32,2,CE77,LF26,Federico Coria,Orlando Luz,69,477,
 challenger:2024-6579:3,challenger,2024,test,2024-6579,Lima 1,C,main,20240616,Clay,R32,3,GJ16,U182,Federico Agustin Gomez,Camilo Ugo Carabelli,135,106,
@@ -160122,18 +160122,18 @@ qualifying:2025-807:9,qualifying,2025,test,2025-807,Acapulco,500,qualifying,2025
 qualifying:2025-807:10,qualifying,2025,test,2025-807,Acapulco,500,qualifying,20250224,Hard,Q2,10,K0AZ,W09E,Aleksandar Kovacevic,Adam Walton,85,97,
 qualifying:2025-807:11,qualifying,2025,test,2025-807,Acapulco,500,qualifying,20250224,Hard,Q2,11,L987,T0HA,Dusan Lajovic,Learner Tien,100,83,
 qualifying:2025-807:12,qualifying,2025,test,2025-807,Acapulco,500,qualifying,20250224,Hard,Q2,12,B0NN,KE64,Nishesh Basavareddy,Stefan Kozlov,106,359,
-qualifying:2025-8996:1,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q1,1,C0C8,S0EK,Juan Manuel Cerundolo,Matias Soto,123,244,
-qualifying:2025-8996:2,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q1,2,M0EA,T0A1,Pol Martin Tiffon,Thiago Agustin Tirante,253,128,
-qualifying:2025-8996:3,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q1,3,B0FV,F0F4,Roman Andres Burruchaga,Kilian Feldbausch,134,588,
-qualifying:2025-8996:4,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q1,4,MM24,MW75,Bastian Malla,Felipe Meligeni Alves,1163,193,
-qualifying:2025-8996:5,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q1,5,H0DU,O660,Gustavo Heide,Genaro Alberto Olivieri,160,329,
-qualifying:2025-8996:6,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q1,6,FA43,V0DP,Juan Pablo Ficovich,Adolfo Daniel Vallejo,174,197,
-qualifying:2025-8996:7,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q1,7,N0AM,V836,Emilio Nava,Juan Pablo Varillas,238,187,
-qualifying:2025-8996:8,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q1,8,LF26,S0DL,Orlando Luz,Ryan Seggerman,462,404,
-qualifying:2025-8996:9,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q2,9,C0C8,LF26,Juan Manuel Cerundolo,Orlando Luz,123,462,
-qualifying:2025-8996:10,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q2,10,H0DU,T0A1,Gustavo Heide,Thiago Agustin Tirante,160,128,
-qualifying:2025-8996:11,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q2,11,B0FV,FA43,Roman Andres Burruchaga,Juan Pablo Ficovich,134,174,
-qualifying:2025-8996:12,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Hard,Q2,12,MW75,V836,Felipe Meligeni Alves,Juan Pablo Varillas,193,187,
+qualifying:2025-8996:1,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q1,1,C0C8,S0EK,Juan Manuel Cerundolo,Matias Soto,123,244,
+qualifying:2025-8996:2,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q1,2,M0EA,T0A1,Pol Martin Tiffon,Thiago Agustin Tirante,253,128,
+qualifying:2025-8996:3,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q1,3,B0FV,F0F4,Roman Andres Burruchaga,Kilian Feldbausch,134,588,
+qualifying:2025-8996:4,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q1,4,MM24,MW75,Bastian Malla,Felipe Meligeni Alves,1163,193,
+qualifying:2025-8996:5,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q1,5,H0DU,O660,Gustavo Heide,Genaro Alberto Olivieri,160,329,
+qualifying:2025-8996:6,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q1,6,FA43,V0DP,Juan Pablo Ficovich,Adolfo Daniel Vallejo,174,197,
+qualifying:2025-8996:7,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q1,7,N0AM,V836,Emilio Nava,Juan Pablo Varillas,238,187,
+qualifying:2025-8996:8,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q1,8,LF26,S0DL,Orlando Luz,Ryan Seggerman,462,404,
+qualifying:2025-8996:9,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q2,9,C0C8,LF26,Juan Manuel Cerundolo,Orlando Luz,123,462,
+qualifying:2025-8996:10,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q2,10,H0DU,T0A1,Gustavo Heide,Thiago Agustin Tirante,160,128,
+qualifying:2025-8996:11,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q2,11,B0FV,FA43,Roman Andres Burruchaga,Juan Pablo Ficovich,134,174,
+qualifying:2025-8996:12,qualifying,2025,test,2025-8996,Santiago,250,qualifying,20250224,Clay,Q2,12,MW75,V836,Felipe Meligeni Alves,Juan Pablo Varillas,193,187,
 qualifying:2025-404:1,qualifying,2025,test,2025-404,Indian Wells Masters,M,qualifying,20250305,Hard,Q1,1,B0GG,WB08,Mattia Bellucci,Yosuke Watanuki,70,349,
 qualifying:2025-404:2,qualifying,2025,test,2025-404,Indian Wells Masters,M,qualifying,20250305,Hard,Q1,2,AE14,GD64,Daniel Altmaier,Cristian Garin,78,138,
 qualifying:2025-404:3,qualifying,2025,test,2025-404,Indian Wells Masters,M,qualifying,20250305,Hard,Q1,3,KI63,V812,Lukas Klein,Botic van de Zandschulp,147,85,

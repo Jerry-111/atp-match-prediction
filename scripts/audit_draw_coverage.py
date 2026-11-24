@@ -13,6 +13,9 @@ from scripts.baseline import (
     DEFAULT_CACHE, HISTORY_MANIFEST, LEVELS, MANIFEST, ROOT, exclusion_reason, fetch_csv, split_name,
 )
 from scripts.qualifying_levels import effective_qualifying_row, load_2010_event_metadata
+from scripts.inventory_event_metadata import corrected_inventory_row
+from scripts.model_event_metadata import corrected_tour_row
+from scripts.reconcile_matches import DUPLICATE_RECORDS, DrawReconciliation
 from scripts.supplemental_draws_2006 import supplemental_draws_2006
 
 
@@ -24,31 +27,6 @@ INVENTORY_FIELDS = (
     "stage", "tourney_date", "surface", "round", "match_num", "player_a_id", "player_b_id",
     "player_a_name", "player_b_name", "rank_a", "rank_b", "a_won",
 )
-# These knockout matches each have two source rows identical except for match_num.
-# Keep the smaller match_num. Preserve all other source rows, including round-robin rematches.
-DUPLICATE_RECORDS = {
-    "tour:2021-416:25": "tour:2021-416:14",
-    "tour:2021-321:13": "tour:2021-321:5",
-    "qualifying:2011-533:14": "qualifying:2011-533:13",
-}
-# Zagreb's 2007 qualifying file repeats each of its three knockout rounds.
-# These are the 19 duplicated matches that pass the rank and completion filters.
-for offset, retained_numbers in (
-    (10, (1, 2, 4, 5, 6, 7, 8, 10)),
-    (8, (21, 22, 23, 24, 25, 27, 28)),
-    (4, (37, 38, 39, 40)),
-):
-    for number in retained_numbers:
-        DUPLICATE_RECORDS[f"qualifying:2007-451:{number + offset}"] = f"qualifying:2007-451:{number}"
-# The official Båstad draw gives Robredo a first-round bye. The source copies
-# the Paire–Robredo final into R32 as #1. Paire's actual R32 is already #4.
-# https://www.protennislive.com/posting/2015/316/mds.pdf
-BASTAD_SPURIOUS = "tour:2015-316:1"
-BASTAD_FINAL = "tour:2015-316:28"
-BASTAD_R32 = "tour:2015-316:4"
-CHECK_IDS = set(DUPLICATE_RECORDS) | set(DUPLICATE_RECORDS.values()) | {
-    BASTAD_SPURIOUS, BASTAD_FINAL, BASTAD_R32,
-}
 
 
 def source_entries(first_season):
@@ -72,7 +50,7 @@ class Inventory:
         self.writer = csv.DictWriter(file, fieldnames=INVENTORY_FIELDS, lineterminator="\n")
         self.writer.writeheader()
         self.seen = set()
-        self.check_rows = {}
+        self.reconciliation = DrawReconciliation()
         self.written = 0
 
     def write(self, row, source, season):
@@ -80,9 +58,7 @@ class Inventory:
         if match_id in self.seen:
             raise ValueError(f"Duplicate inventory ID {match_id}.")
         self.seen.add(match_id)
-        if match_id in CHECK_IDS:
-            self.check_rows[match_id] = {k: v for k, v in row.items() if k != "match_num"}
-        if match_id in DUPLICATE_RECORDS or match_id == BASTAD_SPURIOUS:
+        if self.reconciliation.reason(match_id, row):
             return
         role_a, role_b = sorted(("winner", "loser"), key=lambda role: row[f"{role}_id"])
         split = split_name(season, first_season=self.first_season)
@@ -99,22 +75,9 @@ class Inventory:
         self.written += 1
 
     def verify_exclusions(self):
-        for duplicate, retained in DUPLICATE_RECORDS.items():
-            if int(duplicate.split(":")[1][:4]) < self.first_season:
-                continue
-            twin = self.check_rows.get(duplicate)
-            if not twin or twin["round"] == "RR" or twin != self.check_rows.get(retained):
-                raise ValueError(f"Source rows {duplicate} and {retained} no longer verify as duplicates.")
-        expected_draw = {
-            BASTAD_SPURIOUS: ("R32", "PD31", "R419", "7-6(7) 6-3"),
-            BASTAD_FINAL: ("F", "PD31", "R419", "7-6(7) 6-3"),
-            BASTAD_R32: ("R32", "PD31", "E688", "7-6(4) 6-3"),
-        }
-        for match_id, expected in expected_draw.items():
-            row = self.check_rows.get(match_id, {})
-            actual = tuple(row.get(k) for k in ("round", "winner_id", "loser_id", "score"))
-            if row.get("tourney_id") != "2015-316" or actual != expected:
-                raise ValueError(f"Recheck {match_id} against the official 2015 Båstad draw.")
+        for source in SOURCES:
+            for season in range(self.first_season, 2026):
+                self.reconciliation.verify_season(source, season)
 
 
 @contextmanager
@@ -152,10 +115,11 @@ def audit_rows(rows, source, season, inventory, event_metadata=None):
             raise ValueError(f"Missing tournament ID or duplicate match {key} in {source} {season}.")
         matches.add(key)
         events.add(event)
-        dates.append(row["tourney_date"])
         provenance = ""
         if event_metadata is not None:
             row, provenance = effective_qualifying_row(row, season, event_metadata)
+        row = corrected_tour_row(row) if source == "tour" else corrected_inventory_row(row, source, season)
+        dates.append(row["tourney_date"])
         if exclusion_reason(row, levels=levels) is None:
             eligible += 1
             eligible_events.add(event)

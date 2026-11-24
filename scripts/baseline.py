@@ -13,6 +13,13 @@ from datetime import datetime
 from pathlib import Path
 from urllib.request import Request, urlopen
 
+if __package__:
+    from .model_event_metadata import corrected_tour_row
+    from .reconcile_matches import DrawReconciliation
+else:  # Support the documented python3 scripts/baseline.py entry point.
+    from model_event_metadata import corrected_tour_row
+    from reconcile_matches import DrawReconciliation
+
 
 ROOT = Path(__file__).resolve().parents[1]
 DEFAULT_CACHE = ROOT / "data" / "raw"
@@ -98,7 +105,8 @@ def load_matches(cache_dir=DEFAULT_CACHE, first_season=2015):
     """Return eligible matches and first-failure counts by season.
 
     The score count includes its walkover, retirement, default and other_score
-    subtotals. Match records retain outcomes for downstream supervised analysis.
+    subtotals. eligible_source counts all rows passing those filters. duplicate
+    and spurious count known errors, and eligible counts distinct retained rows.
     """
     if first_season not in FIRST_SEASONS:
         raise ValueError(f"Unsupported first season {first_season}; choose one of {FIRST_SEASONS}.")
@@ -117,9 +125,11 @@ def load_matches(cache_dir=DEFAULT_CACHE, first_season=2015):
     for entry in entries:
         season = entry["season"]
         counts = Counter()
+        reconciliation = DrawReconciliation()
         with fetch_csv(cache_dir, entry).open(encoding="utf-8-sig", newline="") as source:
             for row in csv.DictReader(source):
                 counts["raw"] += 1
+                row = corrected_tour_row(row)
                 reason = exclusion_reason(row)
                 if reason:
                     counts[reason] += 1
@@ -128,10 +138,15 @@ def load_matches(cache_dir=DEFAULT_CACHE, first_season=2015):
                         counts[SCORE_MARKERS.get(status, "other_score")] += 1
                     continue
 
+                counts["eligible_source"] += 1
                 match_key = (row["tourney_id"], int(row["match_num"]))
                 if match_key in seen:
                     raise ValueError(f"Duplicate eligible match {match_key} in {season}.")
                 seen.add(match_key)
+                reason = reconciliation.reason(f"tour:{match_key[0]}:{match_key[1]}", row)
+                if reason:
+                    counts[reason] += 1
+                    continue
                 match = {
                     key: row[key]
                     for key in ("tourney_id", "surface", "round", "winner_id",
@@ -146,6 +161,7 @@ def load_matches(cache_dir=DEFAULT_CACHE, first_season=2015):
                 )
                 matches.append(match)
                 counts["eligible"] += 1
+        reconciliation.verify_season("tour", season)
         audit[season] = counts
     return matches, audit
 
@@ -170,6 +186,9 @@ def main():
     matches, audit = load_matches(args.cache_dir)
     counts = Counter(split_name(match["season"]) for match in matches)
     print(f"Raw matches: {sum(season['raw'] for season in audit.values()):,}")
+    totals = sum(audit.values(), Counter())
+    print(f"After eligibility filters: {totals['eligible_source']:,}; "
+          f"removed {totals['duplicate']} duplicate and {totals['spurious']} spurious records.")
     for split in ("warmup", "train", "validation", "test"):
         print(f"{split.capitalize()} eligible: {counts[split]:,}")
     correct, scored = ranking_result(match for match in matches if match["season"] == 2023)

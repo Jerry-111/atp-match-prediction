@@ -4,6 +4,8 @@ Adding matches that ended in retirement lowered the higher-ranked player's 2023 
 
 ## Which match endings occur?
 
+This source audit counts reported records before the later draw reconciliation. Three records in its completed group were removed from the 2015–2025 modeling population. They are outside the 2023 validation season. [Cleaning and final populations](docs/data-processing.md)
+
 The 11 pinned ATP men's season files for 2015–2025 contain 30,716 records. The first row below includes only ATP 250, ATP 500, Masters and Grand Slam matches on hard, clay or grass, with two distinct player IDs. The second row also requires a positive ranking for both players. Season follows the provider's file year. [Data and field definitions](https://stats.tennismylife.org/tennis-match-database) · [Pinned files](data-manifest.json)
 
 | Sample | All records | Completed | Retirement (RET) | Walkover (W/O) | Default (DEF) | Other |

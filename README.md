@@ -2,6 +2,8 @@
 
 We are testing whether a player's past results on the current surface improve pre-match predictions of men's singles winners once their ATP rankings are known.
 
+For the main experiment, open the [training and validation CSV](data/processed/model_input.csv). It contains the two pre-match features for each of 18,774 matches. The [data processing guide (中文)](docs/data-processing.md) explains how to use both published tables, reproduce the filters and describe their limitations in the presentation.
+
 ## Get the 20-season match inventory
 
 **[Download the match CSV (22.7 MB)](https://raw.githubusercontent.com/Jerry-111/atp-match-prediction/refs/heads/data/shared-foundation/data/processed/mens_singles_2006_2025.csv)**. This branch also includes the file at `data/processed/mens_singles_2006_2025.csv`. Open it directly in your notebook or spreadsheet.
@@ -36,8 +38,8 @@ We use the 2015–2025 ATP annual files, restricted to ATP 250, ATP 500, Masters
 
 | Seasons | Use | Eligible matches |
 | --- | --- | ---: |
-| 2015 | Initialize player history | 2,508 |
-| 2016–2022 | Train and explore | 16,188 |
+| 2015 | Initialize player history | 2,507 |
+| 2016–2022 | Train and explore | 16,186 |
 | 2023 | Validate | 2,588 |
 | 2024–2025 | Final evaluation after model selection | 5,088 |
 

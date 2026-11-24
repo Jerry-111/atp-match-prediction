@@ -10,6 +10,7 @@ This is a four-person course project about predicting ATP singles winners. The s
 
 ## Work with the evidence
 
+- Start modeling with the [published feature CSV](data/processed/model_input.csv). The [data processing guide](docs/data-processing.md) defines its population, predictors, label, time splits and differences from the 20-season inventory.
 - The shared 2006–2025 collection is built with `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory`. Check the 161,989-row count and [published checksum](DATA.md#combined-mens-singles-inventory) when exchanging versions. The commands below apply to the starter Tour main-draw experiment.
 - Reuse `load_matches`, `split_name` and `ranking_result` from [scripts/baseline.py](scripts/baseline.py). The source manifest pins the annual files. Each collaborator downloads the provider's raw CSVs locally through the loader.
 - Use `python3 -m scripts.prepare_data` or `build_model_rows` for the shared training/validation table. [DATA.md](DATA.md) defines its columns and metric denominators. The [outcome audit](OUTCOMES.md) documents what changes when a mid-match retirement counts as a loss.
