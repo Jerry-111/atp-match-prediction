@@ -153,6 +153,19 @@ Use identical 2016–2022 training rows and 2023 validation rows for all eight p
 
 ## How to read the metrics
 
+Use the same [probability scorer](scripts/metrics.py) for rank-only logistic regression, each feature combination and Elo. Pass every outcome in the evaluation split and one full-precision probability of an A win per match ID. The scorer checks that both sets of IDs match and rejects duplicates. For example, if `validation` is the modeling DataFrame filtered to 2023 and `forecasts` contains the model's output:
+
+```python
+from scripts.metrics import score_probabilities
+
+scores = score_probabilities(
+    zip(validation["match_id"], validation["a_won"]),
+    zip(forecasts["match_id"], forecasts["p_a"]),
+)
+```
+
+The result includes `matches`, `correct`, `accuracy` (a fraction) and `mean_log_loss`. The scorer uses the reported probabilities directly. Giving the eventual winner exactly zero probability incurs infinite log loss. For a numerical check, a model assigning 0.5 to each player in every match has mean log loss `ln(2) ≈ 0.6931` for any set of outcomes.
+
 - **Accuracy** is correct winner picks divided by scored matches. Higher is better. For probability models, pick A when its estimated probability is at least 0.5. Report the numerator, denominator and percentage. Express a change from 63% to 64% as **+1 percentage point**.
 - **Mean log loss** is the average of `-ln(probability assigned to the actual winner)`. Lower is better. If two models give A a 51% and a 90% chance and B wins, both get the winner wrong. Their losses are about 0.713 and 2.303 respectively. This distinguishes a near toss-up from a confident mistake. Report this for each probability model. The rank rule supplies a pick only. [Metric definitions](https://scikit-learn.org/stable/modules/model_evaluation.html)
 - **Compare like with like.** Match predictions by unique ID and use identical eligible rows. Report each subset's difference from rank-only in accuracy percentage points and log-loss units. A positive accuracy change and a negative log-loss change denote improvement. Show each test season and their pooled result after settings are frozen. Pool per-match values so each match has equal weight. If making a claim of statistical significance, assess paired differences by resampling tournament editions.

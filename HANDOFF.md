@@ -18,6 +18,8 @@ The logistic models and overall Elo benchmark still need to be run. Once their s
 
 ## What the next agent should deliver
 
+Use the shared scorer for every probability model. Supply probabilities for player A along with their match IDs and compare them with the full split. [Example call and metric definitions](DATA.md#how-to-read-the-metrics)
+
 1. Load the four predictors and the separate A-win label. Check the Cincinnati example in the data guide, including player orientation and the T−21 cutoff. The published table includes counts for interpretation. [Feature definitions](DATA.md#what-goes-into-each-comparison)
 2. Fit logistic regression on the same 16,186 training matches for each of the eight prespecified subsets. Each includes rankings. Compare rank-only with the full four-group model, and report accuracy and mean log loss for every subset on the same 2,588 validation matches. Include the ranking rule's accuracy as a benchmark. Score an overall Elo probability baseline on the same matches and historical cutoff. Record the initialization, update settings and order for matches sharing a date.
 3. Select the subset with the lowest 2023 mean log loss. Share the notebook, rerun command and frozen feature and model settings for the teammate evaluating 2024–2025. [Modeling issue](https://github.com/Jerry-111/atp-match-prediction/issues/1) · [Current research design](PROJECT-PLAN.zh.md)
