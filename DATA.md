@@ -1,6 +1,6 @@
 # Men's singles data and evaluation
 
-Use the [data processing guide (中文)](docs/data-processing.md) for the cleaning decisions, the difference between the inventory and model population, and a worked example. The [model-ready table](data/processed/model_input.csv) contains the primary experiment's training and validation features.
+The published modeling table supplies two pre-match predictors, ranking and same-surface form, for 18,774 training and validation matches. The planned four-group experiment adds two more predictors derived from the published inventory. [First modeling table](data/processed/model_input.csv) · [Data processing guide (中文)](docs/data-processing.md)
 
 ## Combined men's singles inventory
 
@@ -138,17 +138,22 @@ If the current tournament starts at T, previous events qualify from T − 364 da
 
 ## What goes into each comparison
 
-| Method | Inputs | Question it answers |
-| --- | --- | --- |
-| Higher-ranked-player rule | `rank_a`, `rank_b` | How often does the favorite win? An equal ranking gives no pick. All 2,588 validation matches have distinct ranks. |
-| Rank-only logistic regression | `log_rank_diff` | How much predictive information does ranking supply on its own? |
-| Rank and surface logistic regression | `log_rank_diff`, `surface_rate_diff` | How much predictive information does the surface record add to the same model? |
+The higher-ranked-player rule gives a pick when ranks differ. All 2,588 validation matches have distinct ranks. Each logistic regression estimates the probability that A wins. The four feature groups each contribute one predictor.
 
-IDs, names and the outcome are for tracing rows or scoring predictions. Use the input columns listed above to fit the models. The two regressions are planned experiments. Both use the published 2016–2022 training and 2023 validation rows.
+| Group | Column | Definition for a match with tournament start date T |
+| --- | --- | --- |
+| Ranking | `log_rank_diff` (published) | Log rank of B minus log rank of A. |
+| Recent overall form | `overall_rate_diff` (planned) | Across all surfaces and opponents, use eligible matches from T−90 through T−21 days inclusive. Compute each player's smoothed win rate and subtract B's from A's. |
+| Same-surface form | `surface_rate_diff` (published) | On the current surface, use eligible matches from T−364 through T−21 days inclusive. Subtract B's smoothed win rate from A's. |
+| Prior head-to-head | `h2h_rate_diff` (planned) | Across all surfaces, count direct meetings between these players from the 2006 season through T−21 days inclusive. Compute twice A's smoothed win rate against B minus one. Zero prior meetings gives zero. |
+
+For each rate use `(wins + 1) / (matches + 2)`. Use only eligible Tour and major main draws (`source == "tour"`) to compute the histories. For each target in the baseline table, look up `"tour:" + match_id` in the inventory and verify both player IDs. Calculate each new value using earlier results available by its cutoff, then left-join the two derived columns back to the target rows. Preserve the A/B orientation and all 18,774 matches, including pairs with no previous meeting. IDs and names identify the participants, and `a_won` supplies the outcome.
+
+Use identical 2016–2022 training rows and 2023 validation rows for all eight prespecified logistic regressions. Each includes ranking. The optional groups are (1) none, (2) overall, (3) surface, (4) head-to-head, (5) overall and surface, (6) overall and head-to-head, (7) surface and head-to-head, and (8) all three. Compare the rank-only regression with the full four-group regression as planned. Report all eight validation results and select the subset with the lowest 2023 mean log loss. Freeze the choices before evaluating 2024–2025. The fits and validation comparison are pending.
 
 ## How to read the metrics
 
 - **Accuracy** is correct winner picks divided by scored matches. Higher is better. For probability models, pick A when its estimated probability is at least 0.5. Report the numerator, denominator and percentage. Express a change from 63% to 64% as **+1 percentage point**.
-- **Mean log loss** is the average of `-ln(probability assigned to the actual winner)`. Lower is better. If two models give A a 51% and a 90% chance and B wins, both get the winner wrong. Their losses are about 0.713 and 2.303 respectively. This distinguishes a near toss-up from a confident mistake. Report this for the two probability models. The rank rule supplies a pick only. [Metric definitions](https://scikit-learn.org/stable/modules/model_evaluation.html)
-- **Compare like with like.** Match predictions by unique ID and use identical eligible rows. Report the change after adding the surface feature in percentage points of accuracy and in log-loss units. A positive accuracy change and a negative log-loss change denote improvement. Show each test season and their pooled result after settings are frozen. Pool per-match values so each match has equal weight. If making a claim of statistical significance, assess paired differences by resampling tournament editions.
+- **Mean log loss** is the average of `-ln(probability assigned to the actual winner)`. Lower is better. If two models give A a 51% and a 90% chance and B wins, both get the winner wrong. Their losses are about 0.713 and 2.303 respectively. This distinguishes a near toss-up from a confident mistake. Report this for each probability model. The rank rule supplies a pick only. [Metric definitions](https://scikit-learn.org/stable/modules/model_evaluation.html)
+- **Compare like with like.** Match predictions by unique ID and use identical eligible rows. Report each subset's difference from rank-only in accuracy percentage points and log-loss units. A positive accuracy change and a negative log-loss change denote improvement. Show each test season and their pooled result after settings are frozen. Pool per-match values so each match has equal weight. If making a claim of statistical significance, assess paired differences by resampling tournament editions.
 - **Keep the target visible.** The result-status audit compares the ranking rule under two definitions of a loss on the 2023 season. That comparison changes the evaluation population. It measures sensitivity to the definition and cannot establish the predictive benefit of a feature or the effect of injuries on a particular player.

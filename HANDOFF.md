@@ -1,10 +1,10 @@
 # Team handoff
 
-**Current focus:** Use the combined 2006–2025 inventory of 161,989 matches for Tour main draws, all recorded Challenger levels and available Tour/major qualifying. The 2006 qualifying records cover the four majors. [Distinct matches by category](DATA.md#combined-mens-singles-inventory). [Counts, official draw checks and confirmed gaps](DATA.md#coverage-of-recent-draws). [Data and metric definitions](DATA.md) · [Retirement sensitivity](OUTCOMES.md)
+**Current focus.** Use the published modeling rows and match inventory to compare rankings with three sources of historical information: recent overall form, same-surface results and prior meetings between the opponents. Model targets and player histories use eligible ATP Tour and major main draws. The 161,989-match inventory also covers Challenger main draws and available Tour/major qualifying. [Inventory and coverage](DATA.md#combined-mens-singles-inventory) · [Data and metric definitions](DATA.md) · [Retirement sensitivity](OUTCOMES.md)
 
 ## What can be reproduced in this version
 
-The two regressions can read the [prepared feature table](data/processed/model_input.csv) directly. The [data processing guide](docs/data-processing.md) contains the sample definition, time cutoff, worked example and coverage limits for the project presentation.
+The first published feature table contains ranking and same-surface win-rate differences. Both can be used immediately. The next modeling step adds overall form and head-to-head history to the same rows. [Prepared feature table](data/processed/model_input.csv) · [Data processing guide](docs/data-processing.md)
 
 | Evidence | Where to look |
 | --- | --- |
@@ -14,29 +14,30 @@ The two regressions can read the [prepared feature table](data/processed/model_i
 | The 20-season inventory contains 49,252 Tour and major main-draw matches, 86,270 Challenger main-draw matches and 26,467 qualifying matches. The five added seasons contribute 40,747 distinct matches. | Run `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory`. [Annual counts and coverage gaps](DATA.md#combined-mens-singles-inventory) |
 | The archived optional historical pool covers 92,334 eligible matches in 1990–2025. Of these, 82,047 are training matches and 2,588 validation matches. | Run `python3 -m scripts.prepare_data --first-season 1990`. [Historical evidence and comparison design](DATA.md#expand-the-training-history) |
 
-The table includes prior same-surface matches and wins, smoothed rates, a deterministic A/B ordering and the outcome in its own column. Model fitting is pending. The effect of adding surface history is an open question. The test set has **5,088 eligible matches** across 2024–2025. Its final model scores, the result-based literature discussion, submission HTML and video are pending.
+The table includes prior same-surface matches and wins, smoothed rates, a deterministic A/B ordering and the outcome in its own column. The two additional features and the logistic fits are pending. The test set has **5,088 eligible matches** across 2024–2025. Its final model scores, the result-based literature discussion, submission HTML and video are pending.
 
 ## What the next agent should deliver
 
-Fit both models on the same 2016–2022 training matches. Evaluate both on the same 2023 validation matches. Return a table with the ranking rule, the rank-only logistic regression and the regression that adds same-surface win rate. Report accuracy and probability-model log loss. Walk through one match's A/B assignment, historical wins, match counts and cutoff date. Link the notebook, the rerun command and the frozen settings for the teammate doing final evaluation. [Task and acceptance criteria](https://github.com/Jerry-111/atp-match-prediction/issues/1)
+1. Derive `overall_rate_diff` and `h2h_rate_diff` from eligible Tour and major main draws in the published inventory. For each target match, use only events that started by T−21 days. Recent overall form starts at T−90 days. Head-to-head history starts in 2006 and uses all surfaces. Join to all 18,774 target rows by match ID and retain first-time opponents with neutral head-to-head history. Walk through one matchup's A/B ordering, counts and cutoff. [Features, windows and join](DATA.md#what-goes-into-each-comparison)
+2. Fit logistic regression on the same 16,186 training matches for each of the eight prespecified subsets. Each includes rankings. Compare rank-only with the full four-group model, and report accuracy and mean log loss for every subset on the same 2,588 validation matches. Include the ranking rule's accuracy as a benchmark.
+3. Select the subset with the lowest 2023 mean log loss. Share the notebook, rerun command and frozen feature and model settings for the teammate evaluating 2024–2025. [Modeling issue](https://github.com/Jerry-111/atp-match-prediction/issues/1) · [Current research design](PROJECT-PLAN.zh.md)
 
 ## Research ideas and decisions
 
-**Adopted question.** Does same-surface history improve prediction once world rankings are known? Use the same logistic regression and the same sample in the two fits so the extra feature is the change being measured. The current lag, smoothing and time splits are defined in the [research plan](PROJECT-PLAN.zh.md).
+**Adopted question.** Which information improves match-win probabilities beyond ATP rankings? Compare recent overall form, same-surface form and the opponents' prior head-to-head results under the same fitting and evaluation rules. In 16,186 training matches, 3,570 have a recorded prior meeting in the 52-week window. Extending the lookback to 2006 with the same 21-day lag raises coverage to 7,597. These are coverage counts. The 2023 log-loss comparison will measure predictive value. [Research plan](PROJECT-PLAN.zh.md)
 
 **Ideas to revisit.** These are candidates for a later decision. Each has a concrete first check.
 
 | Idea | Why it might matter | Smallest useful check |
 | --- | --- | --- |
-| Look at close rankings | Rank alone gives less separation for players who are close together. | Compare the two frozen models on validation matches with a rank gap of at most 10. Include the match count. |
+| Look at close rankings | Rank alone gives less separation for players who are close together. | Compare rank-only and all four groups on validation matches with a rank gap of at most 10. Include the match count. |
 | Try a longer history on grass | The training figure shows many players have little grass-court history. | Compare coverage under 52 and 104 weeks on seasons with adequate warm-up. Check the change on validation before widening the main experiment. |
-| Add recent overall form | A player's current level could explain part of what the surface feature captures. | Add one all-surface historical win-rate difference to a validation comparison, using the same cutoff. |
 | Compare with Elo | Past opponents' strength can affect a player's raw win rate. | Use the cited papers to explain this limitation first. A separate validation benchmark would require a chronological rating history. |
-| Add head-to-head history | A pair's past meetings may capture a matchup effect. Of 16,186 training matches, 3,570 had a covered prior meeting across all surfaces inside the current 52-week window and 21-day lag. Extending history back to 2006 raises this to 7,597. | Candidate third model after the planned comparison. Retain first-time matchups, shrink small counts toward a neutral feature and compare validation log loss on the same matches. [Research objective and coverage definitions](PROJECT-PLAN.zh.md) |
 
 **Decision history**
 
 | Date | Change and reason | Consequence |
 | --- | --- | --- |
+| 2026-11-23 | Expanded the comparison to rankings, recent overall form, same-surface form and prior head-to-head meetings. | The existing two-feature table supplies the baseline. Derive two more features and compare all eight rank-containing subsets on the existing target matches. |
 | 2026-11-23 | Extended the combined collection from 15 to 20 seasons. The 2006 backfill uses four major qualifying draws and 17 missing Challenger editions with players matched to ATP IDs. | The 20-season inventory is ready for data work. The starter notebook still reports its original Tour-only experiment. |
-| 2026-11-23 | The initial sketch included recent form, surface history and close-ranking subgroups. The team narrowed the main test to the incremental value of same-surface history so one feature comparison can answer the presentation's opening question. | Initial scope and ranking benchmark landed in [11d91ab](https://github.com/Jerry-111/atp-match-prediction/commit/11d91abad3d155f10cad6b7cadb14a65d5b5d2cf). The model comparison is the next handoff. |
+| 2026-11-23 | The first modeling dataset focused on rankings and same-surface history. | The initial scope and ranking benchmark landed in [11d91ab](https://github.com/Jerry-111/atp-match-prediction/commit/11d91abad3d155f10cad6b7cadb14a65d5b5d2cf). |

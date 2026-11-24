@@ -10,12 +10,12 @@ This is a four-person course project about predicting ATP singles winners. The s
 
 ## Work with the evidence
 
-- Start modeling with the [published feature CSV](data/processed/model_input.csv). The [data processing guide](docs/data-processing.md) defines its population, predictors, label, time splits and differences from the 20-season inventory.
+- Start with the published 18,774-row feature CSV for ranking and same-surface form. Derive recent overall form and head-to-head history from eligible Tour and major main draws in the published inventory. Left-join the two new columns by match ID, preserving every target row and its A/B orientation. The guide specifies the windows, smoothing and `tour:` key prefix. [Baseline features](data/processed/model_input.csv) · [Data processing guide](docs/data-processing.md)
 - The shared 2006–2025 collection is built with `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory`. Check the 161,989-row count and [published checksum](DATA.md#combined-mens-singles-inventory) when exchanging versions. The commands below apply to the starter Tour main-draw experiment.
 - Reuse `load_matches`, `split_name` and `ranking_result` from [scripts/baseline.py](scripts/baseline.py). The source manifest pins the annual files. Each collaborator downloads the provider's raw CSVs locally through the loader.
 - Use `python3 -m scripts.prepare_data` or `build_model_rows` for the shared training/validation table. [DATA.md](DATA.md) defines its columns and metric denominators. The [outcome audit](OUTCOMES.md) documents what changes when a mid-match retirement counts as a loss.
 - Use the season splits defined by the loader. Treat the tournament start week as the prediction cutoff. The plan defines the lag for past results. Assign player A/B independently of the winner/loser columns before fitting a model.
-- Keep model selection on 2023. The evaluation teammate scores 2024–2025 after the validation settings are frozen. Label dataset counts, validation measurements and final test measurements explicitly.
+- Fit the eight prespecified rank-containing subsets on identical 2016–2022 rows. Compare rank-only and all four groups as planned. Select the subset with the lowest 2023 mean log loss and report accuracy alongside it. The evaluation teammate scores 2024–2025 after the settings are frozen. Label dataset counts, validation measurements and final test measurements explicitly.
 - When a change affects results, rerun the affected computation and refresh saved notebook outputs before quoting numbers. For a documentation change, verify the links and claims it touches.
 
 ## End a session

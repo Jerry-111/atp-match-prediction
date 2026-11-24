@@ -1,8 +1,8 @@
-# Does surface history improve on ATP rankings?
+# Can match history improve on ATP rankings?
 
-Our goal is to estimate each player's chance of winning a completed ATP Tour or Grand Slam men's singles match using information available at the start of the tournament. The main experiment asks whether recent results on the same surface improve win probabilities beyond ATP rankings alone.
+How much do recent overall form, results on the current surface and prior meetings between the two players add to ATP rankings when predicting a completed men's singles match? We will compare a rank-only logistic regression with one that uses all four feature groups, then examine which combination predicts best on the 2023 validation season.
 
-For the main experiment, open the [training and validation CSV](data/processed/model_input.csv). It contains the two pre-match features for each of 18,774 matches. The [data processing guide (中文)](docs/data-processing.md) explains how to use both published tables, reproduce the filters and describe their limitations in the presentation.
+The first published modeling table provides rank difference and same-surface win-rate difference for 18,774 training and validation matches. The next teammate can use the published match inventory to derive two additional pre-match features, recent overall form and head-to-head record, and join them to these same rows. [Training and validation CSV](data/processed/model_input.csv) · [Data processing guide (中文)](docs/data-processing.md)
 
 ## Get the 20-season match inventory
 
@@ -45,4 +45,4 @@ We use the 2015–2025 ATP annual files, restricted to ATP 250, ATP 500, Masters
 
 ## Research plan and presentation
 
-The plan defines the two logistic regressions, the historical window and the evaluation protocol. The final course submission pairs `workbook.html` with a roughly 20-minute video linked in `video_url.txt`. [Full project plan (中文)](PROJECT-PLAN.zh.md) · [Course assignment](https://docs.google.com/document/d/1w_g-yEtn9lvmXIXQWjQoS51FugM_Mx-ACh0-EZcHWR8/edit)
+All eight planned logistic regressions include ranking and use the same matches. They cover every subset of three history features, including new matchups with no prior recorded meeting. Select by lowest 2023 mean log loss, then evaluate the frozen choices on 2024–2025. The final course submission pairs `workbook.html` with a roughly 20-minute video linked in `video_url.txt`. [Full project plan (中文)](PROJECT-PLAN.zh.md) · [Course assignment](https://docs.google.com/document/d/1w_g-yEtn9lvmXIXQWjQoS51FugM_Mx-ACh0-EZcHWR8/edit)
