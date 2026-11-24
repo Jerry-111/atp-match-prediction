@@ -1,18 +1,22 @@
 # Does surface history improve on ATP rankings?
 
-We are testing whether a player's past results on the current surface improve pre-match predictions of ATP men's singles winners. The initial benchmark always picks the higher-ranked player. It correctly predicts **1,640 of 2,588 matches (63.37%)** in the 2023 validation season.
+We are testing whether a player's past results on the current surface improve pre-match predictions of men's singles winners once their ATP rankings are known.
 
-## Joining the project
+## Get the 20-season match inventory
 
-For the dataset everyone should use, start with the [shared match table and metrics](DATA.md). Run `python3 -m scripts.prepare_data` to generate the training and validation CSV. The [retirement and walkover audit](OUTCOMES.md) explains when a loss enters this table and how an alternative definition affects the ranking benchmark.
+From the repository root on the `data/shared-foundation` branch, run this command with Python 3.9 or newer. It downloads the pinned sources, verifies them and writes the CSV locally.
 
-For the **2006–2025 inventory of 161,989 distinct recorded matches**, run `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory`. [Categories, major counts and deduplication](DATA.md#combined-mens-singles-inventory)
+```bash
+python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory
+```
 
-The collection includes available Grand Slam, ATP Tour and Challenger singles results. The 2006 qualifying supplement covers the four majors. Run `python3 -m scripts.audit_draw_coverage --first-season 2006 --annual` to see coverage by season and draw type. [Coverage and verified gaps](DATA.md#coverage-of-recent-draws)
+The output is `data/processed/mens_singles_2006_2025.csv` with **161,989 distinct matches**. It covers main draws at the four majors, ATP Tour and Challenger events, plus available Tour and major qualifying. In 2006, qualifying covers the four majors. The 2019 and 2024 Challenger files have known gaps. The 2024–2025 outcome column is blank for final evaluation. [Annual counts, file checksum and coverage notes](DATA.md#combined-mens-singles-inventory)
 
 Start with the [team handoff](HANDOFF.md) for the current task, verified results and ideas under discussion. Coding agents should also read [AGENTS.md](AGENTS.md). To pick up a teammate's branch or carry a new research decision into the repo, follow the [collaboration workflow](WORKFLOW.md).
 
-## Reproduce the benchmark
+## Reproduce the starter benchmark
+
+The starter notebook uses 2015–2025 Tour and major main draws. Its ranking rule picked the winner in **1,640 of 2,588 matches (63.37%)** in 2023. Run `python3 -m scripts.prepare_data` for its training and validation feature table. [Feature and metric definitions](DATA.md#read-one-row) · [Retirement and walkover audit](OUTCOMES.md)
 
 From the repository root, run the following command with Python 3.9 or newer. The first run downloads the annual files from TennisMyLife and checks their SHA-256 hashes. Subsequent runs reuse the local cache.
 
@@ -24,7 +28,7 @@ The output includes the season split counts and the 2023 validation accuracy. If
 
 The [analysis notebook](analysis.ipynb) includes the training-set figures and the validation benchmark. GitHub can display its saved outputs. To run it locally with JupyterLab, use a Python environment with `jupyterlab` and `matplotlib` installed, then run `jupyter lab analysis.ipynb` from the repository root.
 
-## Data and evaluation
+## Starter notebook data and evaluation
 
 We use the 2015–2025 ATP annual files, restricted to ATP 250, ATP 500, Masters and Grand Slam main draws on hard, clay or grass. Eligible matches have two identified players with positive rankings and a completed score. The source groups records by season and dates matches by tournament start week. A smaller ranking number indicates a better rank. Raw CSVs are downloaded directly from the provider under its educational-use terms. [Data and field definitions](https://stats.tennismylife.org/tennis-match-database) · [Source files and checksums](data-manifest.json)
 

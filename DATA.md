@@ -1,29 +1,4 @@
-# The shared match table
-
-Our unit of analysis is **one eligible ATP men's main-draw singles match**. Our primary target is **which player wins, conditional on the match being played to completion**. This population leaves out some losses by injured or ill players. For the separate question of who wins a match that starts and ends in retirement, see the [outcome audit](OUTCOMES.md).
-
-## Collect and reproduce
-
-From the repository root, run:
-
-```bash
-python3 -m scripts.prepare_data
-```
-
-The command downloads or verifies 11 annual CSVs in `data/raw/` and writes `data/processed/model_input.csv` locally. The [manifest](data-manifest.json) pins the source URLs and SHA-256 hashes. The data provider compiles records using ATP updates and other sources. Its terms permit educational research and restrict redistribution of its raw files. Each collaborator regenerates the match-level data locally. [Source, field descriptions and usage terms](https://stats.tennismylife.org/tennis-match-database)
-
-| Population | Matches | Scope |
-| --- | ---: | --- |
-| Original 2015–2025 ATP annual files | 30,716 | Includes events outside the selected levels and non-completions. |
-| Selected event levels, surfaces, IDs and valid rankings | 27,343 | Includes completed matches and reported non-completions. |
-| Primary population across all 11 seasons | 26,372 | Completed matches, 768 distinct players and 672 tournament editions. |
-| Modeling table generated at this stage | 18,776 | 16,188 training matches from 2016–2022 and 2,588 validation matches from 2023. |
-
-The pinned input files and current exporter produce SHA-256 `39d76da0f5fac7dbe443774ae58e384fc55dc5dc923219f29b5118125aa9722e` for `model_input.csv`. Matching row counts and this digest confirm that two teammates have the same table.
-
-The retained event levels are 250, 500, Masters and Grand Slam, on hard, clay or grass. The 2015 season supplies 2,508 warm-up matches for player history. The 5,088 eligible 2024–2025 matches are reserved for final evaluation. The complete population contains 15,127 hard-court, 8,174 clay-court and 3,071 grass-court matches. Double counting players across seasons or tournaments would inflate a coverage figure, so player and tournament counts above use distinct IDs.
-
-The [loader](scripts/baseline.py) assigns each exclusion to its first failed check. Its counts in order are 3,303 outside event scope, zero additional surface or ID exclusions, 70 invalid or missing rankings, and 971 score exclusions. These counts describe this pinned snapshot. The [outcome audit](OUTCOMES.md) also shows what the ranking requirement removes from each result category. Scope is limited to the included tour levels. Earlier challenger, qualifying or lower-tour wins are outside the players' recorded histories here.
+# Men's singles data and evaluation
 
 ## Combined men's singles inventory
 
@@ -60,7 +35,7 @@ To reproduce the original 15-season export, run `python3 -m scripts.audit_draw_c
 
 **Reconciliation.** Across all 20 seasons, 162,012 source records pass the filters. Removing 22 duplicates and one spurious first-round entry gives 161,989 matches. In the 2011–2025 subset, 121,246 records pass the filters. Three duplicate pairs have identical source fields except for the match number. They record the same players, score and outcome in the same elimination round. The inventory keeps one copy per pair. The duplicates occur in the 2011 Costa do Sauípe Q1 (one qualifying record), the 2021 Rome R64 and the 2021 Stuttgart R32 (two Tour main-draw records). A fourth entry in the 2015 Båstad file incorrectly gives the Paire–Robredo final a second result in the first round. The official bracket shows Robredo had a bye and Paire faced Markus Eriksson. The inventory keeps the actual final and the actual first-round match. It preserves legitimate meetings across round robins, finals and qualifying stages. [Båstad draw](https://www.protennislive.com/posting/2015/316/mds.pdf)
 
-The inventory distinguishes draw type in its identifier. Its reported tournament date preserves the source value for auditing. Some dates represent the main-draw week even when qualifying was played earlier. Validate suspect dates before calculating chronological features across circuits. The 2024–2025 outcome column is blank for the held-out seasons.
+The unique `match_id` combines the draw source, tournament ID and match number. Player A has the lexicographically smaller ATP ID. A value of 1 in `a_won` means player A won and 0 means player B won. Its reported tournament date preserves the source value for auditing. Some dates represent the main-draw week even when qualifying was played earlier. Validate suspect dates before calculating chronological features across circuits. The 2024–2025 outcome column is blank for the held-out seasons.
 
 The official Rome and Stuttgart draws confirm the repeated pairings. In Costa do Sauípe the draw also includes Frederico Gil vs. Fabiano de Paula in Q1, missing from the provider file. It is outside the inventory pending an independently verified row with compatible rankings. [Rome draw](https://www.protennislive.com/posting/2021/416/mds.pdf) · [Stuttgart draw](https://www.protennislive.com/posting/2021/321/mds.pdf) · [Costa do Sauípe qualifying draw](https://www.protennislive.com/posting/2011/533/qs.pdf)
 
@@ -91,6 +66,33 @@ Official draws provide smaller, match-level checks. All 64 first-round pairings 
 **Why keep draw types separate.** The Challenger file records the 2024 Nottingham grass event (ID 2024-7740) on February 11, the date it also gives a separate hard-court event. The official grass draw ran June 10–16. An uncorrected date could place June results into a player's spring history. For a future history-only feature, first reconcile missing event editions, tournament dates and player IDs, and carry the draw type in the match key because main and qualifying draws reuse match numbers. Until then describe the current feature as **prior covered Tour main-draw results on this surface**. [LTA Nottingham draw](https://www.lta.org.uk/49ca7a/siteassets/events/nottingham/media/atp-challenger-draw---june-11.pdf)
 
 Run `python3 -m scripts.audit_draw_coverage --first-season 2006 --annual --export-inventory` to reproduce the 20-season source counts and reconciled export. All input files are checked against pinned SHA-256 hashes, including the extra 2005 Tour file used only for identity matching. [ATP and Challenger file catalog](https://stats.tennismylife.org/tennis-match-database) · [Supplemental file URLs and checksums](draw-coverage-manifest.json)
+
+## Starter notebook match table
+
+Our unit of analysis is **one eligible ATP men's main-draw singles match**. Our primary target is **which player wins, conditional on the match being played to completion**. This population leaves out some losses by injured or ill players. For the separate question of who wins a match that starts and ends in retirement, see the [outcome audit](OUTCOMES.md).
+
+### Collect and reproduce
+
+From the repository root, run:
+
+```bash
+python3 -m scripts.prepare_data
+```
+
+The command downloads or verifies 11 annual CSVs in `data/raw/` and writes `data/processed/model_input.csv` locally. The [manifest](data-manifest.json) pins the source URLs and SHA-256 hashes. The data provider compiles records using ATP updates and other sources. Its terms permit educational research and restrict redistribution of its raw files. Each collaborator regenerates the match-level data locally. [Source, field descriptions and usage terms](https://stats.tennismylife.org/tennis-match-database)
+
+| Population | Matches | Scope |
+| --- | ---: | --- |
+| Original 2015–2025 ATP annual files | 30,716 | Includes events outside the selected levels and non-completions. |
+| Selected event levels, surfaces, IDs and valid rankings | 27,343 | Includes completed matches and reported non-completions. |
+| Primary population across all 11 seasons | 26,372 | Completed matches, 768 distinct players and 672 tournament editions. |
+| Modeling table generated at this stage | 18,776 | 16,188 training matches from 2016–2022 and 2,588 validation matches from 2023. |
+
+The pinned input files and current exporter produce SHA-256 `39d76da0f5fac7dbe443774ae58e384fc55dc5dc923219f29b5118125aa9722e` for `model_input.csv`. Matching row counts and this digest confirm that two teammates have the same table.
+
+The retained event levels are 250, 500, Masters and Grand Slam, on hard, clay or grass. The 2015 season supplies 2,508 warm-up matches for player history. The 5,088 eligible 2024–2025 matches are reserved for final evaluation. The complete population contains 15,127 hard-court, 8,174 clay-court and 3,071 grass-court matches. Double counting players across seasons or tournaments would inflate a coverage figure, so player and tournament counts above use distinct IDs.
+
+The [loader](scripts/baseline.py) assigns each exclusion to its first failed check. Its counts in order are 3,303 outside event scope, zero additional surface or ID exclusions, 70 invalid or missing rankings, and 971 score exclusions. These counts describe this pinned snapshot. The [outcome audit](OUTCOMES.md) also shows what the ranking requirement removes from each result category. Scope is limited to the included tour levels. Earlier challenger, qualifying or lower-tour wins are outside the players' recorded histories here.
 
 ## Expand the training history
 
