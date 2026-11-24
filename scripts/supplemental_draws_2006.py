@@ -24,6 +24,10 @@ ARCHIVE = {
     "sha256": "9c904151837cf669851f8983b03e24c4838db84eadec55afaf3328e7f4a2eb33",
 }
 MAJORS = {"2006-580", "2006-520", "2006-540", "2006-560"}
+EXPECTED_ROUNDS = {
+    "qualifying": {"Q1": 64, "Q2": 32, "Q3": 16},
+    "challenger": {"R32": 16, "R16": 8, "QF": 4, "SF": 2, "F": 1},
+}
 ROLES = ("winner", "loser")
 
 
@@ -110,22 +114,24 @@ def supplemental_draws_2006(cache_dir, sources):
         archive = list(csv.DictReader(handle))
 
     by_name, known_editions, known_finals = reference_data(cache_dir, sources)
-    qualifying = [r for r in archive if r["tourney_level"] == "G" and r["round"] in {"Q1", "Q2", "Q3"}]
-    challengers = [r for r in archive if r["tourney_level"] == "C" and r["tourney_id"] not in known_editions]
+    qualifying = [
+        r for r in archive if r["tourney_level"] == "G" and r["round"] in EXPECTED_ROUNDS["qualifying"]
+    ]
+    challengers = [
+        r for r in archive
+        if r["tourney_level"] == "C" and r["round"] in EXPECTED_ROUNDS["challenger"]
+        and r["tourney_id"] not in known_editions
+    ]
 
     if {row["tourney_id"] for row in qualifying} != MAJORS:
         raise ValueError("Recheck the four major qualifying draws in the 2006 archive.")
     grouped = {"qualifying": qualifying, "challenger": challengers}
-    expected_rounds = {
-        "qualifying": {"Q1": 64, "Q2": 32, "Q3": 16},
-        "challenger": {"R32": 16, "R16": 8, "QF": 4, "SF": 2, "F": 1},
-    }
     for source, rows in grouped.items():
         by_event = defaultdict(Counter)
         for row in rows:
             by_event[row["tourney_id"]][row["round"]] += 1
         for event, rounds in by_event.items():
-            if rounds != expected_rounds[source]:
+            if rounds != EXPECTED_ROUNDS[source]:
                 raise ValueError(f"Unexpected {source} bracket for {event}: {dict(rounds)}.")
     # An event ID can differ across vendors. Also check the champion and
     # runner-up in the primary file before adding a whole challenger edition.
