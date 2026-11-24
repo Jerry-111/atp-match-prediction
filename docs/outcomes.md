@@ -4,9 +4,9 @@ Adding matches that ended in retirement lowered the higher-ranked player's 2023 
 
 ## Which match endings occur?
 
-This source audit counts reported records before the later draw reconciliation. Three records in its completed group were removed from the 2015–2025 modeling population. They are outside the 2023 validation season. [Cleaning and final populations](docs/data-processing.md)
+This source audit counts reported records before the later draw reconciliation. Three records in its completed group were removed from the 2015–2025 modeling population. They are outside the 2023 validation season. [Cleaning and final populations](data-processing.md)
 
-The 11 pinned ATP men's season files for 2015–2025 contain 30,716 records. The first row below includes only ATP 250, ATP 500, Masters and Grand Slam matches on hard, clay or grass, with two distinct player IDs. The second row also requires a positive ranking for both players. Season follows the provider's file year. [Data and field definitions](https://stats.tennismylife.org/tennis-match-database) · [Pinned files](data-manifest.json)
+The 11 pinned ATP men's season files for 2015–2025 contain 30,716 records. The first row below includes only ATP 250, ATP 500, Masters and Grand Slam matches on hard, clay or grass, with two distinct player IDs. The second row also requires a positive ranking for both players. Season follows the provider's file year. [Data and field definitions](https://stats.tennismylife.org/tennis-match-database) · [Pinned files](../data-manifest.json)
 
 | Sample | All records | Completed | Retirement (RET) | Walkover (W/O) | Default (DEF) | Other |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: |
@@ -34,7 +34,7 @@ There were no equal rankings in either scored group. In both versions the 19 wal
 
 A player who retires repeatedly accumulates recorded losses in matches that started. Excluding those matches selects for completion, so the primary benchmark describes a narrower population than a forecast of who advances in a draw. For a later study of retirements, a possible pre-match feature is a player's prior RET losses divided by prior starts, accompanied by the exposure count. A simple count gives more opportunities to players who play more often. Compute both values strictly from earlier tournaments and keep W/O separate. A player's current RET flag is learned after the match begins and would reveal information unavailable when predicting. This remains a candidate follow-up.
 
-From the repository root, run the command below. The script verifies each season file against its recorded SHA-256 hash. For an existing cache, add `--cache-dir /path/to/season/files`. [Audit code](scripts/audit_outcomes.py)
+From the repository root, run the command below. The script verifies each season file against its recorded SHA-256 hash. For an existing cache, add `--cache-dir /path/to/season/files`. [Audit code](../scripts/audit_outcomes.py)
 
 ```bash
 python3 scripts/audit_outcomes.py

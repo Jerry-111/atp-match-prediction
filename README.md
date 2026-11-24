@@ -14,13 +14,13 @@ To rebuild the same table from the pinned sources, run the following command fro
 python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory
 ```
 
-The output is `data/processed/mens_singles_2006_2025.csv` with **161,989 distinct matches**. It covers main draws at the four majors, ATP Tour and Challenger events, plus available Tour and major qualifying. In 2006, qualifying covers the four majors. The 2019 and 2024 Challenger files have known gaps. The 2024–2025 outcome column is blank for final evaluation. [Annual counts, file checksum and coverage notes](DATA.md#combined-mens-singles-inventory)
+The output is `data/processed/mens_singles_2006_2025.csv` with **161,989 distinct matches**. It covers main draws at the four majors, ATP Tour and Challenger events, plus available Tour and major qualifying. In 2006, qualifying covers the four majors. The 2019 and 2024 Challenger files have known gaps. The 2024–2025 outcome column is blank for final evaluation. [Annual counts, file checksum and coverage notes](docs/data.md#combined-mens-singles-inventory)
 
-Start with the [team handoff](HANDOFF.md) for the current task, verified results and ideas under discussion. Coding agents should also read [AGENTS.md](AGENTS.md). To pick up a teammate's branch or carry a new research decision into the repo, follow the [collaboration workflow](WORKFLOW.md).
+Project documentation lives in [docs/](docs/). Start with the [team handoff](docs/agents/handoff.md) for the current task, verified results and ideas under discussion. Coding agents should also read [AGENTS.md](AGENTS.md). To pick up a teammate's branch or carry a new research decision into the repo, follow the [collaboration workflow](docs/agents/workflow.md).
 
 ## Reproduce the starter benchmark
 
-The starter notebook uses 2015–2025 Tour and major main draws. Its ranking rule picked the winner in **1,640 of 2,588 matches (63.37%)** in 2023. Run `python3 -m scripts.prepare_data` for its training and validation feature table. [Feature and metric definitions](DATA.md#read-one-row) · [Retirement and walkover audit](OUTCOMES.md)
+The starter notebook uses 2015–2025 Tour and major main draws. Its ranking rule picked the winner in **1,640 of 2,588 matches (63.37%)** in 2023. Run `python3 -m scripts.prepare_data` for its training and validation feature table. [Feature and metric definitions](docs/data.md#read-one-row) · [Retirement and walkover audit](docs/outcomes.md)
 
 From the repository root, run the following command with Python 3.9 or newer. The first run downloads the annual files from TennisMyLife and checks their SHA-256 hashes. Subsequent runs reuse the local cache.
 
@@ -45,4 +45,4 @@ We use the 2015–2025 ATP annual files, restricted to ATP 250, ATP 500, Masters
 
 ## Research plan and presentation
 
-All eight planned logistic regressions include ranking and use the same matches. They cover every subset of three history features, including new matchups with no prior recorded meeting. Compare with a standalone Elo probability benchmark. Select the logistic feature subset by lowest 2023 mean log loss, then evaluate the frozen choices on 2024–2025. The final course submission pairs `workbook.html` with a roughly 20-minute video linked in `video_url.txt`. [Full project plan (中文)](PROJECT-PLAN.zh.md) · [Course assignment](https://docs.google.com/document/d/1w_g-yEtn9lvmXIXQWjQoS51FugM_Mx-ACh0-EZcHWR8/edit)
+All eight planned logistic regressions include ranking and use the same matches. They cover every subset of three history features, including new matchups with no prior recorded meeting. Compare with a standalone Elo probability benchmark. Select the logistic feature subset by lowest 2023 mean log loss, then evaluate the frozen choices on 2024–2025. The final course submission pairs `workbook.html` with a roughly 20-minute video linked in `video_url.txt`. [Full project plan (中文)](docs/project-plan.zh.md) · [Course assignment](https://docs.google.com/document/d/1w_g-yEtn9lvmXIXQWjQoS51FugM_Mx-ACh0-EZcHWR8/edit)
