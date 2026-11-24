@@ -27,29 +27,54 @@ The [loader](scripts/baseline.py) assigns each exclusion to its first failed che
 
 ## Combined men's singles inventory
 
-Run `python3 -m scripts.audit_draw_coverage --export-inventory` to generate `data/processed/mens_singles_2011_2025.csv`. It covers 15 seasons, ATP 250/500/Masters 1000 and the four majors, ATP Challenger Tour main draws, and the qualifying draws in the selected Tour-level event classes. Apply the same court, valid-ranking, player-ID and completion criteria to each source. The primary modeling notebook is an earlier, Tour-main-draw-only analysis. Its 63.37% validation benchmark applies to that population.
+Run `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory` to generate `data/processed/mens_singles_2006_2025.csv`. Each row represents one retained men's singles match. The inventory includes main draws at the four majors, the selected ATP Tour tiers and all recorded Challenger tiers, plus available Tour and major qualifying. Each source uses the same court, positive-ranking, player-ID and completed-score filters. The starter notebook's 63.37% validation benchmark applies to its Tour main-draw population.
 
-| 2011–2025 category | Distinct matches |
-| --- | ---: |
-| Australian Open, Roland Garros, Wimbledon and US Open men's main draws | 7,156 |
-| ATP Masters 1000, ATP 500 and ATP 250 men's main draws | 29,211 |
-| Challenger men's main draws (all recorded Challenger levels) | 64,969 |
-| Tour and major qualifying | 19,906 |
-| **All included men's singles** | **121,242** |
+| Men's singles category | 2006–2010 added | 2011–2025 | 2006–2025 |
+| --- | ---: | ---: | ---: |
+| Australian Open, Roland Garros, Wimbledon and US Open main draws | 2,427 | 7,156 | 9,583 |
+| Masters 1000, ATP 500 and ATP 250 main draws and their historical equivalents | 10,458 | 29,211 | 39,669 |
+| Challenger main draws (all recorded Challenger levels) | 21,301 | 64,969 | 86,270 |
+| Tour and major qualifying | 6,561 | 19,906 | 26,467 |
+| **All included men's singles** | **40,747** | **121,242** | **161,989** |
 
-The four majors contribute 6,337 additional qualifying matches within the qualifying row. Main draws alone contain **101,336** distinct matches. The same scope restricted to the ten seasons 2016–2025 contains **80,356** distinct matches. The available series omit Challenger qualifying. The [coverage checks below](#coverage-of-recent-draws) describe known gaps in the underlying results.
+Across 20 seasons the inventory contains **135,522 main-draw matches**. The qualifying row includes 8,517 major qualifying matches. We find records for 79 major main draws and 78 major qualifying draws. In 2020 Wimbledon was cancelled and the US Open held its main draw without qualifying. Challenger qualifying is outside this collection. [Wimbledon cancellation](https://www.wimbledon.com/pdf/2020_Compendium.pdf) · [USTA's 2020 format](https://www.usopen.org/en_US/news/articles/2020-06-17/2020_us_open_western_southern_open_to_be_held_in_new_york.html) · [Other known coverage gaps](#coverage-of-recent-draws)
+
+To reproduce the original 15-season export, run `python3 -m scripts.audit_draw_coverage --first-season 2011 --export-inventory`. Those seasons contain 101,336 main-draw matches and 19,906 qualifying matches, including 6,337 in the majors. The ten-season subset from 2016 through 2025 contains 80,356 distinct matches.
+
+**Annual totals after reconciliation.** 2006 supplies the initial history, 2007–2022 contain 125,924 training-period matches, 2023 has 9,288 validation-period matches and 2024–2025 have 19,280 held-out matches. These counts describe collection, before fitting a model. The local 20-season CSV has SHA-256 `a7a957101c07da0f4779a664ab77af68a61a67ffffd6e0e50510e79ad796d21f`.
+
+| Season | Matches | Season | Matches |
+| --- | ---: | --- | ---: |
+| 2006 | 7,497 | 2016 | 8,388 |
+| 2007 | 8,278 | 2017 | 8,040 |
+| 2008 | 8,552 | 2018 | 8,215 |
+| 2009 | 8,365 | 2019 | 6,788 |
+| 2010 | 8,055 | 2020 | 3,898 |
+| 2011 | 8,008 | 2021 | 7,593 |
+| 2012 | 7,987 | 2022 | 8,866 |
+| 2013 | 8,169 | 2023 | 9,288 |
+| 2014 | 8,163 | 2024 | 9,480 |
+| 2015 | 8,559 | 2025 | 9,800 |
 
 **Tournament points and category codes.** Challenger 75 and Challenger 100 both belong to the ATP Challenger Tour. The number indicates the champion's ranking points. The provider uses one level code, `C`, for Challenger editions. As concrete checks, the 2024 Champaign Challenger 75 and Kobe Challenger 100 each contribute 31 eligible main-draw matches in this inventory. Historical Challenger categories changed over time. A count for just the 75 or just the 100 events would require an edition-level crosswalk to official classifications. [ATP points table](https://www.atptour.com/en/news/2024-rankings-points-update) · [Champaign draw](https://www.protennislive.com/posting/2024/637/mds.pdf) · [Kobe draw](https://www.protennislive.com/posting/2024/7397/mds.pdf)
 
-**Why the total differs from adding earlier tables.** The source audit returns **121,246 eligible records** before reconciliation. Three duplicate pairs have identical source fields except for the match number. They record the same players, score and outcome in the same elimination round. The inventory keeps one copy per pair. The duplicates occur in the 2011 Costa do Sauípe Q1 (one qualifying record), the 2021 Rome R64 and the 2021 Stuttgart R32 (two Tour main-draw records). A fourth entry in the 2015 Båstad file incorrectly gives the Paire–Robredo final a second result in the first round. The official bracket shows Robredo had a bye and Paire faced Markus Eriksson. The inventory keeps the actual final and the actual first-round match. It preserves legitimate meetings across round robins, finals and qualifying stages. [Båstad draw](https://www.protennislive.com/posting/2015/316/mds.pdf)
+**Reconciliation.** Across all 20 seasons, 162,012 source records pass the filters. Removing 22 duplicates and one spurious first-round entry gives 161,989 matches. In the 2011–2025 subset, 121,246 records pass the filters. Three duplicate pairs have identical source fields except for the match number. They record the same players, score and outcome in the same elimination round. The inventory keeps one copy per pair. The duplicates occur in the 2011 Costa do Sauípe Q1 (one qualifying record), the 2021 Rome R64 and the 2021 Stuttgart R32 (two Tour main-draw records). A fourth entry in the 2015 Båstad file incorrectly gives the Paire–Robredo final a second result in the first round. The official bracket shows Robredo had a bye and Paire faced Markus Eriksson. The inventory keeps the actual final and the actual first-round match. It preserves legitimate meetings across round robins, finals and qualifying stages. [Båstad draw](https://www.protennislive.com/posting/2015/316/mds.pdf)
 
-The inventory distinguishes draw type in its identifier. Its reported tournament date preserves the source value for auditing. Validate suspect dates before calculating chronological features across circuits. The 2024–2025 outcome column is blank for the held-out seasons.
+The inventory distinguishes draw type in its identifier. Its reported tournament date preserves the source value for auditing. Some dates represent the main-draw week even when qualifying was played earlier. Validate suspect dates before calculating chronological features across circuits. The 2024–2025 outcome column is blank for the held-out seasons.
 
 The official Rome and Stuttgart draws confirm the repeated pairings. In Costa do Sauípe the draw also includes Frederico Gil vs. Fabiano de Paula in Q1, missing from the provider file. It is outside the inventory pending an independently verified row with compatible rankings. [Rome draw](https://www.protennislive.com/posting/2021/416/mds.pdf) · [Stuttgart draw](https://www.protennislive.com/posting/2021/321/mds.pdf) · [Costa do Sauípe qualifying draw](https://www.protennislive.com/posting/2011/533/qs.pdf)
 
+### Coverage in the five added seasons
+
+- **2006.** TennisMyLife supplies 144 Challenger editions and no annual Tour qualifying file. Jeff Sackmann's archived results provide the four major qualifying draws and 17 additional Challenger main draws, including Sunrise. The 448 qualifying records yield 437 eligible matches. The 527 Challenger records yield 463. To match players across sources, the supplement checks normalized full names and estimated birth dates against pinned TennisMyLife records, then requires a one-to-one ID mapping. Thirty players have insufficient evidence for a match. Their 39 Challenger records are omitted. The source is credited to Jeff Sackmann under CC BY-NC-SA 4.0. [Supplement code and checksum](scripts/supplemental_draws_2006.py) Other Tour qualifiers took place, including Indian Wells and Rome. Those draws are outside the combined inventory for 2006. [Pinned archive](https://github.com/Aneeshers/tennis-sackmann-archive/blob/83733587353df8a41f2fd4f516147d5aa83f5a8d/atp/atp_matches_qual_chall_2006.csv) · [Sunrise draw](https://www.protennislive.com/posting/2006/2207/mds.pdf) · [Indian Wells qualifying draw](https://www.protennislive.com/posting/2006/404/qs.pdf) · [Rome qualifying draw](https://www.protennislive.com/posting/2006/416/qs.pdf)
+- **2007.** Each round of Zagreb qualifying appears twice in the annual file. The 22 pairs agree on all fields except match number. Nineteen pairs pass the eligibility checks. The export keeps one copy of each eligible match, then verifies equality against the pinned rows. [Official Zagreb qualifying draw](https://www.protennislive.com/posting/2007/451/qs.pdf)
+- **2010.** The qualifying file omits both tier and surface for 356 records from 11 events. For those editions, the corresponding main draw has one consistent tier and surface and matches the qualifying event ID, name and reported date. Filling the two event fields restores 319 eligible matches, including 110 from Wimbledon. Of the other 37 records, 29 fail the ranking check and eight fail the completion check. [Recovery code](scripts/qualifying_levels.py) · [Wimbledon qualifying draw](https://assets.wimbledon.com/archive/draws/pdfs/draws/2010_QS_A4.pdf) · [Hamburg qualifying draw](https://www.protennislive.com/posting/2010/414/qs.pdf)
+
+Before 2009, the provider labels older Tour tiers retrospectively as 250 or 500. The three-surface restriction also excludes historical indoor carpet matches. In the 2007 Australian Open qualifying, 2008 Las Vegas qualifying, 2007 Belo Horizonte and 2008 Cremona draws, four eligible source score strings are inconsistent with the recorded winner's sets. The draws confirm the recorded players advanced. The inventory retains the winners and supplies no set-score features. [Australian Open qualifying](https://www.protennislive.com/posting/2007/580/qs.pdf) · [Las Vegas qualifying](https://www.protennislive.com/posting/2008/433/qs.pdf) · [Belo Horizonte](https://www.protennislive.com/posting/2007/3633/mds.pdf) · [Cremona](https://www.protennislive.com/posting/2008/3812/mds.pdf)
+
 ## Coverage of recent draws
 
-The preferred collection window is **2011–2025**, with **2016–2025** as the ten-season comparison. The saved starter notebook uses 2015–2025. For either new window, generate the four-tier main-draw modeling table with the chosen first season, for example `python3 -m scripts.prepare_data --first-season 2011`. The file is `data/processed/model_input_2011.csv`.
+The collection window is **2006–2025**. The following source-level comparisons document the original 15- and ten-season windows. The saved starter notebook uses 2015–2025. Generate a four-tier Tour main-draw modeling table for a chosen first season, for example `python3 -m scripts.prepare_data --first-season 2011`. The file is `data/processed/model_input_2011.csv`.
 
 | Source series | 2011–2025 raw | 2011–2025 eligible | 2016–2025 raw | 2016–2025 eligible |
 | --- | ---: | ---: | ---: | ---: |
@@ -65,7 +90,7 @@ Official draws provide smaller, match-level checks. All 64 first-round pairings 
 
 **Why keep draw types separate.** The Challenger file records the 2024 Nottingham grass event (ID 2024-7740) on February 11, the date it also gives a separate hard-court event. The official grass draw ran June 10–16. An uncorrected date could place June results into a player's spring history. For a future history-only feature, first reconcile missing event editions, tournament dates and player IDs, and carry the draw type in the match key because main and qualifying draws reuse match numbers. Until then describe the current feature as **prior covered Tour main-draw results on this surface**. [LTA Nottingham draw](https://www.lta.org.uk/49ca7a/siteassets/events/nottingham/media/atp-challenger-draw---june-11.pdf)
 
-Run `python3 -m scripts.audit_draw_coverage --annual` to reproduce source totals from all 45 season files with local checksum verification. [ATP and Challenger file catalog](https://stats.tennismylife.org/tennis-match-database) · [Supplemental file URLs and checksums](draw-coverage-manifest.json)
+Run `python3 -m scripts.audit_draw_coverage --first-season 2006 --annual --export-inventory` to reproduce the 20-season source counts and reconciled export. All input files are checked against pinned SHA-256 hashes, including the extra 2005 Tour file used only for identity matching. [ATP and Challenger file catalog](https://stats.tennismylife.org/tennis-match-database) · [Supplemental file URLs and checksums](draw-coverage-manifest.json)
 
 ## Expand the training history
 
@@ -89,7 +114,7 @@ The file is `data/processed/model_input_1990.csv`. Substitute `2009` to build th
 
 **Coverage and comparability.** The full eligible pool covers 2,261 players across 2,262 tournament editions, with 49,752 hard-court, 32,245 clay-court and 10,340 grass-court matches. All 36 headers match and the eligible match keys are unique. Among the selected tiers, the surface filter drops 6,428 historical carpet-court rows. The provider assigns the codes `250`, `500`, `M` and `G` to older editions retrospectively. ATP formally introduced the current tier names in 2009. For example, the source codes Hamburg as `M` in 2008 and `500` in 2009. Use the edition's recorded level. [ATP tour timeline](https://www.atptour.com/-/media/files/media-guide/2026/2026-atp-media-guide-full.pdf) · [Hamburg tournament history](https://hamburgopenatp500.com/en/history)
 
-The longer historical exports are archived alternatives. The active collection work focuses on draw coverage within the recent 10–15 seasons.
+The longer historical Tour-only exports are archived alternatives. The combined inventory covers the 20 seasons from 2006 through 2025.
 
 ## Read one row
 

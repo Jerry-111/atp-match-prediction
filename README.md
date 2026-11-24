@@ -6,9 +6,9 @@ We are testing whether a player's past results on the current surface improve pr
 
 For the dataset everyone should use, start with the [shared match table and metrics](DATA.md). Run `python3 -m scripts.prepare_data` to generate the training and validation CSV. The [retirement and walkover audit](OUTCOMES.md) explains when a loss enters this table and how an alternative definition affects the ranking benchmark.
 
-For the combined inventory of **121,242 distinct recorded matches**, run `python3 -m scripts.audit_draw_coverage --export-inventory`. [Categories, major counts and deduplication](DATA.md#combined-mens-singles-inventory)
+For the **2006–2025 inventory of 161,989 distinct recorded matches**, run `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory`. [Categories, major counts and deduplication](DATA.md#combined-mens-singles-inventory)
 
-The current coverage audit focuses on **2011–2025** and **2016–2025**. Run `python3 -m scripts.prepare_data --first-season 2011` for the 15-season main-draw table and `python3 -m scripts.audit_draw_coverage --annual` to see Challenger and qualifying coverage separately. [Coverage and verified gaps](DATA.md#coverage-of-recent-draws)
+The collection includes available Grand Slam, ATP Tour and Challenger singles results. The 2006 qualifying supplement covers the four majors. Run `python3 -m scripts.audit_draw_coverage --first-season 2006 --annual` to see coverage by season and draw type. [Coverage and verified gaps](DATA.md#coverage-of-recent-draws)
 
 Start with the [team handoff](HANDOFF.md) for the current task, verified results and ideas under discussion. Coding agents should also read [AGENTS.md](AGENTS.md). To pick up a teammate's branch or carry a new research decision into the repo, follow the [collaboration workflow](WORKFLOW.md).
 

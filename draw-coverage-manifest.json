@@ -4,6 +4,31 @@
   "series": {
     "challenger": [
       {
+        "season": 2006,
+        "url": "https://stats.tennismylife.org/data/2006_challenger.csv",
+        "sha256": "b339d9ebc3c2dbf2f6c36460726759a7bff09304e24537cb7e6b24586fe41640"
+      },
+      {
+        "season": 2007,
+        "url": "https://stats.tennismylife.org/data/2007_challenger.csv",
+        "sha256": "76957e15fa76445bbb40b47c09bceed053d655bd88073478924c6540d0316462"
+      },
+      {
+        "season": 2008,
+        "url": "https://stats.tennismylife.org/data/2008_challenger.csv",
+        "sha256": "b719a93a6d4020edfd38d5c40e37035077e9a4f79e3acba7f55e346d61e6b376"
+      },
+      {
+        "season": 2009,
+        "url": "https://stats.tennismylife.org/data/2009_challenger.csv",
+        "sha256": "747e40527581535f5864c1f18f7c60abba21a17d0884bd1a1373ba12056ae634"
+      },
+      {
+        "season": 2010,
+        "url": "https://stats.tennismylife.org/data/2010_challenger.csv",
+        "sha256": "c5fb2807bc7d53f2dc64a9efe6aff094feb392ce1e07912c24214858e5e4a33d"
+      },
+      {
         "season": 2011,
         "url": "https://stats.tennismylife.org/data/2011_challenger.csv",
         "sha256": "d7f1ddf7ea845859f215ab8a9d8a8d5b3066025ea166dae2eb6d3c4cd675f66c"
@@ -80,6 +105,26 @@
       }
     ],
     "qualifying": [
+      {
+        "season": 2007,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2007_atp_quali.csv",
+        "sha256": "311ea1f893d18a4d00a0c0226a9e5e17f068b83d60e80957e4f7a33633c16cc3"
+      },
+      {
+        "season": 2008,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2008_atp_quali.csv",
+        "sha256": "91b295fbe21ae3fe0be4a77c4436213fcac32933246d6abb09657ba61c2ac93c"
+      },
+      {
+        "season": 2009,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2009_atp_quali.csv",
+        "sha256": "fe38e7c9adf1a2f8c0c4f0c1d5b1fd70e4b15553992e0b6708b9bafa47ba870a"
+      },
+      {
+        "season": 2010,
+        "url": "https://stats.tennismylife.org/data/atp_quali/2010_atp_quali.csv",
+        "sha256": "bfa7c13c4d3571f189627a3c90e3315f6135ba630c5f9057350207ac9ec12076"
+      },
       {
         "season": 2011,
         "url": "https://stats.tennismylife.org/data/atp_quali/2011_atp_quali.csv",
