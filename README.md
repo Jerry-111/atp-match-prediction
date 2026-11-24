@@ -4,7 +4,7 @@ We are testing whether a player's past results on the current surface improve pr
 
 ## Get the 20-season match inventory
 
-**[Download the match CSV (22.7 MB)](https://github.com/Jerry-111/atp-match-prediction/raw/refs/heads/data/shared-foundation/data/processed/mens_singles_2006_2025.csv)**. This branch also includes the file at `data/processed/mens_singles_2006_2025.csv`. Open it directly in your notebook or spreadsheet.
+**[Download the match CSV (22.7 MB)](https://raw.githubusercontent.com/Jerry-111/atp-match-prediction/refs/heads/data/shared-foundation/data/processed/mens_singles_2006_2025.csv)**. This branch also includes the file at `data/processed/mens_singles_2006_2025.csv`. Open it directly in your notebook or spreadsheet.
 
 To rebuild the same table from the pinned sources, run the following command from the repository root with Python 3.9 or newer.
 
