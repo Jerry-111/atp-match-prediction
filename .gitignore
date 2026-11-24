@@ -3,4 +3,5 @@
 __pycache__/
 .ipynb_checkpoints/
 data/raw/
-data/processed/
+data/processed/*
+!data/processed/mens_singles_2006_2025.csv

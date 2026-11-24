@@ -2,7 +2,9 @@
 
 ## Combined men's singles inventory
 
-Run `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory` to generate `data/processed/mens_singles_2006_2025.csv`. Each row represents one retained men's singles match. The inventory includes main draws at the four majors, the selected ATP Tour tiers and all recorded Challenger tiers, plus available Tour and major qualifying. Each source uses the same court, positive-ranking, player-ID and completed-score filters. The starter notebook's 63.37% validation benchmark applies to its Tour main-draw population.
+The [processed match CSV](data/processed/mens_singles_2006_2025.csv) is included in this branch. To reproduce it, run `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory`. Each row represents one retained men's singles match. The inventory includes main draws at the four majors, the selected ATP Tour tiers and all recorded Challenger tiers, plus available Tour and major qualifying. Each source uses the same court, positive-ranking, player-ID and completed-score filters. The starter notebook's 63.37% validation benchmark applies to its Tour main-draw population.
+
+**Source credits.** This educational table combines TennisMyLife records with a 2006 supplement from Jeff Sackmann’s ATP data, archived by Aneeshers. The project filters and reconciles matches, aligns player IDs, assigns A/B positions and masks held-out outcomes. TennisMyLife limits use to personal, educational and noncommercial research and restricts redistribution of its raw CSVs. The adapted Sackmann supplement carries CC BY-NC-SA 4.0. [TennisMyLife terms](https://stats.tennismylife.org/tennis-match-database) · [Sackmann archive](https://github.com/Aneeshers/tennis-sackmann-archive) · [Supplement license](https://creativecommons.org/licenses/by-nc-sa/4.0/)
 
 | Men's singles category | 2006–2010 added | 2011–2025 | 2006–2025 |
 | --- | ---: | ---: | ---: |
