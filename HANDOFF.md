@@ -4,7 +4,7 @@
 
 ## What can be reproduced in this version
 
-Read the [four-feature modeling CSV](data/processed/model_features.csv) to fit the planned models. It contains all 18,774 training and validation matches. For the worked Cincinnati final and the offline rebuild, see the [data processing guide](docs/data-processing.md).
+Start a modeling branch from the latest `main`. Read the [four-feature modeling CSV](data/processed/model_features.csv) to fit the planned models. It contains all 18,774 training and validation matches. For the worked Cincinnati final and the offline rebuild, see the [data processing guide](docs/data-processing.md).
 
 | Evidence | Where to look |
 | --- | --- |

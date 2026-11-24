@@ -2,11 +2,11 @@
 
 How much do recent overall form, results on the current surface and prior meetings between the two players add to ATP rankings when predicting a completed men's singles match? We will compare a rank-only logistic regression with one that uses all four feature groups, then examine which combination predicts best on the 2023 validation season.
 
-Download the [four-feature modeling CSV](data/processed/model_features.csv) for all 16,186 training and 2,588 validation matches. It includes the outcome, four pre-match predictors and the historical counts behind them. Rebuild it offline from the published tables with `python3 -m scripts.prepare_features`. [Data processing guide (中文)](docs/data-processing.md)
+Start from `main` and open [modeling task #1](https://github.com/Jerry-111/atp-match-prediction/issues/1). Download the [four-feature modeling CSV](data/processed/model_features.csv) for all 16,186 training and 2,588 validation matches. It includes the outcome, four pre-match predictors and the historical counts behind them. Rebuild it offline from the published tables with `python3 -m scripts.prepare_features`. [Data processing guide (中文)](docs/data-processing.md)
 
 ## Get the 20-season match inventory
 
-**[Download the match CSV (22.7 MB)](https://raw.githubusercontent.com/Jerry-111/atp-match-prediction/refs/heads/data/shared-foundation/data/processed/mens_singles_2006_2025.csv)**. This branch also includes the file at `data/processed/mens_singles_2006_2025.csv`. Open it directly in your notebook or spreadsheet.
+**[Download the match CSV (22.7 MB)](https://raw.githubusercontent.com/Jerry-111/atp-match-prediction/refs/heads/main/data/processed/mens_singles_2006_2025.csv)**. The file is also available locally at `data/processed/mens_singles_2006_2025.csv`. Open it directly in your notebook or spreadsheet.
 
 To rebuild the same table from the pinned sources, run the following command from the repository root with Python 3.9 or newer.
 
