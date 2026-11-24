@@ -1,6 +1,6 @@
 # Does surface history improve on ATP rankings?
 
-We are testing whether a player's past results on the current surface improve pre-match predictions of men's singles winners once their ATP rankings are known.
+Our goal is to estimate each player's chance of winning a completed ATP Tour or Grand Slam men's singles match using information available at the start of the tournament. The main experiment asks whether recent results on the same surface improve win probabilities beyond ATP rankings alone.
 
 For the main experiment, open the [training and validation CSV](data/processed/model_input.csv). It contains the two pre-match features for each of 18,774 matches. The [data processing guide (中文)](docs/data-processing.md) explains how to use both published tables, reproduce the filters and describe their limitations in the presentation.
 

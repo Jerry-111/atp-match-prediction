@@ -32,6 +32,7 @@ Fit both models on the same 2016–2022 training matches. Evaluate both on the s
 | Try a longer history on grass | The training figure shows many players have little grass-court history. | Compare coverage under 52 and 104 weeks on seasons with adequate warm-up. Check the change on validation before widening the main experiment. |
 | Add recent overall form | A player's current level could explain part of what the surface feature captures. | Add one all-surface historical win-rate difference to a validation comparison, using the same cutoff. |
 | Compare with Elo | Past opponents' strength can affect a player's raw win rate. | Use the cited papers to explain this limitation first. A separate validation benchmark would require a chronological rating history. |
+| Add head-to-head history | A pair's past meetings may capture a matchup effect. Of 16,186 training matches, 3,570 had a covered prior meeting across all surfaces inside the current 52-week window and 21-day lag. Extending history back to 2006 raises this to 7,597. | Candidate third model after the planned comparison. Retain first-time matchups, shrink small counts toward a neutral feature and compare validation log loss on the same matches. [Research objective and coverage definitions](PROJECT-PLAN.zh.md) |
 
 **Decision history**
 
