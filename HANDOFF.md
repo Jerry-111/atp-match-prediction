@@ -1,6 +1,6 @@
 # Team handoff
 
-**Current focus:** Audit main draws, Challenger events and qualifying in the most recent 10–15 completed seasons. [Counts, official draw checks and confirmed gaps](DATA.md#coverage-of-recent-draws). [Data and metric definitions](DATA.md) · [Retirement sensitivity](OUTCOMES.md)
+**Current focus:** Use the combined 2011–2025 inventory for Tour main draws, all recorded Challenger levels and Tour/major qualifying. [Distinct matches by category](DATA.md#combined-mens-singles-inventory). [Counts, official draw checks and confirmed gaps](DATA.md#coverage-of-recent-draws). [Data and metric definitions](DATA.md) · [Retirement sensitivity](OUTCOMES.md)
 
 ## What can be reproduced in this version
 
@@ -9,7 +9,7 @@
 | The loader retains 26,372 eligible matches across 11 seasons. The higher-ranked player won **1,640 / 2,588** validation matches in 2023 (**63.37%**). | Run `python3 scripts/baseline.py` from the repo root. [Loader and ranking rule](scripts/baseline.py) |
 | Training figures show how often the favorite wins as the rank gap grows, and how much prior surface history is available. With the adopted window, 77.5% of grass-court player appearances have fewer than five eligible prior matches, compared with 29.4% on clay and 13.8% on hard courts. | [Executed notebook, section 2](analysis.ipynb) |
 | A shared feature table contains 18,776 training and validation matches. An independent source-row calculation replicates both players' prior hard-court records for the 2023 Cincinnati final. | Run `python3 -m scripts.prepare_data`. [Schema and population](DATA.md) · [Worked match](analysis.ipynb) |
-| The 2011–2025 Tour target pool contains 36,370 eligible main-draw matches. The separate Challenger and qualifying sources have been collected and checked for coverage. | [Recent draws audit](DATA.md#coverage-of-recent-draws) |
+| The 2011–2025 Tour source contains 36,370 eligible main-draw records (36,367 distinct matches). The separate Challenger and qualifying sources have been collected and checked for coverage. | [Recent draws audit](DATA.md#coverage-of-recent-draws) |
 | The archived optional historical pool covers 92,337 eligible matches in 1990–2025. Of these, 82,050 are training matches and 2,588 validation matches. | Run `python3 -m scripts.prepare_data --first-season 1990`. [Historical evidence and comparison design](DATA.md#expand-the-training-history) |
 
 The table includes prior same-surface matches and wins, smoothed rates, a deterministic A/B ordering and the outcome in its own column. Model fitting is pending. The effect of adding surface history is an open question. The test set has **5,088 eligible matches** across 2024–2025. Its final model scores, the result-based literature discussion, submission HTML and video are pending.
