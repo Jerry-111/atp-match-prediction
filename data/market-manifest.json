@@ -1,0 +1,17 @@
+{
+  "source": "Valuebetennis, Tennis results and odds since 2021",
+  "source_url": "https://www.valuebetennis.com/en/donnees.htm",
+  "methodology_url": "https://www.valuebetennis.com/en/methodologie.htm",
+  "license": "CC BY 4.0",
+  "license_url": "https://creativecommons.org/licenses/by/4.0/",
+  "retrieved_utc_date": "2026-11-25",
+  "bookmaker_as_described_by_provider": "Pinnacle",
+  "information_regime": "Opening/last prematch prices per provider; quote timestamps absent. Different from tournament-start T-21 historical features.",
+  "permitted_seasons": [2021, 2022, 2023],
+  "final_test_downloaded": false,
+  "files": [
+    {"season": 2021, "url": "https://www.valuebetennis.com/datasets/valuebetennis-matchs-2021.csv", "sha256": "ea30ae06fab7734ada518b974aacf55bea3cde41ff569f1135c9d05f79cc9aee", "bytes": 9473096, "rows": 63728},
+    {"season": 2022, "url": "https://www.valuebetennis.com/datasets/valuebetennis-matchs-2022.csv", "sha256": "e4bab3987820ecdded8895648ac7bcbdac2539410fc5d4a9901febb6f95b114c", "bytes": 12700799, "rows": 83381},
+    {"season": 2023, "url": "https://www.valuebetennis.com/datasets/valuebetennis-matchs-2023.csv", "sha256": "fa45622d678b17176c8b950d09872538dd765a684b16e1910a3ede4e75664bfb", "bytes": 13735679, "rows": 89826}
+  ]
+}

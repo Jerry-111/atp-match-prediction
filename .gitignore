@@ -23,3 +23,12 @@ results/round4/development_features.csv
 results/round4/oof_predictions.csv
 results/round4/frozen_models.joblib
 results/round4/inference_predictions.csv
+results/round5/development_features.csv
+results/round5/oof_predictions.csv
+results/round5/frozen_models.joblib
+results/round5/inference_predictions.csv
+results/round5/market_features.csv
+results/round5/market_models.joblib
+results/round5/market/features.csv
+results/round5/market/oof_predictions.csv
+results/round5/market/frozen_models.joblib

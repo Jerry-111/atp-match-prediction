@@ -1,0 +1,31 @@
+{
+  "recommendation": "context_calibrated_C0.01",
+  "best_candidate": "context_calibrated_C0.01",
+  "selected_by_family": {
+    "context_calibrated": "context_calibrated_C0.01",
+    "fusion_calibrated": "fusion_calibrated_C0.1",
+    "history": "history_only",
+    "logit_blend": "logit_blend_market0.75",
+    "market_calibrated": "market_calibrated_C10",
+    "opening": "opening_market",
+    "probability_blend": "probability_blend_market0.75"
+  },
+  "procedure_gate": {
+    "procedure": "adopt_market_information",
+    "early_selected": "fusion_calibrated_C0.01",
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6855221518987342,
+    "accuracy_improvement": 0.014240506329114,
+    "required_accuracy_improvement": 0.005,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5843226420169768,
+    "allowed_loss_increase": 0.005,
+    "selection_fold": "2021H2",
+    "gate_fold": "2022"
+  },
+  "base_model": "add_age_spline_C0.01",
+  "information_regime": "Opening prematch market plus frozen historical model; separate from T-21 baseline",
+  "decision_threshold": 0.5,
+  "final_test_evaluated": false,
+  "exploratory_after_2023": true
+}

@@ -1,0 +1,118 @@
+{
+  "candidates": [
+    {
+      "name": "round4_history",
+      "kind": "history",
+      "base": "round4"
+    },
+    {
+      "name": "round4_closing",
+      "kind": "opening",
+      "base": "round4"
+    },
+    {
+      "name": "round4_probability_closing0.25",
+      "kind": "blend",
+      "base": "round4",
+      "mode": "probability",
+      "weight": 0.25
+    },
+    {
+      "name": "round4_probability_closing0.5",
+      "kind": "blend",
+      "base": "round4",
+      "mode": "probability",
+      "weight": 0.5
+    },
+    {
+      "name": "round4_probability_closing0.75",
+      "kind": "blend",
+      "base": "round4",
+      "mode": "probability",
+      "weight": 0.75
+    },
+    {
+      "name": "round4_logit_closing0.25",
+      "kind": "blend",
+      "base": "round4",
+      "mode": "logit",
+      "weight": 0.25
+    },
+    {
+      "name": "round4_logit_closing0.5",
+      "kind": "blend",
+      "base": "round4",
+      "mode": "logit",
+      "weight": 0.5
+    },
+    {
+      "name": "round4_logit_closing0.75",
+      "kind": "blend",
+      "base": "round4",
+      "mode": "logit",
+      "weight": 0.75
+    },
+    {
+      "name": "round5_exploratory_history",
+      "kind": "history",
+      "base": "round5_exploratory"
+    },
+    {
+      "name": "round5_exploratory_closing",
+      "kind": "opening",
+      "base": "round5_exploratory"
+    },
+    {
+      "name": "round5_exploratory_probability_closing0.25",
+      "kind": "blend",
+      "base": "round5_exploratory",
+      "mode": "probability",
+      "weight": 0.25
+    },
+    {
+      "name": "round5_exploratory_probability_closing0.5",
+      "kind": "blend",
+      "base": "round5_exploratory",
+      "mode": "probability",
+      "weight": 0.5
+    },
+    {
+      "name": "round5_exploratory_probability_closing0.75",
+      "kind": "blend",
+      "base": "round5_exploratory",
+      "mode": "probability",
+      "weight": 0.75
+    },
+    {
+      "name": "round5_exploratory_logit_closing0.25",
+      "kind": "blend",
+      "base": "round5_exploratory",
+      "mode": "logit",
+      "weight": 0.25
+    },
+    {
+      "name": "round5_exploratory_logit_closing0.5",
+      "kind": "blend",
+      "base": "round5_exploratory",
+      "mode": "logit",
+      "weight": 0.5
+    },
+    {
+      "name": "round5_exploratory_logit_closing0.75",
+      "kind": "blend",
+      "base": "round5_exploratory",
+      "mode": "logit",
+      "weight": 0.75
+    }
+  ],
+  "selection_season": 2022,
+  "scoring_season": 2023,
+  "source_features_sha256": "af715502be4320267e751cd92d63a4d2918bcf2c86ad2666622329a29942a375",
+  "adaptive_after_round5_2023": true,
+  "independent_validation": false,
+  "final_test_evaluated": false,
+  "information_regime": "Provider-described closing prematch prices plus fixed historical model",
+  "no_parameter_fitting": true,
+  "no_recommendation_upgrade": true,
+  "caveat": "The direction follows observed2023 results; weights use2022, already used in earlier searches."
+}

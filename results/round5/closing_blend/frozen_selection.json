@@ -1,0 +1,9 @@
+{
+  "selected_control": "round5_exploratory_logit_closing0.5",
+  "decision_basis": "2022accuracy, .005loss guard, then lower loss/name",
+  "selection_matches": 2528,
+  "no_recommendation_upgrade": true,
+  "adaptive_after_round5_2023": true,
+  "independent_validation": false,
+  "final_test_evaluated": false
+}
