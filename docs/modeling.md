@@ -104,8 +104,58 @@ without declaring a different protocol. Historical updates and parameter
 refitting are different operations.
 
 The report and notebook distinguish measured validation findings from ideas.
-Deferred candidates include graph/centrality ratings, explicitly modeled
-skill uncertainty, score-margin Elo and mechanistic point models. Historical
-odds or injury/news features require verified availability timestamps and a
-separate information regime. None of these is asserted to improve results
-without a matched experiment.
+The follow-ups below evaluate skill uncertainty, graph/centrality ratings,
+score-margin Elo and mechanistic point models. Historical odds or injury/news
+features still require verified availability timestamps and a separate
+information regime.
+
+## Follow-up paper experiments
+
+The original results above remain archived. Reproduce the subsequent rounds
+in order, because each preserves and compares the previous frozen artifacts:
+
+```sh
+.venv/bin/python -m scripts.train_round2
+.venv/bin/python -m scripts.report_round2
+.venv/bin/python -m scripts.train_round3
+.venv/bin/python -m scripts.report_round3
+.venv/bin/python -m scripts.train_round4
+.venv/bin/python -m scripts.report_round4
+```
+
+Round four adds paper-derived margin ratings, opponent-network centrality,
+standardized point-to-match probabilities, and age/ranking-point features to
+the existing 202-column matrix. It retains the 33,833 expanded training rows
+and 2,588 validation rows. Separate age and points controls help identify the
+source of profile improvements. The [protocol](research/round4_protocol.md)
+records paper adaptations, snapshot corrections, interrupted runs and the
+51-candidate search. The [report](../results/round4/report_summary.md) records
+the outcome; [the executed notebook](../round4.ipynb) and
+[standalone HTML](../round4.html) contain the same saved evidence.
+
+All follow-up 2023 scores are exploratory: the season has already informed
+earlier work. Round four must improve the current round-three early-selected
+2022 reference by at least 0.001 before replacing its procedure. The gate is
+a practical selection rule, not independent confirmation or a significance
+test. The final 2024–2025 test remains unopened.
+
+Reload the locally generated fourth-round bundle without fitting:
+
+```sh
+.venv/bin/python -m scripts.train_round4 --predict-features path/to/prepared_features.csv
+```
+
+This writes `results/round4/inference_predictions.csv`. Inputs must follow the
+frozen feature definitions and include all 259 numeric features; labels and
+extra columns are ignored. Raw model probabilities, prior recommendations and
+the new family finalists are retained. Model files and large intermediate
+matrices are generated locally rather than committed. The final evaluator
+must deliberately extend the development-only target guards, preserve all
+coefficients and cutoff rules, and compare frozen procedures on identical
+test matches.
+
+The completed round-four audit reloaded all 21 reported probability columns
+on all 2,588 matches exactly, reproduced shared log loss/accuracy/Brier exactly,
+and verified A/B complementarity to 2.22e−16. A separate reviewer reproduced
+all 204 CV measurements and all selections. The final suite passes 113 tests
+and 31 subtests; [machine-readable audit](../results/round4/artifact_audit.json).
