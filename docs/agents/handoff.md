@@ -1,10 +1,12 @@
 # Team handoff
 
-**Current focus.** Use the published modeling rows and match inventory to compare rankings with three sources of historical information: recent overall form, same-surface results and prior meetings between the opponents. Model targets and player histories use eligible ATP Tour and major main draws. The 161,989-match inventory also covers Challenger main draws and available Tour/major qualifying. [Inventory and coverage](../data.md#combined-mens-singles-inventory) · [Data and metric definitions](../data.md) · [Retirement sensitivity](../outcomes.md)
+**Current focus.** Independently reproduce the completed modeling/validation experiment, then evaluate frozen models on the still-unopened 2024–2025 test seasons. The user authorized a broader strong-model comparison on 2026-11-24. [Modeling protocol and commands](../modeling.md) · [Validation table](../../results/modeling/validation_comparison.csv) · [Frozen model choices](../../results/modeling/frozen_selection.json) · [Research evidence](../research/sota_evidence.md)
+
+**Branch:** `codex/strong-model-validation`. This extends the original eight logistic subsets with historical strength, multiscale form, technical statistics and boosting. It does not establish a universal SOTA result.
 
 ## What can be reproduced in this version
 
-Start a modeling branch from the latest `main`. Read the [four-feature modeling CSV](../../data/processed/model_features.csv) to fit the planned models. It contains all 18,774 training and validation matches. For the worked Cincinnati final and the offline rebuild, see the [data processing guide](../data-processing.md).
+Use the modeling branch above until this work merges into `main`. The [four-feature modeling CSV](../../data/processed/model_features.csv) contains all 18,774 training and validation matches. For the worked Cincinnati final and the offline rebuild, see the [data processing guide](../data-processing.md). The additional model inputs are rebuilt by the modeling command.
 
 | Evidence | Where to look |
 | --- | --- |
@@ -14,15 +16,19 @@ Start a modeling branch from the latest `main`. Read the [four-feature modeling 
 | The 20-season inventory contains 49,252 Tour and major main-draw matches, 86,270 Challenger main-draw matches and 26,467 qualifying matches. The five added seasons contribute 40,747 distinct matches. | Run `python3 -m scripts.audit_draw_coverage --first-season 2006 --export-inventory`. [Annual counts and coverage gaps](../data.md#combined-mens-singles-inventory) |
 | The archived optional historical pool covers 92,334 eligible matches in 1990–2025. Of these, 82,047 are training matches and 2,588 validation matches. | Run `python3 -m scripts.prepare_data --first-season 1990`. [Historical evidence and comparison design](../data.md#expand-the-training-history) |
 
-The logistic models and overall Elo benchmark still need to be run. Once their settings are frozen, the evaluation teammate can score the 5,088 held-out matches across 2024–2025. The result-based literature discussion, submission HTML and video follow.
+The modeling run is complete: 72 learned configurations plus three raw Elo settings were compared in forward training-period folds. Every reported model uses the same 2,588 validation matches. Ranking logistic log loss is **0.62980** (63.37% accuracy); the advanced recommendation frozen before 2023 is the convex ensemble at **0.61153** (65.07%), a **2.90%** relative loss reduction. Its paired date-block exploratory interval for absolute loss reduction is **[0.01233, 0.02458]**. This interval does not account for the full model search or cross-date player dependence.
+
+The lowest 2023 loss is the richer regularized linear model at **0.61056** (65.26%). Preserve the distinction between this observed validation ordering and the pre-2023 recommendation. The prescribed eight-subset winner is ranking + recent overall form + H2H, **0.62891**; all four original groups score **0.63021**. Original feature additions alone do not show a clear improvement over rankings. Matched advanced linear ablations increase loss by **0.00860** without explicit Elo features, **0.00449** without point-statistic features and **0.00286** without rank features. The Elo ablation retains opponent-adjusted residual form, so it is not removal of every Elo-derived quantity.
+
+The evaluation teammate can now score the 5,088 held-out matches across 2024–2025 using the frozen protocol. No test-season outcome has been evaluated. Video production remains a later team task.
 
 ## What the next agent should deliver
 
 Use the shared scorer for every probability model. Supply probabilities for player A along with their match IDs and compare them with the full split. [Example call and metric definitions](../data.md#how-to-read-the-metrics)
 
-1. Load the four predictors and the separate A-win label. Check the Cincinnati example in the data guide, including player orientation and the T−21 cutoff. The published table includes counts for interpretation. [Feature definitions](../data.md#what-goes-into-each-comparison)
-2. Fit logistic regression on the same 16,186 training matches for each of the eight prespecified subsets. Each includes rankings. Compare rank-only with the full four-group model, and report accuracy and mean log loss for every subset on the same 2,588 validation matches. Include the ranking rule's accuracy as a benchmark. Score an overall Elo probability baseline on the same matches and historical cutoff. Record the initialization, update settings and order for matches sharing a date.
-3. Select the subset with the lowest 2023 mean log loss. Share the notebook, rerun command and frozen feature and model settings for the teammate evaluating 2024–2025. [Modeling issue](https://github.com/Jerry-111/atp-match-prediction/issues/1) · [Current research design](../project-plan.zh.md)
+1. Install `requirements-modeling.txt`; run `python -m scripts.train_models --with-serve` and `python -m scripts.model_report`. Confirm source hashes, selected settings and saved validation probabilities. Read the executed modeling section in `analysis.ipynb` and the dedicated `modeling.ipynb`.
+2. Verify the Cincinnati worked match and the T−21 cutoff. Extend the explicit development-only feature gates for final evaluation without changing feature definitions or model parameters. Historical updates may incorporate earlier test results only when available under the same cutoff; do not refit coefficients on 2023 or test outcomes.
+3. Evaluate ranking, original full/subset, raw Elo, the frozen advanced ensemble and its best-single comparator on identical 2024–2025 rows. Report per-year and combined metrics, calibration and paired uncertainty. Label every test result explicitly and record any protocol deviation before scoring. [Modeling issue](https://github.com/Jerry-111/atp-match-prediction/issues/1) · [Current research design](../project-plan.zh.md)
 
 ## Research ideas and decisions
 
@@ -40,6 +46,7 @@ Use the shared scorer for every probability model. Supply probabilities for play
 
 | Date | Change and reason | Consequence |
 | --- | --- | --- |
+| 2026-11-24 | User authorized broad optimization toward stronger predictions. Preserved the original eight subsets and unopened test; added temporal tuning, richer history/point features, symmetric boosting and an OOF ensemble. | Validation experiment complete. Freeze artifacts and final-test handoff replace the previous pending-modeling task; see the modeling protocol and full results. |
 | 2026-11-23 | Adopted overall Elo as an independent benchmark to account for opponent strength. Historical serve and return rates are an optional extension. | The modeling teammate can start from the published four-feature table, fit eight subsets and compare Elo on the same rows. |
 | 2026-11-23 | Expanded the comparison to rankings, recent overall form, same-surface form and prior head-to-head meetings. | The existing two-feature table supplies the baseline. Derive two more features and compare all eight rank-containing subsets on the existing target matches. |
 | 2026-11-23 | Extended the combined collection from 15 to 20 seasons. The 2006 backfill uses four major qualifying draws and 17 missing Challenger editions with players matched to ATP IDs. | The 20-season inventory is ready for data work. The starter notebook still reports its original Tour-only experiment. |

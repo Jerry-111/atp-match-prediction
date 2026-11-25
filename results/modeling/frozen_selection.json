@@ -1,0 +1,58 @@
+{
+  "selected_by_family": {
+    "all_history_reference": "all_history_reference_C0.01",
+    "advanced_linear": "history_linear_C0.01",
+    "without_rank": "without_rank_C0.01",
+    "catboost": "cat_d3_half3.0",
+    "histboost": "hist_l15_reg50",
+    "without_serve": "without_serve_C0.01",
+    "without_elo": "without_elo_C0.1",
+    "lr_111": "lr_111_C0.1",
+    "lr_011": "lr_011_C0.1",
+    "lr_110": "lr_110_C0.01",
+    "lr_010": "lr_010_C0.1",
+    "lr_101": "lr_101_C0.01",
+    "lr_100": "lr_100_C0.01",
+    "lr_001": "lr_001_C0.1",
+    "lr_000": "lr_000_C0.1",
+    "raw_elo": "raw_elo_k32_diff"
+  },
+  "advanced_champion": "oof_convex_ensemble",
+  "best_single": "history_linear_C0.01",
+  "ensemble_components": [
+    "history_linear_C0.01",
+    "cat_d3_half3.0",
+    "hist_l15_reg50",
+    "raw_elo_k32_diff"
+  ],
+  "ensemble_weights": [
+    0.5092814430960181,
+    0.15236417399136692,
+    0.3184048164201424,
+    0.019949566492472665
+  ],
+  "ensemble_gate_2022": true,
+  "gate_loss": 0.6047212107312954,
+  "gate_reference_loss": 0.6083681240226338,
+  "gate_components": [
+    "history_linear_C1",
+    "cat_d4_half3.0",
+    "hist_l15_reg50",
+    "raw_elo_k32_diff"
+  ],
+  "gate_weights": [
+    0.49031347502325173,
+    0.20777928190703085,
+    0.24721187059926653,
+    0.05469537247045092
+  ],
+  "gate_reference": "history_linear_C1",
+  "caveat": "Ensemble OOF loss is meta-training loss. Gate selects the procedure on 2022; 2023 remains validation.",
+  "final_test_evaluated": false,
+  "fit_end_season": 2022,
+  "history_lag_days": 21,
+  "source_hashes": {
+    "model_features.csv": "6291a9b51f5aac5d12cf1611c1d89df34350a4f2111d20997ab007c496207d27",
+    "mens_singles_2006_2025.csv": "6bbd220cdc1a7bc90427f31fb897fd1a4314c2aa4b352f80385b91401fb20613"
+  }
+}

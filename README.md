@@ -1,8 +1,10 @@
 # Can match history improve on ATP rankings?
 
-How much do recent overall form, results on the current surface and prior meetings between the two players add to ATP rankings when predicting a completed men's singles match? We will compare a rank-only logistic regression with one that uses all four feature groups, then examine which combination predicts best on the 2023 validation season.
+**Modeling results (2026-11-24).** The training-period-selected ensemble reduces 2023 validation log loss from **0.62980** (ranking logistic) to **0.61153**, with accuracy increasing from **63.37%** to **65.07%** on the same 2,588 matches. The richer linear comparator has the lowest observed validation loss, **0.61056**. Final 2024–2025 testing remains unopened; these results do not establish SOTA. [Results and reproduction](docs/modeling.md) · [Complete comparison](results/modeling/validation_comparison.csv) · [Executed modeling notebook](modeling.ipynb)
 
-Start from `main` and open [modeling task #1](https://github.com/Jerry-111/atp-match-prediction/issues/1). Download the [four-feature modeling CSV](data/processed/model_features.csv) for all 16,186 training and 2,588 validation matches. It includes the outcome, four pre-match predictors and the historical counts behind them. Rebuild it offline from the published tables with `python3 -m scripts.prepare_features`. [Data processing guide (中文)](docs/data-processing.md)
+How much do recent overall form, results on the current surface and prior meetings between the two players add to ATP rankings when predicting a completed men's singles match? We compare a rank-only logistic regression with all four feature groups, then extend the experiment with strength ratings, historical point statistics and nonlinear models.
+
+Start with the [modeling protocol](docs/modeling.md) and [team handoff](docs/agents/handoff.md) to reproduce [modeling task #1](https://github.com/Jerry-111/atp-match-prediction/issues/1). The [four-feature modeling CSV](data/processed/model_features.csv) contains all 16,186 training and 2,588 validation matches, the outcome, four pre-match predictors and the historical counts behind them. Rebuild it offline from the published tables with `python3 -m scripts.prepare_features`. [Data processing guide (中文)](docs/data-processing.md)
 
 ## Get the 20-season match inventory
 
@@ -30,7 +32,7 @@ python3 scripts/baseline.py
 
 The output includes the season split counts and the 2023 validation accuracy. If a source file changes, the script reports the year and stops. Review the revised data and its effect on the benchmark before updating the manifest.
 
-The [analysis notebook](analysis.ipynb) includes the training-set figures and the validation benchmark. GitHub can display its saved outputs. To run it locally with JupyterLab, use a Python environment with `jupyterlab` and `matplotlib` installed, then run `jupyter lab analysis.ipynb` from the repository root.
+The [analysis notebook](analysis.ipynb) includes the training-set figures, validation benchmark and executed model comparisons. GitHub can display its saved outputs. Install `requirements-modeling.txt` plus `jupyterlab` to run interactively, then run `jupyter lab analysis.ipynb` from the repository root. The standalone [workbook.html](workbook.html) displays the saved results without a Python environment; final-test results and the video remain pending.
 
 ## Starter notebook data and evaluation
 
@@ -45,4 +47,4 @@ We use the 2015–2025 ATP annual files, restricted to ATP 250, ATP 500, Masters
 
 ## Research plan and presentation
 
-All eight planned logistic regressions include ranking and use the same matches. They cover every subset of three history features, including new matchups with no prior recorded meeting. Compare with a standalone Elo probability benchmark. Select the logistic feature subset by lowest 2023 mean log loss, then evaluate the frozen choices on 2024–2025. The final course submission pairs `workbook.html` with a roughly 20-minute video linked in `video_url.txt`. [Full project plan (中文)](docs/project-plan.zh.md) · [Course assignment](https://docs.google.com/document/d/1w_g-yEtn9lvmXIXQWjQoS51FugM_Mx-ACh0-EZcHWR8/edit)
+All eight fitted logistic subsets include ranking and use the same matches, including new matchups with no prior recorded meeting. A standalone Elo benchmark and richer models are reported on the same validation set. The original logistic subset is selected by 2023 mean log loss; the advanced recommendation is selected using training-period folds before 2023 scoring. Next, evaluate the frozen choices on 2024–2025. The final course submission pairs `workbook.html` with a roughly 20-minute video linked in `video_url.txt`. [Full project plan (中文)](docs/project-plan.zh.md) · [Course assignment](https://docs.google.com/document/d/1w_g-yEtn9lvmXIXQWjQoS51FugM_Mx-ACh0-EZcHWR8/edit)
