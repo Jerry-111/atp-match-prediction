@@ -1,0 +1,32 @@
+{
+  "round": 3,
+  "recommendation": "history2009_odd_spline_C0.01_context1_half3.0_format1",
+  "best_single": "history2009_odd_spline_C0.01_context1_half3.0_format1",
+  "selected_by_family": {
+    "history2009_linear_format0": "history2009_linear_C0.01_half5.0_format0",
+    "history2009_linear_format1": "history2009_linear_C0.01_half5.0_format1",
+    "history2009_spline_format0": "history2009_odd_spline_C0.01_context1_half3.0_format0",
+    "history2009_spline_format1": "history2009_odd_spline_C0.01_context1_half3.0_format1",
+    "history2016_linear_format0": "history2016_linear_C0.003_half5.0_format0",
+    "history2016_linear_format1": "history2016_linear_C0.003_half5.0_format1",
+    "history2016_spline_format0": "history2016_odd_spline_C0.003_context1_half3.0_format0",
+    "history2016_spline_format1": "history2016_odd_spline_C0.003_context1_half3.0_format1"
+  },
+  "procedure_gate": {
+    "procedure": "adopt_history_model",
+    "early_selected": "history2009_odd_spline_C0.003_context1_half3.0_format1",
+    "candidate_2022_loss": 0.601131855143717,
+    "reference_2022_loss": 0.6047212107312954,
+    "absolute_improvement": 0.0035893555875783356,
+    "required_improvement": 0.001,
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022
+  },
+  "history_lag_days": 21,
+  "fit_end_season": 2022,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

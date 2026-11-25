@@ -11,3 +11,11 @@ results/modeling/development_features.csv
 results/modeling/oof_predictions.csv
 results/modeling/frozen_models.joblib
 catboost_info/
+results/round2/development_features.csv
+results/round2/oof_predictions.csv
+results/round2/frozen_models.joblib
+results/round2/inference_predictions.csv
+results/round3/development_targets.csv
+results/round3/development_features.csv
+results/round3/oof_predictions.csv
+results/round3/frozen_models.joblib

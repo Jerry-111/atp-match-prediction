@@ -93,15 +93,18 @@ class PointHistory:
         }
 
 
-def build_serve_features(targets, inventory, *, cache_dir=DEFAULT_CACHE, raw_rows=None):
+def build_serve_features(targets, inventory, *, cache_dir=DEFAULT_CACHE, raw_rows=None,
+                         first_target_season=2016):
     """Return a numeric frame with the same row index as ``targets``.
 
     ``raw_rows`` is an optional iterable of (season, raw row) for offline unit
     tests. Production loads and SHA-256 verifies the pinned 2006..2023 files.
     Provenance and missing-statistics counts are stored in ``result.attrs``.
     """
-    if not pd.to_numeric(targets["season"]).between(2016, 2023).all():
-        raise ValueError("Final holdout is locked: targets must be from 2016..2023")
+    if first_target_season not in range(2009, 2017):
+        raise ValueError("first_target_season must be an integer from 2009 through 2016")
+    if not pd.to_numeric(targets["season"]).between(first_target_season, 2023).all():
+        raise ValueError(f"Final holdout is locked: targets must be from {first_target_season}..2023")
     eligible = inventory.loc[inventory["source"].eq("tour") &
                              pd.to_numeric(inventory["season"]).between(2006, 2023)]
     expected = {}

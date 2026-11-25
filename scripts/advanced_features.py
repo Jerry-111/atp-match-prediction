@@ -219,17 +219,20 @@ class HistoricalState:
         return result
 
 
-def build_advanced_features(targets, inventory):
+def build_advanced_features(targets, inventory, *, first_target_season=2016):
     """Return numeric features in exact target index/order, without labels.
 
-    Only 2016–2023 targets are accepted in this development entry point. The
+    By default only 2016–2023 targets are accepted. An explicit lower bound
+    from 2009 through 2016 permits the historical-training experiment. The
     next evaluator must explicitly adapt this gate to score the frozen model;
     this prevents silently treating held-out outcomes as development data.
     Original four published features are intentionally not duplicated here.
     """
     seasons = pd.to_numeric(targets["season"])
-    if not seasons.between(2016, 2023).all():
-        raise ValueError("Development features accept only 2016–2023 targets; final holdout is locked")
+    if first_target_season not in range(2009, 2017):
+        raise ValueError("first_target_season must be an integer from 2009 through 2016")
+    if not seasons.between(first_target_season, 2023).all():
+        raise ValueError(f"Development features accept only {first_target_season}–2023 targets; final holdout is locked")
     state = HistoricalState(inventory)
     frame = pd.DataFrame([state.features(row) for row in targets.to_dict("records")], index=targets.index)
     frame.attrs["feature_version"] = FEATURE_VERSION
