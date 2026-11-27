@@ -1,0 +1,406 @@
+{
+  "status": "passed",
+  "audited_utc": "2026-11-27T16:24:11.779968+00:00",
+  "auditor": "independent audit agent",
+  "no_refitting_or_tuning": true,
+  "final_test_evaluated": false,
+  "training_rows": 33833,
+  "validation_matches": 2588,
+  "numeric_features": 383,
+  "models_checked": 18,
+  "oof_rows": 6130,
+  "all_cv_candidates_checked": 35,
+  "prediction_id_order_exact": true,
+  "unique_match_ids": true,
+  "probabilities_finite_in_unit_interval": true,
+  "feature_order_and_label_poisoning_exact": true,
+  "max_saved_probability_absolute_error": 0.0,
+  "saved_probability_absolute_error_by_model": {
+    "r6_all_linear_C0.01": 0.0,
+    "r6_all_spline_C0.01": 0.0,
+    "r6_base_linear_C0.003": 0.0,
+    "r6_base_spline_C0.01": 0.0,
+    "r6_breakpoint_linear_C0.003": 0.0,
+    "r6_breakpoint_spline_C0.003": 0.0,
+    "r6_combined_cat_d6": 0.0,
+    "r6_combined_linear_C0.003": 0.0,
+    "r6_combined_spline_C0.003": 0.0,
+    "r6_extended_linear_C0.003": 0.0,
+    "r6_extended_spline_C0.003": 0.0,
+    "r6_trajectory_linear_C0.003": 0.0,
+    "r6_trajectory_spline_C0.003": 0.0,
+    "previous_probability_recommendation": 0.0,
+    "previous_round5_exploration": 0.0,
+    "previous_round5_best_loss": 0.0,
+    "rank_reference": 0.0,
+    "accuracy_grid_blend": 0.0
+  },
+  "max_shared_score_absolute_error": 0.0,
+  "shared_scores": {
+    "r6_all_linear_C0.01": {
+      "matches": 2588,
+      "correct": 1698,
+      "accuracy": 0.6561051004636785,
+      "mean_log_loss": 0.6079742414168481,
+      "brier": 0.21108101603653598
+    },
+    "r6_all_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1702,
+      "accuracy": 0.6576506955177743,
+      "mean_log_loss": 0.6079966022272193,
+      "brier": 0.21103019909680865
+    },
+    "r6_base_linear_C0.003": {
+      "matches": 2588,
+      "correct": 1691,
+      "accuracy": 0.6534003091190108,
+      "mean_log_loss": 0.6075782304709331,
+      "brier": 0.21088097784559473
+    },
+    "r6_base_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1704,
+      "accuracy": 0.6584234930448223,
+      "mean_log_loss": 0.6075059093183265,
+      "brier": 0.2107704181832106
+    },
+    "r6_breakpoint_linear_C0.003": {
+      "matches": 2588,
+      "correct": 1683,
+      "accuracy": 0.6503091190108191,
+      "mean_log_loss": 0.6084467488450052,
+      "brier": 0.21127100990259032
+    },
+    "r6_breakpoint_spline_C0.003": {
+      "matches": 2588,
+      "correct": 1684,
+      "accuracy": 0.6506955177743431,
+      "mean_log_loss": 0.6082794109354451,
+      "brier": 0.21116456115294044
+    },
+    "r6_combined_cat_d6": {
+      "matches": 2588,
+      "correct": 1690,
+      "accuracy": 0.6530139103554868,
+      "mean_log_loss": 0.613189247986387,
+      "brier": 0.21313123890675312
+    },
+    "r6_combined_linear_C0.003": {
+      "matches": 2588,
+      "correct": 1689,
+      "accuracy": 0.6526275115919629,
+      "mean_log_loss": 0.6086295033043929,
+      "brier": 0.2113865827230131
+    },
+    "r6_combined_spline_C0.003": {
+      "matches": 2588,
+      "correct": 1692,
+      "accuracy": 0.6537867078825348,
+      "mean_log_loss": 0.6084407293468183,
+      "brier": 0.2112638188156396
+    },
+    "r6_extended_linear_C0.003": {
+      "matches": 2588,
+      "correct": 1688,
+      "accuracy": 0.652241112828439,
+      "mean_log_loss": 0.607944180138119,
+      "brier": 0.21100837073982984
+    },
+    "r6_extended_spline_C0.003": {
+      "matches": 2588,
+      "correct": 1687,
+      "accuracy": 0.651854714064915,
+      "mean_log_loss": 0.6077702371764607,
+      "brier": 0.21089985358253074
+    },
+    "r6_trajectory_linear_C0.003": {
+      "matches": 2588,
+      "correct": 1698,
+      "accuracy": 0.6561051004636785,
+      "mean_log_loss": 0.6074546870951085,
+      "brier": 0.21088541484435366
+    },
+    "r6_trajectory_spline_C0.003": {
+      "matches": 2588,
+      "correct": 1697,
+      "accuracy": 0.6557187017001546,
+      "mean_log_loss": 0.6072371332235565,
+      "brier": 0.21075491914286176
+    },
+    "previous_probability_recommendation": {
+      "matches": 2588,
+      "correct": 1696,
+      "accuracy": 0.6553323029366306,
+      "mean_log_loss": 0.6094069006143001,
+      "brier": 0.21149308142611395
+    },
+    "previous_round5_exploration": {
+      "matches": 2588,
+      "correct": 1715,
+      "accuracy": 0.6626738794435858,
+      "mean_log_loss": 0.6098708358424767,
+      "brier": 0.21165778805762117
+    },
+    "previous_round5_best_loss": {
+      "matches": 2588,
+      "correct": 1706,
+      "accuracy": 0.6591962905718701,
+      "mean_log_loss": 0.6064532068148539,
+      "brier": 0.21032297846926845
+    },
+    "rank_reference": {
+      "matches": 2588,
+      "correct": 1640,
+      "accuracy": 0.633693972179289,
+      "mean_log_loss": 0.629795675429261,
+      "brier": 0.22015601161403017
+    },
+    "accuracy_grid_blend": {
+      "matches": 2588,
+      "correct": 1693,
+      "accuracy": 0.6541731066460588,
+      "mean_log_loss": 0.6077397512939476,
+      "brier": 0.21094047548004816
+    }
+  },
+  "max_player_swap_complement_error": 2.220446049250313e-16,
+  "player_swap_complement_error_by_model": {
+    "r6_all_linear_C0.01": 1.1102230246251565e-16,
+    "r6_all_spline_C0.01": 2.220446049250313e-16,
+    "r6_base_linear_C0.003": 1.1102230246251565e-16,
+    "r6_base_spline_C0.01": 2.220446049250313e-16,
+    "r6_breakpoint_linear_C0.003": 1.1102230246251565e-16,
+    "r6_breakpoint_spline_C0.003": 2.220446049250313e-16,
+    "r6_combined_cat_d6": 1.1102230246251565e-16,
+    "r6_combined_linear_C0.003": 1.1102230246251565e-16,
+    "r6_combined_spline_C0.003": 2.220446049250313e-16,
+    "r6_extended_linear_C0.003": 1.1102230246251565e-16,
+    "r6_extended_spline_C0.003": 2.220446049250313e-16,
+    "r6_trajectory_linear_C0.003": 1.1102230246251565e-16,
+    "r6_trajectory_spline_C0.003": 2.220446049250313e-16,
+    "previous_probability_recommendation": 2.220446049250313e-16,
+    "previous_round5_exploration": 2.220446049250313e-16,
+    "previous_round5_best_loss": 2.220446049250313e-16,
+    "rank_reference": 1.1102230246251565e-16,
+    "accuracy_grid_blend": 2.220446049250313e-16
+  },
+  "previous_round_probability_errors": {
+    "previous_probability_recommendation": 0.0,
+    "previous_round5_exploration": 0.0,
+    "previous_round5_best_loss": 0.0,
+    "rank_reference": 0.0
+  },
+  "reused_oof_probabilities_exact": true,
+  "max_cv_metric_absolute_error": 0.0,
+  "independent_early_selection": {
+    "choice": "accuracy_grid_blend",
+    "best_single": "r6_trajectory_spline_C0.003",
+    "selected_by_family": {
+      "all_linear": "r6_all_linear_C0.01",
+      "all_spline": "r6_all_spline_C0.01",
+      "base_linear": "r6_base_linear_C0.003",
+      "base_spline": "r6_base_spline_C0.01",
+      "breakpoint_linear": "r6_breakpoint_linear_C0.003",
+      "breakpoint_spline": "r6_breakpoint_spline_C0.003",
+      "combined_catboost": "r6_combined_cat_d6",
+      "combined_linear": "r6_combined_linear_C0.003",
+      "combined_spline": "r6_combined_spline_C0.003",
+      "extended_linear": "r6_extended_linear_C0.003",
+      "extended_spline": "r6_extended_spline_C0.003",
+      "previous_reference": "previous_probability_recommendation",
+      "trajectory_linear": "r6_trajectory_linear_C0.003",
+      "trajectory_spline": "r6_trajectory_spline_C0.003"
+    },
+    "components": [
+      "r6_trajectory_spline_C0.003",
+      "r6_combined_cat_d6",
+      "r6_trajectory_linear_C0.003"
+    ],
+    "weights": [
+      0.2,
+      0.5,
+      0.3
+    ],
+    "eligible_models": 35,
+    "selected_accuracy": 0.6662965019433648,
+    "selected_log_loss": 0.6030582542815254,
+    "loss_limit": 0.614177070959239,
+    "selection_rows": 3602,
+    "grid_units": 10
+  },
+  "independent_pooled_selection": {
+    "choice": "accuracy_grid_blend",
+    "best_single": "r6_trajectory_spline_C0.003",
+    "selected_by_family": {
+      "all_linear": "r6_all_linear_C0.01",
+      "all_spline": "r6_all_spline_C0.01",
+      "base_linear": "r6_base_linear_C0.003",
+      "base_spline": "r6_base_spline_C0.01",
+      "breakpoint_linear": "r6_breakpoint_linear_C0.003",
+      "breakpoint_spline": "r6_breakpoint_spline_C0.003",
+      "combined_catboost": "r6_combined_cat_d6",
+      "combined_linear": "r6_combined_linear_C0.003",
+      "combined_spline": "r6_combined_spline_C0.003",
+      "extended_linear": "r6_extended_linear_C0.003",
+      "extended_spline": "r6_extended_spline_C0.003",
+      "previous_reference": "previous_probability_recommendation",
+      "trajectory_linear": "r6_trajectory_linear_C0.003",
+      "trajectory_spline": "r6_trajectory_spline_C0.003"
+    },
+    "components": [
+      "r6_trajectory_spline_C0.003",
+      "r6_base_linear_C0.003",
+      "r6_combined_cat_d6"
+    ],
+    "weights": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "eligible_models": 35,
+    "selected_accuracy": 0.6704730831973899,
+    "selected_log_loss": 0.5979582979506557,
+    "loss_limit": 0.60818952373614,
+    "selection_rows": 6130,
+    "grid_units": 10
+  },
+  "independent_gate": {
+    "procedure": "retain_round4",
+    "accuracy_improvement": 0.003955696202531667,
+    "required_accuracy_improvement": 0.005,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5908868874042219,
+    "allowed_loss_increase": 0.005
+  },
+  "chronological_fold_populations": [
+    {
+      "year": 2020,
+      "training_rows": 27703,
+      "validation_rows": 1214,
+      "latest_training_date": "2019-10-28",
+      "earliest_validation_date": "2020-01-06",
+      "cutoff": "2019-12-16"
+    },
+    {
+      "year": 2021,
+      "training_rows": 28917,
+      "validation_rows": 2388,
+      "latest_training_date": "2020-11-09",
+      "earliest_validation_date": "2021-01-04",
+      "cutoff": "2020-12-14"
+    },
+    {
+      "year": 2022,
+      "training_rows": 31305,
+      "validation_rows": 2528,
+      "latest_training_date": "2021-11-08",
+      "earliest_validation_date": "2022-01-03",
+      "cutoff": "2021-12-13"
+    },
+    {
+      "year": 2023,
+      "training_rows": 33833,
+      "validation_rows": 2588,
+      "latest_training_date": "2022-10-31",
+      "earliest_validation_date": "2023-01-02",
+      "cutoff": "2022-12-12"
+    }
+  ],
+  "max_bootstrap_summary_absolute_error": 0.0,
+  "recommendation": "previous_probability_recommendation",
+  "correct_required_for_70": 1812,
+  "artifact_sha256": {
+    "frozen_models.joblib": "149fe7fa29102a3c19be1e6ad2fb6113d035765b5b1613894c5fe2811cfc435b",
+    "frozen_selection.json": "669a5b6117f865dedee11ecb58bfc623defd4063293b4102d51e5e5f2f6b445f",
+    "search_registry.json": "86c44fea41a3e102777328eea6cfce7fee905d721d80fab2e2e2ce49bcb17025",
+    "development_features.csv": "b72168679b2ff8dd4177f3175ac01b03841d192389608257db11d218cb6eea5f",
+    "validation_predictions.csv": "ee1391dd10ff35f91fad01c2d999c0450f853583a1f8136609beedea5f1ffe3d",
+    "validation_comparison.csv": "7901a90ad64dd91f57698bb71e238c4ebc783e42de4cb154e472ba4acf695d57",
+    "oof_predictions.csv": "15a816bdb37cd98534b5793c8cd255ccf9bee544d9205b527f4114a08a2e7167",
+    "temporal_cv.csv": "b96127131240265fe3ecdfe9d4b9a70b712387c05ec02c0564c84c16ec896762",
+    "summary.json": "90b9519d2c015cdd99e59cfa4590a1a3d90af9bbc5010273eed049f14c8b32d3"
+  },
+  "limitations": [
+    "2023 comparisons are exploratory after earlier rounds were observed.",
+    "OOF values audit cached out-of-time predictions and selection reproducibility; no models were refitted.",
+    "Date-block intervals do not correct repeated model search or all repeated-player dependence.",
+    "Passing this audit establishes reproducibility, not SOTA or 70% accuracy."
+  ],
+  "new_feature_rebuild_with_target_labels_poisoned_errors": {
+    "extended": 0.0,
+    "trajectory": 0.0,
+    "breakpoint": 0.0
+  },
+  "new_feature_exchange_errors": {
+    "extended": 0.0,
+    "trajectory": 0.0,
+    "breakpoint": 0.0
+  },
+  "original_326_feature_columns_exact": true,
+  "previous_round5_explorations_excluded_from_selection": true,
+  "implementation_sha256": {
+    "scripts/train_round6.py": "a7d9bac73e3b6234f25ed87a6918a830ea6493436bb03296684e36c37afaaf1e",
+    "scripts/extended_history_features.py": "95ae3f8b1abf2684a8695f95e88c8d27211636f6169270f500d1d5222814ce21",
+    "scripts/breakpoint_features.py": "e81aa33e86ae920ab1960dd6dbf01311d395f7e0329b120b032d05e99fe7b29d",
+    "scripts/rank_trajectory_features.py": "9898e70403435c369af2848b76f1ed652cd253358b2551c7d56d9aa5ed4539fa"
+  },
+  "bootstrap_reference_models_checked": [
+    "previous_probability_recommendation",
+    "previous_round5_exploration"
+  ],
+  "bootstrap_error_by_reference_and_model": {
+    "previous_probability_recommendation": {
+      "r6_all_linear_C0.01": 0.0,
+      "r6_all_spline_C0.01": 0.0,
+      "r6_base_linear_C0.003": 0.0,
+      "r6_base_spline_C0.01": 0.0,
+      "r6_breakpoint_linear_C0.003": 0.0,
+      "r6_breakpoint_spline_C0.003": 0.0,
+      "r6_combined_cat_d6": 0.0,
+      "r6_combined_linear_C0.003": 0.0,
+      "r6_combined_spline_C0.003": 0.0,
+      "r6_extended_linear_C0.003": 0.0,
+      "r6_extended_spline_C0.003": 0.0,
+      "r6_trajectory_linear_C0.003": 0.0,
+      "r6_trajectory_spline_C0.003": 0.0,
+      "previous_probability_recommendation": 0.0,
+      "previous_round5_exploration": 0.0,
+      "previous_round5_best_loss": 0.0,
+      "rank_reference": 0.0,
+      "accuracy_grid_blend": 0.0
+    },
+    "previous_round5_exploration": {
+      "r6_all_linear_C0.01": 0.0,
+      "r6_all_spline_C0.01": 0.0,
+      "r6_base_linear_C0.003": 0.0,
+      "r6_base_spline_C0.01": 0.0,
+      "r6_breakpoint_linear_C0.003": 0.0,
+      "r6_breakpoint_spline_C0.003": 0.0,
+      "r6_combined_cat_d6": 0.0,
+      "r6_combined_linear_C0.003": 0.0,
+      "r6_combined_spline_C0.003": 0.0,
+      "r6_extended_linear_C0.003": 0.0,
+      "r6_extended_spline_C0.003": 0.0,
+      "r6_trajectory_linear_C0.003": 0.0,
+      "r6_trajectory_spline_C0.003": 0.0,
+      "previous_probability_recommendation": 0.0,
+      "previous_round5_exploration": 0.0,
+      "previous_round5_best_loss": 0.0,
+      "rank_reference": 0.0,
+      "accuracy_grid_blend": 0.0
+    }
+  },
+  "complete_tour_target_population_and_metadata_verified_against_pinned_inventory": true,
+  "target_metadata_fields_checked": [
+    "match_id",
+    "season",
+    "tourney_date",
+    "player_a_id",
+    "player_b_id",
+    "surface",
+    "rank_a",
+    "rank_b",
+    "a_won"
+  ]
+}

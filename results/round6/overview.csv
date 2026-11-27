@@ -1,0 +1,11 @@
+information_regime,role,model,selection,matches,correct,accuracy,mean_log_loss,brier,additional_correct_for_70
+原 T−21 历史信息,第四轮正式推荐；继续保留,previous_probability_recommendation,formal,2588,1696,0.6553323029366306,0.6094069006143001,0.21149308142611395,116
+原 T−21 历史信息,第五轮冻结探索组合,previous_round5_exploration,previous_pooled_cv,2588,1715,0.6626738794435858,0.6098708358424767,0.21165778805762117,97
+原 T−21 历史信息,第五轮最低观察 loss 对照,previous_round5_best_loss,previous_observed_loss,2588,1706,0.6591962905718701,0.6064532068148539,0.21032297846926845,106
+原 T−21 历史信息,第六轮主实验探索组合,accuracy_grid_blend,pooled_cv_accuracy,2588,1693,0.6541731066460588,0.6077397512939476,0.21094047548004816,119
+原 T−21 历史信息,第六轮迁移分支探索选择,transfer_linear_C0.1_aux0_r4blend0.75,pooled_cv_accuracy,2588,1702,0.6576506955177743,0.6092796403773791,0.2116716981389468,110
+原 T−21 历史信息,第六轮追加概率目标对照,minimum_cv_loss_control,adaptive_pooled_cv_loss,2588,1710,0.660741885625966,0.6075523979245387,0.21084384914581863,102
+另加赛前开盘报价,既有原始开盘市场＋缺失回退,opening_market,previous_later_information,2588,1728,0.6676970633693973,0.5915829505096849,0.2041833229011842,84
+另加赛前开盘报价,既有开盘融合模型,context_calibrated_C0.01,previous_later_information,2588,1727,0.6673106646058733,0.5930358269072029,0.20469920212267642,85
+另加赛前收盘报价,既有追加自适应收盘融合,round5_exploratory_logit_closing0.5,previous_later_information,2588,1741,0.6727202472952086,0.594637754580006,0.20552114900002597,71
+另加赛前收盘报价,既有原始收盘市场＋缺失回退,closing_market_descriptive,previous_later_information,2588,1752,0.6769706336939721,0.5877182121074237,0.20278963304630468,60

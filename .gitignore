@@ -32,3 +32,14 @@ results/round5/market_models.joblib
 results/round5/market/features.csv
 results/round5/market/oof_predictions.csv
 results/round5/market/frozen_models.joblib
+results/round6/development_features.csv
+results/round6/oof_predictions.csv
+results/round6/frozen_models.joblib
+results/round6/inference_predictions.csv
+results/round6/transfer/development_features.csv
+results/round6/transfer/oof_predictions.csv
+results/round6/transfer/frozen_models.joblib
+results/round6/transfer/inference_predictions.csv
+results/round6/transfer/development_targets.csv
+results/round6/transfer/inference_features.csv
+results/round6/probability_control/frozen_model.joblib

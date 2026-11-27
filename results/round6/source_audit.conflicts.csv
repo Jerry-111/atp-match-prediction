@@ -1,0 +1,2 @@
+match_id,season,tourney_date,tourney_id,round,player_a_id,player_b_id,player_a_name,player_b_name,a_won,linkage_status,market_match_id,market_player_a_id,market_player_b_id,source_winner_id,source_winner_side,source_a_won,agreement,issues,audit_status
+2022-6932:5,2022,2022-02-14,2022-6932,R32,A596,C882,Pablo Andujar,Pablo Cuevas,1,matched,458130.0,241.0,109.0,109,joueur1,0.0,False,,winner_disagreement

@@ -1,0 +1,97 @@
+{
+  "round": 6,
+  "recommendation": "previous_probability_recommendation",
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "accuracy_grid_blend",
+      "best_single": "r6_trajectory_spline_C0.003",
+      "selected_by_family": {
+        "all_linear": "r6_all_linear_C0.01",
+        "all_spline": "r6_all_spline_C0.01",
+        "base_linear": "r6_base_linear_C0.003",
+        "base_spline": "r6_base_spline_C0.01",
+        "breakpoint_linear": "r6_breakpoint_linear_C0.003",
+        "breakpoint_spline": "r6_breakpoint_spline_C0.003",
+        "combined_catboost": "r6_combined_cat_d6",
+        "combined_linear": "r6_combined_linear_C0.003",
+        "combined_spline": "r6_combined_spline_C0.003",
+        "extended_linear": "r6_extended_linear_C0.003",
+        "extended_spline": "r6_extended_spline_C0.003",
+        "previous_reference": "previous_probability_recommendation",
+        "trajectory_linear": "r6_trajectory_linear_C0.003",
+        "trajectory_spline": "r6_trajectory_spline_C0.003"
+      },
+      "components": [
+        "r6_trajectory_spline_C0.003",
+        "r6_combined_cat_d6",
+        "r6_trajectory_linear_C0.003"
+      ],
+      "weights": [
+        0.2,
+        0.5,
+        0.3
+      ],
+      "eligible_models": 35,
+      "selected_accuracy": 0.6662965019433648,
+      "selected_log_loss": 0.6030582542815254,
+      "loss_limit": 0.614177070959239,
+      "selection_rows": 3602,
+      "grid_units": 10
+    },
+    "reference": "previous_probability_recommendation",
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6752373417721519,
+    "accuracy_improvement": 0.003955696202531667,
+    "required_accuracy_improvement": 0.005,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5908868874042219,
+    "allowed_loss_increase": 0.005,
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022
+  },
+  "pooled_selection": {
+    "choice": "accuracy_grid_blend",
+    "best_single": "r6_trajectory_spline_C0.003",
+    "selected_by_family": {
+      "all_linear": "r6_all_linear_C0.01",
+      "all_spline": "r6_all_spline_C0.01",
+      "base_linear": "r6_base_linear_C0.003",
+      "base_spline": "r6_base_spline_C0.01",
+      "breakpoint_linear": "r6_breakpoint_linear_C0.003",
+      "breakpoint_spline": "r6_breakpoint_spline_C0.003",
+      "combined_catboost": "r6_combined_cat_d6",
+      "combined_linear": "r6_combined_linear_C0.003",
+      "combined_spline": "r6_combined_spline_C0.003",
+      "extended_linear": "r6_extended_linear_C0.003",
+      "extended_spline": "r6_extended_spline_C0.003",
+      "previous_reference": "previous_probability_recommendation",
+      "trajectory_linear": "r6_trajectory_linear_C0.003",
+      "trajectory_spline": "r6_trajectory_spline_C0.003"
+    },
+    "components": [
+      "r6_trajectory_spline_C0.003",
+      "r6_base_linear_C0.003",
+      "r6_combined_cat_d6"
+    ],
+    "weights": [
+      0.5,
+      0.3,
+      0.2
+    ],
+    "eligible_models": 35,
+    "selected_accuracy": 0.6704730831973899,
+    "selected_log_loss": 0.5979582979506557,
+    "loss_limit": 0.60818952373614,
+    "selection_rows": 6130,
+    "grid_units": 10
+  },
+  "history_lag_days": 21,
+  "decision_threshold": 0.5,
+  "fit_end_season": 2022,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

@@ -253,7 +253,85 @@ candidate and missing-price fallback; the market audit replayed calibration
 fits. See the [historical audit](../results/round5/artifact_audit.json),
 [market audit](../results/round5/market/artifact_audit.json) and
 [closing-control audit](../results/round5/closing_blend/artifact_audit.json).
-The completed suite passes **167 tests and 58 subtests**. All 2023 scores
+The round-five suite passed **167 tests and 58 subtests**. All 2023 scores
 remain exploratory after repeated inspection. The 2024–2025
 test seasons remain unopened; extending development-only guards belongs to
 the final evaluator, with frozen model choices and no new search on that test.
+
+## Sixth round: new information and supervised transfer
+
+The [sixth-round overview](../results/round6/overview.md) preserves a negative
+result: neither new historical information nor the tested auxiliary
+supervision improves the previous best 2023 accuracy. All comparisons retain
+2,588 targets, T−21 and a fixed 0.5 threshold. The original final test is sealed.
+
+After rounds one through five, run:
+
+```sh
+.venv/bin/python -m scripts.audit_round6_labels
+.venv/bin/python -m scripts.train_round6
+.venv/bin/python -m scripts.report_round6
+.venv/bin/python -m scripts.train_transfer_round6
+.venv/bin/python -m scripts.probability_control_round6
+.venv/bin/python -m scripts.round6_overview
+.venv/bin/python -m pytest -q
+```
+
+The main run adds 57 columns to the untouched 326-column matrix: 20 official
+event-history ratings, 17 rank-trajectory descriptors and 20 breakpoint/hold
+summaries. The new rating banks include 4,291 additional conventional completed
+official matches and matched Tour-only banks; exhibition/alternate-format
+events are excluded by explicit rules. Thus an entire-block effect cannot
+be attributed solely to extra matches. Historical ranking peaks are only
+observed since 2006; conflicting player/date snapshots are masked. Breakpoint
+residuals are not identified psychological ability. The
+[protocol](research/round6_protocol.md) and individual feature notes record
+all priors, eligibility rules and limitations.
+
+The 34 fixed configurations use the prior 2020/2021/2022 forward folds. Only
+the current Round 4 reference is eligible as a previous selection candidate;
+Round 5's pooled mixture and lowest observed loss model are reported solely
+as frozen comparators. The 2022 gain of 0.396 percentage points falls short
+of 0.5. The resulting exploratory mixture scores 65.42% / 0.60774 on 2023,
+so the formal recommendation stays unchanged.
+
+The separate [transfer protocol](research/round6_transfer.md) uses up to
+75,261 extra Challenger/qualifying supervised rows and a compact 48-column
+shared representation. Twelve settings compare auxiliary weights 0/.1/.3/1,
+with 36 fixed mixtures with Round 4. Scalers/bases see only positive-weight
+training rows, weights normalize to the Tour training count, and every fold
+retains the 21-day purge. The full positive-weight final fits use 109,094 rows;
+the selected zero-auxiliary model fits only 33,833 Tour rows. Its selected
+mixture scores 65.77% / 0.60928 and does not pass the upgrade gate.
+
+After the main accuracy results were seen, a single additional comparator
+selects the minimum pooled-CV log loss among the same 34 main configurations.
+That explicitly adaptive comparison scores 66.07% / 0.60755 and upgrades no
+recommendation. It is not a new hyperparameter grid or independent validation.
+
+Reload without fitting:
+
+```sh
+.venv/bin/python -m scripts.train_round6 --predict-features path/to/383-column-features.csv
+.venv/bin/python -m scripts.train_transfer_round6 --predict-features results/round6/transfer/inference_features.csv
+```
+
+Transfer inference expects 337 columns: the previous 326 plus 11 additional
+compact descriptors, with shared multilevel fields checked for equality.
+The probability-control bundle stores the selected model and its feature
+names for direct `model.predict_proba(prepared_features)` inference. All
+joblib files and large feature/target/OOF matrices remain local and ignored.
+
+The independent [source audit](../results/round6/source_audit.md) deliberately
+reads external winners **after** R5's outcome-blind links are frozen. It
+never changes matches, features or labels. One 2022 external winner error is
+resolved using an official ATP draw in favor of the original project label;
+all 2,502 matched 2023 winners agree, and the 86 unmatched targets remain
+unchecked by that source. This diagnostic cannot explain or erase model errors.
+
+Independent artifact audits cover the [main experiment](../results/round6/artifact_audit.json),
+[transfer experiment](../results/round6/transfer/artifact_audit.json) and
+[adaptive probability control](../results/round6/probability_control/artifact_audit.json).
+They check saved probabilities, full-cohort metrics, chronological selections
+and feature/inference contracts. Prior artifacts and predictions remain intact.
+The completed six-round suite passes **207 tests and 91 subtests**.

@@ -1,0 +1,22 @@
+{
+  "purpose": "Post-audit official evidence only; never a target or feature correction file",
+  "resolutions": [
+    {
+      "match_id": "2022-6932:5",
+      "season": 2022,
+      "market_match_id": "458130",
+      "observed_source_winner_id": "109",
+      "observed_target_a_won": 1,
+      "official_winner_atp_id": "A596",
+      "official_winner_name": "Pablo Andujar",
+      "official_loser_name": "Pablo Cuevas",
+      "official_score": "7-6(2) 7-5",
+      "official_source_url": "https://www.protennislive.com/posting/2022/6932/mds.pdf",
+      "official_source_description": "ATP Rio Open 2022 official main-draw singles PDF, page 1, draw positions 19 and 20; visually inspected",
+      "official_source_sha256": "491355fc50fb836767a6808d37fa8d7a076825cdfc0ca7289746ab2db125f735",
+      "verified_on": "2026-11-27",
+      "finding": "Official draw supports the unchanged target winner. External source winner ID disagrees; original target and both source files remain unchanged.",
+      "changes_applied": false
+    }
+  ]
+}

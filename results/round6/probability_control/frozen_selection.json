@@ -1,0 +1,12 @@
+{
+  "selected": "r6_trajectory_spline_C0.01",
+  "rule": "Minimum pooled2020--2022 log loss among34 fixed new configurations",
+  "cv_log_loss": 0.5974299736430134,
+  "cv_accuracy": 0.667862969004894,
+  "adaptive_after_round6_accuracy_results": true,
+  "recommendation_upgraded": false,
+  "final_test_evaluated": false,
+  "independent_validation": false,
+  "registry_sha256": "86c44fea41a3e102777328eea6cfce7fee905d721d80fab2e2e2ce49bcb17025",
+  "cv_sha256": "b96127131240265fe3ecdfe9d4b9a70b712387c05ec02c0564c84c16ec896762"
+}

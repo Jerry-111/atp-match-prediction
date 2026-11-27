@@ -1,0 +1,58 @@
+{
+  "status": "passed",
+  "audited_utc": "2026-11-27T16:29:30.837246+00:00",
+  "auditor": "independent features agent; probability control authored by coordinating agent",
+  "no_tuning": true,
+  "verification_refits": 1,
+  "selected": "r6_trajectory_spline_C0.01",
+  "frozen_configuration_count": 34,
+  "independent_cv_metrics": {
+    "matches": 6130,
+    "correct": 4094,
+    "accuracy": 0.667862969004894,
+    "mean_log_loss": 0.5974299736430134,
+    "brier": 0.20657702001228778
+  },
+  "validation_matches": 2588,
+  "validation_result": {
+    "matches": 2588,
+    "correct": 1710,
+    "accuracy": 0.660741885625966,
+    "mean_log_loss": 0.6075523979245389,
+    "brier": 0.21084384914581863
+  },
+  "max_saved_probability_error": 0.0,
+  "max_swap_complement_error": 2.220446049250313e-16,
+  "max_metric_error": 1.1102230246251565e-16,
+  "max_fixed_spec_refit_probability_error": 0.0,
+  "prediction_ids_order_exact": true,
+  "previous_three_comparators_preserved": true,
+  "fixed_threshold": 0.5,
+  "final_test_evaluated": false,
+  "adaptive_after_round6_accuracy_results": true,
+  "recommendation_upgraded": false,
+  "independent_validation": false,
+  "reviewed_invariants": [
+    "Minimum pooled2020--2022 log loss among34 prior fixed candidates",
+    "All34 CV loss values recomputed independently from stored OOF probabilities",
+    "Single selected configuration refit with earlier-season21-day-purged training only",
+    "Frozen adaptive decision precedes scoring in reviewed source",
+    "Prior formal recommendation and baseline artifacts unchanged"
+  ],
+  "artifact_sha256": {
+    "frozen_model.joblib": "cf4a1efb9f6a6397350600b72b0a85ff77e8b66e0098c0cb04880b6678aac6c8",
+    "frozen_selection.json": "e4805926f8eb8f43880b8d8b415ac49a0a763e4567bc03aefed12a2644fddbe5",
+    "report_summary.md": "5061d2913dad4547d6851ed0ae60b5c7333d7e7ba2557f2275cb9386c00eff95",
+    "summary.json": "d129b99c8b4a57a5970691cc4be99790149049dd6fdee6ae66e5869a011c4215",
+    "validation_comparison.csv": "3cc03acc68cf7292b022da3ea1067cc72fa4991000a6193e476afe28b570af9c",
+    "validation_predictions.csv": "1b4f00948941939ffdb9dde853b76dbc0085c868adceff9f7fb34734c942855f"
+  },
+  "source_sha256": {
+    "scripts/probability_control_round6.py": "504d3786448abc1226485d9d597bce55c78247ed8dc136d7f8fb24c7431ec0e1",
+    "scripts/train_round5.py": "2328a9369b530ff533baa76378e81a3a00c0af4b69200ddb865d6c82ec4dceb6",
+    "scripts/round2_learning.py": "1cb73e8a9247b3132d8d9c5656ccc138580ee8414afcf13405458e432b0e93c4"
+  },
+  "probabilities_finite_in_unit_interval": true,
+  "minimum_saved_probability": 0.002974294347749672,
+  "maximum_saved_probability": 0.9902794790579591
+}
