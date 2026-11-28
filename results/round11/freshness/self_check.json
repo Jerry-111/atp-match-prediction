@@ -1,0 +1,44 @@
+{
+  "year_checks": {
+    "2021": {
+      "reload_max_error": 0.0,
+      "swap_max_error": 2.220446049250313e-16,
+      "no_extra_rows": 2220,
+      "exact_fallback": true
+    },
+    "2022": {
+      "reload_max_error": 0.0,
+      "swap_max_error": 2.220446049250313e-16,
+      "no_extra_rows": 2345,
+      "exact_fallback": true
+    },
+    "2023": {
+      "reload_max_error": 0.0,
+      "swap_max_error": 2.220446049250313e-16,
+      "no_extra_rows": 2354,
+      "exact_fallback": true
+    }
+  },
+  "old_feature_alignment": 0.0,
+  "all_prediction_rows": 7504,
+  "2023_scoring_after_freeze": true,
+  "artifact_sha256": {
+    "all_predictions.csv": "4a85efacda3329f089da145c1259701fc203da3712276c178b95895f72e4feca",
+    "coverage_by_match.csv": "bdffb38bc519adb0ac75053241890f10910c0b26521516a3877e0cb6a9ba8212",
+    "development_features.csv": "bd518f9af2ee1db338f7bad29162f537d64233a8a23261708c7740de3d1e3781",
+    "feature_metadata.json": "4e8bc25fd71efc8b576f7f54907af6d470f1dbc9869fa39eddf723f865e22d8d",
+    "feature_smoke.json": "ead62ad582fa67be1a64a7de2fd9a8e8661a279c035b69dd77223239a4e7d59c",
+    "fit_records.json": "aa042f49a0837cee2ecee542f8c8d2b65fa64d4adff008c2217e1c4adf1271fa",
+    "frozen_models.joblib": "f113cfceb7b8b085f3d538fb1dd9c031ffb045f5b109e1504b5b843c96e79075",
+    "frozen_selection.json": "a6b33ab008bbe5201d5195948b352630f0c90f63349dab58b7c474cb976b2b5a",
+    "matched_controls.csv": "3a8f6b05b6c01671135c6beb151ad990f34a44d7d5012e0f5e273bb98fa213d1",
+    "model_2021.joblib": "1a0927a9751d2d0b6c09b40678433a23319d7273a4fe3820baa18cb654acf56c",
+    "model_2022.joblib": "53e553b29babedef26fa255e3d2cd6926c9e5f6c4d55c2b1ce5907eed0db2086",
+    "oof_predictions.csv": "93172eac489aacf72b1064ae59149daec314e02b61be8c8a44a0f94c46d89ef2",
+    "search_registry.json": "45071c9545f3ad3ed482b547c5cc996f10cb1472ad5701cc16ea95fd0fd01999",
+    "summary.json": "955409b54fd1b73bc14559c7159f06d40232f64ebdf5b9ea20d997a15c1d9464",
+    "temporal_cv.csv": "4056a17b3be650cd6c6252c960592d1a2f8acda65d3141a3c47724db960369de",
+    "validation_comparison.csv": "b261c243dd8664985cbaf3570c9f35fc30ff076f81057f7a1b275d4b8aa324dd",
+    "validation_predictions.csv": "ee444f2ac75fb31e5b32107d5c645ecc237a4d0311d16de759445385ef73ca40"
+  }
+}

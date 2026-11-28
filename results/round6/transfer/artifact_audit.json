@@ -1,0 +1,139 @@
+{
+  "status": "passed",
+  "audited_utc": "2026-11-27T16:29:30.247875+00:00",
+  "auditor": "independent features agent; transfer authored by research agent",
+  "no_tuning": true,
+  "verification_refits": {
+    "oof_models": 0,
+    "zero_auxiliary_final_controls": 3
+  },
+  "final_test_evaluated": false,
+  "validation_matches": 2588,
+  "probability_columns_checked": 50,
+  "saved_probability_values_checked": 129400,
+  "selection_entries_checked": 49,
+  "oof_reported_columns_checked": 50,
+  "oof_rows": 6130,
+  "feature_rows": 111682,
+  "numeric_compact_features": 48,
+  "prediction_ids_order_and_original_target_metadata_exact": true,
+  "source_purge_checks": {
+    "2020": {
+      "training_rows": 88737,
+      "validation_rows": 1214,
+      "source_training_counts": {
+        "tour": 27703,
+        "challenger": 44819,
+        "qualifying": 16215
+      },
+      "cutoff": "2019-12-16"
+    },
+    "2021": {
+      "training_rows": 92635,
+      "validation_rows": 2388,
+      "source_training_counts": {
+        "tour": 28917,
+        "challenger": 46905,
+        "qualifying": 16813
+      },
+      "cutoff": "2020-12-14"
+    },
+    "2022": {
+      "training_rows": 100200,
+      "validation_rows": 2528,
+      "source_training_counts": {
+        "tour": 31305,
+        "challenger": 50859,
+        "qualifying": 18036
+      },
+      "cutoff": "2021-12-13"
+    },
+    "2023": {
+      "training_rows": 109094,
+      "validation_rows": 2588,
+      "source_training_counts": {
+        "tour": 33833,
+        "challenger": 55969,
+        "qualifying": 19292
+      },
+      "cutoff": "2022-12-12"
+    }
+  },
+  "max_rebuilt_compact_feature_error": 0.0,
+  "max_prior326_feature_error": 0.0,
+  "max_inference_compact_feature_error": 0.0,
+  "max_saved_probability_error": 0.0,
+  "max_swap_complement_error": 2.220446049250313e-16,
+  "max_metric_error": 1.1102230246251565e-16,
+  "max_independently_recomputed_scale_error": 3.495870259939693e-12,
+  "max_zero_aux_control_probability_error": 1.6571986005686767e-09,
+  "oof_verification": "All stored OOF metrics, fixed compositions, selection and folds independently recomputed; no OOF refits",
+  "early_selection": {
+    "choice": "transfer_linear_C0.1_aux0_r4blend0.5",
+    "accuracy": 0.6621321488062187,
+    "mean_log_loss": 0.605423209767134,
+    "eligible_models": 46,
+    "selection_rows": 3602,
+    "loss_limit": 0.614177070959239
+  },
+  "pooled_selection": {
+    "choice": "transfer_linear_C0.1_aux0_r4blend0.75",
+    "accuracy": 0.667047308319739,
+    "mean_log_loss": 0.6017798721458099,
+    "eligible_models": 46,
+    "selection_rows": 6130,
+    "loss_limit": 0.60818952373614
+  },
+  "independently_recomputed_gate": {
+    "procedure": "retain_round4",
+    "accuracy_gain": 0.0015822784810126667,
+    "log_loss_increase": -0.0014338550902583957
+  },
+  "outcome_threshold": 0.5,
+  "recommendation": "round4_reference",
+  "postfit_source_revision": {
+    "at_fit_sha256": "45557529c01ea86ae91cf6012f2b07b259772cb2ead80282effe81cb681ac20f",
+    "current_sha256": "73ecd25b0379c5b3fc136987e3bf29d209b00a632b520b481bb76e07973bc468",
+    "exact_reverse_matches_original_hash": true,
+    "computational_ast_excluding_write_report_unchanged": true,
+    "changes": "Only write_report prose: active versus eligible counts, and matched CV negative-result explanation"
+  },
+  "reviewed_invariants": [
+    "Only earlier-season, cutoff-purged rows of every source fit each fold",
+    "Positive-weight training rows alone determine weighted scales; knots fixed",
+    "Global weight mass equals Tour fit count for all four auxiliary weights",
+    "Zero auxiliary removes rows before scaling and exactly matches Tour-only fit",
+    "Round5 pooled comparator excluded from all 49-entry decisions",
+    "Frozen selection file written before final fitting and 2023 inference in reviewed source",
+    "2023 repeatedly viewed: exploratory; failed2022 gate retains formal Round4"
+  ],
+  "artifact_sha256": {
+    "development_features.csv": "d07e21ed0e7b9a1a15f99f77e87d686a96c841270fa89afe98dbcfcceddbd7fc",
+    "development_targets.csv": "cc3efe6c7e22148391a450cd392fb4eec2860ee1de5d80896201a89622972565",
+    "frozen_models.joblib": "bfccdb1e2f6deb9d9251fe8c3311f9d8123ba5777ea4f775afe19d5fa42b3a0a",
+    "frozen_selection.json": "e85f40b1160566108470358d843e6f955cf84302d9675b79b8dfe8185703cb8e",
+    "inference_features.csv": "c8b51939e9243e00b27e748254d35bb57916283d7a81e0d5d471e23a3799da04",
+    "matched_transfer_controls.csv": "0f1d350cd6e654470e4531d11dd599fe26054db09c3e94138c33f3c67fe76f2f",
+    "oof_predictions.csv": "931d424eda4d56ca9cf49170ebb935b02ce29fc0aace082737ea3f15515b94da",
+    "report_revision.json": "5b895d9bcbb5a48d504dd1c0cea3ece70637fa2ea327e1ac5f4710094a530838",
+    "report_summary.md": "c4afa7fc6bdcfa70969a56ca40b20b85aa184b6e576b0c48994612e36d85e4cb",
+    "search_registry.json": "7d8066be932302651adcce12c2a5c808285e6a5b8dbe00f7d115526397c23079",
+    "summary.json": "e166396624d322c18d29af0b187bd67e493d2ff8a406abe86cc4621b3a1a5e5a",
+    "temporal_cv.csv": "180ccb4f71c4fb511eb0d2b2ed2db3f66ff2b61159aaa0a3cf0027cf26120288",
+    "validation_comparison.csv": "6791c303451de8a2c10bab249390abe4cf4b8890287463a0520087f4b7e07ee3",
+    "validation_predictions.csv": "75efb22b512a851dfd02692311b17aa51bbbfbf00ffb612fc70e39bdb39810eb"
+  },
+  "source_sha256": {
+    "scripts/train_transfer_round6.py": "73ecd25b0379c5b3fc136987e3bf29d209b00a632b520b481bb76e07973bc468",
+    "scripts/multilevel_features.py": "554ebdd674dc306fc33872bdd4c628f241739f9d8c17dbd742c26a9646d78bb0",
+    "docs/research/round6_transfer.md": "fccf25ee9a6f8588e666bcde9cd8a275334c5f5402224b629c5e4e0dbed3ba16",
+    "tests/test_transfer_round6.py": "eb19e355dc8a05cab790f87edb4db8d1c5e21cff708e62b4c810233450864798"
+  },
+  "probabilities_finite_in_unit_interval": true,
+  "minimum_saved_probability": 0.003607331110841616,
+  "maximum_saved_probability": 0.9900450985200344,
+  "max_independently_recomputed_shape_scale_error": 0,
+  "all12_stored_model_specs_equal_registry": true,
+  "zero_auxiliary_controls_same_all2588_classifications": true,
+  "regression_tests_passed": 10
+}

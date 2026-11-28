@@ -1,0 +1,187 @@
+{
+  "round": 11,
+  "branch": "bounded_completed_event_freshness",
+  "seed": 158,
+  "prediction_years": [
+    2021,
+    2022,
+    2023
+  ],
+  "fit_configurations": 1,
+  "total_fits": 3,
+  "paired_algorithms": [
+    "overall_elo",
+    "rank_rating_logistic"
+  ],
+  "probability_columns": [
+    "overall_elo_stale",
+    "overall_elo_fresh",
+    "rank_rating_logistic_stale",
+    "rank_rating_logistic_fresh"
+  ],
+  "spec": {
+    "name": "shared_rank_rating_logistic_C0.01",
+    "kind": "logistic",
+    "columns": [
+      "log_rank_diff",
+      "elo_k32_diff",
+      "shrunk_surface_elo_k32_diff"
+    ],
+    "params": {
+      "C": 0.01
+    },
+    "half_life": null
+  },
+  "stale_training_only": true,
+  "new_mixtures": false,
+  "pooled_reselection": false,
+  "protocol_sha256": "690c60196e3b8700157036c5632e5b17190c86c102843530d7f48c972eed1ce7",
+  "qualified_manifest_sha256": "54281191164bdcfae2cc3cc71cc53db080653d4b6137686f960581517b10dc9d",
+  "runner_sha256": "adf32c966f291db9d8e974a14eca0bb4571d59c055a88a4e86f190859de262f5",
+  "feature_code_sha256": "6577f63cbd3fcaed252137813c2933a174772da90a0d8faf19892722de17ddef",
+  "elo_engine_sha256": "3bdf46acfb574b8bfa63b9b273e7d3c45fdfdea862539ba0ba5f6b92c1803e06",
+  "classifier_code_sha256": "f472f7dc94a440c8e542dca3802cee86d9ee9dc3a066745f907a0318d2f754c2",
+  "inventory_sha256": "6bbd220cdc1a7bc90427f31fb897fd1a4314c2aa4b352f80385b91401fb20613",
+  "expanded_target_sha256": "9bcb3ad4b0fbe745b23b776a750256f92ab9acc9fd1cb57aed0a16cef86435d2",
+  "previous_feature_sha256": "22f43ab601229c71bfd23fe3732801b510f8d1a198c69c090ab93e8ae991087e",
+  "previous_oof_sha256": "48ac256c83ad0d479af95829b7db5054449744e0c263ea12ddc2a421a875724a",
+  "previous_validation_sha256": "a2826e57586b49a9b3428e14224d64520be182e059ae963fe3f5796bdaea370f",
+  "previous_frozen_selection_sha256": "b82bb070cffabe55e62033f35c20482bc29b3be6df35505d97f291c140b501ea",
+  "development_features_sha256": "bd518f9af2ee1db338f7bad29162f537d64233a8a23261708c7740de3d1e3781",
+  "qualified_pairs": 15,
+  "feature_metadata": {
+    "version": "bounded-completed-edition-elo-v1",
+    "columns": [
+      "log_rank_diff",
+      "elo_k32_diff",
+      "shrunk_surface_elo_k32_diff"
+    ],
+    "old_elo_rebuild_max_abs_error": 0.0,
+    "qualified_pairs": 15,
+    "target_editions_with_extra_history": 12,
+    "extra_unique_match_ids": 241,
+    "replays": [
+      {
+        "target_tourney_id": "2021-403",
+        "baseline_cutoff_day": "2021-03-01",
+        "last_included_nominal_day": "2021-03-08",
+        "extra_source_matches": 24,
+        "extra_source_editions": 1,
+        "history_rows": 37101,
+        "history_match_ids_sha256": "7286751a1ce12bba951b0254a733547d25e0e72b6689f7a05893045ef294b7ab"
+      },
+      {
+        "target_tourney_id": "2021-451",
+        "baseline_cutoff_day": "2021-02-15",
+        "last_included_nominal_day": "2021-02-22",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 36966,
+        "history_match_ids_sha256": "83b7d25ce5cc1dddcb8f6ce1f00e4703516c47201f9b188b3e47f042b3ce17f3"
+      },
+      {
+        "target_tourney_id": "2021-496",
+        "baseline_cutoff_day": "2021-02-15",
+        "last_included_nominal_day": "2021-02-22",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 36966,
+        "history_match_ids_sha256": "83b7d25ce5cc1dddcb8f6ce1f00e4703516c47201f9b188b3e47f042b3ce17f3"
+      },
+      {
+        "target_tourney_id": "2021-8996",
+        "baseline_cutoff_day": "2021-02-15",
+        "last_included_nominal_day": "2021-02-22",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 36966,
+        "history_match_ids_sha256": "83b7d25ce5cc1dddcb8f6ce1f00e4703516c47201f9b188b3e47f042b3ce17f3"
+      },
+      {
+        "target_tourney_id": "2022-495",
+        "baseline_cutoff_day": "2022-01-31",
+        "last_included_nominal_day": "2022-02-07",
+        "extra_source_matches": 57,
+        "extra_source_editions": 2,
+        "history_rows": 39411,
+        "history_match_ids_sha256": "d53985b7d1f8e51e4059633f9cf811454c725bdaf9c9672dd09c7e292af40a9d"
+      },
+      {
+        "target_tourney_id": "2022-580",
+        "baseline_cutoff_day": "2021-12-27",
+        "last_included_nominal_day": "2022-01-03",
+        "extra_source_matches": 25,
+        "extra_source_editions": 1,
+        "history_rows": 39073,
+        "history_match_ids_sha256": "9f8bfabd778354c6b3a12c272b1567823af8de1dfa8515e7037cf9b5013c1405"
+      },
+      {
+        "target_tourney_id": "2022-807",
+        "baseline_cutoff_day": "2022-01-31",
+        "last_included_nominal_day": "2022-02-07",
+        "extra_source_matches": 57,
+        "extra_source_editions": 2,
+        "history_rows": 39411,
+        "history_match_ids_sha256": "d53985b7d1f8e51e4059633f9cf811454c725bdaf9c9672dd09c7e292af40a9d"
+      },
+      {
+        "target_tourney_id": "2023-495",
+        "baseline_cutoff_day": "2023-02-06",
+        "last_included_nominal_day": "2023-02-13",
+        "extra_source_matches": 30,
+        "extra_source_editions": 1,
+        "history_rows": 41909,
+        "history_match_ids_sha256": "382706e54d8fca0f9a8f707e0b05adc8ca5cfabafeff250a374ac2092d812cb5"
+      },
+      {
+        "target_tourney_id": "2023-496",
+        "baseline_cutoff_day": "2023-01-30",
+        "last_included_nominal_day": "2023-02-06",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 41830,
+        "history_match_ids_sha256": "a2bf4dfcecebe3634426ce64818acfac0b398df039e67b65c29357e47a4cc5bc"
+      },
+      {
+        "target_tourney_id": "2023-580",
+        "baseline_cutoff_day": "2022-12-26",
+        "last_included_nominal_day": "2023-01-02",
+        "extra_source_matches": 53,
+        "extra_source_editions": 2,
+        "history_rows": 41629,
+        "history_match_ids_sha256": "5d6e3d9268cedfab44286c000f1864f06defa6c163912b0e4c70ab9ba4b03b19"
+      },
+      {
+        "target_tourney_id": "2023-6932",
+        "baseline_cutoff_day": "2023-01-30",
+        "last_included_nominal_day": "2023-02-06",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 41830,
+        "history_match_ids_sha256": "a2bf4dfcecebe3634426ce64818acfac0b398df039e67b65c29357e47a4cc5bc"
+      },
+      {
+        "target_tourney_id": "2023-807",
+        "baseline_cutoff_day": "2023-02-06",
+        "last_included_nominal_day": "2023-02-13",
+        "extra_source_matches": 30,
+        "extra_source_editions": 1,
+        "history_rows": 41909,
+        "history_match_ids_sha256": "382706e54d8fca0f9a8f707e0b05adc8ca5cfabafeff250a374ac2092d812cb5"
+      }
+    ],
+    "source_population": "unchanged completed ranked Tour inventory",
+    "nominal_date_batching": true,
+    "full_target_count": 36421,
+    "information_regime": "Tier B completed-edition historical outcomes under explicit publication assumptions",
+    "inventory_id_mapping": "Strip exactly one tour: prefix after Tour/development-year filtering; source population unchanged.",
+    "inventory_id_mapping_sha256": "81d9caace28a11a9cb8c18a490cb54a0ebeac9c846016e674c57c503f5f48a27",
+    "source_namespace_prefix_rows": 44164,
+    "pair_identity_sha256": "3f059b4d7389c3fce9f3a5062a03d3f4d807ec7f5239bb57c317d45fabf1d551"
+  },
+  "context_references_selection_eligible": false,
+  "decision_threshold": 0.5,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false,
+  "information_regime": "Tier B completed-edition historical outcomes under explicit publication assumptions"
+}

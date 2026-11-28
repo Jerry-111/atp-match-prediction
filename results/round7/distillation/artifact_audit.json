@@ -1,0 +1,149 @@
+{
+  "status": "passed",
+  "auditor": "features_agent_independent_of_implementation",
+  "audit_date": "2026-11-27",
+  "validation_matches": 2588,
+  "training_rows": 33833,
+  "prediction_columns": 10,
+  "new_students": 7,
+  "historical_features": 326,
+  "max_reload_probability_error": 0.0,
+  "max_swap_complement_error": 2.220446049250313e-16,
+  "max_metric_error": 0,
+  "max_teacher_rebuild_error": 2.220446049250313e-16,
+  "max_cv_metric_error": 0,
+  "max_matched_control_error": 0,
+  "max_training_scale_error": 0,
+  "max_hand_calculated_head_error": 0,
+  "max_pseudo_weight_mass_error": 1.1102230246251565e-16,
+  "normalized_soft_objective_gradient_max_by_model": {
+    "hard_labels": 7.781624810670207e-05,
+    "market_lambda0.25": 7.60072314411528e-05,
+    "market_lambda0.5": 9.228116650971734e-05,
+    "market_lambda1": 8.3898766575157e-05,
+    "uniform_lambda0.25": 9.222999372533704e-05,
+    "uniform_lambda0.5": 8.94274961977401e-05,
+    "uniform_lambda1": 8.398391050911377e-05
+  },
+  "prediction_extraneous_label_quote_poison_invariant": true,
+  "hard_control_vs_r5_same_model_exact": true,
+  "source_years_opened": [
+    2021,
+    2022
+  ],
+  "source_match_ids_unique": true,
+  "source_outcome_and_closing_columns_loaded": false,
+  "production_loader_trace": [
+    {
+      "file": "linked_matches.csv",
+      "columns": [
+        "match_id",
+        "season",
+        "status",
+        "target_event_id",
+        "market_match_id",
+        "market_event_id",
+        "market_match_utc",
+        "market_player_a_id",
+        "market_player_b_id"
+      ]
+    },
+    {
+      "file": "2021.csv",
+      "columns": [
+        "match_id",
+        "date",
+        "tournoi_id",
+        "joueur1_id",
+        "joueur2_id",
+        "cote1_ouverture",
+        "cote2_ouverture"
+      ]
+    },
+    {
+      "file": "2022.csv",
+      "columns": [
+        "match_id",
+        "date",
+        "tournoi_id",
+        "joueur1_id",
+        "joueur2_id",
+        "cote1_ouverture",
+        "cote2_ouverture"
+      ]
+    }
+  ],
+  "folds": {
+    "2021H2": {
+      "train": 30271,
+      "valid": 911,
+      "cutoff": "2021-06-21",
+      "eligible_teacher_rows": 1307
+    },
+    "2022": {
+      "train": 31305,
+      "valid": 2528,
+      "cutoff": "2021-12-13",
+      "eligible_teacher_rows": 2374
+    },
+    "final_fit": {
+      "train": 33833,
+      "valid": 2588,
+      "cutoff": "2022-12-12",
+      "eligible_teacher_rows": 4854
+    }
+  },
+  "selection": {
+    "early": "market_lambda1",
+    "pooled": "market_lambda1",
+    "gate_passed": true,
+    "2022_accuracy_gain": 0.006724683544303778,
+    "2022_log_loss_change": -0.003950358420448441,
+    "2023_correct": 1712,
+    "2023_log_loss": 0.6045986459458591
+  },
+  "all_bootstrap_summaries_recomputed_exact": true,
+  "selection_eligible_names": [
+    "hard_labels",
+    "market_lambda0.25",
+    "market_lambda0.5",
+    "market_lambda1",
+    "uniform_lambda0.25",
+    "uniform_lambda0.5",
+    "uniform_lambda1",
+    "previous_probability_recommendation"
+  ],
+  "prior_r5_report_only": true,
+  "fit_time_source_sha256": "7dea93783b1f3714bc7cf42161b97f145ff99e18d35c355c13fa2b43ae039280",
+  "current_source_sha256": "e5c239e62242cff2e1b2a92b6fa4893078e6ad84f89f26b874fd60d5bcee2fac",
+  "postfit_source_change_verified": "At-fit source reconstructed to exact registered SHA; AST outside write_report is identical. Only report prose changed.",
+  "protocol_sha256": "14153f08ce4a35d100e1c3144092b0bacb0178646bd05867df50b3159fcc03fe",
+  "artifact_sha256": {
+    "fit_populations.csv": "94ef901c87cf3845f5d8539af3dce69cd9df6da8da730b1e44d191689972aa04",
+    "frozen_models.joblib": "f25ea96ef48bd5c0b52c33bbf7a216ba7d8ae3c4b69c6ea6758491d3d8696bdc",
+    "frozen_selection.json": "dc73cbf7f4d8e7b8de1923e28b2e4b9339f3c282c6935774fdbe9e251f68701d",
+    "matched_controls.csv": "195f988cf41e38368139e128f29bd15e83fa34d101526bacdacc355a5ab53259",
+    "oof_predictions.csv": "c9c73eafb6f93ba011f41f4315936b1ae155dd5ef85ff3ebe720ce84be79e9fa",
+    "report_summary.md": "eea4546a04f6d9f48da79714ca45d765d23be154a6a50f7a8e2dabcad8a5a025",
+    "search_registry.json": "f7a3f4151195e279891deb225d4efb928dbe16418daa4502275686644215a982",
+    "self_check.json": "b8c043e1763409db0343d88643ef8d0450bdcec31d9a6dbd0c7db35e865d48f1",
+    "summary.json": "86abd5c5a8cb8f852823e0c2da1974896ffd8626d76e61e448a707f8dbad657f",
+    "temporal_cv.csv": "8f9558b846abcdb3b0dd1eb8a0b5487623df49b45540012f305af2178ccfb72d",
+    "training_teacher.csv": "2ff9eaacda01beb6f1cfb949257243dbb192f57c5f074bf41e01f5c1d49c582b",
+    "validation_comparison.csv": "81441b4c3163e2c39e2573e6e6602c9b0ed2634760aecbd19cbe04a05ff1db20",
+    "validation_predictions.csv": "c26bb00ebfb719ca691a184d43ad491ed99e21d18a29c6e443079304c90d4db8"
+  },
+  "limitations": [
+    "2023 repeatedly inspected; results exploratory, not a 70% claim.",
+    "Market-supervised training is a distinct information condition; historical-label R4 recommendation stays separate.",
+    "Provider lacks archived quote capture timestamps; source match times bound eligibility under its prematch claim.",
+    "Audited saved OOF scores and selections; OOF models were not independently refitted.",
+    "Date-block uncertainty is conditional and does not adjust all adaptive searching or player dependence."
+  ],
+  "final_test_evaluated": false,
+  "blockers": [],
+  "regression_tests": {
+    "command": ".venv/bin/python -m pytest tests/test_distillation_round7.py tests/test_event_state_features.py tests/test_event_round7.py -q",
+    "passed": 20
+  }
+}

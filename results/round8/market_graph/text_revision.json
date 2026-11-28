@@ -1,0 +1,127 @@
+{
+  "reason": "Post-result timing provenance correction: provider UTC is not independently verified actual start or completion. No model, feature or selection change.",
+  "changes": [
+    {
+      "path": "scripts/train_market_graph_round8.py",
+      "old_sha256": "fb0215e98f3aaeb2a1783db87364465deef317f94a8750d96c81a65017faaeff",
+      "new_sha256": "2b09a2ccebe940a2de958c95a5c66d28e95e1bd7b5328b9e73d770dcf1ef864e",
+      "replacements": [
+        {
+          "old": "这是独立的“历史市场输入、T−21”条件：每场只使用截止日前已发生比赛的开盘赔率，",
+          "new": "这是独立的“历史市场输入、T−21”条件：每场按供应方所报比赛UTC≤T−21筛选历史开盘赔率，",
+          "count": 1
+        },
+        {
+          "old": "超参数或剔除未知球员的评价。提供方无逐条采集时间，实际比赛UTC只是在其赛前声明下的保守上界。",
+          "new": "超参数或剔除未知球员的评价。提供方无逐条采集时间；其比赛UTC不是独立核实的实际开赛、完成或报价可得时间。补充审计发现轮次时间矛盾，但所有已用边同时满足已纠正赛事日期≤T−21；此次仅修正文案，预测和选择保持冻结。",
+          "count": 1
+        },
+        {
+          "old": "Past opening-market inputs with actual UTC T-21 cutoff",
+          "new": "Past opening-market inputs filtered by provider-reported UTC at T-21",
+          "count": 1
+        },
+        {
+          "old": "'研究协议：[round8_market_graph.md](../../../docs/research/round8_market_graph.md)。', '']",
+          "new": "'研究协议：[round8_market_graph.md](../../../docs/research/round8_market_graph.md)。',\n        '时间审计与限制：[freshness feasibility](../../../docs/research/round9_freshness_feasibility.md)。', '']",
+          "count": 1
+        }
+      ],
+      "scope": "Report / information-regime strings only"
+    },
+    {
+      "path": "docs/research/round8_market_graph.md",
+      "old_sha256": "2ffb7c7df5e168e7ce461e04ce545479ad4c98f655d63d032790cc27fa5b5360",
+      "new_sha256": "a12c674c73f93b1d7ac1c455950625bc3d5369bdc13e297ab73cc7a2b0683034",
+      "replacements": [
+        {
+          "old": "strict T−21 actual-UTC filtering",
+          "new": "strict T−21 provider-reported-UTC filtering",
+          "count": 1
+        },
+        {
+          "old": "date as available. The provider calls quotes prematch but has no capture\n  timestamps; match UTC is an upper bound under that claim, not independent\n  proof that a historical quote was archived then.",
+          "new": "date as available. The provider calls quotes prematch but has no capture\n  timestamps. Its match UTC is a provider field, not an independently verified\n  actual start, finish or quote-availability upper bound. Later metadata checks\n  found contradictory own-round times; the post-result clarification below\n  records their limits without modifying the frozen numerical experiment.",
+          "count": 1
+        },
+        {
+          "old": "codes. No target, edge eligibility rule or experiment setting changed.\n",
+          "new": "codes. No target, edge eligibility rule or experiment setting changed.\n\n## Post-result timestamp clarification (2026-11-27)\n\nA subsequent chronology investigation found eight same-player/event groups\nwith different knockout rounds at identical provider UTC and 14 nonincreasing\nown-round transitions in the 7,341 frozen edges. The provider field therefore\ncannot certify universal actual start/completion time. It is not a quote-capture\nor historical publication timestamp. These are metadata checks, not a new\nperformance-dependent filter.\n\nThe [persisted timing audit](../../results/round8/market_graph/timing_audit.json)\nchecks all 36,421 original development queries: every admitted edge also has\nits linked corrected tournament date at or before T−21. There are zero nominal\ndate violations among 374,716 logical snapshot-edge uses, including all 2,588\n2023 targets. An additional dual cutoff would remove no existing edge; no such\nalgorithm change is made here. This establishes the original nominal date guard,\nnot independently certified real-time quote/result availability.\n\nThe original registry and all numerical/model artifacts remain frozen.\n[Reversible text provenance](../../results/round8/market_graph/text_revision.json)\nrecords the exact explanatory changes and reconstructs the at-fit source/protocol\nhashes. The [freshness feasibility note](round9_freshness_feasibility.md) links\nprimary counterexamples and explains why a shorter history lag is not yet approved.\n",
+          "count": 1
+        }
+      ],
+      "scope": "Explanatory documentation only"
+    },
+    {
+      "path": "results/round8/market_graph/report_summary.md",
+      "old_sha256": "2ab973dc3085596f2de263b41cd8f31671857dccbdd5b238759018044a663b35",
+      "new_sha256": "1070ec2d3e9d443bf4ba6ecf758596f932f1d8e5f2b113ca28ab691fc439ec3d",
+      "replacements": [
+        {
+          "old": "这是独立的“历史市场输入、T−21”条件：每场只使用截止日前已发生比赛的开盘赔率，",
+          "new": "这是独立的“历史市场输入、T−21”条件：每场按供应方所报比赛UTC≤T−21筛选历史开盘赔率，",
+          "count": 1
+        },
+        {
+          "old": "超参数或剔除未知球员的评价。提供方无逐条采集时间，实际比赛UTC只是在其赛前声明下的保守上界。",
+          "new": "超参数或剔除未知球员的评价。提供方无逐条采集时间；其比赛UTC不是独立核实的实际开赛、完成或报价可得时间。补充审计发现轮次时间矛盾，但所有已用边同时满足已纠正赛事日期≤T−21；此次仅修正文案，预测和选择保持冻结。",
+          "count": 1
+        },
+        {
+          "old": "研究协议：[round8_market_graph.md](../../../docs/research/round8_market_graph.md)。\n",
+          "new": "研究协议：[round8_market_graph.md](../../../docs/research/round8_market_graph.md)。\n时间审计与限制：[freshness feasibility](../../../docs/research/round9_freshness_feasibility.md)。\n",
+          "count": 1
+        }
+      ],
+      "scope": "Explanatory documentation only"
+    },
+    {
+      "path": "scripts/audit_market_graph_round8.py",
+      "old_sha256": "1752fc7357d443f6ed7a15ca0182a6f463a631c97f32b236772f8f619d90156c",
+      "new_sha256": "ff03becd891e160efe6c39767cada11e8684efefcf958778f2acf5a76eabe50c",
+      "replacements": [
+        {
+          "old": "import json\n",
+          "new": "import ast\nimport hashlib\nimport json\n",
+          "count": 1
+        },
+        {
+          "old": "def main():\n",
+          "new": "def verify_text_revision(out, registry):\n    \"\"\"Reconstruct at-fit bytes and verify non-report computation is identical.\"\"\"\n    revision_path = out/'text_revision.json'\n    if not revision_path.exists():\n        assert registry['source_code_sha256'] == sha256(ROOT/'scripts/train_market_graph_round8.py')\n        assert registry['protocol_sha256'] == sha256(ROOT/'docs/research/round8_market_graph.md')\n        return dict(present=False)\n    revision = json.loads(revision_path.read_text())\n    reconstructed = {}\n    for change in revision['changes']:\n        path = ROOT/change['path']\n        assert sha256(path) == change['new_sha256'], change['path']\n        text = path.read_text()\n        for edit in reversed(change['replacements']):\n            assert text.count(edit['new']) == edit['count'], change['path']\n            text = text.replace(edit['new'], edit['old'], edit['count'])\n        assert hashlib.sha256(text.encode()).hexdigest() == change['old_sha256']\n        reconstructed[change['path']] = text\n    trainer = 'scripts/train_market_graph_round8.py'\n    protocol = 'docs/research/round8_market_graph.md'\n    assert hashlib.sha256(reconstructed[trainer].encode()).hexdigest() == registry['source_code_sha256']\n    assert hashlib.sha256(reconstructed[protocol].encode()).hexdigest() == registry['protocol_sha256']\n    assert sha256(out/'search_registry.json') == revision['preserved_original_registry_sha256']\n    for name, expected in revision['preserved_artifact_sha256'].items():\n        assert sha256(out/name) == expected, name\n    class IgnorePresentation(ast.NodeTransformer):\n        def visit_Constant(self, node):\n            if isinstance(node.value, str) and node.value in (\n                'Past opening-market inputs with actual UTC T-21 cutoff',\n                'Past opening-market inputs filtered by provider-reported UTC at T-21'):\n                node.value = 'INFORMATION_REGIME_DESCRIPTION'\n            return node\n    def computation(text):\n        tree = ast.parse(text)\n        tree.body = [n for n in tree.body if not (isinstance(n, ast.FunctionDef) and n.name == 'write_report')]\n        return ast.dump(IgnorePresentation().visit(tree), include_attributes=False)\n    assert computation(reconstructed[trainer]) == computation((ROOT/trainer).read_text())\n    timing = json.loads((out/'timing_audit.json').read_text())\n    assert timing['periods']['all_development']['violating_snapshot_edge_uses'] == 0\n    assert timing['periods']['exploratory_2023']['target_rows'] == 2588\n    return dict(present=True, at_fit_source_and_protocol_reconstructed=True,\n                computational_ast_unchanged=True, frozen_artifacts_sha256_unchanged=True,\n                text_revision_sha256=sha256(revision_path),\n                timing_audit_sha256=sha256(out/'timing_audit.json'))\n\n\ndef main():\n",
+          "count": 1
+        },
+        {
+          "old": "    assert registry['source_code_sha256']==sha256(ROOT/'scripts/train_market_graph_round8.py')\n    assert registry['feature_code_sha256']==sha256(ROOT/'scripts/market_graph_features.py')\n    assert registry['protocol_sha256']==sha256(ROOT/'docs/research/round8_market_graph.md')",
+          "new": "    text_provenance=verify_text_revision(out,registry)\n    assert registry['feature_code_sha256']==sha256(ROOT/'scripts/market_graph_features.py')",
+          "count": 1
+        },
+        {
+          "old": "'Actual match UTC is an upper bound only under provider prematch provenance; no quote capture timestamps independently verified.',",
+          "new": "'Provider-reported UTC is not independently verified actual start/completion or a quote-availability upper bound. The timing audit found contradictory own-round times but zero violations of the original nominal tournament-date T-21 guard.',",
+          "count": 1
+        },
+        {
+          "old": "        source_code_sha256=registry['source_code_sha256'],feature_code_sha256=registry['feature_code_sha256'],",
+          "new": "        text_revision_verification=text_provenance,\n        current_source_code_sha256=sha256(ROOT/'scripts/train_market_graph_round8.py'),\n        current_protocol_sha256=sha256(ROOT/'docs/research/round8_market_graph.md'),\n        source_code_sha256=registry['source_code_sha256'],feature_code_sha256=registry['feature_code_sha256'],",
+          "count": 1
+        }
+      ],
+      "scope": "Audit provenance verification and limitation wording only"
+    }
+  ],
+  "preserved_artifact_sha256": {
+    "coverage.csv": "72b9c5eca70b32fe2cdc4fa0ba10f7e5ccdd88c32792eec4a8828639e4140c5a",
+    "frozen_models.joblib": "3b5f50308813ff49b49ddd5af2ba792a5b7522f06039e6f44f7a86f8ce1b4567",
+    "frozen_selection.json": "2e9f0dffb7e17d73317a405955ce47a48d599edd214f945c6dc9bf23666ef0f4",
+    "graph_features.csv": "245427f4140a7e738e284952a76f5f6292957693075e83c0baad08a15a1aa8c0",
+    "inference_features.csv": "1a8d546a4a874e24213c1c932c644c105c1c1ab31e18b7af738255b202a15dd6",
+    "oof_predictions.csv": "ee5cef18fbc76ab0f2cb8d0ddfee7d6f3718737e5c61484bba972ec6c67ae2bd",
+    "opening_history.csv": "950b279793afa143d228827777ea6074dbaa77467f719a544459181d8419eb2f",
+    "search_registry.json": "036e05a1ab2bde813b9c65220bfe81252b02afd45c3d457749d6370620bc7086",
+    "summary.json": "247ea3acf0a952bd9170fed01d3c0ffc4fa2db28925bdd3d21e15ee324297e99",
+    "temporal_cv.csv": "f0ce61b517d998a9bd8ce72f485da3944c8677e02982210ee0c36e2eddc60585",
+    "validation_comparison.csv": "4ae47fb58c02a6f3ebd326c7d3b82d0ad72586ec131210082b56033855512b90",
+    "validation_predictions.csv": "89ec0db23176d69df8da17e3a25b33dae01e8b0be8ca357e34265a7c526a3633"
+  },
+  "preserved_original_registry_sha256": "036e05a1ab2bde813b9c65220bfe81252b02afd45c3d457749d6370620bc7086"
+}

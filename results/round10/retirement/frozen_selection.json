@@ -1,0 +1,57 @@
+{
+  "round": 10,
+  "branch": "historical_retirement_state",
+  "recommendation": "previous_probability_recommendation",
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "ret_R_spline",
+      "selected_accuracy": 0.6599111604664075,
+      "selected_log_loss": 0.605651171238122,
+      "loss_limit": 0.614177070959239,
+      "eligible_models": [
+        "previous_probability_recommendation",
+        "ret_I_spline",
+        "ret_R_spline",
+        "ret_RC_spline"
+      ],
+      "selection_rows": 3602,
+      "mixture_search": false
+    },
+    "reference": "previous_probability_recommendation",
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6732594936708861,
+    "accuracy_improvement": 0.001977848101265889,
+    "required_accuracy_improvement": 0.005,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5902067310644632,
+    "allowed_loss_increase": 0.005,
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022
+  },
+  "pooled_selection": {
+    "choice": "ret_I_spline",
+    "selected_accuracy": 0.6657422512234911,
+    "selected_log_loss": 0.5994391025974455,
+    "loss_limit": 0.60818952373614,
+    "eligible_models": [
+      "previous_probability_recommendation",
+      "ret_I_spline",
+      "ret_R_spline",
+      "ret_RC_spline"
+    ],
+    "selection_rows": 6130,
+    "mixture_search": false
+  },
+  "frozen_at_utc": "2026-11-28T08:35:40.575582+00:00",
+  "decision_threshold": 0.5,
+  "historical_lag_days": 21,
+  "provider_recorded_ret_status": true,
+  "source_semantics_fully_verified": false,
+  "fit_end_season": 2022,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

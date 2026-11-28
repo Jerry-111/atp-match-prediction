@@ -1,0 +1,83 @@
+"""One comparison table across explicitly separate information regimes."""
+import json
+import math
+
+import pandas as pd
+
+from scripts.train_models import ROOT
+
+
+def main():
+    out = ROOT / 'results/round5'
+    core = pd.read_csv(out / 'validation_comparison.csv').set_index('model')
+    market = pd.read_csv(out / 'market/validation_comparison.csv').set_index('model')
+    closing = pd.read_csv(out / 'closing_blend/validation_comparison.csv').set_index('model')
+    fm = json.loads((out / 'market/frozen_selection.json').read_text())
+    fc = json.loads((out / 'closing_blend/frozen_selection.json').read_text())
+    choices = [
+        ('原T−21历史信息', '第四轮正式推荐', 'previous_probability_recommendation', core),
+        ('原T−21历史信息', '第五轮探索集成；未过升级门槛', 'accuracy_grid_blend', core),
+        ('另加赛前开盘报价', '原始市场基准＋缺失回退', 'opening_market', market),
+        ('另加赛前开盘报价', '开发期选中融合模型', fm['recommendation'], market),
+        ('另加赛前收盘报价', '追加自适应探索融合', fc['selected_control'], closing),
+        ('另加赛前收盘报价', '原始市场基准＋缺失回退', 'closing_market_descriptive', market),
+    ]
+    rows = []
+    for regime, role, name, table in choices:
+        row = table.loc[name]
+        if int(row.matches) != 2588:
+            raise ValueError('Comparison must retain every target match')
+        rows.append(dict(information_regime=regime, role=role, model=name, matches=int(row.matches),
+            correct=int(row.correct), accuracy=float(row.accuracy), mean_log_loss=float(row.mean_log_loss),
+            brier=float(row.brier), additional_correct_for_70=max(0, math.ceil(.7 * row.matches) - int(row.correct))))
+    frame = pd.DataFrame(rows)
+    frame.to_csv(out / 'overview.csv', index=False)
+    body = '''# 第五轮总览：尚未达到全量70%
+
+本轮完成75个新历史模型配置、20个开盘市场配置和16个追加收盘融合控制。仍使用完整2,588场2023比赛；不靠删难样本、只选大满贯或改变0.5阈值报告70%。至少需预测对1,812场。
+
+| 信息条件 | 比较角色 | 正确数 | 准确率 | Log loss ↓ | 距70%还差 |
+| --- | --- | ---: | ---: | ---: | ---: |
+'''
+    for row in frame.itertuples():
+        body += f'| {row.information_regime} | {row.role} | {row.correct}/2588 | {row.accuracy:.2%} | {row.mean_log_loss:.5f} | {row.additional_correct_for_70}场 |\n'
+    body += '''
+## 能支持的选择
+
+**原信息条件下，正式推荐仍保留第四轮年龄样条。**第五轮早期选中流程在2022只净多对5场，提高0.198个百分点，未达到事先规定的0.5个百分点升级门槛。探索集成在2023比原推荐多对19场：纠正98场，同时新错79场；准确率改善的条件区间为[−0.157,+1.638]个百分点，不能确认泛化提升。其log loss略有恶化。另一个全输入样条取得更低观察loss0.60645（65.92%），保留作概率模型对照，不据此改换准确率推荐。
+
+**市场信息有帮助，但尚无超过原始市场的证据。**开盘分支通过单独设置的2022流程门槛，2023选中模型比历史模型多对31场，但比原始开盘基准少对1场。追加收盘融合的选择只用2022，方向却是在看过本轮2023结果后提出，因此明确为自适应探索；它比公开收盘基准少对11场，两者缺失报价时分别回退第五轮探索底模和第四轮正式底模。即使用相同第五轮底模回退，纯收盘对照仍比融合多对9场。不升级正式推荐，也不能把67.70%的市场基准写成自主模型成绩。
+
+67项新特征使用了截止2023-10-16的97,764场合格挑战赛/资格赛历史及过去技术组成、身高/左右手信息，模型拟合目标仍是33,833场。原2006–2023库存有98,545场新增历史，超过各目标T−21截止的比赛不进入特征。核分类器、hinge损失、有限交互和概率组合均真实运行。诊断发现六个既定旧模型在2023共同错740场，说明只组合相似模型难补足目标差距；这不是准确率的理论上限。
+
+市场来源为[Valuebetennis公开数据](https://www.valuebetennis.com/en/donnees.htm)，使用CC BY4.0，按供应方描述的赛前开/收盘报价计算。报价没有逐条采集时间，信息晚于原赛事开始周。2023开盘有效2,487场、收盘2,477场；各缺失行精确回退历史预测，没有删行。市场结果必须与原T−21信息任务分开解读。
+
+**所有2023结果均为反复使用样本上的探索测量，2024–2025最终测试仍未打开。**本轮没有达到70%，也没有确立SOTA。下一位评估者应保留正式历史推荐、新历史探索组合、最低loss对照和单列市场基准，按冻结规则在最终测试上比较。
+
+## 证据与复跑
+
+- [主实验报告](report_summary.md) · [主实验HTML](../../round5.html) · [独立重载审计](artifact_audit.json)
+- [开盘市场报告](market/report_summary.md) · [市场HTML](../../round5_market.html) · [市场审计](market/artifact_audit.json)
+- [追加收盘控制](closing_blend/report_summary.md) · [误差诊断](diagnostics.md)
+- [主实验协议](../../docs/research/round5_protocol.md) · [市场协议及追加记录](../../docs/research/round5_market_protocol.md)
+
+先按[建模说明](../../docs/modeling.md)复现前四轮，再运行：
+
+```sh
+.venv/bin/python -m scripts.diagnose_round5
+.venv/bin/python -m scripts.train_round5
+.venv/bin/python -m scripts.report_round5
+.venv/bin/python -m scripts.train_market_round5
+.venv/bin/python -m scripts.report_market_round5
+.venv/bin/python -m scripts.closing_blend_round5
+.venv/bin/python -m scripts.round5_overview
+```
+
+全部候选/概率/分数/冻结选择公开保存；较大输入与本地模型文件按固定来源重建。按原流程复跑，不以新的2023排序重新选择配置。
+'''
+    (out / 'overview.md').write_text(body)
+    print(frame.to_string(index=False))
+
+
+if __name__ == '__main__':
+    main()

@@ -1,0 +1,180 @@
+{
+  "status": "passed",
+  "auditor": "independent features agent",
+  "audit_type": "fixed-formula recomputation; no refitting",
+  "validation_matches": 2588,
+  "prediction_columns": 16,
+  "probability_cells_verified": 41408,
+  "max_saved_probability_error": 2.220446049250313e-16,
+  "max_independent_formula_error": 1.6653345369377348e-16,
+  "max_metric_error": 0.0,
+  "max_selection_metric_error": 1.1102230246251565e-16,
+  "max_exchange_complement_error": 2.220446049250313e-16,
+  "closing_missing_rows": 111,
+  "all_controls_missing_rows_exact_base_fallback": true,
+  "original_closing_baseline_max_probability_error": 0.0,
+  "original_closing_baseline_all_decisions_identical": true,
+  "base_provenance": {
+    "round4": {
+      "components": [
+        "add_age_spline_C0.01"
+      ],
+      "weights": [
+        1.0
+      ],
+      "training_source": "2022 true OOF",
+      "scoring_source": "2023 frozen validation predictions"
+    },
+    "round5_exploratory": {
+      "components": [
+        "r5_rff512_g2_squared_hinge_C0.03",
+        "r5_rff512_g2_logistic_C0.03",
+        "both_spline_C0.01_half5.0"
+      ],
+      "weights": [
+        0.5,
+        0.2,
+        0.3
+      ],
+      "training_source": "2022 true OOF",
+      "scoring_source": "2023 frozen validation predictions"
+    }
+  },
+  "selection_matches": 2528,
+  "independent_2022_selected_control": "round5_exploratory_logit_closing0.5",
+  "selection_reproduced": true,
+  "selected_control_metrics": {
+    "correct": 1741,
+    "accuracy": 0.6727202472952086,
+    "mean_log_loss": 0.594637754580006,
+    "brier": 0.20552114900002597
+  },
+  "all_validation_metrics": {
+    "round4_history": {
+      "correct": 1696,
+      "accuracy": 0.6553323029366306,
+      "mean_log_loss": 0.6094069006143001,
+      "brier": 0.21149308142611395
+    },
+    "round4_closing": {
+      "correct": 1752,
+      "accuracy": 0.6769706336939721,
+      "mean_log_loss": 0.5877182121074237,
+      "brier": 0.20278963304630468
+    },
+    "round4_probability_closing0.25": {
+      "correct": 1724,
+      "accuracy": 0.6661514683153014,
+      "mean_log_loss": 0.6006373349781139,
+      "brier": 0.2079220112546521
+    },
+    "round4_probability_closing0.5": {
+      "correct": 1734,
+      "accuracy": 0.6700154559505409,
+      "mean_log_loss": 0.5942114880238137,
+      "brier": 0.2052810798008632
+    },
+    "round4_probability_closing0.75": {
+      "correct": 1747,
+      "accuracy": 0.6750386398763524,
+      "mean_log_loss": 0.5899155418764868,
+      "brier": 0.20357028706474742
+    },
+    "round4_logit_closing0.25": {
+      "correct": 1724,
+      "accuracy": 0.6661514683153014,
+      "mean_log_loss": 0.6006693145011971,
+      "brier": 0.2079172932304085
+    },
+    "round4_logit_closing0.5": {
+      "correct": 1734,
+      "accuracy": 0.6700154559505409,
+      "mean_log_loss": 0.5941453155770409,
+      "brier": 0.20526420692606834
+    },
+    "round4_logit_closing0.75": {
+      "correct": 1748,
+      "accuracy": 0.6754250386398764,
+      "mean_log_loss": 0.5898352540757873,
+      "brier": 0.20355756393602484
+    },
+    "round5_exploratory_history": {
+      "correct": 1715,
+      "accuracy": 0.6626738794435858,
+      "mean_log_loss": 0.6098708358424767,
+      "brier": 0.21165778805762117
+    },
+    "round5_exploratory_closing": {
+      "correct": 1750,
+      "accuracy": 0.6761978361669243,
+      "mean_log_loss": 0.5884036375514733,
+      "brier": 0.2030751702885838
+    },
+    "round5_exploratory_probability_closing0.25": {
+      "correct": 1719,
+      "accuracy": 0.6642194744976816,
+      "mean_log_loss": 0.6009099210159918,
+      "brier": 0.20807945469976954
+    },
+    "round5_exploratory_probability_closing0.5": {
+      "correct": 1741,
+      "accuracy": 0.6727202472952086,
+      "mean_log_loss": 0.5945046253994547,
+      "brier": 0.20545624061897944
+    },
+    "round5_exploratory_probability_closing0.75": {
+      "correct": 1745,
+      "accuracy": 0.6742658423493045,
+      "mean_log_loss": 0.5903667248214894,
+      "brier": 0.20378814581525087
+    },
+    "round5_exploratory_logit_closing0.25": {
+      "correct": 1719,
+      "accuracy": 0.6642194744976816,
+      "mean_log_loss": 0.6011417257757371,
+      "brier": 0.2081604538936914
+    },
+    "round5_exploratory_logit_closing0.5": {
+      "correct": 1741,
+      "accuracy": 0.6727202472952086,
+      "mean_log_loss": 0.594637754580006,
+      "brier": 0.20552114900002597
+    },
+    "round5_exploratory_logit_closing0.75": {
+      "correct": 1746,
+      "accuracy": 0.6746522411128284,
+      "mean_log_loss": 0.5903895023114824,
+      "brier": 0.20381251262903408
+    }
+  },
+  "decision_threshold": 0.5,
+  "frozen_file_written_before_2023_control_scoring_in_source": true,
+  "freeze_artifact_predates_score_table": true,
+  "no_refitting_performed": true,
+  "no_recommendation_upgrade": true,
+  "adaptive_after_round5_2023": true,
+  "independent_validation": false,
+  "final_test_evaluated": false,
+  "final_test_source_files_accessed": false,
+  "artifact_sha256": {
+    "search_registry.json": "c75e75af00532862b59ca2fa41e8d4d3ef7ae32128f53a436a5a248975c0aa82",
+    "frozen_selection.json": "4d50246052c33010096df08542553a3b538b9fbee8254abbada09f3a1e12634e",
+    "summary.json": "3cae923f34129e435200b0c708860074735969005f576122b0f330680b2f0311",
+    "validation_predictions.csv": "6a70bc2f54c801c16c572bc8e62b332cd44cb85e110cd9ce72a0e9628684154d",
+    "validation_comparison.csv": "ec17d49b575f052d3e000079c2cc74444aeae4dc05bd1e631593335037bcbb43",
+    "selection_2022.csv": "e3a1c3bc9e6c357820478f1d2a26ddbe4fdee6539d769f12014f7671c9f59b72",
+    "report_summary.md": "dec4627bdf0997b3b66f76a7a4bd00e3905022fa3a3f29dc2df2986ab6551e41"
+  },
+  "dependency_sha256": {
+    "results/round4/frozen_selection.json": "808a9343792ad410f6b2fe6c95bdc0cee36b0b418a5ec09948bfb0288c161b11",
+    "results/round4/oof_predictions.csv": "d8d6b70c777bd52f9d15ebdf39cbae1b9c4b10786702cab232eadff7f400d3b6",
+    "results/round4/validation_predictions.csv": "228ee3a0e2c628ffaaa98bea11026f015ec9d53ac6e560705947cc98ba079dac",
+    "results/round5/frozen_selection.json": "b82bb070cffabe55e62033f35c20482bc29b3be6df35505d97f291c140b501ea",
+    "results/round5/oof_predictions.csv": "48ac256c83ad0d479af95829b7db5054449744e0c263ea12ddc2a421a875724a",
+    "results/round5/validation_predictions.csv": "a2826e57586b49a9b3428e14224d64520be182e059ae963fe3f5796bdaea370f",
+    "results/round5/market/features.csv": "af715502be4320267e751cd92d63a4d2918bcf2c86ad2666622329a29942a375"
+  },
+  "implementation_sha256": "dfc9c7d33168099c25dd47137e8e55fb36fce4dc0e06b769e8ea9cbb3d708cd7",
+  "interpretation": "Direction was chosen after main/opening2023 inspection. A2022-selected fixed closing blend is an adaptive exploratory control, not a recommendation upgrade or evidence of70percent. Later provider-described prices change the information regime.",
+  "elapsed_seconds": 0.342
+}

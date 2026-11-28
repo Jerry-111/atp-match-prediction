@@ -1,0 +1,917 @@
+{
+  "round": 6,
+  "recommendation": "previous_probability_recommendation",
+  "new_candidates": 34,
+  "features": 383,
+  "training_rows": 33833,
+  "validation_matches": 2588,
+  "comparisons": {
+    "previous_probability_recommendation": {
+      "r6_all_linear_C0.01": {
+        "accuracy": {
+          "accuracy_improvement": 0.0007727975270479134,
+          "net_correct": 2,
+          "corrected": 87,
+          "newly_wrong": 85,
+          "ci95": [
+            -0.007016836317958653,
+            0.009214706863532254
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0014326591974520063,
+          "ci95": [
+            -0.0027272953618970933,
+            0.005734368311974192
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_all_spline_C0.01": {
+        "accuracy": {
+          "accuracy_improvement": 0.00231839258114374,
+          "net_correct": 6,
+          "corrected": 87,
+          "newly_wrong": 81,
+          "ci95": [
+            -0.005175796047840994,
+            0.01004478306712132
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.001410298387080727,
+          "ci95": [
+            -0.002766030988543253,
+            0.005777152498263117
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_base_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.0019319938176197836,
+          "net_correct": -5,
+          "corrected": 65,
+          "newly_wrong": 70,
+          "ci95": [
+            -0.008984806541530277,
+            0.005834914570468198
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.001828670143366961,
+          "ci95": [
+            -0.0010205167148785248,
+            0.004871853860091028
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_base_spline_C0.01": {
+        "accuracy": {
+          "accuracy_improvement": 0.0030911901081916537,
+          "net_correct": 8,
+          "corrected": 75,
+          "newly_wrong": 67,
+          "ci95": [
+            -0.004097428332019428,
+            0.010387472156919228
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0019009912959736816,
+          "ci95": [
+            -0.0014342017114231584,
+            0.005280626225358495
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_breakpoint_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.005023183925811438,
+          "net_correct": -13,
+          "corrected": 60,
+          "newly_wrong": 73,
+          "ci95": [
+            -0.01102421807544106,
+            0.0010658321603238506
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0009601517692949617,
+          "ci95": [
+            -0.0017682070369396175,
+            0.0038478971487617454
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_breakpoint_spline_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.00463678516228748,
+          "net_correct": -12,
+          "corrected": 59,
+          "newly_wrong": 71,
+          "ci95": [
+            -0.012231126107127795,
+            0.002798723656553093
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.001127489678855032,
+          "ci95": [
+            -0.0016825669882601306,
+            0.004022260937622786
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_combined_cat_d6": {
+        "accuracy": {
+          "accuracy_improvement": -0.00231839258114374,
+          "net_correct": -6,
+          "corrected": 100,
+          "newly_wrong": 106,
+          "ci95": [
+            -0.013461913198464119,
+            0.009014222979615903
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": -0.0037823473720868853,
+          "ci95": [
+            -0.00850474655261746,
+            0.0008667287788948427
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_combined_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.002704791344667697,
+          "net_correct": -7,
+          "corrected": 74,
+          "newly_wrong": 81,
+          "ci95": [
+            -0.010313371802273444,
+            0.005213430869256815
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0007773973099071025,
+          "ci95": [
+            -0.002632413296687129,
+            0.004497103684722066
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_combined_spline_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.0015455950540958269,
+          "net_correct": -4,
+          "corrected": 74,
+          "newly_wrong": 78,
+          "ci95": [
+            -0.009277627134769992,
+            0.006583842878796593
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0009661712674817775,
+          "ci95": [
+            -0.0024035284474430716,
+            0.004638026832746645
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_extended_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.0030911901081916537,
+          "net_correct": -8,
+          "corrected": 70,
+          "newly_wrong": 78,
+          "ci95": [
+            -0.010795747262221222,
+            0.00502556420582353
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0014627204761810495,
+          "ci95": [
+            -0.0015701548350710987,
+            0.004681205743491056
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_extended_spline_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.0034775888717156105,
+          "net_correct": -9,
+          "corrected": 65,
+          "newly_wrong": 74,
+          "ci95": [
+            -0.01058651257375265,
+            0.003958731642041049
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0016366634378393724,
+          "ci95": [
+            -0.0013836525514749271,
+            0.004900340911698705
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_trajectory_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": 0.0007727975270479134,
+          "net_correct": 2,
+          "corrected": 77,
+          "newly_wrong": 75,
+          "ci95": [
+            -0.006150621567999848,
+            0.00763720563299021
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0019522135191915074,
+          "ci95": [
+            -0.0014099533081393166,
+            0.005738922903014721
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_trajectory_spline_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": 0.0003863987635239567,
+          "net_correct": 1,
+          "corrected": 73,
+          "newly_wrong": 72,
+          "ci95": [
+            -0.006013091501307385,
+            0.006797281087564974
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0021697673907435525,
+          "ci95": [
+            -0.001181262288087692,
+            0.005902293416471692
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "previous_probability_recommendation": {
+        "accuracy": {
+          "accuracy_improvement": 0.0,
+          "net_correct": 0,
+          "corrected": 0,
+          "newly_wrong": 0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "previous_round5_exploration": {
+        "accuracy": {
+          "accuracy_improvement": 0.007341576506955177,
+          "net_correct": 19,
+          "corrected": 98,
+          "newly_wrong": 79,
+          "ci95": [
+            -0.0015687005432222156,
+            0.01638020603107885
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": -0.00046393522817660837,
+          "ci95": [
+            -0.005427101732200658,
+            0.004630971964773404
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "previous_round5_best_loss": {
+        "accuracy": {
+          "accuracy_improvement": 0.0038639876352395673,
+          "net_correct": 10,
+          "corrected": 76,
+          "newly_wrong": 66,
+          "ci95": [
+            -0.004383080970279733,
+            0.012706110355997443
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.002953693799446162,
+          "ci95": [
+            -0.0006116205062992244,
+            0.006572692814577927
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "rank_reference": {
+        "accuracy": {
+          "accuracy_improvement": -0.021638330757341576,
+          "net_correct": -56,
+          "corrected": 167,
+          "newly_wrong": 223,
+          "ci95": [
+            -0.035242446028642904,
+            -0.006537556821754784
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": -0.02038877481496086,
+          "ci95": [
+            -0.02842204245390942,
+            -0.01288221567758321
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "accuracy_grid_blend": {
+        "accuracy": {
+          "accuracy_improvement": -0.00115919629057187,
+          "net_correct": -3,
+          "corrected": 71,
+          "newly_wrong": 74,
+          "ci95": [
+            -0.007154698338809784,
+            0.0048154836767500325
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.001667149320352454,
+          "ci95": [
+            -0.0014396107997718018,
+            0.005071972803583808
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      }
+    },
+    "previous_round5_exploration": {
+      "r6_all_linear_C0.01": {
+        "accuracy": {
+          "accuracy_improvement": -0.006568778979907265,
+          "net_correct": -17,
+          "corrected": 67,
+          "newly_wrong": 84,
+          "ci95": [
+            -0.014771903035639713,
+            0.00162879755593877
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0018965944256286154,
+          "ci95": [
+            -0.0020344516939875402,
+            0.005584007174868397
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_all_spline_C0.01": {
+        "accuracy": {
+          "accuracy_improvement": -0.005023183925811438,
+          "net_correct": -13,
+          "corrected": 64,
+          "newly_wrong": 77,
+          "ci95": [
+            -0.013894645096420024,
+            0.004234081036978761
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0018742336152573367,
+          "ci95": [
+            -0.0017596718678509564,
+            0.005500228615853872
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_base_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.00927357032457496,
+          "net_correct": -24,
+          "corrected": 62,
+          "newly_wrong": 86,
+          "ci95": [
+            -0.017985814491566644,
+            0.0
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0022926053715435703,
+          "ci95": [
+            -0.001930515879320804,
+            0.006609892977519572
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_base_spline_C0.01": {
+        "accuracy": {
+          "accuracy_improvement": -0.004250386398763524,
+          "net_correct": -11,
+          "corrected": 53,
+          "newly_wrong": 64,
+          "ci95": [
+            -0.01094922774342085,
+            0.0024292236468756
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0023649265241502907,
+          "ci95": [
+            -0.0008611208804903372,
+            0.005634845515219112
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_breakpoint_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.012364760432766615,
+          "net_correct": -32,
+          "corrected": 58,
+          "newly_wrong": 90,
+          "ci95": [
+            -0.019387646101131736,
+            -0.005676238323274672
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0014240869974715702,
+          "ci95": [
+            -0.00274845922389759,
+            0.0056048184601937045
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_breakpoint_spline_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.011978361669242658,
+          "net_correct": -31,
+          "corrected": 58,
+          "newly_wrong": 89,
+          "ci95": [
+            -0.019525417544027566,
+            -0.004637290316854532
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.001591424907031641,
+          "ci95": [
+            -0.0024790296865625423,
+            0.005770163573344826
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_combined_cat_d6": {
+        "accuracy": {
+          "accuracy_improvement": -0.009659969088098918,
+          "net_correct": -25,
+          "corrected": 86,
+          "newly_wrong": 111,
+          "ci95": [
+            -0.02184728017068832,
+            0.0019696111009254815
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": -0.003318412143910276,
+          "ci95": [
+            -0.008287503263380723,
+            0.002050104848540994
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_combined_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.010046367851622875,
+          "net_correct": -26,
+          "corrected": 64,
+          "newly_wrong": 90,
+          "ci95": [
+            -0.017585774082478106,
+            -0.0020693231575154383
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0012413325380837116,
+          "ci95": [
+            -0.0030511076686020764,
+            0.005555957854153102
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_combined_spline_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.008887171561051005,
+          "net_correct": -23,
+          "corrected": 65,
+          "newly_wrong": 88,
+          "ci95": [
+            -0.016739955112097776,
+            -0.001231831788056169
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0014301064956583865,
+          "ci95": [
+            -0.0027472007192405417,
+            0.005705845464333515
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_extended_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.010432766615146832,
+          "net_correct": -27,
+          "corrected": 64,
+          "newly_wrong": 91,
+          "ci95": [
+            -0.01832012412417636,
+            -0.002293534177641032
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0019266557043576592,
+          "ci95": [
+            -0.0023477181526105634,
+            0.006430362090496458
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_extended_spline_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.010819165378670788,
+          "net_correct": -28,
+          "corrected": 61,
+          "newly_wrong": 89,
+          "ci95": [
+            -0.018803466635675226,
+            -0.00263601412838963
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0021005986660159815,
+          "ci95": [
+            -0.001991416588307992,
+            0.006560285744402792
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_trajectory_linear_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.006568778979907265,
+          "net_correct": -17,
+          "corrected": 70,
+          "newly_wrong": 87,
+          "ci95": [
+            -0.014442041158447964,
+            0.0012122318071223174
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.002416148747368117,
+          "ci95": [
+            -0.0018558755080512884,
+            0.006787085350320507
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "r6_trajectory_spline_C0.003": {
+        "accuracy": {
+          "accuracy_improvement": -0.006955177743431221,
+          "net_correct": -18,
+          "corrected": 69,
+          "newly_wrong": 87,
+          "ci95": [
+            -0.014515602164807304,
+            0.0012411239602353396
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.002633702618920161,
+          "ci95": [
+            -0.0015681332514698994,
+            0.007039405128566917
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "previous_probability_recommendation": {
+        "accuracy": {
+          "accuracy_improvement": -0.007341576506955177,
+          "net_correct": -19,
+          "corrected": 79,
+          "newly_wrong": 98,
+          "ci95": [
+            -0.01638020603107885,
+            0.001568700543222212
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.00046393522817660837,
+          "ci95": [
+            -0.004630971964773404,
+            0.005427101732200652
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "previous_round5_exploration": {
+        "accuracy": {
+          "accuracy_improvement": 0.0,
+          "net_correct": 0,
+          "corrected": 0,
+          "newly_wrong": 0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "previous_round5_best_loss": {
+        "accuracy": {
+          "accuracy_improvement": -0.0034775888717156105,
+          "net_correct": -9,
+          "corrected": 56,
+          "newly_wrong": 65,
+          "ci95": [
+            -0.010771946611840645,
+            0.003651824645610912
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0034176290276227714,
+          "ci95": [
+            7.947816809975124e-05,
+            0.006741708084633599
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "rank_reference": {
+        "accuracy": {
+          "accuracy_improvement": -0.028979907264296754,
+          "net_correct": -75,
+          "corrected": 186,
+          "newly_wrong": 261,
+          "ci95": [
+            -0.0449121815306299,
+            -0.011367419163826144
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": -0.019924839586784253,
+          "ci95": [
+            -0.03106225643408806,
+            -0.009669405277535513
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "accuracy_grid_blend": {
+        "accuracy": {
+          "accuracy_improvement": -0.008500772797527048,
+          "net_correct": -22,
+          "corrected": 64,
+          "newly_wrong": 86,
+          "ci95": [
+            -0.016786738541993276,
+            -0.00040289682978824904
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.002131084548529064,
+          "ci95": [
+            -0.0018827362858442691,
+            0.006319943751955902
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      }
+    }
+  },
+  "correct_required_for_70": 1812,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

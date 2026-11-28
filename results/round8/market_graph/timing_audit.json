@@ -1,0 +1,587 @@
+{
+  "status": "passed_with_timestamp_provenance_limitations",
+  "purpose": "Audit existing edge inclusion; no new model or availability rule implemented.",
+  "source_rows": 7341,
+  "periods": {
+    "all_development": {
+      "target_rows": 36421,
+      "snapshots": 543,
+      "nonempty_snapshots": 107,
+      "snapshot_edge_uses": 374716,
+      "target_edge_uses": 26379109,
+      "violating_snapshot_edge_uses": 0,
+      "violating_target_edge_uses": 0,
+      "affected_snapshots": 0,
+      "affected_targets": 0,
+      "unique_edges_ever_admitted": 7097,
+      "minimum_nominal_date_age_days": 21.0,
+      "minimum_provider_timestamp_age_days": 21.0,
+      "violations": []
+    },
+    "early_2021H2": {
+      "target_rows": 911,
+      "snapshots": 15,
+      "nonempty_snapshots": 15,
+      "snapshot_edge_uses": 26503,
+      "target_edge_uses": 1588984,
+      "violating_snapshot_edge_uses": 0,
+      "violating_target_edge_uses": 0,
+      "affected_snapshots": 0,
+      "affected_targets": 0,
+      "unique_edges_ever_admitted": 2187,
+      "minimum_nominal_date_age_days": 21.0,
+      "minimum_provider_timestamp_age_days": 21.0,
+      "violations": []
+    },
+    "gate_2022": {
+      "target_rows": 2528,
+      "snapshots": 36,
+      "nonempty_snapshots": 36,
+      "snapshot_edge_uses": 125650,
+      "target_edge_uses": 8676837,
+      "violating_snapshot_edge_uses": 0,
+      "violating_target_edge_uses": 0,
+      "affected_snapshots": 0,
+      "affected_targets": 0,
+      "unique_edges_ever_admitted": 4617,
+      "minimum_nominal_date_age_days": 21.0,
+      "minimum_provider_timestamp_age_days": 21.0,
+      "violations": []
+    },
+    "exploratory_2023": {
+      "target_rows": 2588,
+      "snapshots": 35,
+      "nonempty_snapshots": 35,
+      "snapshot_edge_uses": 209701,
+      "target_edge_uses": 15307076,
+      "violating_snapshot_edge_uses": 0,
+      "violating_target_edge_uses": 0,
+      "affected_snapshots": 0,
+      "affected_targets": 0,
+      "unique_edges_ever_admitted": 7097,
+      "minimum_nominal_date_age_days": 21.0,
+      "minimum_provider_timestamp_age_days": 21.0,
+      "violations": []
+    }
+  },
+  "locked_pre2023": {
+    "target_rows": 36421,
+    "snapshots": 543,
+    "nonempty_snapshots": 107,
+    "snapshot_edge_uses": 334905,
+    "target_edge_uses": 23634185,
+    "violating_snapshot_edge_uses": 0,
+    "violating_target_edge_uses": 0,
+    "affected_snapshots": 0,
+    "affected_targets": 0,
+    "unique_edges_ever_admitted": 4854,
+    "minimum_nominal_date_age_days": 21.0,
+    "minimum_provider_timestamp_age_days": 21.0,
+    "violations": []
+  },
+  "offset_days": {
+    "min": -0.8958333333333334,
+    "max": 14.083333333333334,
+    "negative_rows": 399,
+    "negative_by_season": {
+      "2021": 110,
+      "2022": 170,
+      "2023": 119
+    },
+    "floor_day_histogram": {
+      "-1": 399,
+      "0": 1874,
+      "1": 706,
+      "2": 1359,
+      "3": 946,
+      "4": 838,
+      "5": 540,
+      "6": 332,
+      "7": 114,
+      "8": 95,
+      "9": 51,
+      "10": 37,
+      "11": 22,
+      "12": 7,
+      "13": 19,
+      "14": 2
+    },
+    "earliest_examples": [
+      {
+        "match_id": "2023-2843:2",
+        "source_match_id": 553092,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:15",
+        "source_match_id": 553095,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:11",
+        "source_match_id": 553096,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:7",
+        "source_match_id": 553097,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:6",
+        "source_match_id": 553098,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:5",
+        "source_match_id": 553099,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:4",
+        "source_match_id": 553100,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:16",
+        "source_match_id": 553105,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:8",
+        "source_match_id": 553106,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-2843:9",
+        "source_match_id": 553107,
+        "tourney_date": "2023-01-02",
+        "match_utc": "2023-01-01 02:30:00+00:00",
+        "offset_days": -0.8958333333333334
+      },
+      {
+        "match_id": "2023-7581:11",
+        "source_match_id": 638490,
+        "tourney_date": "2023-09-20",
+        "match_utc": "2023-09-19 07:00:00+00:00",
+        "offset_days": -0.7083333333333334
+      },
+      {
+        "match_id": "2023-7581:9",
+        "source_match_id": 638491,
+        "tourney_date": "2023-09-20",
+        "match_utc": "2023-09-19 07:00:00+00:00",
+        "offset_days": -0.7083333333333334
+      }
+    ],
+    "latest_examples": [
+      {
+        "match_id": "2021-404:95",
+        "source_match_id": 432690,
+        "tourney_date": "2021-10-04",
+        "match_utc": "2021-10-18 02:00:00+00:00",
+        "offset_days": 14.083333333333334
+      },
+      {
+        "match_id": "2022-404:95",
+        "source_match_id": 467049,
+        "tourney_date": "2022-03-07",
+        "match_utc": "2022-03-21 01:00:00+00:00",
+        "offset_days": 14.041666666666666
+      },
+      {
+        "match_id": "2021-560:127",
+        "source_match_id": 422540,
+        "tourney_date": "2021-08-30",
+        "match_utc": "2021-09-12 23:00:00+00:00",
+        "offset_days": 13.958333333333334
+      },
+      {
+        "match_id": "2023-560:127",
+        "source_match_id": 635022,
+        "tourney_date": "2023-08-28",
+        "match_utc": "2023-09-10 23:00:00+00:00",
+        "offset_days": 13.958333333333334
+      },
+      {
+        "match_id": "2023-404:95",
+        "source_match_id": 573472,
+        "tourney_date": "2023-03-06",
+        "match_utc": "2023-03-19 22:00:00+00:00",
+        "offset_days": 13.916666666666666
+      },
+      {
+        "match_id": "2021-403:95",
+        "source_match_id": 384192,
+        "tourney_date": "2021-03-22",
+        "match_utc": "2021-04-04 20:00:00+00:00",
+        "offset_days": 13.833333333333334
+      },
+      {
+        "match_id": "2022-403:95",
+        "source_match_id": 470587,
+        "tourney_date": "2022-03-21",
+        "match_utc": "2022-04-03 20:00:00+00:00",
+        "offset_days": 13.833333333333334
+      },
+      {
+        "match_id": "2023-403:95",
+        "source_match_id": 577398,
+        "tourney_date": "2023-03-20",
+        "match_utc": "2023-04-02 20:00:00+00:00",
+        "offset_days": 13.833333333333334
+      }
+    ]
+  },
+  "chronology": {
+    "same_player_different_round_same_utc_groups": 8,
+    "same_utc_appearance_rows": 16,
+    "nonincreasing_own_round_transitions": 14,
+    "same_utc_examples": [
+      {
+        "tourney_id": "2021-9510",
+        "player_id": "CF01",
+        "utc": "2021-05-28T12:00:00+00:00",
+        "matches": [
+          {
+            "match_id": "2021-9510:24",
+            "round": "QF"
+          },
+          {
+            "match_id": "2021-9510:26",
+            "round": "SF"
+          }
+        ]
+      },
+      {
+        "tourney_id": "2021-9510",
+        "player_id": "PL56",
+        "utc": "2021-05-28T12:00:00+00:00",
+        "matches": [
+          {
+            "match_id": "2021-9510:21",
+            "round": "QF"
+          },
+          {
+            "match_id": "2021-9510:25",
+            "round": "SF"
+          }
+        ]
+      },
+      {
+        "tourney_id": "2021-9512",
+        "player_id": "D643",
+        "utc": "2021-05-28T12:00:00+00:00",
+        "matches": [
+          {
+            "match_id": "2021-9512:25",
+            "round": "SF"
+          },
+          {
+            "match_id": "2021-9512:21",
+            "round": "QF"
+          }
+        ]
+      },
+      {
+        "tourney_id": "2021-9512",
+        "player_id": "MV14",
+        "utc": "2021-05-28T12:00:00+00:00",
+        "matches": [
+          {
+            "match_id": "2021-9512:24",
+            "round": "QF"
+          },
+          {
+            "match_id": "2021-9512:26",
+            "round": "SF"
+          }
+        ]
+      },
+      {
+        "tourney_id": "2022-416",
+        "player_id": "KB05",
+        "utc": "2022-05-09T12:00:00+00:00",
+        "matches": [
+          {
+            "match_id": "2022-416:12",
+            "round": "R64"
+          },
+          {
+            "match_id": "2022-416:32",
+            "round": "R32"
+          }
+        ]
+      },
+      {
+        "tourney_id": "2023-421",
+        "player_id": "DH50",
+        "utc": "2023-08-10T18:00:00+00:00",
+        "matches": [
+          {
+            "match_id": "2023-421:30",
+            "round": "R32"
+          },
+          {
+            "match_id": "2023-421:43",
+            "round": "R16"
+          }
+        ]
+      },
+      {
+        "tourney_id": "2023-421",
+        "player_id": "FB98",
+        "utc": "2023-08-10T18:00:00+00:00",
+        "matches": [
+          {
+            "match_id": "2023-421:28",
+            "round": "R32"
+          },
+          {
+            "match_id": "2023-421:42",
+            "round": "R16"
+          }
+        ]
+      },
+      {
+        "tourney_id": "2023-421",
+        "player_id": "MK66",
+        "utc": "2023-08-10T18:00:00+00:00",
+        "matches": [
+          {
+            "match_id": "2023-421:32",
+            "round": "R32"
+          },
+          {
+            "match_id": "2023-421:44",
+            "round": "R16"
+          }
+        ]
+      }
+    ],
+    "nonincreasing_examples": [
+      {
+        "player_id": "BG23",
+        "player_name": "Nikoloz Basilashvili",
+        "earlier_round_match_id": "2021-451:21",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2021-03-12T18:00:00+00:00",
+        "later_round_match_id": "2021-451:25",
+        "later_round": "SF",
+        "later_round_utc": "2021-03-12T13:00:00+00:00"
+      },
+      {
+        "player_id": "CF01",
+        "player_name": "Marco Cecchinato",
+        "earlier_round_match_id": "2021-9510:24",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2021-05-28T12:00:00+00:00",
+        "later_round_match_id": "2021-9510:26",
+        "later_round": "SF",
+        "later_round_utc": "2021-05-28T12:00:00+00:00"
+      },
+      {
+        "player_id": "MU94",
+        "player_name": "Jaume Munar",
+        "earlier_round_match_id": "2021-9510:22",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2021-05-28T13:00:00+00:00",
+        "later_round_match_id": "2021-9510:26",
+        "later_round": "SF",
+        "later_round_utc": "2021-05-28T12:00:00+00:00"
+      },
+      {
+        "player_id": "PL56",
+        "player_name": "Tommy Paul",
+        "earlier_round_match_id": "2021-9510:21",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2021-05-28T12:00:00+00:00",
+        "later_round_match_id": "2021-9510:25",
+        "later_round": "SF",
+        "later_round_utc": "2021-05-28T12:00:00+00:00"
+      },
+      {
+        "player_id": "D643",
+        "player_name": "Novak Djokovic",
+        "earlier_round_match_id": "2021-9512:21",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2021-05-28T12:00:00+00:00",
+        "later_round_match_id": "2021-9512:25",
+        "later_round": "SF",
+        "later_round_utc": "2021-05-28T12:00:00+00:00"
+      },
+      {
+        "player_id": "MV14",
+        "player_name": "Alex Molcan",
+        "earlier_round_match_id": "2021-9512:24",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2021-05-28T12:00:00+00:00",
+        "later_round_match_id": "2021-9512:26",
+        "later_round": "SF",
+        "later_round_utc": "2021-05-28T12:00:00+00:00"
+      },
+      {
+        "player_id": "KB05",
+        "player_name": "Filip Krajinovic",
+        "earlier_round_match_id": "2022-416:12",
+        "earlier_round": "R64",
+        "earlier_round_utc": "2022-05-09T12:00:00+00:00",
+        "later_round_match_id": "2022-416:32",
+        "later_round": "R32",
+        "later_round_utc": "2022-05-09T12:00:00+00:00"
+      },
+      {
+        "player_id": "DB63",
+        "player_name": "Laslo Djere",
+        "earlier_round_match_id": "2022-6242:43",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2022-08-27T02:00:00+00:00",
+        "later_round_match_id": "2022-6242:46",
+        "later_round": "SF",
+        "later_round_utc": "2022-08-26T18:00:00+00:00"
+      },
+      {
+        "player_id": "ME82",
+        "player_name": "Adrian Mannarino",
+        "earlier_round_match_id": "2022-6242:42",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2022-08-26T22:00:00+00:00",
+        "later_round_match_id": "2022-6242:45",
+        "later_round": "SF",
+        "later_round_utc": "2022-08-26T18:00:00+00:00"
+      },
+      {
+        "player_id": "V812",
+        "player_name": "Botic van de Zandschulp",
+        "earlier_round_match_id": "2022-6242:41",
+        "earlier_round": "QF",
+        "earlier_round_utc": "2022-08-26T22:00:00+00:00",
+        "later_round_match_id": "2022-6242:45",
+        "later_round": "SF",
+        "later_round_utc": "2022-08-26T18:00:00+00:00"
+      },
+      {
+        "player_id": "KC56",
+        "player_name": "Aslan Karatsev",
+        "earlier_round_match_id": "2022-8994:13",
+        "earlier_round": "R32",
+        "earlier_round_utc": "2022-06-20T14:00:00+00:00",
+        "later_round_match_id": "2022-8994:21",
+        "later_round": "R16",
+        "later_round_utc": "2022-06-20T13:00:00+00:00"
+      },
+      {
+        "player_id": "DH50",
+        "player_name": "Alejandro Davidovich Fokina",
+        "earlier_round_match_id": "2023-421:30",
+        "earlier_round": "R32",
+        "earlier_round_utc": "2023-08-10T18:00:00+00:00",
+        "later_round_match_id": "2023-421:43",
+        "later_round": "R16",
+        "later_round_utc": "2023-08-10T18:00:00+00:00"
+      },
+      {
+        "player_id": "FB98",
+        "player_name": "Taylor Fritz",
+        "earlier_round_match_id": "2023-421:28",
+        "earlier_round": "R32",
+        "earlier_round_utc": "2023-08-10T18:00:00+00:00",
+        "later_round_match_id": "2023-421:42",
+        "later_round": "R16",
+        "later_round_utc": "2023-08-10T18:00:00+00:00"
+      },
+      {
+        "player_id": "MK66",
+        "player_name": "Mackenzie McDonald",
+        "earlier_round_match_id": "2023-421:32",
+        "earlier_round": "R32",
+        "earlier_round_utc": "2023-08-10T18:00:00+00:00",
+        "later_round_match_id": "2023-421:44",
+        "later_round": "R16",
+        "later_round_utc": "2023-08-10T18:00:00+00:00"
+      }
+    ]
+  },
+  "linked_time_coverage": {
+    "2021": {
+      "targets": 2388,
+      "matched_time": 2381,
+      "unmatched_time": 7
+    },
+    "2022": {
+      "targets": 2528,
+      "matched_time": 2495,
+      "unmatched_time": 33
+    },
+    "2023": {
+      "targets": 2588,
+      "matched_time": 2502,
+      "unmatched_time": 86
+    }
+  },
+  "conclusions": {
+    "dual_cutoff_would_remove_edges": false,
+    "existing_numerical_predictions_changed": false,
+    "independent_actual_start_or_completion_proven": false,
+    "original_nominal_tournament_date_guard_satisfied": true,
+    "safe_to_shorten_lag_on_provider_utc_alone": false
+  },
+  "limitations": [
+    "tourney_date is the linked, corrected repository tournament date; it is not a per-match timestamp or an independently certified end date.",
+    "Negative offsets can be legitimate Sunday starts or timezone effects; they are not individually labelled source errors.",
+    "A provider match-time field with contradictory own-round chronology cannot certify actual starts, finishes, quote capture times or publication time.",
+    "Zero nominal-date violations establishes the existing guard, not universal proof that every historical quote/result was available at the earlier cutoff.",
+    "Edge-use counts share one logical graph per cutoff before six setting/surface repetitions; target-edge uses weight each cutoff by its target count.",
+    "No raw source, odds, target outcomes, score, duration or 2024/2025 final files are read by this timing audit."
+  ],
+  "input_columns": {
+    "targets": [
+      "match_id",
+      "season",
+      "tourney_id",
+      "tourney_date",
+      "round",
+      "player_a_id",
+      "player_b_id",
+      "player_a_name",
+      "player_b_name"
+    ],
+    "edges": [
+      "match_id",
+      "source_match_id",
+      "source_season",
+      "match_utc"
+    ],
+    "links": [
+      "match_id",
+      "season",
+      "status",
+      "market_match_utc"
+    ]
+  },
+  "artifact_sha256": {
+    "results/round3/development_targets.csv": "9bcb3ad4b0fbe745b23b776a750256f92ab9acc9fd1cb57aed0a16cef86435d2",
+    "results/round8/market_graph/opening_history.csv": "950b279793afa143d228827777ea6074dbaa77467f719a544459181d8419eb2f",
+    "results/round5/market/linked_matches.csv": "e4885dc5df1071537f1fb9a06b10cbb173e6d36d2c4c44f75a5439606ee0dd13",
+    "results/round8/market_graph/search_registry.json": "036e05a1ab2bde813b9c65220bfe81252b02afd45c3d457749d6370620bc7086"
+  },
+  "audit_code_sha256": "08676599b186c27d6aceb33aae2da2d047b531808d71a53cfea06740588b4d00"
+}

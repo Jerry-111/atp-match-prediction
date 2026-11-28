@@ -1,0 +1,880 @@
+{
+  "schema_version": "provisional_probe_2023_v1_not_unified_availability_ledger",
+  "scope": "First ten of 62 existing 2023 source editions ordered by nominal date then lexical ID; metadata-led, no new prediction or error inspection.",
+  "recorded_at_utc": "2026-11-28T09:01:54.348450+00:00",
+  "sampling_rule": "sort(source_nominal_date, source_tourney_id), first 10",
+  "source_editions_in_frame": 62,
+  "source_editions_probed": 10,
+  "source_editions_not_probed": 52,
+  "completion_day_supported_by_current_primary_full_text": 6,
+  "completion_day_unresolved": 4,
+  "historic_first_publication_snapshots_obtained": 0,
+  "admitted_for_prediction": 0,
+  "models_fitted": 0,
+  "input_read_columns": {
+    "source_frame": [
+      "source_tourney_id",
+      "source_nominal_date"
+    ],
+    "raw_2023": [
+      "tourney_id",
+      "tourney_name",
+      "surface"
+    ]
+  },
+  "input_sha256": {
+    "results/round10/completion/source_frame_2023_unqualified.csv": "ea7922107d77f113251017d01ecd96144d4acc49462668dd39066da6344b09a6",
+    "data/raw/2023.csv": "fb4ad5ed014945bb7270dd073fc3319dde6e1ca18cd5cbc80f2823f0abc344c5"
+  },
+  "worklist": [
+    {
+      "sample_order": 1,
+      "source_tourney_id": "2023-2843",
+      "source_nominal_date": "2023-01-02",
+      "tourney_name": "Adelaide-1",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 2,
+      "source_tourney_id": "2023-891",
+      "source_nominal_date": "2023-01-02",
+      "tourney_name": "Pune",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 3,
+      "source_tourney_id": "2023-301",
+      "source_nominal_date": "2023-01-09",
+      "tourney_name": "Auckland",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 4,
+      "source_tourney_id": "2023-8998",
+      "source_nominal_date": "2023-01-09",
+      "tourney_name": "Adelaide-2",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 5,
+      "source_tourney_id": "2023-375",
+      "source_nominal_date": "2023-02-06",
+      "tourney_name": "Montpellier",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 6,
+      "source_tourney_id": "2023-424",
+      "source_nominal_date": "2023-02-06",
+      "tourney_name": "Dallas",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 7,
+      "source_tourney_id": "2023-9158",
+      "source_nominal_date": "2023-02-06",
+      "tourney_name": "Cordoba",
+      "surface": "Clay",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 8,
+      "source_tourney_id": "2023-407",
+      "source_nominal_date": "2023-02-13",
+      "tourney_name": "Rotterdam",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 9,
+      "source_tourney_id": "2023-499",
+      "source_nominal_date": "2023-02-13",
+      "tourney_name": "Delray Beach",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 10,
+      "source_tourney_id": "2023-506",
+      "source_nominal_date": "2023-02-13",
+      "tourney_name": "Buenos Aires",
+      "surface": "Clay",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 11,
+      "source_tourney_id": "2023-451",
+      "source_nominal_date": "2023-02-20",
+      "tourney_name": "Doha",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 12,
+      "source_tourney_id": "2023-496",
+      "source_nominal_date": "2023-02-20",
+      "tourney_name": "Marseille",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 13,
+      "source_tourney_id": "2023-6932",
+      "source_nominal_date": "2023-02-20",
+      "tourney_name": "Rio De Janeiro",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 14,
+      "source_tourney_id": "2023-495",
+      "source_nominal_date": "2023-02-27",
+      "tourney_name": "Dubai",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 15,
+      "source_tourney_id": "2023-807",
+      "source_nominal_date": "2023-02-27",
+      "tourney_name": "Acapulco",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 16,
+      "source_tourney_id": "2023-8996",
+      "source_nominal_date": "2023-02-27",
+      "tourney_name": "Santiago",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 17,
+      "source_tourney_id": "2023-404",
+      "source_nominal_date": "2023-03-06",
+      "tourney_name": "Indian Wells Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 18,
+      "source_tourney_id": "2023-403",
+      "source_nominal_date": "2023-03-20",
+      "tourney_name": "Miami Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 19,
+      "source_tourney_id": "2023-360",
+      "source_nominal_date": "2023-04-03",
+      "tourney_name": "Marrakech",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 20,
+      "source_tourney_id": "2023-717",
+      "source_nominal_date": "2023-04-03",
+      "tourney_name": "Houston",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 21,
+      "source_tourney_id": "2023-7290",
+      "source_nominal_date": "2023-04-03",
+      "tourney_name": "Estoril",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 22,
+      "source_tourney_id": "2023-410",
+      "source_nominal_date": "2023-04-10",
+      "tourney_name": "Monte Carlo Masters",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 23,
+      "source_tourney_id": "2023-2841",
+      "source_nominal_date": "2023-04-17",
+      "tourney_name": "Banja Luka",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 24,
+      "source_tourney_id": "2023-308",
+      "source_nominal_date": "2023-04-17",
+      "tourney_name": "Munich",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 25,
+      "source_tourney_id": "2023-425",
+      "source_nominal_date": "2023-04-17",
+      "tourney_name": "Barcelona",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 26,
+      "source_tourney_id": "2023-1536",
+      "source_nominal_date": "2023-04-24",
+      "tourney_name": "Madrid Masters",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 27,
+      "source_tourney_id": "2023-416",
+      "source_nominal_date": "2023-05-08",
+      "tourney_name": "Rome Masters",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 28,
+      "source_tourney_id": "2023-322",
+      "source_nominal_date": "2023-05-22",
+      "tourney_name": "Geneva",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 29,
+      "source_tourney_id": "2023-7694",
+      "source_nominal_date": "2023-05-22",
+      "tourney_name": "Lyon",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 30,
+      "source_tourney_id": "2023-520",
+      "source_nominal_date": "2023-05-29",
+      "tourney_name": "Roland Garros",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 31,
+      "source_tourney_id": "2023-321",
+      "source_nominal_date": "2023-06-12",
+      "tourney_name": "Stuttgart",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 32,
+      "source_tourney_id": "2023-440",
+      "source_nominal_date": "2023-06-12",
+      "tourney_name": "'s-Hertogenbosch",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 33,
+      "source_tourney_id": "2023-311",
+      "source_nominal_date": "2023-06-19",
+      "tourney_name": "Queen's Club",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 34,
+      "source_tourney_id": "2023-500",
+      "source_nominal_date": "2023-06-19",
+      "tourney_name": "Halle",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 35,
+      "source_tourney_id": "2023-741",
+      "source_nominal_date": "2023-06-26",
+      "tourney_name": "Eastbourne",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 36,
+      "source_tourney_id": "2023-8994",
+      "source_nominal_date": "2023-06-26",
+      "tourney_name": "Mallorca",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 37,
+      "source_tourney_id": "2023-540",
+      "source_nominal_date": "2023-07-03",
+      "tourney_name": "Wimbledon",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 38,
+      "source_tourney_id": "2023-314",
+      "source_nominal_date": "2023-07-17",
+      "tourney_name": "Gstaad",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 39,
+      "source_tourney_id": "2023-315",
+      "source_nominal_date": "2023-07-17",
+      "tourney_name": "Newport",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 40,
+      "source_tourney_id": "2023-316",
+      "source_nominal_date": "2023-07-17",
+      "tourney_name": "Bastad",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 41,
+      "source_tourney_id": "2023-414",
+      "source_nominal_date": "2023-07-24",
+      "tourney_name": "Hamburg",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 42,
+      "source_tourney_id": "2023-439",
+      "source_nominal_date": "2023-07-24",
+      "tourney_name": "Umag",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 43,
+      "source_tourney_id": "2023-6116",
+      "source_nominal_date": "2023-07-24",
+      "tourney_name": "Atlanta",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 44,
+      "source_tourney_id": "2023-319",
+      "source_nominal_date": "2023-07-31",
+      "tourney_name": "Kitzbuhel",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 45,
+      "source_tourney_id": "2023-418",
+      "source_nominal_date": "2023-07-31",
+      "tourney_name": "Washington",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 46,
+      "source_tourney_id": "2023-7480",
+      "source_nominal_date": "2023-07-31",
+      "tourney_name": "Los Cabos",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 47,
+      "source_tourney_id": "2023-421",
+      "source_nominal_date": "2023-08-07",
+      "tourney_name": "Canada Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 48,
+      "source_tourney_id": "2023-422",
+      "source_nominal_date": "2023-08-14",
+      "tourney_name": "Cincinnati Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 49,
+      "source_tourney_id": "2023-6242",
+      "source_nominal_date": "2023-08-21",
+      "tourney_name": "Winston-Salem",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 50,
+      "source_tourney_id": "2023-7581",
+      "source_nominal_date": "2023-09-20",
+      "tourney_name": "Chengdu",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 51,
+      "source_tourney_id": "2023-9164",
+      "source_nominal_date": "2023-09-20",
+      "tourney_name": "Zhuhai",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 52,
+      "source_tourney_id": "2023-9410",
+      "source_nominal_date": "2023-09-25",
+      "tourney_name": "Astana",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 53,
+      "source_tourney_id": "2023-747",
+      "source_nominal_date": "2023-09-27",
+      "tourney_name": "Beijing",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 54,
+      "source_tourney_id": "2023-5014",
+      "source_nominal_date": "2023-10-02",
+      "tourney_name": "Shanghai Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 55,
+      "source_tourney_id": "2023-329",
+      "source_nominal_date": "2023-10-16",
+      "tourney_name": "Tokyo",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 56,
+      "source_tourney_id": "2023-429",
+      "source_nominal_date": "2023-10-16",
+      "tourney_name": "Stockholm",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 57,
+      "source_tourney_id": "2023-7485",
+      "source_nominal_date": "2023-10-16",
+      "tourney_name": "Antwerp",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 58,
+      "source_tourney_id": "2023-328",
+      "source_nominal_date": "2023-10-23",
+      "tourney_name": "Basel",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 59,
+      "source_tourney_id": "2023-337",
+      "source_nominal_date": "2023-10-23",
+      "tourney_name": "Vienna",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 60,
+      "source_tourney_id": "2023-352",
+      "source_nominal_date": "2023-10-30",
+      "tourney_name": "Paris Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 61,
+      "source_tourney_id": "2023-341",
+      "source_nominal_date": "2023-11-06",
+      "tourney_name": "Metz",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 62,
+      "source_tourney_id": "2023-7434",
+      "source_nominal_date": "2023-11-06",
+      "tourney_name": "Sofia",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    }
+  ],
+  "cases": [
+    {
+      "source_tourney_id": "2023-2843",
+      "displayed_publication_day": "2023-01-08",
+      "completed_by_day": "2023-01-08",
+      "timezone": null,
+      "inspection": "full_text",
+      "source_url": "https://novakdjokovic.com/en/news/tennis/nole-begins-the-new-season-with-a-triumph-in-adelaide/",
+      "assessment": "Participant report dated 8 January describes the completed Sunday singles final.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": "23e1200d363710ab5bd0685c323b0c61ba2ff3745c3de07daef35b791c917cff",
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-891",
+      "displayed_publication_day": "2023-01-07",
+      "completed_by_day": "2023-01-07",
+      "timezone": null,
+      "inspection": "full_text",
+      "source_url": "https://www.atptour.com/en/news/griekspoor-bonzi-pune-2023-final",
+      "assessment": "ATP report dated 7 January explicitly describes completed Saturday final.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-301",
+      "displayed_publication_day": "2023-01-14",
+      "completed_by_day": "2023-01-14",
+      "timezone": null,
+      "inspection": "full_text",
+      "source_url": "https://www.fft.fr/actualites/heroique-richard-gasquet-titre-victoire-finale-auckland",
+      "assessment": "French federation report dated 14 January describes the completed singles final.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-8998",
+      "displayed_publication_day": "2023-01-14",
+      "completed_by_day": "2023-01-14",
+      "timezone": null,
+      "inspection": "full_text",
+      "source_url": "https://www.tennis.com.au/adelaide-international/news/2023/01/soonwoo-kwon-claims-historic-title-adelaide",
+      "assessment": "Official event report dated Saturday 14 January describes completed final and post-match remarks.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-375",
+      "displayed_publication_day": null,
+      "completed_by_day": null,
+      "timezone": null,
+      "inspection": "access_denied",
+      "source_url": "https://www.atptour.com/en/news/cressy-sinner-montpellier-2023-sunday",
+      "assessment": "Indexed dated final report found, full open returned 403; unresolved.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-424",
+      "displayed_publication_day": "2023-02-12",
+      "completed_by_day": "2023-02-12",
+      "timezone": null,
+      "inspection": "full_text",
+      "source_url": "https://www.dallasopen.com/en/media/news/isner-wu-dallas-2023-sunday-final",
+      "assessment": "Tournament report dated 12 February describes completed Sunday final.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-9158",
+      "displayed_publication_day": null,
+      "completed_by_day": null,
+      "timezone": null,
+      "inspection": "access_denied",
+      "source_url": "https://www.atptour.com/en/news/baez-coria-cordoba-2023-sunday-final",
+      "assessment": "Indexed report is dated 13 February while referring to Sunday; full open returned 403.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-407",
+      "displayed_publication_day": "2023-02-19",
+      "completed_by_day": "2023-02-19",
+      "timezone": null,
+      "inspection": "full_text",
+      "source_url": "https://www.abnamro-open.nl/en/news/headlines/50th-edition/magical-medvedev-extinguishes-sparkling-sinner",
+      "assessment": "Tournament report dated 19 February describes completed final and post-match remarks.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-499",
+      "displayed_publication_day": null,
+      "completed_by_day": null,
+      "timezone": null,
+      "inspection": "access_denied",
+      "source_url": "https://www.atptour.com/en/news/fritz-kecmanovic-delray-beach-2023-final",
+      "assessment": "Indexed dated final report found, full open returned 403; unresolved.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    },
+    {
+      "source_tourney_id": "2023-506",
+      "displayed_publication_day": null,
+      "completed_by_day": null,
+      "timezone": null,
+      "inspection": "access_denied",
+      "source_url": "https://www.atptour.com/en/news/alcaraz-norrie-buenos-aires-2023-final",
+      "assessment": "Indexed dated final report found, full open returned 403; unresolved.",
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false,
+      "target_start_evidence": []
+    }
+  ],
+  "access_and_parse_limits": [
+    "Full-open denials were not retried or bypassed.",
+    "Current article display dates are not historical immutable content snapshots or timezone-aware completion clocks.",
+    "ATP yearbook search table extraction was inconsistent and was not admitted.",
+    "Embedded official post IDs were considered but not admitted as original content/version evidence."
+  ],
+  "target_start_evidence": [
+    {
+      "target_tourney_id": "2023-580",
+      "target_lower_day": "2023-01-16",
+      "source_url": "https://ausopen.com/articles/news/australian-open-set-three-week-tennis-extravaganza",
+      "assessment": "Advance announcement explicitly separates qualifying and main-draw opening.",
+      "inspection": "full_text",
+      "timezone": null,
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false
+    },
+    {
+      "target_tourney_id": "2023-496",
+      "target_lower_day": "2023-02-20",
+      "source_url": "https://www.fft.fr/actualites/open-13-bonzi-domine-van-assche",
+      "assessment": "Dated federation report explicitly calls Monday the first main-draw day.",
+      "inspection": "full_text",
+      "timezone": null,
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false
+    },
+    {
+      "target_tourney_id": "2023-6932",
+      "target_lower_day": "2023-02-20",
+      "source_url": "https://www.rioopen.com/pt-br/noticias/news/23_02_15_maior-torneio-de-tenis-da-america-do-sul-rio-open-chega-a-sua-nona-edicao",
+      "assessment": "Advance announcement distinguishes 18-19 qualifying from Monday 20 main-draw start.",
+      "inspection": "full_text",
+      "timezone": null,
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false
+    },
+    {
+      "target_tourney_id": "2023-495",
+      "target_lower_day": "2023-02-25",
+      "source_url": "https://dubaidutyfreetennischampionships.com/mens-draw-for-2023-dubai-duty-free-tennis-championships-revealed-on-saturday/",
+      "assessment": "Conservative draw-day lower bound: all opening matches explicitly remain future. Not the actual opening day.",
+      "inspection": "full_text",
+      "timezone": null,
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false
+    },
+    {
+      "target_tourney_id": "2023-807",
+      "target_lower_day": "2023-02-27",
+      "source_url": "https://abiertomexicanodetenis.com/2023/01/31/cinco-top-10-encabezan-el-30-aniversario-del-amt/",
+      "assessment": "Advance announcement gives 27 February-4 March event period; assumes main play not advanced before announced opening.",
+      "inspection": "full_text",
+      "timezone": null,
+      "retrieved_on_utc": "2026-11-28",
+      "retrieved_at_utc": null,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false
+    }
+  ],
+  "unresolved_screened_targets": [
+    "2023-451",
+    "2023-8996"
+  ]
+}

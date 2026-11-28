@@ -1,0 +1,22 @@
+{
+  "synthetic_only": true,
+  "seed": 12,
+  "threads": 4,
+  "records": [
+    {
+      "device": "cpu",
+      "rows": 4096,
+      "epochs": 2,
+      "elapsed_seconds": 0.638243000023067,
+      "synthetic_train_loss": 0.6736649572849274
+    },
+    {
+      "device": "mps",
+      "rows": 4096,
+      "epochs": 2,
+      "elapsed_seconds": 1.2845297919702716,
+      "synthetic_train_loss": 0.6736649572849274
+    }
+  ],
+  "chosen_device": "cpu"
+}

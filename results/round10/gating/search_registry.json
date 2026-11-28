@@ -1,0 +1,93 @@
+{
+  "round": 10,
+  "branch": "gating",
+  "experts": [
+    "add_age_spline_C0.01",
+    "r5_linear_logistic_C0.003",
+    "realmlp_td_s",
+    "sequence_mean"
+  ],
+  "source_bindings": {
+    "add_age_spline_C0.01": {
+      "branch": "round4",
+      "files": {
+        "oof_predictions.csv": "d8d6b70c777bd52f9d15ebdf39cbae1b9c4b10786702cab232eadff7f400d3b6",
+        "validation_predictions.csv": "228ee3a0e2c628ffaaa98bea11026f015ec9d53ac6e560705947cc98ba079dac"
+      },
+      "audit_sha256": "baa9e7f3934cf36bfd5d0cbd232d2b30aa6b2beff0458c2e3017770e736ff722"
+    },
+    "r5_linear_logistic_C0.003": {
+      "branch": "round5",
+      "files": {
+        "oof_predictions.csv": "48ac256c83ad0d479af95829b7db5054449744e0c263ea12ddc2a421a875724a",
+        "validation_predictions.csv": "a2826e57586b49a9b3428e14224d64520be182e059ae963fe3f5796bdaea370f"
+      },
+      "audit_sha256": "d2b6a537efdf4166677e3cd8e3edbd5dee686bb11ce01568ae87b0e3b783bed6"
+    },
+    "realmlp_td_s": {
+      "branch": "round9/neural",
+      "files": {
+        "oof_predictions.csv": "cfbdce14016db99add6f6011938e2e89c893313d5c04935387c96821f898eb0d",
+        "validation_predictions.csv": "175ee6bac013e24c60eb7f7354a446fecce705a0a15891b20326917db2b5517f"
+      },
+      "audit_sha256": "8de1326e29b3a25577403c71d1a1b557525a90046b22ceb3dde39428b4e09529"
+    },
+    "sequence_mean": {
+      "branch": "round9/sequence",
+      "files": {
+        "oof_predictions.csv": "4d013076dd10dd926b369e859185141e59b656f19a4d077f05604c224d2a0cb9",
+        "validation_predictions.csv": "a3cf01f272a6b1fbc88cc81c4d7f56bd2b8999667389488b051a6e649d4708f1"
+      },
+      "audit_sha256": "c92f61371dc419231e8302397b6e36babad9c7f9abc45a0e1f7ec06a8eff3729"
+    }
+  },
+  "procedures": [
+    "equal_mix",
+    "global_mix",
+    "conditional_mix"
+  ],
+  "selection_entries": [
+    "equal_mix",
+    "global_mix",
+    "conditional_mix",
+    "round4_reference"
+  ],
+  "context_fields": [
+    "log_rank_abs_gap",
+    "career_min_count",
+    "surface_career_min_count",
+    "points_overall_364_serve_points_min",
+    "format_best_of_five"
+  ],
+  "context_columns": [
+    "rank_gap",
+    "career_coverage",
+    "surface_coverage",
+    "point_coverage",
+    "best_of_five"
+  ],
+  "probability_clip": 1e-06,
+  "global_weight_floor": 0.02,
+  "gate_penalty": 0.01,
+  "gate_parameters": 15,
+  "optimizer_runs": 6,
+  "base_expert_fits": 0,
+  "meta_warmup_season": 2020,
+  "selection_season": 2021,
+  "gate_season": 2022,
+  "threshold": 0.5,
+  "targets_sha256": "9bcb3ad4b0fbe745b23b776a750256f92ab9acc9fd1cb57aed0a16cef86435d2",
+  "features_sha256": "22f43ab601229c71bfd23fe3732801b510f8d1a198c69c090ab93e8ae991087e",
+  "source_sha256": "dd92985e656ffea0f3d123b31494a5636ddf4beefd132df3a5368e81e443ddc3",
+  "engine_sha256": "cb0c454ae3d34cd619e9687e58fbc12e6337d3e27e8471b8461835c89572a780",
+  "protocol_sha256": "15d6d17e1151d075fb4a51949f59fa8e0a3a97cbadb90c0ac14646a7905f3a63",
+  "feasibility_sha256": "eda362e3a012ce4cde715aa4254b985bc4809fcbef30bb1606ff7dc96f60d749",
+  "dependency_versions": {
+    "numpy": "2.5.5",
+    "pandas": "3.1.1",
+    "scipy": "1.18.1",
+    "joblib": "1.6.0"
+  },
+  "final_test_evaluated": false,
+  "exploratory_after_2023": true
+}

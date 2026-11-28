@@ -1,0 +1,37 @@
+{
+  "round": 6,
+  "branch": "supervised_transfer",
+  "recommendation": "round4_reference",
+  "pooled_choice": "transfer_linear_C0.1_aux0_r4blend0.75",
+  "fit_candidates": 12,
+  "selection_entries": 49,
+  "compact_features": 48,
+  "inference_features": 337,
+  "total_target_rows": 111682,
+  "auxiliary_rows": 75261,
+  "training_rows": 109094,
+  "training_tour_rows": 33833,
+  "validation_matches": 2588,
+  "correct_required_for_70": 1812,
+  "matched_selected_controls": [
+    "transfer_linear_C0.01_aux0",
+    "transfer_linear_C0.1_aux0",
+    "transfer_spline_C0.01_aux0",
+    "transfer_linear_C0.1_aux0.1"
+  ],
+  "pooled_comparison_vs_round4": {
+    "accuracy_improvement": 0.00231839258114374,
+    "net_correct": 6,
+    "corrected": 104,
+    "newly_wrong": 98,
+    "ci95": [
+      -0.005743146214459045,
+      0.011255117551276714
+    ],
+    "date_blocks": 35,
+    "repetitions": 2000,
+    "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+  },
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

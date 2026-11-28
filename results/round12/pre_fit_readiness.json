@@ -1,0 +1,28 @@
+{
+  "recorded_at_utc": "2026-11-28T09:53:39.675265+00:00",
+  "empirical_fit_started": false,
+  "source_sha256": {
+    "docs/research/round12_residual_state_protocol.md": "54fbc7f95d8419cde22d0d26a1f14d5f6e01acd748a72f73959f365dacc45e34",
+    "scripts/residual_state_round12.py": "f505fa892ba075cb174c63a87fce42f5164467a1798e4ba87c61985147f45522",
+    "scripts/train_residual_state_round12.py": "cbd545bd9330943b08568262d558afd5916e43ff9fbe4f286da7de51c53e33ab",
+    "scripts/audit_residual_state_round12.py": "75faccc56d77a3f34e2dbb79c361c03d9dbf4c60716c8e3f62e811a70cf8a87b",
+    "tests/test_residual_state_round12.py": "0b770b041d3f9b7b4fe4667f93dbec3d74fccdaf79a58741aaa3168ec111ee6b",
+    "tests/test_train_residual_state_round12.py": "cce698a45e63b258400ca99e2ebda7074879230ea13c45c64e3da5ab13f5dbea",
+    "tests/test_residual_state_audit_round12.py": "067068e3358e24f50a0ec7bf92f5e9792dae2fc93fba5bfc46ffb3aaf611df5e",
+    "results/round12/residual_synthetic_feasibility.json": "fb96e152e8743f5e58288296b1ababd3e07a917c5a3d1d58777c8c146426e662"
+  },
+  "readiness": {
+    "research": "ENGINE READY; stopped editing; synthetic only",
+    "features": "RUNNER READY; 13 synthetic tests passed after diagnostics addition",
+    "audit": "CODE READY; final exact protocol/engine reviewed; all 39 focused tests passed"
+  },
+  "tests": {
+    "existing_passed": 343,
+    "existing_skipped": 8,
+    "existing_subtests": 109,
+    "new_passed": 39,
+    "new_subtests": 12
+  },
+  "final_test_evaluated": false,
+  "authorization": "Existing user optimization instruction; internal readiness is not a new user approval"
+}

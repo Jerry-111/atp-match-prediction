@@ -1,0 +1,100 @@
+{
+  "round": 7,
+  "branch": "own_earlier_rounds",
+  "recommendation": "previous_probability_recommendation",
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "accuracy_grid_blend",
+      "best_single": "event_load_spline",
+      "selected_by_family": {
+        "base_linear": "event_base_linear",
+        "base_spline": "event_base_spline",
+        "combined_linear": "event_combined_linear",
+        "combined_spline": "event_combined_spline",
+        "context_linear": "event_context_linear",
+        "context_spline": "event_context_spline",
+        "event_catboost": "event_all_cat_d6",
+        "load_linear": "event_load_linear",
+        "load_spline": "event_load_spline",
+        "performance_linear": "event_performance_linear",
+        "performance_spline": "event_performance_spline",
+        "previous_reference": "previous_probability_recommendation"
+      },
+      "components": [
+        "event_load_spline",
+        "event_load_linear",
+        "event_all_cat_d6",
+        "previous_probability_recommendation"
+      ],
+      "weights": [
+        0.7,
+        0.1,
+        0.1,
+        0.1
+      ],
+      "eligible_models": 13,
+      "selected_accuracy": 0.6654636313159356,
+      "selected_log_loss": 0.6071909431801379,
+      "loss_limit": 0.614177070959239,
+      "selection_rows": 3602,
+      "grid_units": 10
+    },
+    "reference": "previous_probability_recommendation",
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6740506329113924,
+    "accuracy_improvement": 0.002768987341772222,
+    "required_accuracy_improvement": 0.005,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.591950298243826,
+    "allowed_loss_increase": 0.005,
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022
+  },
+  "pooled_selection": {
+    "choice": "accuracy_grid_blend",
+    "best_single": "event_load_spline",
+    "selected_by_family": {
+      "base_linear": "event_base_linear",
+      "base_spline": "event_base_spline",
+      "combined_linear": "event_combined_linear",
+      "combined_spline": "event_combined_spline",
+      "context_linear": "event_context_linear",
+      "context_spline": "event_context_spline",
+      "event_catboost": "event_all_cat_d6",
+      "load_linear": "event_load_linear",
+      "load_spline": "event_load_spline",
+      "performance_linear": "event_performance_linear",
+      "performance_spline": "event_performance_spline",
+      "previous_reference": "previous_probability_recommendation"
+    },
+    "components": [
+      "event_load_spline",
+      "event_performance_linear",
+      "event_all_cat_d6",
+      "previous_probability_recommendation"
+    ],
+    "weights": [
+      0.2,
+      0.3,
+      0.3,
+      0.2
+    ],
+    "eligible_models": 13,
+    "selected_accuracy": 0.6691680261011419,
+    "selected_log_loss": 0.6003883394041397,
+    "loss_limit": 0.60818952373614,
+    "selection_rows": 6130,
+    "grid_units": 10
+  },
+  "historical_input_lag_days": 21,
+  "event_input": "Own completed earlier knockout rounds",
+  "original_T21_recommendation_unchanged": true,
+  "decision_threshold": 0.5,
+  "fit_end_season": 2022,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

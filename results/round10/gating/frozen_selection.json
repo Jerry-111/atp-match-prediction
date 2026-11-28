@@ -1,0 +1,45 @@
+{
+  "round": 10,
+  "branch": "gating",
+  "selected_procedure": "round4_reference",
+  "selection": {
+    "choice": "round4_reference",
+    "selection_season": 2021,
+    "selection_rows": 2388,
+    "accuracy": 0.6557788944723618,
+    "mean_log_loss": 0.6104844670308204,
+    "eligible_entries": [
+      "equal_mix",
+      "global_mix",
+      "conditional_mix",
+      "round4_reference"
+    ],
+    "loss_limit": 0.6154844670308204,
+    "decision_threshold": 0.5
+  },
+  "procedure_gate": {
+    "passed": false,
+    "procedure": "retain_round4",
+    "selected_procedure": "round4_reference",
+    "gate_season": 2022,
+    "gate_rows": 2528,
+    "accuracy_improvement": 0.0,
+    "loss_increase": 0.0,
+    "net_correct": 0,
+    "required_accuracy_improvement": 0.005,
+    "allowed_loss_increase": 0.005,
+    "reference_accuracy": 0.6712816455696202,
+    "candidate_accuracy": 0.6712816455696202,
+    "reference_loss": 0.5946582163399363,
+    "candidate_loss": 0.5946582163399363
+  },
+  "recommendation": "round4_reference",
+  "no_pooled_reselection": true,
+  "selection_rows": 2388,
+  "gate_rows": 2528,
+  "final_meta_fit_rows": 6130,
+  "threshold": 0.5,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false,
+  "original_choice_sha256": "ec1ada6ac3a5506321c12b5a45d81ce4706335d57a52e41015a17a952ef2c8e4"
+}

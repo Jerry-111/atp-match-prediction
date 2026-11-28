@@ -1,0 +1,400 @@
+{
+  "status": "passed",
+  "audited_utc": "2026-11-25T09:48:42.261944+00:00",
+  "auditor": "independent audit agent",
+  "no_refitting_or_tuning": true,
+  "final_test_evaluated": false,
+  "training_rows": 33833,
+  "validation_matches": 2588,
+  "numeric_features": 259,
+  "models_checked": 21,
+  "prediction_id_order_exact": true,
+  "unique_match_ids": true,
+  "probabilities_finite_in_unit_interval": true,
+  "feature_order_and_label_poisoning_exact": true,
+  "max_saved_probability_absolute_error": 0.0,
+  "saved_probability_absolute_error_by_model": {
+    "add_age_spline_C0.01": 0.0,
+    "add_graph_spline_C0.01": 0.0,
+    "add_margin_spline_C0.01": 0.0,
+    "add_point_spline_C0.01": 0.0,
+    "add_points_spline_C0.01": 0.0,
+    "add_profile_spline_C0.01": 0.0,
+    "all_papers_spline_C0.01": 0.0,
+    "paper_compact_linear_C0.01": 0.0,
+    "papers_cat_d4": 0.0,
+    "papers_hist_l15": 0.0,
+    "without_graph_spline_C0.01": 0.0,
+    "without_margin_spline_C0.01": 0.0,
+    "without_point_spline_C0.01": 0.0,
+    "without_profile_spline_C0.01": 0.0,
+    "raw_paper_overall_welo_games_diff": 0.0,
+    "raw_paperpoint_h365_surface_match_logit_diff": 0.0,
+    "round3_recommended": 0.0,
+    "round1_best_single": 0.0,
+    "round1_ensemble": 0.0,
+    "rank_reference": 0.0,
+    "round3_linear": 0.0
+  },
+  "max_shared_score_absolute_error": 0.0,
+  "shared_scores": {
+    "add_age_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1696,
+      "accuracy": 0.6553323029366306,
+      "mean_log_loss": 0.6094069006143001,
+      "brier": 0.21149308142611395
+    },
+    "add_graph_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1692,
+      "accuracy": 0.6537867078825348,
+      "mean_log_loss": 0.6108285843216565,
+      "brier": 0.21217431002500653
+    },
+    "add_margin_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1698,
+      "accuracy": 0.6561051004636785,
+      "mean_log_loss": 0.6104673002100152,
+      "brier": 0.21196687039888054
+    },
+    "add_point_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1697,
+      "accuracy": 0.6557187017001546,
+      "mean_log_loss": 0.6105643923662785,
+      "brier": 0.21201322857277738
+    },
+    "add_points_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1696,
+      "accuracy": 0.6553323029366306,
+      "mean_log_loss": 0.6106095042073293,
+      "brier": 0.21205057599097116
+    },
+    "add_profile_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1694,
+      "accuracy": 0.6545595054095827,
+      "mean_log_loss": 0.6092352665098987,
+      "brier": 0.21142808503281957
+    },
+    "all_papers_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1689,
+      "accuracy": 0.6526275115919629,
+      "mean_log_loss": 0.6087252383013159,
+      "brier": 0.21122553444838635
+    },
+    "paper_compact_linear_C0.01": {
+      "matches": 2588,
+      "correct": 1699,
+      "accuracy": 0.6564914992272025,
+      "mean_log_loss": 0.6134127747148473,
+      "brier": 0.21309959805557732
+    },
+    "papers_cat_d4": {
+      "matches": 2588,
+      "correct": 1692,
+      "accuracy": 0.6537867078825348,
+      "mean_log_loss": 0.6128494494529507,
+      "brier": 0.212851541136325
+    },
+    "papers_hist_l15": {
+      "matches": 2588,
+      "correct": 1690,
+      "accuracy": 0.6530139103554868,
+      "mean_log_loss": 0.6120274928720592,
+      "brier": 0.21254335012356262
+    },
+    "without_graph_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1693,
+      "accuracy": 0.6541731066460588,
+      "mean_log_loss": 0.6086846633258024,
+      "brier": 0.21117708556012652
+    },
+    "without_margin_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1699,
+      "accuracy": 0.6564914992272025,
+      "mean_log_loss": 0.6091575340729473,
+      "brier": 0.21142169063532096
+    },
+    "without_point_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1687,
+      "accuracy": 0.651854714064915,
+      "mean_log_loss": 0.6088729228453156,
+      "brier": 0.21129032348176008
+    },
+    "without_profile_spline_C0.01": {
+      "matches": 2588,
+      "correct": 1699,
+      "accuracy": 0.6564914992272025,
+      "mean_log_loss": 0.6101211346758167,
+      "brier": 0.21185689389641854
+    },
+    "raw_paper_overall_welo_games_diff": {
+      "matches": 2588,
+      "correct": 1638,
+      "accuracy": 0.6329211746522411,
+      "mean_log_loss": 0.6435643437778769,
+      "brier": 0.2250417202194367
+    },
+    "raw_paperpoint_h365_surface_match_logit_diff": {
+      "matches": 2588,
+      "correct": 1641,
+      "accuracy": 0.634080370942813,
+      "mean_log_loss": 0.6350012262614928,
+      "brier": 0.22285094364669905
+    },
+    "round3_recommended": {
+      "matches": 2588,
+      "correct": 1696,
+      "accuracy": 0.6553323029366306,
+      "mean_log_loss": 0.6108223167880373,
+      "brier": 0.21212836793027756
+    },
+    "round1_best_single": {
+      "matches": 2588,
+      "correct": 1689,
+      "accuracy": 0.6526275115919629,
+      "mean_log_loss": 0.6105597267443936,
+      "brier": 0.21220257976754112
+    },
+    "round1_ensemble": {
+      "matches": 2588,
+      "correct": 1684,
+      "accuracy": 0.6506955177743431,
+      "mean_log_loss": 0.6115335523031606,
+      "brier": 0.2124064275990155
+    },
+    "rank_reference": {
+      "matches": 2588,
+      "correct": 1640,
+      "accuracy": 0.633693972179289,
+      "mean_log_loss": 0.629795675429261,
+      "brier": 0.22015601161403017
+    },
+    "round3_linear": {
+      "matches": 2588,
+      "correct": 1705,
+      "accuracy": 0.6588098918083463,
+      "mean_log_loss": 0.6105686650069294,
+      "brier": 0.21203887090752346
+    }
+  },
+  "shared_score_absolute_error_by_model": {
+    "add_age_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "add_graph_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "add_margin_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "add_point_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "add_points_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "add_profile_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "all_papers_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "paper_compact_linear_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "papers_cat_d4": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "papers_hist_l15": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "without_graph_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "without_margin_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "without_point_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "without_profile_spline_C0.01": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "raw_paper_overall_welo_games_diff": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "raw_paperpoint_h365_surface_match_logit_diff": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "round3_recommended": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "round1_best_single": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "round1_ensemble": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "rank_reference": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    },
+    "round3_linear": {
+      "matches": 0.0,
+      "correct": 0.0,
+      "accuracy": 0.0,
+      "mean_log_loss": 0.0,
+      "brier": 0.0
+    }
+  },
+  "max_player_swap_complement_error": 2.220446049250313e-16,
+  "player_swap_complement_error_by_model": {
+    "add_age_spline_C0.01": 2.220446049250313e-16,
+    "add_graph_spline_C0.01": 2.220446049250313e-16,
+    "add_margin_spline_C0.01": 2.220446049250313e-16,
+    "add_point_spline_C0.01": 2.220446049250313e-16,
+    "add_points_spline_C0.01": 2.220446049250313e-16,
+    "add_profile_spline_C0.01": 2.220446049250313e-16,
+    "all_papers_spline_C0.01": 2.220446049250313e-16,
+    "paper_compact_linear_C0.01": 1.1102230246251565e-16,
+    "papers_cat_d4": 1.1102230246251565e-16,
+    "papers_hist_l15": 1.1102230246251565e-16,
+    "without_graph_spline_C0.01": 2.220446049250313e-16,
+    "without_margin_spline_C0.01": 2.220446049250313e-16,
+    "without_point_spline_C0.01": 2.220446049250313e-16,
+    "without_profile_spline_C0.01": 2.220446049250313e-16,
+    "raw_paper_overall_welo_games_diff": 2.220446049250313e-16,
+    "raw_paperpoint_h365_surface_match_logit_diff": 2.220446049250313e-16,
+    "round3_recommended": 2.220446049250313e-16,
+    "round1_best_single": 1.1102230246251565e-16,
+    "round1_ensemble": 2.220446049250313e-16,
+    "rank_reference": 1.1102230246251565e-16,
+    "round3_linear": 1.1102230246251565e-16
+  },
+  "previous_round_probability_errors": {
+    "round3_recommended": 0.0,
+    "round1_best_single": 0.0,
+    "round1_ensemble": 0.0,
+    "rank_reference": 0.0,
+    "round3_linear": 0.0
+  },
+  "profile_snapshot_version": 3,
+  "masked_event": "2019-418",
+  "masked_matches": 47,
+  "masked_age_appearances": 94,
+  "masked_points_appearances": 94,
+  "independent_gate": {
+    "early_selected": "without_margin_spline_C0.003",
+    "pooled_selected": "add_age_spline_C0.01",
+    "reference_round3_early_selected": "history2009_odd_spline_C0.003_context1_half3.0_format1",
+    "reference_2022_loss": 0.601131855143717,
+    "candidate_2022_loss": 0.5959382622080386,
+    "absolute_improvement": 0.005193592935678448,
+    "threshold": 0.001,
+    "procedure": "adopt_paper_model"
+  },
+  "recommendation": "add_age_spline_C0.01",
+  "artifact_sha256": {
+    "frozen_models.joblib": "8788f1bc6ebaa4f6c35ab399e6bd3477b74b9272dac1d8f7629aa458a669a693",
+    "frozen_selection.json": "808a9343792ad410f6b2fe6c95bdc0cee36b0b418a5ec09948bfb0288c161b11",
+    "search_registry.json": "14f50e97e1b7cc23894f04e2d446e61332de23098be7fdb895023701449e0e39",
+    "development_features.csv": "d1000e3fbcdc0810e5a2c51cc6644190e305da1e90b8e29a63280fcc53a771d2",
+    "validation_predictions.csv": "228ee3a0e2c628ffaaa98bea11026f015ec9d53ac6e560705947cc98ba079dac",
+    "validation_comparison.csv": "cee0174acb336026d69cb3a285abd2e9512d7615aaf054a164a3936b32f87e08",
+    "oof_predictions.csv": "d8d6b70c777bd52f9d15ebdf39cbae1b9c4b10786702cab232eadff7f400d3b6",
+    "summary.json": "333f7420eaf63090a7057f81b533d41515b351bbbeca1c840ed6479a456fd169"
+  },
+  "limitations": [
+    "2023 comparisons are exploratory after previous rounds were observed.",
+    "Standardized point model does not reconstruct historical deciding-set rules.",
+    "Artifact audit verifies reproducibility, chronology selection logic, and symmetry; it does not establish SOTA."
+  ]
+}

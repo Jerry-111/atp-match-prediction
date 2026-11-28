@@ -1,0 +1,12 @@
+{
+  "base_passed": 298,
+  "base_skipped": 8,
+  "base_subtests": 97,
+  "torch_tests": 23,
+  "torch_tests_overlapping_base": 7,
+  "base_command": ".venv/bin/python -m pytest -q",
+  "torch_command": ".venv-foundation/bin/python -m unittest tests.test_tabular_neural tests.test_train_neural_round9 tests.test_sequence_features tests.test_sequence_learning",
+  "base_log": "............................................................................................................... [ 36%]\n.......................................... [ 50%]\n............................................................ [ 70%]\n.......................................ssssss.......... [ 88%]\n....................................                                [100%]\n298 passed, 8 skipped, 97 subtests passed in 4.57s",
+  "torch_log": ".......................\n----------------------------------------------------------------------\nRan 23 tests in 1.120s\n\nOK",
+  "note": "Optional Torch tests skipped in base environment are exercised in the pinned isolated environment. Audit scripts independently verify saved artifacts; no test count proves 70% performance."
+}

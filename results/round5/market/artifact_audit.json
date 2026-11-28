@@ -1,0 +1,199 @@
+{
+  "status": "passed",
+  "auditor": "independent features agent",
+  "audit_type": "reload, independent formulas/metrics/source direction, full chronological candidate replay and independently implemented selection",
+  "validation_matches": 2588,
+  "prediction_columns": 21,
+  "probability_cells_verified": 54348,
+  "max_reloaded_probability_error": 0.0,
+  "max_independent_formula_probability_error": 2.220446049250313e-16,
+  "max_metric_error": 0.0,
+  "max_exchange_complement_error": 2.220446049250313e-16,
+  "max_rebuilt_feature_error": 0.0,
+  "max_source_quote_direction_error": 0.0,
+  "accepted_source_matches_verified": 7378,
+  "source_match_reuse_count": 0,
+  "source_player_identity_collision_count": 0,
+  "source_outcomes_read": false,
+  "source_outcome_poisoning_invariance": true,
+  "opening_missing_rows": 101,
+  "all_opening_model_missing_rows_exact_fallback": true,
+  "closing_missing_rows": 111,
+  "closing_missing_rows_exact_fallback": true,
+  "historical_training_input": "audited Round4 true chronological OOF probabilities, never in-sample refit predictions",
+  "historical_base_model": "add_age_spline_C0.01",
+  "folds": {
+    "2021H2": {
+      "training_rows": 1354,
+      "validation_rows": 911,
+      "latest_training_date": "2021-06-19T00:00:00",
+      "first_validation_date": "2021-07-12T00:00:00",
+      "purge_cutoff": "2021-06-21T00:00:00"
+    },
+    "2022": {
+      "training_rows": 2388,
+      "validation_rows": 2528,
+      "latest_training_date": "2021-11-08T00:00:00",
+      "first_validation_date": "2022-01-03T00:00:00",
+      "purge_cutoff": "2021-12-13T00:00:00"
+    }
+  },
+  "chronological_fits_replayed": 40,
+  "max_replayed_oof_probability_error": 0.0,
+  "max_cv_metric_error": 0.0,
+  "early_selected": "fusion_calibrated_C0.01",
+  "pooled_selected": "context_calibrated_C0.01",
+  "recommendation": "context_calibrated_C0.01",
+  "selection_reproduced_independently": true,
+  "closing_is_descriptive_only": true,
+  "decision_threshold": 0.5,
+  "verified_validation_metrics": {
+    "history_only": {
+      "correct": 1696,
+      "accuracy": 0.6553323029366306,
+      "mean_log_loss": 0.6094069006143001,
+      "brier": 0.21149308142611395
+    },
+    "opening_market": {
+      "correct": 1728,
+      "accuracy": 0.6676970633693973,
+      "mean_log_loss": 0.5915829505096849,
+      "brier": 0.2041833229011842
+    },
+    "probability_blend_market0.25": {
+      "correct": 1711,
+      "accuracy": 0.66112828438949,
+      "mean_log_loss": 0.601930984393596,
+      "brier": 0.20842286234038487
+    },
+    "probability_blend_market0.5": {
+      "correct": 1731,
+      "accuracy": 0.6688562596599691,
+      "mean_log_loss": 0.5965610771535539,
+      "brier": 0.20618116289098687
+    },
+    "probability_blend_market0.75": {
+      "correct": 1731,
+      "accuracy": 0.6688562596599691,
+      "mean_log_loss": 0.5931155289914816,
+      "brier": 0.20476798307792
+    },
+    "logit_blend_market0.25": {
+      "correct": 1712,
+      "accuracy": 0.6615146831530139,
+      "mean_log_loss": 0.6019761122422653,
+      "brier": 0.20842576650624434
+    },
+    "logit_blend_market0.5": {
+      "correct": 1731,
+      "accuracy": 0.6688562596599691,
+      "mean_log_loss": 0.5965259168493735,
+      "brier": 0.20617423657774164
+    },
+    "logit_blend_market0.75": {
+      "correct": 1731,
+      "accuracy": 0.6688562596599691,
+      "mean_log_loss": 0.5930640770852167,
+      "brier": 0.20475966663617096
+    },
+    "market_calibrated_C0.01": {
+      "correct": 1728,
+      "accuracy": 0.6676970633693973,
+      "mean_log_loss": 0.5922268522881448,
+      "brier": 0.20430705680816338
+    },
+    "market_calibrated_C0.1": {
+      "correct": 1728,
+      "accuracy": 0.6676970633693973,
+      "mean_log_loss": 0.5915144293712497,
+      "brier": 0.20424621990098404
+    },
+    "market_calibrated_C1": {
+      "correct": 1728,
+      "accuracy": 0.6676970633693973,
+      "mean_log_loss": 0.5915733505390324,
+      "brier": 0.204286861765665
+    },
+    "market_calibrated_C10": {
+      "correct": 1728,
+      "accuracy": 0.6676970633693973,
+      "mean_log_loss": 0.5915810986581492,
+      "brier": 0.20429155666512896
+    },
+    "fusion_calibrated_C0.01": {
+      "correct": 1737,
+      "accuracy": 0.6711746522411128,
+      "mean_log_loss": 0.5937382565259736,
+      "brier": 0.2050518004058381
+    },
+    "fusion_calibrated_C0.1": {
+      "correct": 1735,
+      "accuracy": 0.6704018547140649,
+      "mean_log_loss": 0.5923509141476673,
+      "brier": 0.20458808291438269
+    },
+    "fusion_calibrated_C1": {
+      "correct": 1728,
+      "accuracy": 0.6676970633693973,
+      "mean_log_loss": 0.5921819225301996,
+      "brier": 0.2045309773358119
+    },
+    "fusion_calibrated_C10": {
+      "correct": 1727,
+      "accuracy": 0.6673106646058733,
+      "mean_log_loss": 0.592165456303643,
+      "brier": 0.20452548346266783
+    },
+    "context_calibrated_C0.01": {
+      "correct": 1727,
+      "accuracy": 0.6673106646058733,
+      "mean_log_loss": 0.5930358269072029,
+      "brier": 0.20469920212267642
+    },
+    "context_calibrated_C0.1": {
+      "correct": 1725,
+      "accuracy": 0.6665378670788253,
+      "mean_log_loss": 0.5920383168966633,
+      "brier": 0.20440520326641876
+    },
+    "context_calibrated_C1": {
+      "correct": 1731,
+      "accuracy": 0.6688562596599691,
+      "mean_log_loss": 0.5918341374695826,
+      "brier": 0.204342320164437
+    },
+    "context_calibrated_C10": {
+      "correct": 1731,
+      "accuracy": 0.6688562596599691,
+      "mean_log_loss": 0.5918320971888954,
+      "brier": 0.20433863764584712
+    },
+    "closing_market_descriptive": {
+      "correct": 1752,
+      "accuracy": 0.6769706336939721,
+      "mean_log_loss": 0.5877182121074237,
+      "brier": 0.20278963304630468
+    }
+  },
+  "artifact_sha256": {
+    "features.csv": "af715502be4320267e751cd92d63a4d2918bcf2c86ad2666622329a29942a375",
+    "linked_matches.csv": "e4885dc5df1071537f1fb9a06b10cbb173e6d36d2c4c44f75a5439606ee0dd13",
+    "oof_predictions.csv": "cc62e8878be88650c95c79d41a07a9f11c80720976f4b76e346577b66f3558a3",
+    "validation_predictions.csv": "b838c7dc46471d3294c0d5cc0e3675ecf31db6ef93ea25400bdc793f4cd18fdb",
+    "temporal_cv.csv": "6d66d4de24f07b3ec01500005b33efe5a5ba342f03e1fa5de177b741010a7e81",
+    "validation_comparison.csv": "9b9ea629603aafe7b02e4fec1acce1c91046a974dcecd4b59a083fe8b7c63e1c",
+    "search_registry.json": "c0e5088fb8112e31199c6cecd769632f32f2e7891a83c07b2b6f2d9370c1b959",
+    "frozen_selection.json": "443bfaba95ef35358e0615d4c350ffefce9c5a0fcfd0c3ada0015c3c269664d5",
+    "summary.json": "87f4f34984efdc201b796dd037cee3c2db8928b17bab8787aedf2253c41e9088",
+    "frozen_models.joblib": "fa5dd92d3dcca57b3b7ec371df1fde9a344726edb30c85786bb7fa2ef60dfb97"
+  },
+  "source_manifest_sha256": "446272b84eaed74882777add59ad2058a6f6d267150d2272115b21a864bb44fc",
+  "implementation_sha256": {
+    "scripts/market_data.py": "87e483a7f675eb6cdadf72c8a42ac2ce929e24e18334f7cfea8b850cdf970616",
+    "scripts/train_market_round5.py": "13cf11be2509d2407c6644bf8cb99eaa2cf005a8c225af85521f89a2872a8569"
+  },
+  "final_test_evaluated": false,
+  "final_test_source_files_accessed": false,
+  "interpretation": "Separate later prematch-market information regime; reused2023 exploratory. Quote timestamps are provider-described, not independently proven. No superiority to opening market or70percent claim follows from the selected result.",
+  "elapsed_seconds": 1.663
+}

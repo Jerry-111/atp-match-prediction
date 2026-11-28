@@ -1,0 +1,324 @@
+{
+  "status": "passed",
+  "auditor": "independent /root/audit",
+  "no_model_refitting": true,
+  "final_test_evaluated": false,
+  "validation_matches": 2588,
+  "probability_columns": 7,
+  "oof_rows": 6130,
+  "oof_probability_columns": 4,
+  "saved_fitted_models_reloaded": 12,
+  "fit_checks": {
+    "ret_I_spline_2020": {
+      "scaler_max_error": 0.0,
+      "training_rows": 27703,
+      "design_width": 280,
+      "manual_linear_head_error": 0.0,
+      "iterations": 53
+    },
+    "ret_I_spline_2021": {
+      "scaler_max_error": 0.0,
+      "training_rows": 28917,
+      "design_width": 280,
+      "manual_linear_head_error": 0.0,
+      "iterations": 56
+    },
+    "ret_I_spline_2022": {
+      "scaler_max_error": 0.0,
+      "training_rows": 31305,
+      "design_width": 280,
+      "manual_linear_head_error": 0.0,
+      "iterations": 53
+    },
+    "ret_I_spline_2023": {
+      "scaler_max_error": 0.0,
+      "training_rows": 33833,
+      "design_width": 280,
+      "manual_linear_head_error": 0.0,
+      "iterations": 54
+    },
+    "ret_R_spline_2020": {
+      "scaler_max_error": 0.0,
+      "training_rows": 27703,
+      "design_width": 296,
+      "manual_linear_head_error": 0.0,
+      "iterations": 53
+    },
+    "ret_R_spline_2021": {
+      "scaler_max_error": 0.0,
+      "training_rows": 28917,
+      "design_width": 296,
+      "manual_linear_head_error": 0.0,
+      "iterations": 53
+    },
+    "ret_R_spline_2022": {
+      "scaler_max_error": 0.0,
+      "training_rows": 31305,
+      "design_width": 296,
+      "manual_linear_head_error": 0.0,
+      "iterations": 52
+    },
+    "ret_R_spline_2023": {
+      "scaler_max_error": 0.0,
+      "training_rows": 33833,
+      "design_width": 296,
+      "manual_linear_head_error": 0.0,
+      "iterations": 55
+    },
+    "ret_RC_spline_2020": {
+      "scaler_max_error": 0.0,
+      "training_rows": 27703,
+      "design_width": 296,
+      "manual_linear_head_error": 0.0,
+      "iterations": 53
+    },
+    "ret_RC_spline_2021": {
+      "scaler_max_error": 0.0,
+      "training_rows": 28917,
+      "design_width": 296,
+      "manual_linear_head_error": 0.0,
+      "iterations": 53
+    },
+    "ret_RC_spline_2022": {
+      "scaler_max_error": 0.0,
+      "training_rows": 31305,
+      "design_width": 296,
+      "manual_linear_head_error": 0.0,
+      "iterations": 59
+    },
+    "ret_RC_spline_2023": {
+      "scaler_max_error": 0.0,
+      "training_rows": 33833,
+      "design_width": 296,
+      "manual_linear_head_error": 0.0,
+      "iterations": 51
+    }
+  },
+  "old326_feature_max_error": 0.0,
+  "independently_rebuilt_state_values": 437052,
+  "independent_feature_max_error": 0.0,
+  "independent_source_counts": {
+    "source_rows_by_status": {
+      "retirement": 1452,
+      "walkover": 279,
+      "default": 7
+    },
+    "ret_rows_by_season": {
+      "2006": 94,
+      "2007": 97,
+      "2008": 98,
+      "2009": 102,
+      "2010": 94,
+      "2011": 95,
+      "2012": 89,
+      "2013": 93,
+      "2014": 87,
+      "2015": 94,
+      "2016": 81,
+      "2017": 89,
+      "2018": 68,
+      "2019": 57,
+      "2020": 23,
+      "2021": 59,
+      "2022": 67,
+      "2023": 65
+    },
+    "completed_inventory_rows": 43998,
+    "ret_rows": 1452,
+    "coverage_by_season": {
+      "2009": {
+        "targets": 2593,
+        "either_ret_364": 1625,
+        "both_ret_364": 415,
+        "either_ordinary_return": 2592
+      },
+      "2010": {
+        "targets": 2549,
+        "either_ret_364": 1803,
+        "both_ret_364": 522,
+        "either_ordinary_return": 2541
+      },
+      "2011": {
+        "targets": 2549,
+        "either_ret_364": 1705,
+        "both_ret_364": 477,
+        "either_ordinary_return": 2545
+      },
+      "2012": {
+        "targets": 2480,
+        "either_ret_364": 1511,
+        "both_ret_364": 342,
+        "either_ordinary_return": 2472
+      },
+      "2013": {
+        "targets": 2496,
+        "either_ret_364": 1603,
+        "both_ret_364": 388,
+        "either_ordinary_return": 2491
+      },
+      "2014": {
+        "targets": 2473,
+        "either_ret_364": 1564,
+        "both_ret_364": 360,
+        "either_ordinary_return": 2472
+      },
+      "2015": {
+        "targets": 2507,
+        "either_ret_364": 1494,
+        "both_ret_364": 335,
+        "either_ordinary_return": 2503
+      },
+      "2016": {
+        "targets": 2506,
+        "either_ret_364": 1448,
+        "both_ret_364": 324,
+        "either_ordinary_return": 2498
+      },
+      "2017": {
+        "targets": 2511,
+        "either_ret_364": 1332,
+        "both_ret_364": 211,
+        "either_ordinary_return": 2506
+      },
+      "2018": {
+        "targets": 2537,
+        "either_ret_364": 1349,
+        "both_ret_364": 272,
+        "either_ordinary_return": 2533
+      },
+      "2019": {
+        "targets": 2502,
+        "either_ret_364": 1189,
+        "both_ret_364": 188,
+        "either_ordinary_return": 2495
+      },
+      "2020": {
+        "targets": 1214,
+        "either_ret_364": 405,
+        "both_ret_364": 63,
+        "either_ordinary_return": 1207
+      },
+      "2021": {
+        "targets": 2388,
+        "either_ret_364": 865,
+        "both_ret_364": 128,
+        "either_ordinary_return": 2371
+      },
+      "2022": {
+        "targets": 2528,
+        "either_ret_364": 1118,
+        "both_ret_364": 130,
+        "either_ordinary_return": 2522
+      },
+      "2023": {
+        "targets": 2588,
+        "either_ret_364": 1425,
+        "both_ret_364": 287,
+        "either_ordinary_return": 2580
+      }
+    }
+  },
+  "source_years_read": [
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "candidate_input_dimensions": [
+    332,
+    336,
+    336
+  ],
+  "I_nested_in_R_and_RC": true,
+  "R_RC_same_design_width": true,
+  "oof_reload_max_error": 0.0,
+  "validation_reload_max_error": 0.0,
+  "swap_max_error": 2.220446049250313e-16,
+  "permutation_max_error": 0.0,
+  "changed_order_classifications": 0,
+  "unused_label_column_error": 0.0,
+  "metrics_max_error": 0.0,
+  "independent_early_choice": {
+    "choice": "ret_R_spline",
+    "selected_accuracy": 0.6599111604664075,
+    "selected_log_loss": 0.605651171238122,
+    "loss_limit": 0.614177070959239,
+    "eligible_models": [
+      "previous_probability_recommendation",
+      "ret_I_spline",
+      "ret_R_spline",
+      "ret_RC_spline"
+    ],
+    "selection_rows": 3602,
+    "mixture_search": false
+  },
+  "independent_pooled_choice": {
+    "choice": "ret_I_spline",
+    "selected_accuracy": 0.6657422512234911,
+    "selected_log_loss": 0.5994391025974455,
+    "loss_limit": 0.60818952373614,
+    "eligible_models": [
+      "previous_probability_recommendation",
+      "ret_I_spline",
+      "ret_R_spline",
+      "ret_RC_spline"
+    ],
+    "selection_rows": 6130,
+    "mixture_search": false
+  },
+  "independent_gate_accuracy_gain": 0.001977848101265889,
+  "independent_gate_loss_increase": -0.0044514852754731216,
+  "matched_controls_checked": true,
+  "paired_intervals_recomputed": 14,
+  "official_verified_sample_rows": 10,
+  "official_unresolved_sample_rows": 20,
+  "observed_official_contradictions": 0,
+  "source_semantics_fully_verified": false,
+  "bounded_source_authorization_hashes_verified": true,
+  "limitations": [
+    "No model optimization or full gradient trajectory was repeated; twelve saved fold/final estimators and their preprocessing were checked.",
+    "This audit verifies the existing official-evidence manifest and cached source hashes, not a second human adjudication of PDFs. Twenty sampled records remain unresolved; no population error rate or clinical injury status is established.",
+    "Feature reconstruction shares the established official date-correction table and known-exclusion list, while independently parsing dates/statuses and counting appearances.",
+    "Raw sources were limited to 2006\u20132023. The mixed-year inventory was read only for identity/date/source metadata, then filtered; no final-year labels or annual 2024\u20132025 raw files were opened.",
+    "Repeated 2023 exploration and 2022 gate reuse remain development limitations."
+  ],
+  "audit_source_sha256": "ca11b417439722202483a611f41552b5a4e35071bec308a5a25b3270360375df",
+  "artifact_sha256": {
+    "coverage_by_season.csv": "4d722f8a2ee80f9c54f9848b988115453934381023261aeff27a8a6d0e0fdc02",
+    "development_features.csv": "54533d03af797f229be36b81db0a58ac6043b2e823addaee49025034a741e1aa",
+    "feature_smoke.json": "8cd3240eb1874a0ca515e206c95efe591a2249d98ecc7ce327f01b2a849196f7",
+    "fit_records.json": "e4a3f49d1d880c6b13a254873ab840859acefeef70558cbc77e99d644c1f2af9",
+    "fold_models_ret_I_spline.joblib": "54b46f2ebf954455ad31e73f2e9a373f0d94058a90147db2af68cda7922e1d1b",
+    "fold_models_ret_RC_spline.joblib": "ad8640136c3d212c3c205fa859d808ff0008a494f49c2b03c6af6aacf9eec9e1",
+    "fold_models_ret_R_spline.joblib": "401fca6e160d063186b11399e2ea1f3a2f9ef04cd9e9f02fafd3eefbc67d2943",
+    "frozen_models.joblib": "a466d8710d9a13d36f5e8291a1bef04e66c0005ddf7e0e993dce863d70030e0d",
+    "frozen_selection.json": "0c4b617a5a9fc65d04d3d20d3959337ba09fc8ec66c58a8e82a9129aabb889c4",
+    "matched_controls.csv": "016f5ed17f50531872ec0cbc9d56bd4bd32e8642a9b6529d64888d72e2627f10",
+    "official_reviews.json": "a57d9afb7f5274e981aa90aa0c3890baccc09083dd99680b3710d04c8c51ca20",
+    "official_sources.json": "458a71536203189f08bb5e422f8f3472f71ee895b428acaacab6f2df62d91cab",
+    "oof_predictions.csv": "9de07b5a05a70381b1c80f33b8487a1be3590386a3545fa14ab7c42a760aa67f",
+    "report_summary.md": "e11c74db66dbecf0ab9b9f3ba224ca5f022e24e40ac43d900563697a61f477df",
+    "sample_registry.json": "285accb1a21c9313abb8297ad249834e82a4b8bc6352da964a312e3cb5cccbe8",
+    "search_registry.json": "78d2ea91580b728c0ee8596d1c7a5a163d4f8b982ae209e835936af16d226650",
+    "self_check.json": "631d75d02d5ce0a4220474e9118445b09508c9a0bc89647e8e9647c6490915ed",
+    "source_feasibility.json": "5d9677cb19da16a21bd818991a8bced1cb812334b385e80a661cf02a211e4f69",
+    "summary.json": "ad37757f6c422a67c24ac8278dcbdf7dd0e5aa77f66c191fc938fd8cafce2049",
+    "temporal_cv.csv": "13acb6d11524667ca59d19eb43a577a9fc9df698be5315e35d998a63cfc07a6e",
+    "validation_comparison.csv": "7b5415958cd5fa9f3ec5d11c51601f3f5b9b3b4916edb773d01b74812eeddf18",
+    "validation_predictions.csv": "51260e8f06a99c23412716744d190c4bb5043933a616c45433c1cea3a6bbc7c9"
+  }
+}

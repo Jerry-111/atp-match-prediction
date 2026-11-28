@@ -1,0 +1,70 @@
+{
+  "round": 8,
+  "branch": "historical_venue_style",
+  "recommendation": "previous_probability_recommendation",
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "venue_surface_linear",
+      "selected_accuracy": 0.6599111604664075,
+      "selected_log_loss": 0.6055840932479345,
+      "loss_limit": 0.614177070959239,
+      "eligible_models": [
+        "previous_probability_recommendation",
+        "venue_base_linear",
+        "venue_base_spline",
+        "venue_surface_linear",
+        "venue_surface_spline",
+        "venue_raw_linear",
+        "venue_raw_spline",
+        "venue_adjusted_linear",
+        "venue_adjusted_spline",
+        "venue_strength_linear",
+        "venue_strength_spline"
+      ],
+      "selection_rows": 3602,
+      "mixture_search": false
+    },
+    "reference": "previous_probability_recommendation",
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6748417721518988,
+    "accuracy_improvement": 0.0035601265822785555,
+    "required_accuracy_improvement": 0.005,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5906081379434304,
+    "allowed_loss_increase": 0.005,
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022
+  },
+  "pooled_selection": {
+    "choice": "venue_strength_linear",
+    "selected_accuracy": 0.6675367047308319,
+    "selected_log_loss": 0.5991353002690443,
+    "loss_limit": 0.60818952373614,
+    "eligible_models": [
+      "previous_probability_recommendation",
+      "venue_base_linear",
+      "venue_base_spline",
+      "venue_surface_linear",
+      "venue_surface_spline",
+      "venue_raw_linear",
+      "venue_raw_spline",
+      "venue_adjusted_linear",
+      "venue_adjusted_spline",
+      "venue_strength_linear",
+      "venue_strength_spline"
+    ],
+    "selection_rows": 6130,
+    "mixture_search": false
+  },
+  "frozen_at_utc": "2026-11-28T07:06:06.251939+00:00",
+  "decision_threshold": 0.5,
+  "historical_lag_days": 21,
+  "environment_prior_seasons_only": true,
+  "fit_end_season": 2022,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

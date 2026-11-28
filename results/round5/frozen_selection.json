@@ -1,0 +1,111 @@
+{
+  "round": 5,
+  "recommendation": "previous_probability_recommendation",
+  "probability_reference": "previous_probability_recommendation",
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "accuracy_grid_blend",
+      "best_single": "r5_rff512_g2_squared_hinge_C0.03",
+      "selected_by_family": {
+        "all_inputs": "all_inputs_spline_C0.01",
+        "both_linear": "both_linear_C0.1_halfNone",
+        "both_spline": "both_spline_C0.01_half5.0",
+        "core_linear": "core_linear_C0.1_halfNone",
+        "core_spline": "core_spline_C0.03_half3",
+        "multilevel_linear": "multilevel_linear_C0.1_halfNone",
+        "multilevel_spline": "multilevel_spline_C0.03_half3",
+        "new_catboost": "both_cat_d4_it1200",
+        "new_histboost": "both_hist_l15",
+        "previous_accuracy_comparator": "previous_accuracy_comparator",
+        "previous_exploratory_best_loss": "previous_exploratory_best_loss",
+        "previous_probability_recommendation": "previous_probability_recommendation",
+        "r5_context_logistic": "r5_context_logistic_C0.003",
+        "r5_context_squared_hinge": "r5_context_squared_hinge_C0.03",
+        "r5_existing_spline": "r5_existing_odd_spline_C0.01_context1_half3.0",
+        "r5_linear_logistic": "r5_linear_logistic_C0.03",
+        "r5_linear_squared_hinge": "r5_linear_squared_hinge_C0.03",
+        "r5_rff_logistic": "r5_rff512_g2_logistic_C0.03",
+        "r5_rff_squared_hinge": "r5_rff512_g2_squared_hinge_C0.03",
+        "style_linear": "style_linear_C0.1_half3.0",
+        "style_spline": "style_spline_C0.03_half3"
+      },
+      "components": [
+        "r5_rff512_g2_squared_hinge_C0.03",
+        "r5_rff512_g2_logistic_C0.03",
+        "multilevel_linear_C0.1_halfNone"
+      ],
+      "weights": [
+        0.5,
+        0.3,
+        0.2
+      ],
+      "eligible_models": 78,
+      "selected_accuracy": 0.6701832315380344,
+      "selected_log_loss": 0.6053641532903838,
+      "loss_limit": 0.614177070959239,
+      "selection_rows": 3602,
+      "grid_units": 10
+    },
+    "reference": "previous_probability_recommendation",
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6732594936708861,
+    "accuracy_improvement": 0.001977848101265889,
+    "required_accuracy_improvement": 0.005,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5899169737181146,
+    "allowed_loss_increase": 0.005,
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022
+  },
+  "pooled_selection": {
+    "choice": "accuracy_grid_blend",
+    "best_single": "r5_rff512_g2_squared_hinge_C0.03",
+    "selected_by_family": {
+      "all_inputs": "all_inputs_spline_C0.01",
+      "both_linear": "both_linear_C0.1_half3.0",
+      "both_spline": "both_spline_C0.01_half5.0",
+      "core_linear": "core_linear_C0.1_halfNone",
+      "core_spline": "core_spline_C0.03_half3",
+      "multilevel_linear": "multilevel_linear_C0.01_half3.0",
+      "multilevel_spline": "multilevel_spline_C0.03_half3",
+      "new_catboost": "both_cat_d4_it1200",
+      "new_histboost": "both_hist_l7",
+      "previous_exploratory_best_loss": "previous_exploratory_best_loss",
+      "previous_probability_recommendation": "previous_probability_recommendation",
+      "r5_context_logistic": "r5_context_logistic_C0.003",
+      "r5_context_squared_hinge": "r5_context_squared_hinge_C0.03",
+      "r5_existing_spline": "r5_existing_odd_spline_C0.01_context1_half3.0",
+      "r5_linear_logistic": "r5_linear_logistic_C0.003",
+      "r5_linear_squared_hinge": "r5_linear_squared_hinge_C0.003",
+      "r5_rff_logistic": "r5_rff512_g2_logistic_C0.03",
+      "r5_rff_squared_hinge": "r5_rff512_g2_squared_hinge_C0.03",
+      "style_linear": "style_linear_C0.1_half3.0",
+      "style_spline": "style_spline_C0.01_half3"
+    },
+    "components": [
+      "r5_rff512_g2_squared_hinge_C0.03",
+      "r5_rff512_g2_logistic_C0.03",
+      "both_spline_C0.01_half5.0"
+    ],
+    "weights": [
+      0.5,
+      0.2,
+      0.3
+    ],
+    "eligible_models": 77,
+    "selected_accuracy": 0.6719412724306688,
+    "selected_log_loss": 0.5990588312314531,
+    "loss_limit": 0.60818952373614,
+    "selection_rows": 6130,
+    "grid_units": 10
+  },
+  "fit_end_season": 2022,
+  "history_lag_days": 21,
+  "decision_threshold": 0.5,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

@@ -1,0 +1,74 @@
+{
+  "audit_agent": "independent /root/audit",
+  "status": "passed",
+  "condition": "latest",
+  "validation_rows": 2588,
+  "validation_probability_columns": 28,
+  "oof_rows": 3439,
+  "oof_columns": 28,
+  "input_rebuild_max_error": 0.0,
+  "reload_max_error": 0.0,
+  "swap_max_error": 2.220446049250313e-16,
+  "label_poison_and_column_order_max_error": 0.0,
+  "validation_metrics_max_error": 0.0,
+  "oof_metrics_max_error": 2.220446049250313e-16,
+  "single_selection_and_gate_independently_reproduced": true,
+  "final_train_only_rms_max_error": 0.0,
+  "independent_residual_formula_max_error": 0.0,
+  "final_offset_logistic_gradient_max_abs": 4.0518619303924796e-07,
+  "exact_r4_fallback_rows": 101,
+  "date_block_intervals_recomputed": 28,
+  "fold_populations": {
+    "2021H2": {
+      "fit": 1307,
+      "validation": 911,
+      "cutoff": "2021-06-21 00:00:00"
+    },
+    "2022": {
+      "fit": 2374,
+      "validation": 2528,
+      "cutoff": "2021-12-13 00:00:00"
+    },
+    "2023": {
+      "fit": 4854,
+      "validation": 2588,
+      "cutoff": "2022-12-12 00:00:00"
+    }
+  },
+  "opening_has_no_closing_or_movement_input": false,
+  "temporal_fit_checks": "Earlier 2021/22 only, tournament date and actual UTC each <= fold start minus21 days.",
+  "limits": [
+    "No OOF training or final model fitting repeated. Stored OOF predictions, selectors, final scales and residual formulas checked.",
+    "Later-prematch input condition; opening quote timestamps unknown and earlier-round information is not established to precede opening capture.",
+    "Latest condition uses opening in2021 because closing is entirely missing; later coverage shift remains.",
+    "2023 comparisons exploratory after repeated prior inspection; 2024/25 not read."
+  ],
+  "source_code_sha256": "a5a18449558a3f39dfd6fca228c5ee626b50676c7caac5f549b4c71406f9e9c8",
+  "at_fit_protocol_sha256": "65e3f20ff60a74e12ad49f7e01b5257537da86b3b072287a2397aac6825671a9",
+  "current_protocol_sha256": "89e125e11a6e17694883cbf5dcf16c487abb84c25bd9e54dac93c84e1a1d6b2d",
+  "report_revision": {
+    "reason": "Clarify opening price field versus unverified decision/capture time, especially event-history variants",
+    "at_fit_protocol_sha256": "65e3f20ff60a74e12ad49f7e01b5257537da86b3b072287a2397aac6825671a9",
+    "current_protocol_sha256": "89e125e11a6e17694883cbf5dcf16c487abb84c25bd9e54dac93c84e1a1d6b2d",
+    "previous_report_generator_sha256": "54ce9f2cc50b983fe0b10db5ed0173bf57a6a4b49d02ad72cc5e859018ab3526",
+    "current_report_generator_sha256": "77d261ad682d00e56e2c822eca07bc7b76f88c0d33d1f36529f0596c887bd777",
+    "runner_unchanged_sha256": "a5a18449558a3f39dfd6fca228c5ee626b50676c7caac5f549b4c71406f9e9c8",
+    "all_numerical_artifact_hashes_unchanged": true,
+    "no_refit_no_new_selection": true
+  },
+  "audit_code_sha256": "f324f1c5cb608dcbdb80501622f30ec70014fe22b74639f270c003d7d11ee1a3",
+  "artifact_sha256": {
+    "development_features.csv": "884859dde5d9f088207a9082645b77de7994eabd3a46b412dc66cd72e39bbc55",
+    "fit_populations.csv": "a7e4aedda7e3ee5c09139e1555c00142a29f29a6d9c2005cc1fd13d31a2a0a0a",
+    "frozen_models.joblib": "2c3551d85593c62c66e796176c682bb1d95bd3b12045785c8f3bc92c87a3d4f3",
+    "frozen_selection.json": "8791dcc139596eae40d9d174510bbc23340aa211f31696c8ebe22c19bec9e006",
+    "matched_information_controls.csv": "eb9aba6eab1660f09a5d7d7782c01a2afee5731b3c2c96a91626495503cbf4d6",
+    "oof_predictions.csv": "da96e8ea1c67f6bd72fe27d5138ac9c78bf49b671b889b7a2a76c08442acd28a",
+    "report_summary.md": "90fb73b187a2956bccfb3012212a7f12785c658da4da1a95c716f0042a794d93",
+    "search_registry.json": "c7376ab999d40222175bb54fca0e7833c151f795f18f72dda7d82752b5bca0fc",
+    "summary.json": "5a2c7bcfc679967fad09ac2426a030ced315a531bfb93cf34fd1ea609c1c8db3",
+    "temporal_cv.csv": "4ad2905cc642e05ffa0b8cc50f63c5d9baf4d529a5688d51728d2868e5f0ae56",
+    "validation_comparison.csv": "4ac2b699caf6b7e320ed38120bda94b8f664f88613896ecf70f31231b3af1410",
+    "validation_predictions.csv": "d5d342861485f7e5fbd71b9940619eacda735d495ec5f96e2b388c7c0ad72d51"
+  }
+}

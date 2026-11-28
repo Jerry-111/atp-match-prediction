@@ -1,0 +1,52 @@
+{
+  "status": "passed",
+  "recorded_at_utc": "2026-11-28T09:59:58.894973+00:00",
+  "tests": {
+    "passed": 382,
+    "skipped": 8,
+    "subtests_passed": 121,
+    "components": {
+      "unchanged_base": {
+        "passed": 343,
+        "skipped": 8,
+        "subtests": 109
+      },
+      "round12_focused": {
+        "passed": 39,
+        "skipped": 0,
+        "subtests": 12
+      }
+    },
+    "commands": [
+      ".venv/bin/python -m pytest tests --ignore=tests/test_residual_state_round12.py --ignore=tests/test_train_residual_state_round12.py --ignore=tests/test_residual_state_audit_round12.py -q",
+      ".venv/bin/python -m pytest tests/test_residual_state_round12.py tests/test_residual_state_audit_round12.py tests/test_train_residual_state_round12.py -q"
+    ],
+    "log_sha256": {
+      "/tmp/atp-round12-base-tests.log": "459198756fdff1af9d33867ef37e643b986cf3e3e6f3192410a92f69b96bf695",
+      "/tmp/atp-round12-focused-tests.log": "3347981c17eeb7b779274ba4ddec1e66dd4e35075546373e1c90135e3e453bbc"
+    }
+  },
+  "independent_audit_sha256": "b766b43ebe0eb6647c8aa9e3336d9514facfd8d39baf4fd1d11535f39d9745c6",
+  "pre_fit_readiness_sources_unchanged": true,
+  "saved_global_models_checked": 12,
+  "saved_state_snapshots_checked": 256,
+  "maximum_errors": {
+    "probability": 0.0,
+    "old_control": 0.0,
+    "symmetry": 2.220446049250313e-16,
+    "permutation": 0.0,
+    "batching": 0.0,
+    "transform": 0.0,
+    "objective": 9.094947017729282e-13,
+    "joint_gradient_unscaled": 0.00014372967369524758,
+    "state_gradient_unscaled": 4.318713440421007e-06,
+    "interval": 9.893344823930228e-19
+  },
+  "final_test_evaluated": false,
+  "goal_reached": false,
+  "limits": [
+    "No optimizer trajectory or real-data fit was replayed; saved objectives and gradients were recomputed.",
+    "Old 326 input fields were hash-bound, not reconstructed from raw match sources.",
+    "MAP forecasts do not integrate state uncertainty; reused gate and 2023 remain exploratory."
+  ]
+}

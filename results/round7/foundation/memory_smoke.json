@@ -1,0 +1,22 @@
+{
+  "synthetic_only": true,
+  "outcome_scores_computed": false,
+  "context_rows": 8192,
+  "features": 64,
+  "query_rows": 64,
+  "n_estimators": 1,
+  "inference_config": {
+    "ROW_CONFIG": {
+      "safety_factor": 0.05
+    },
+    "COL_CONFIG": {
+      "safety_factor": 0.05,
+      "offload": "cpu"
+    }
+  },
+  "small_context_equivalence_max_difference": 0.0,
+  "elapsed_seconds": 3.8992269999871496,
+  "large_seconds": 2.7309367079869844,
+  "finite_probabilities": true,
+  "mps_driver_bytes": 3034267648
+}

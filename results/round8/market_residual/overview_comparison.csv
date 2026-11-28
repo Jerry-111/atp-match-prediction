@@ -1,0 +1,7 @@
+condition,model,correct,accuracy,mean_log_loss,role
+opening,raw_market,1728,0.6676970633693973,0.5915829505096849,raw prior
+opening,price_cat_d3_alpha1,1733,0.669629057187017,0.591238943507641,pooled frozen
+opening,history_linear_C0.03_alpha1,1760,0.6800618238021638,0.5967230897774881,"best observed, unselected"
+latest,raw_market,1752,0.6769706336939721,0.5876907045270375,raw prior
+latest,price_cat_d3_alpha1,1734,0.6700154559505409,0.5900459570730271,pooled frozen
+latest,price_linear_C0.03_alpha0.5,1758,0.6792890262751159,0.5876868797851189,"best observed, unselected"

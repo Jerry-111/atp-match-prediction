@@ -1,0 +1,58 @@
+small_equivalence 0.0
+Traceback (most recent call last):
+  File "<stdin>", line 10, in <module>
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_sklearn/classifier.py", line 526, in fit
+    self._build_kv_cache()
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_sklearn/classifier.py", line 550, in _build_kv_cache
+    self.model_.forward_with_cache(
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/tabicl.py", line 746, in forward_with_cache
+    self.col_embedder.forward_with_cache(
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/embedding.py", line 879, in forward_with_cache
+    embeddings = self.inference_mgr(
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/inference.py", line 1347, in __call__
+    out = self._run_forward(forward_fn, self._prepare_inputs(inputs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/inference.py", line 1232, in _run_forward
+    return forward_fn(**inputs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/embedding.py", line 791, in _compute_embeddings_with_cache
+    src = self.tf_col.forward_with_cache(
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/encoders.py", line 401, in forward_with_cache
+    out = block.forward_with_cache(out, col_cache, block_idx, train_size, use_cache, store_cache)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/layers.py", line 791, in forward_with_cache
+    out = self.induced_attention_with_cache(src, col_cache, block_idx, train_size, use_cache, store_cache)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/layers.py", line 735, in induced_attention_with_cache
+    out, k_proj, v_proj = self.multihead_attn2(src, hidden, hidden, need_kv=True)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/layers.py", line 456, in forward
+    attn_result = self._attn_block(
+                  ^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/layers.py", line 508, in _attn_block
+    result = self.attn(
+             ^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/layers.py", line 269, in forward
+    return multi_head_attention_forward(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/attention.py", line 297, in multi_head_attention_forward
+    attn_output = sdpa_with_flattened_batch(
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/attention.py", line 128, in sdpa_with_flattened_batch
+    out = F.scaled_dot_product_attention(q, k, v, attn_mask, dropout_p)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: MPS backend out of memory (MPS allocated: 4.15 GiB, other allocations: 4.81 GiB, max allowed: 10.66 GiB). Tried to allocate 2.12 GiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).

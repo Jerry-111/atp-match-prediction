@@ -1,0 +1,124 @@
+{
+  "status": "passed",
+  "auditor": "independent audit agent /root/audit",
+  "validation_matches": 2588,
+  "probability_columns": 22,
+  "probability_cells_verified": 56936,
+  "max_reloaded_probability_error": 0.0,
+  "max_exchange_complement_error": 2.220446049250313e-16,
+  "max_independent_head_formula_error": 0.0,
+  "max_shared_metric_error": 0.0,
+  "max_oof_metric_error": 1.1102230246251565e-16,
+  "oof_rows": 6130,
+  "oof_probability_columns": 22,
+  "selection_entries": 21,
+  "independent_early_selection": "margin_games_C0.1",
+  "independent_pooled_selection": "margin_points_C0.01_r4blend0.5",
+  "independent_gate": {
+    "passed": false,
+    "accuracy_improvement": 0.0011867088607595555,
+    "loss_increase": -0.0014149917279382418
+  },
+  "recommendation": "round4_reference",
+  "prior_probabilities_exact": true,
+  "all_fixed_blends_exact": true,
+  "target_ids_order_labels_exact": true,
+  "poisoned_inference_columns_ignored": true,
+  "train_target_rebuild_exact": true,
+  "training_target_rows": 33833,
+  "full_training_target_exchange_complement": true,
+  "point_target_valid": 33796,
+  "game_target_valid": 33833,
+  "all_train_scaling_max_error": 0.0,
+  "max_weight_normalized_soft_objective_gradient": 1.804958933327619e-07,
+  "independent_final_inner_calibration_refit_errors": {
+    "margin_binary_C0.01": 0.0,
+    "margin_points_C0.01": 0.0,
+    "margin_games_C0.01": 0.0,
+    "margin_binary_C0.1": 0.0,
+    "margin_points_C0.1": 0.0,
+    "margin_games_C0.1": 0.0
+  },
+  "chronological_folds": [
+    {
+      "outer_year": 2020,
+      "training_rows": 27703,
+      "validation_rows": 1214,
+      "cutoff": "2019-12-16",
+      "inner_train_rows": 25201,
+      "inner_calibration_rows": 2502,
+      "inner_cutoff": "2018-12-10"
+    },
+    {
+      "outer_year": 2021,
+      "training_rows": 28917,
+      "validation_rows": 2388,
+      "cutoff": "2020-12-14",
+      "inner_train_rows": 27703,
+      "inner_calibration_rows": 1214,
+      "inner_cutoff": "2019-12-16"
+    },
+    {
+      "outer_year": 2022,
+      "training_rows": 31305,
+      "validation_rows": 2528,
+      "cutoff": "2021-12-13",
+      "inner_train_rows": 28917,
+      "inner_calibration_rows": 2388,
+      "inner_cutoff": "2020-12-14"
+    },
+    {
+      "outer_year": 2023,
+      "training_rows": 33833,
+      "validation_rows": 2588,
+      "cutoff": "2022-12-12",
+      "inner_train_rows": 31305,
+      "inner_calibration_rows": 2528,
+      "inner_cutoff": "2021-12-13"
+    }
+  ],
+  "matched_control_metrics_max_error": 0.0,
+  "date_bootstrap_interval_exact": true,
+  "actual_target_source_years_read": [
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "read_2023_target_stats": false,
+  "final_test_evaluated": false,
+  "artifact_sha256": {
+    "summary.json": "2947814c1611198d325ea28667759c9db50bcdefd7122e19cdba7ad82f0d2ac2",
+    "training_targets.csv": "f58edfb792c80deca7d706dbc388a04bbc63dedbf2e91e23874e3727c0a2020a",
+    "validation_predictions.csv": "922c71667946fd48a5287ddb386808d23e749c32009363833632ff7faf75b4cf",
+    "search_registry.json": "6c57cc4fc59560454690ee6cc02a6d49dbc1ece6d18463c9891fe380ec597de3",
+    "oof_predictions.csv": "d6dbc5b99c1a0c5098a003dd48c983bf4288393ab08cf868a88c74b875360b0e",
+    "calibration_metadata.json": "2fda1c45ed66a1e014c8372d3ede2c692a59022566995a4fcdfe0a8bd7c94467",
+    "frozen_models.joblib": "121da2719d02bc84e52026a6ca05309647720e19efdd925936e507c4a21e5d0b",
+    "frozen_selection.json": "1ade459890151aa391a1e35b3ad6c1992d91569d0795e0b1291de26d7372aaf0",
+    "temporal_cv.csv": "0efffa7d5ac9ebdca9fcc441497e59aba01a6654cc7f4d7c084e642a26ed79dd",
+    "report_summary.md": "8a63806afe43da41ec57fbed0f8a7f3241e44d2ee7316cfff56e8c62872e9484",
+    "validation_comparison.csv": "e8288adaed1869502bee3b3a87bc84e9c2b05dd407553148e84b7fb28f00d980",
+    "matched_objective_controls.csv": "5ca44f6c6bca8f230327ada29270e25dd94caf097203a6e31b8c1d28ec0951ef"
+  },
+  "implementation_sha256": {
+    "margin_targets.py": "a63a830153d518e94f3eebbf39ddb5cf55e79d74cbbb5378431fb93fa247f059",
+    "train_margin_round7.py": "c506a6bc4f25be702c52b9faa3b33c945b1f03fbb995ec6ca3b572bfb444df1b"
+  },
+  "limits": [
+    "Recomputed all stored OOF scores and selections; did not retrain the 30 outer-fold OOF models.",
+    "Replayed six final inner calibration models independently; uniform inner models were checked by metadata and final objective/scale checks, not replayed.",
+    "2023 and the 2022 gate were reused across rounds; this is artifact/protocol verification, not independent predictive confirmation."
+  ],
+  "elapsed_seconds": 11.77156466600718
+}

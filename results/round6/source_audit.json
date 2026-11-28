@@ -1,0 +1,124 @@
+{
+  "audited_utc": "2026-11-27T16:25:34.089116+00:00",
+  "status": "disagreements_officially_resolved",
+  "protocol_written_before_source_winner_read": true,
+  "processing_order": [
+    2021,
+    2022,
+    2023
+  ],
+  "final_test_evaluated": false,
+  "final_test_source_files_accessed": false,
+  "predictions_read": false,
+  "models_fitted": false,
+  "labels_changed": false,
+  "source_linkage_changed": false,
+  "winner_fields_used_for_matching": false,
+  "source_fields_read": [
+    "match_id",
+    "date",
+    "tournoi_id",
+    "joueur1_id",
+    "joueur2_id",
+    "vainqueur_id"
+  ],
+  "target_rows": 7504,
+  "validation_2023_rows": 2588,
+  "seasons": [
+    {
+      "season": 2021,
+      "targets": 2388,
+      "matched": 2381,
+      "unmatched": 7,
+      "structurally_valid_winners": 2381,
+      "agreements": 2381,
+      "winner_disagreements": 0,
+      "structural_conflicts": 0,
+      "missing_or_invalid_winners": 0,
+      "unrelated_winners": 0,
+      "winner_source_side_counts": {
+        "joueur1": 1206,
+        "joueur2": 1175
+      },
+      "unmatched_status_counts": {
+        "no_pair_date_surface_round_candidate": 4,
+        "name_unmatched_or_ambiguous": 3
+      },
+      "source_agreement_rate": 1.0
+    },
+    {
+      "season": 2022,
+      "targets": 2528,
+      "matched": 2495,
+      "unmatched": 33,
+      "structurally_valid_winners": 2495,
+      "agreements": 2494,
+      "winner_disagreements": 1,
+      "structural_conflicts": 0,
+      "missing_or_invalid_winners": 0,
+      "unrelated_winners": 0,
+      "winner_source_side_counts": {
+        "joueur2": 1267,
+        "joueur1": 1228
+      },
+      "unmatched_status_counts": {
+        "name_unmatched_or_ambiguous": 31,
+        "no_pair_date_surface_round_candidate": 2
+      },
+      "source_agreement_rate": 0.9995991983967936
+    },
+    {
+      "season": 2023,
+      "targets": 2588,
+      "matched": 2502,
+      "unmatched": 86,
+      "structurally_valid_winners": 2502,
+      "agreements": 2502,
+      "winner_disagreements": 0,
+      "structural_conflicts": 0,
+      "missing_or_invalid_winners": 0,
+      "unrelated_winners": 0,
+      "winner_source_side_counts": {
+        "joueur1": 1294,
+        "joueur2": 1208
+      },
+      "unmatched_status_counts": {
+        "name_unmatched_or_ambiguous": 59,
+        "no_pair_date_surface_round_candidate": 27
+      },
+      "source_agreement_rate": 1.0
+    }
+  ],
+  "investigation_rows": 1,
+  "official_resolutions": [
+    {
+      "match_id": "2022-6932:5",
+      "season": 2022,
+      "market_match_id": "458130",
+      "observed_source_winner_id": "109",
+      "observed_target_a_won": 1,
+      "official_winner_atp_id": "A596",
+      "official_winner_name": "Pablo Andujar",
+      "official_loser_name": "Pablo Cuevas",
+      "official_score": "7-6(2) 7-5",
+      "official_source_url": "https://www.protennislive.com/posting/2022/6932/mds.pdf",
+      "official_source_description": "ATP Rio Open 2022 official main-draw singles PDF, page 1, draw positions 19 and 20; visually inspected",
+      "official_source_sha256": "491355fc50fb836767a6808d37fa8d7a076825cdfc0ca7289746ab2db125f735",
+      "verified_on": "2026-11-27",
+      "finding": "Official draw supports the unchanged target winner. External source winner ID disagrees; original target and both source files remain unchanged.",
+      "changes_applied": false
+    }
+  ],
+  "unresolved_investigation_rows": 0,
+  "input_sha256": {
+    "protocol": "c9f39849b5462b08d711d83f6a6696653d80af11154fd5d896c08c444a2b16e5",
+    "manifest": "446272b84eaed74882777add59ad2058a6f6d267150d2272115b21a864bb44fc",
+    "fixed_linkage": "e4885dc5df1071537f1fb9a06b10cbb173e6d36d2c4c44f75a5439606ee0dd13",
+    "targets": "6291a9b51f5aac5d12cf1611c1d89df34350a4f2111d20997ab007c496207d27",
+    "2021": "ea30ae06fab7734ada518b974aacf55bea3cde41ff569f1135c9d05f79cc9aee",
+    "2022": "e4bab3987820ecdded8895648ac7bcbdac2539410fc5d4a9901febb6f95b114c",
+    "2023": "fa45622d678b17176c8b950d09872538dd765a684b16e1910a3ede4e75664bfb",
+    "official_resolution_record": "50c7b040663e472e4f077fadb06b762c55a9ed923b340c4ff8af71bf6864c445"
+  },
+  "interpretation": "Post-link source agreement is a quality check, not independent model validation. Unmatched targets remain unaudited; shared upstream errors remain possible. No labels, cohorts, features, models or scores are changed."
+}

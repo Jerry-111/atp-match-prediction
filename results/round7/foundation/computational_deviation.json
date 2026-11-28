@@ -1,0 +1,14 @@
+{
+  "reason": "Official MPS memory estimator attempted a single oversized row/column embedding batch; hit conservative 60% memory cap.",
+  "completed_before_failure": [
+    "tabicl_context2048",
+    "logistic_context2048",
+    "catboost_context2048"
+  ],
+  "new_2023_predictions_before_change": false,
+  "change": "Supported COL_CONFIG and ROW_CONFIG safety_factor0.05 with column output offload to CPU; same float32 operations and checkpoint.",
+  "candidates_contexts_ensemble_members_labels_cohorts_selection_rules_changed": false,
+  "evidence": "memory_smoke.json:1024-context numerical equivalence exactly0;8192-context synthetic smoke passed.",
+  "rerun_policy": "Rerun all unchanged configurations and all folds; no selection using failed-run scores.",
+  "final_test_evaluated": false
+}

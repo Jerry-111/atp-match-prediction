@@ -1,0 +1,39 @@
+{
+  "recommendation": "previous_probability_recommendation",
+  "pooled_selection": {
+    "choice": "market_graph_h90_surface1_r4blend0.5",
+    "accuracy": 0.6687990694969468,
+    "mean_log_loss": 0.6015711814444323,
+    "selection_rows": 3439,
+    "eligible_models": 7,
+    "loss_limit": 0.605283896705875
+  },
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "market_graph_h90_surface1_r4blend0.5",
+      "accuracy": 0.6553238199780461,
+      "mean_log_loss": 0.6177361929298433,
+      "selection_rows": 911,
+      "eligible_models": 5,
+      "loss_limit": 0.6208950053393473
+    },
+    "accuracy_improvement": 0.002373417721519,
+    "loss_increase": 0.0010876781332898044,
+    "required_accuracy_improvement": 0.005,
+    "allowed_loss_increase": 0.005,
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6736550632911392,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5957458944732261,
+    "selection_fold": "2021H2",
+    "gate_fold": "2022"
+  },
+  "history_lag_days": 21,
+  "decision_threshold": 0.5,
+  "binary_selection_end_season": 2022,
+  "information_regime": "Past opening-market inputs with actual UTC T-21 cutoff",
+  "graph_updates_past_2023_prices": true,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

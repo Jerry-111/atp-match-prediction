@@ -1,0 +1,4 @@
+candidate,control,oof_net_correct,oof_loss_change,validation_net_correct,validation_loss_change
+shared_static_residual,shared_only,3,0.0016797556768611832,5,0.0024187760412852644
+shared_dynamic_residual,shared_static_residual,10,0.002057970206843729,-19,0.0021886366859509288
+shared_dynamic_residual,shared_only,13,0.003737725883704912,-14,0.004607412727236193

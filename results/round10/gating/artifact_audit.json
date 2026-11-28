@@ -1,0 +1,122 @@
+{
+  "status": "passed",
+  "auditor": "independent /root/audit",
+  "no_refitting": true,
+  "final_test_evaluated": false,
+  "primitive_oof_rows": 6130,
+  "honest_meta_validation_rows": 4916,
+  "meta_validation_seasons": [
+    2021,
+    2022
+  ],
+  "no_manufactured_2020_meta_test": true,
+  "validation_matches": 2588,
+  "probability_columns": 4,
+  "saved_meta_optimizers_checked": 6,
+  "base_expert_fits": 0,
+  "fit_checks": {
+    "2021": {
+      "training_rows": 1214,
+      "scaler_rebuild_max_error": 4.440892098500626e-15,
+      "shared_global_anchor_max_error": 0.0,
+      "global_kkt_error": 1.3693324141250685e-08,
+      "conditional_max_gradient": 1.0370354781613807e-09,
+      "conditional_finite_difference_error": 1.1598351318389264e-11
+    },
+    "2022": {
+      "training_rows": 3602,
+      "scaler_rebuild_max_error": 2.0872192862952943e-14,
+      "shared_global_anchor_max_error": 0.0,
+      "global_kkt_error": 2.1034173361411668e-10,
+      "conditional_max_gradient": 9.684334906809137e-10,
+      "conditional_finite_difference_error": 1.5051746430705735e-11
+    },
+    "2023": {
+      "training_rows": 6130,
+      "scaler_rebuild_max_error": 2.842170943040401e-14,
+      "shared_global_anchor_max_error": 0.0,
+      "global_kkt_error": 1.5202383388604468e-08,
+      "conditional_max_gradient": 2.8595172838754776e-10,
+      "conditional_finite_difference_error": 1.0800887735669391e-11
+    }
+  },
+  "exact_four_primitive_hash_identity_label_bindings": true,
+  "context_exposure_semantics_max_error": 1.7763568394002505e-15,
+  "independent_forward_max_error": 0.0,
+  "oof_reload_max_error": 0.0,
+  "validation_reload_max_error": 0.0,
+  "inference_reload_max_error": 0.0,
+  "swap_max_error": 4.440892098500626e-16,
+  "permutation_batch_max_error": 1.1102230246251565e-16,
+  "changed_order_classifications": 0,
+  "label_poisoning_max_error": 0.0,
+  "metrics_max_error": 0.0,
+  "independent_2021_only_selection": {
+    "choice": "round4_reference",
+    "selection_season": 2021,
+    "selection_rows": 2388,
+    "accuracy": 0.6557788944723618,
+    "mean_log_loss": 0.6104844670308204,
+    "eligible_entries": [
+      "equal_mix",
+      "global_mix",
+      "conditional_mix",
+      "round4_reference"
+    ],
+    "loss_limit": 0.6154844670308204,
+    "decision_threshold": 0.5
+  },
+  "independent_2022_gate": {
+    "passed": false,
+    "procedure": "retain_round4",
+    "selected_procedure": "round4_reference",
+    "gate_season": 2022,
+    "gate_rows": 2528,
+    "accuracy_improvement": 0.0,
+    "loss_increase": 0.0,
+    "net_correct": 0,
+    "required_accuracy_improvement": 0.005,
+    "allowed_loss_increase": 0.005,
+    "reference_accuracy": 0.6712816455696202,
+    "candidate_accuracy": 0.6712816455696202,
+    "reference_loss": 0.5946582163399363,
+    "candidate_loss": 0.5946582163399363
+  },
+  "no_pooled_reselection": true,
+  "paired_intervals_recomputed": 2,
+  "all_clipping_counts_and_weight_spread_checked": true,
+  "final_frozen_manifest_verified": true,
+  "invalid_season_probes_rejected": [
+    2015,
+    2020,
+    2024,
+    2025
+  ],
+  "limitations": [
+    "No optimizer, primitive model, or historical training trajectory was rerun.",
+    "R4/R5 primitive fold weights were not retained. Their OOF legality relies on audited caches and generation paths, unlike the directly reloaded R9 fold models.",
+    "Source ordering proves the freeze-before-new-prediction code path; file hashes alone are not independent wall-clock proof.",
+    "Prior recipe selection, repeated 2022 gate use and repeated 2023 exploration remain adaptive research limitations; no 2024\u20132025 data were opened."
+  ],
+  "audit_source_sha256": "a0e9524e2be152fcb5633f358bb6e133f3fe10d08618ba604639197757db37f7",
+  "artifact_sha256": {
+    "final_fit_manifest.json": "f970a5fe6710b669234ed3b2892dd8f05f4300015c1ecc50d893825f90f13653",
+    "frozen_2021_choice.json": "ec1ada6ac3a5506321c12b5a45d81ce4706335d57a52e41015a17a952ef2c8e4",
+    "frozen_models.joblib": "5b8db16508ffb9499b965e5f98b37dac38e14a601af715743d1ac04318679bab",
+    "frozen_selection.json": "e5615dcce71d8bb41de03bf503a835a61e3dbe59a8672bf3fa66f2589a56a34f",
+    "inference_inputs.csv": "446a12b1d43069fcc0f2bce2718d10423d017c8350df9d041ed713c491267685",
+    "inference_predictions.csv": "e6d1800136e051f4738d39531029d739677725e96047f53467cf7c529c8a0608",
+    "matched_routing.csv": "9dc347ee9d461018a95bb511241dd0444f23c5da1c7c8a7bb8a2fb370757f5c6",
+    "oof_predictions.csv": "faa9ec930208b87045185a18ed4f4bd71f99641869097c533153fcacc9b5d8df",
+    "primitive_oof_inputs.csv": "e16435e01d9048b0f9c513c30a156fd4f1bbffed17ad7d34e4882a902901ee13",
+    "report_summary.md": "e12f08098eb748c87eb348d00e99320889f7f9d53c7af7710c2af246ee8b5590",
+    "search_registry.json": "f01ff462ba6ed7d9bcd983708c6f65f6ee5a727c8a44f70ca18d175b41c45a15",
+    "summary.json": "e1525da349072981d47139296949f37b0afd3e5dc6e4b400a2c895a068bb39aa",
+    "temporal_cv.csv": "4be0c197ca1ea0a41519d6556e00e26440e28634938ca9a562435dbf440b9771",
+    "training_metadata.json": "fd8d5f89192987ba08a57265faca9e2302138bea1a92fe7b4a7b9d66f66245ce",
+    "validation_comparison.csv": "6a5452fb0a5818e686ccf3d858561cbe781a8186a4dbbf173aa9c073bbc04cd4",
+    "validation_experts.csv": "d22df04a46992dc05d9c0090595852a11729554b1cf667623872a5fdbda1a86b",
+    "validation_predictions.csv": "9c1df1451671344768158c4bc64c9130a6aa1e6867ceb23241ff9c69bd4f4bd6",
+    "weight_spread.csv": "5c314572185c912296e3dacada9d501589a29b116a8362d5fa2b21b02c7a8d2c"
+  }
+}

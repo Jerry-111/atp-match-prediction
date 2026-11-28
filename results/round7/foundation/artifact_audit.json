@@ -1,0 +1,201 @@
+{
+  "status": "passed",
+  "auditor": "independent audit agent /root/audit",
+  "validation_matches": 2588,
+  "probability_columns": 15,
+  "probability_cells_verified": 38820,
+  "reload_error_by_model": {
+    "round4_reference": 0.0,
+    "round5_pooled_comparator": 0.0,
+    "round5_probability_comparator": 0.0,
+    "tabicl_context2048": 0.0,
+    "logistic_context2048": 0.0,
+    "catboost_context2048": 0.0,
+    "tabicl_context4096": 0.0,
+    "logistic_context4096": 0.0,
+    "catboost_context4096": 0.0,
+    "tabicl_context2048_r4blend0.25": 0.0,
+    "tabicl_context2048_r4blend0.5": 0.0,
+    "tabicl_context2048_r4blend0.75": 0.0,
+    "tabicl_context4096_r4blend0.25": 0.0,
+    "tabicl_context4096_r4blend0.5": 0.0,
+    "tabicl_context4096_r4blend0.75": 0.0
+  },
+  "max_reload_probability_error": 0.0,
+  "exchange_complement_error_by_model": {
+    "round4_reference": 2.220446049250313e-16,
+    "round5_pooled_comparator": 2.220446049250313e-16,
+    "round5_probability_comparator": 2.220446049250313e-16,
+    "tabicl_context2048": 0.0,
+    "logistic_context2048": 0.0,
+    "catboost_context2048": 1.1102230246251565e-16,
+    "tabicl_context4096": 0.0,
+    "logistic_context4096": 0.0,
+    "catboost_context4096": 1.1102230246251565e-16,
+    "tabicl_context2048_r4blend0.25": 2.220446049250313e-16,
+    "tabicl_context2048_r4blend0.5": 2.220446049250313e-16,
+    "tabicl_context2048_r4blend0.75": 1.1102230246251565e-16,
+    "tabicl_context4096_r4blend0.25": 2.220446049250313e-16,
+    "tabicl_context4096_r4blend0.5": 2.220446049250313e-16,
+    "tabicl_context4096_r4blend0.75": 1.1102230246251565e-16
+  },
+  "max_exchange_complement_error": 2.220446049250313e-16,
+  "reload_classification_changes": {
+    "round4_reference": 0,
+    "round5_pooled_comparator": 0,
+    "round5_probability_comparator": 0,
+    "tabicl_context2048": 0,
+    "logistic_context2048": 0,
+    "catboost_context2048": 0,
+    "tabicl_context4096": 0,
+    "logistic_context4096": 0,
+    "catboost_context4096": 0,
+    "tabicl_context2048_r4blend0.25": 0,
+    "tabicl_context2048_r4blend0.5": 0,
+    "tabicl_context2048_r4blend0.75": 0,
+    "tabicl_context4096_r4blend0.25": 0,
+    "tabicl_context4096_r4blend0.5": 0,
+    "tabicl_context4096_r4blend0.75": 0
+  },
+  "query_batch_and_permutation_checks": {
+    "tabicl_context2048": {
+      "queries": 128,
+      "chunk_difference": 5.587935447692871e-07,
+      "permutation_difference": 5.587935447692871e-07,
+      "poisoned_column_difference": 0.0
+    },
+    "tabicl_context4096": {
+      "queries": 128,
+      "chunk_difference": 4.470348358154297e-07,
+      "permutation_difference": 4.76837158203125e-07,
+      "poisoned_column_difference": 0.0
+    }
+  },
+  "max_saved_shared_metric_error": 0.0,
+  "max_reload_shared_metric_error": 0.0,
+  "max_oof_metric_error": 1.1102230246251565e-16,
+  "oof_rows": 6130,
+  "oof_probability_columns": 15,
+  "selection_entries": 13,
+  "eligible_early": 12,
+  "eligible_pooled": 12,
+  "independent_early_selection": "tabicl_context4096_r4blend0.75",
+  "independent_pooled_selection": "tabicl_context4096_r4blend0.75",
+  "independent_gate": {
+    "passed": true,
+    "accuracy_improvement": 0.010284810126582333,
+    "loss_increase": -0.0001340711948332185
+  },
+  "recommendation": "tabicl_context4096_r4blend0.75",
+  "all_fixed_blends_verified": true,
+  "prior_probabilities_exact": true,
+  "target_identity_order_verified": true,
+  "all_contexts": [
+    {
+      "year": 2020,
+      "count": 2048,
+      "cutoff": "2019-12-16",
+      "latest": "2019-10-28",
+      "original_context_sha256": "25703fd755ccac0ae2c905aa8439c2b37e3147232a7d9298590d0b8b5fef16a5"
+    },
+    {
+      "year": 2020,
+      "count": 4096,
+      "cutoff": "2019-12-16",
+      "latest": "2019-10-28",
+      "original_context_sha256": "653fa14c4fc8e6c8b4cb46f5ed7034b4ea0167af55cc448bca4ab78a424e972b"
+    },
+    {
+      "year": 2021,
+      "count": 2048,
+      "cutoff": "2020-12-14",
+      "latest": "2020-11-09",
+      "original_context_sha256": "565527efa05faee5eedfc6b951c4af473320ddd15b2521a31bd0f0049950e224"
+    },
+    {
+      "year": 2021,
+      "count": 4096,
+      "cutoff": "2020-12-14",
+      "latest": "2020-11-09",
+      "original_context_sha256": "76c1043553a6b4d0e950a2d153ed51aaa44b5274e814977580f41ecc1d9221f0"
+    },
+    {
+      "year": 2022,
+      "count": 2048,
+      "cutoff": "2021-12-13",
+      "latest": "2021-11-08",
+      "original_context_sha256": "cde3566b1eb51a6979deabc55b88c52cad1e97bd01d5dcca2dafc1de973a315b"
+    },
+    {
+      "year": 2022,
+      "count": 4096,
+      "cutoff": "2021-12-13",
+      "latest": "2021-11-08",
+      "original_context_sha256": "9cd34d01eefd6246f212d4973503cc4fe5ec3f9db5732dd1aca1316a764cfcca"
+    },
+    {
+      "year": 2023,
+      "count": 2048,
+      "cutoff": "2022-12-12",
+      "latest": "2022-10-31",
+      "original_context_sha256": "f61bec6b30306dfcb3290e9c44e4fd35bc7d4529ff03726779f8d9b6d7da6721"
+    },
+    {
+      "year": 2023,
+      "count": 4096,
+      "cutoff": "2022-12-12",
+      "latest": "2022-10-31",
+      "original_context_sha256": "0b082456155bf1d98bc8b6ae58fb79f7b584142ff49a9b1c43e1c37227a26796"
+    }
+  ],
+  "context_features_and_mirrored_labels_verified": true,
+  "conventional_context_scalers_verified": true,
+  "teacher_or_market_input_used": false,
+  "matched_metrics_max_error": 0.0,
+  "max_date_bootstrap_interval_error": 0.0,
+  "checkpoint_sha256": "bdc7dbd5e4ff21f8f0456fcf90c6b7cdf72dbea960f2d05b19bec19f9b3d4ed0",
+  "computational_deviation_verified": true,
+  "changed_candidates_after_memory_failure": false,
+  "source_years_in_fitted_context": [
+    2021,
+    2022
+  ],
+  "final_test_evaluated": false,
+  "artifact_sha256": {
+    "memory_smoke.json": "905d27d181c55c6e0caba893902da5855d6c3af471af7342242d4a25c315eeb8",
+    "summary.json": "aebcd5cbd4886f5ded205d1405cbe11afe73af93535f480f482d135f0cd1bbc5",
+    "matched_learner_controls.csv": "a0832506714e7ec19b804067a2e8dce1919fd3bbf0aaeb72366a3bed15fdcaa2",
+    "aborted_attempt1_registry.json": "f6e6b93d3578c82b9d79553d5f7945e45066cd5c87d16eeb3c44ed8031b99dee",
+    "validation_predictions.csv": "d6d4a7adfa559a201436291b81a7452f76792296072f629e16bcbf7dfa94b3a9",
+    "search_registry.json": "1f72762807a0f9f140098e6ed1e7bc0b967ce18c78c795cca04977a911c369ad",
+    "oof_predictions.csv": "a5c52eab3f2a7ab9fece17068a6363f4f261e5f0ba2094308f15a03e4ddf484f",
+    "failed_row_only_memory_smoke.log": "12e662098b36432f09818af0464bc2df5af877084f15cbbe8efef69740d4fec1",
+    "frozen_models.joblib": "952eb8794802bf220a1a9ff63f8e3776039bb4a5379056bad497bedd30f02116",
+    "aborted_attempt1.log": "a1ff871085020b0ea246ae85b1f55b61ce7f8c629bbb3467071bae880facdeb2",
+    "frozen_selection.json": "3cfdcd1fa136d6cf7f08596a409c9e4bc48ea8ec1e527e49e83a169aeea26832",
+    "report_revision.json": "43d742837d915e56ae6d0353714399322eb92023d0f79ecb18e05cbdb1bd5a4d",
+    "dependencies.txt": "ba02b51fb8c5059b1b6647e108712cac9c0e7e8382f21187944f27d74d4f9e88",
+    "development_features.csv": "edc5f8bc6d83ffc32d89a6c31d4df67f674d7f0ea9a14fc8b3f932a64aa44990",
+    "temporal_cv.csv": "b0e8a29a931474b32f0b96fef23fda54d260a2652b1da9ed59c112720bc6246d",
+    "report_summary.md": "52ebf7c6e1bf14f0503d8d079634c855aa27bd9e6ed1a6b66f3041d045d4e204",
+    "computational_deviation.json": "17d5f3c578d26c1a330cc8b7e641c40841317ba39ad50fca904ab7211039f128",
+    "validation_comparison.csv": "16c596d1e3eec40b7803e73a8c7eb504193ae7712c85297e06627c0ac1468644",
+    "smoke.json": "760c42278c53398d216d0ce1a8f63da6171ad72d270fdb639d644d6fbf5650b1",
+    "serialization_smoke.json": "919e058e3094f8f1cb91dcfb0de3c59e8a3fc2ec8abd36c8e3009abc67b8d24c",
+    "timing.csv": "085ac85a9729587c97e5e0ef024ae841b173114d37a0c8c78dfdb9c1ab1c0500",
+    "context_rows.json": "04a9a26f75c9463d211690f6055e00af6dca62d7d468524693aba6477d03b280"
+  },
+  "limits": [
+    "Recomputed all stored OOF metrics, contexts and selections, but did not refit 18 outer-fold models.",
+    "Query invariance examined all 2588 exchanges and a fixed 128-query chunk/permutation test per foundation model; float32 MPS differences are reported.",
+    "The 2022 gate passed but 2023 performance declined; audit confirms procedure/artifacts, not predictive superiority."
+  ],
+  "elapsed_seconds": 33.17913987499196,
+  "source_revision": {
+    "fit_source_sha256": "f6b0b9d2b456c8dc96ee114785ed625cabac23aa2b8d2b5dc920d1c043d54f27",
+    "current_source_sha256": "cd2b697d30fb76d8a7f7293901049b7489fa281c6949526e4623ea5e025a9df2",
+    "ast_outside_write_report_identical": true,
+    "description": "Presentation-only: branch-local recommendation and explicit observed2023 decline; no fit/predict/selection changes."
+  },
+  "current_implementation_sha256": "cd2b697d30fb76d8a7f7293901049b7489fa281c6949526e4623ea5e025a9df2"
+}

@@ -1,0 +1,10 @@
+{
+  "at_fit_runner_sha256": "8c404889a7b5481bda7ee7f52c67816654fe9d340228f394ad30515f4d221cda",
+  "current_runner_sha256": "5756ff334db68b20e206bc63e127ad8a4478decf0b47185e48fa98acc0795571",
+  "changes": [
+    "write_report renders Markdown without optional tabulate dependency",
+    "self_check metadata key corrected: labels are read for pinned identity checking, but scoring occurs only after freeze"
+  ],
+  "computation_AST_unchanged_after_removing_report_and_renaming_metadata_key": true,
+  "no_refit_or_rescore": true
+}

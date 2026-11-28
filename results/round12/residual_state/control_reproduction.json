@@ -1,0 +1,26 @@
+{
+  "2020": {
+    "rows": 1214,
+    "max_absolute_error": 0.0,
+    "classification_changes": 0,
+    "correct": 804
+  },
+  "2021": {
+    "rows": 2388,
+    "max_absolute_error": 0.0,
+    "classification_changes": 0,
+    "correct": 1569
+  },
+  "2022": {
+    "rows": 2528,
+    "max_absolute_error": 0.0,
+    "classification_changes": 0,
+    "correct": 1708
+  },
+  "2023": {
+    "rows": 2588,
+    "max_absolute_error": 0.0,
+    "classification_changes": 0,
+    "correct": 1706
+  }
+}

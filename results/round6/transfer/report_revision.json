@@ -1,0 +1,9 @@
+{
+  "scope": "Report prose only: distinguish eligible training pool from positive-weight selected rows; state matched negative results.",
+  "original_fit_source_sha256": "45557529c01ea86ae91cf6012f2b07b259772cb2ead80282effe81cb681ac20f",
+  "report_revised_source_sha256": "73ecd25b0379c5b3fc136987e3bf29d209b00a632b520b481bb76e07973bc468",
+  "reversing_only_documented_prose_reconstructs_original_fit_hash": true,
+  "models_features_probabilities_selections_changed": false,
+  "report_regenerated_without_fitting": true,
+  "final_test_evaluated": false
+}

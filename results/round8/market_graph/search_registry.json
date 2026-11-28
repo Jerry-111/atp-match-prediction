@@ -1,0 +1,137 @@
+{
+  "round": 8,
+  "experiment": "historical_opening_market_graph",
+  "candidates": [
+    {
+      "name": "market_graph_h90_surface0",
+      "graph": "market_graph_h90_surface0",
+      "weight": 1.0
+    },
+    {
+      "name": "market_graph_h90_surface0_r4blend0.5",
+      "graph": "market_graph_h90_surface0",
+      "weight": 0.5
+    },
+    {
+      "name": "market_graph_h90_surface1",
+      "graph": "market_graph_h90_surface1",
+      "weight": 1.0
+    },
+    {
+      "name": "market_graph_h90_surface1_r4blend0.5",
+      "graph": "market_graph_h90_surface1",
+      "weight": 0.5
+    },
+    {
+      "name": "market_graph_h365_surface0",
+      "graph": "market_graph_h365_surface0",
+      "weight": 1.0
+    },
+    {
+      "name": "market_graph_h365_surface0_r4blend0.5",
+      "graph": "market_graph_h365_surface0",
+      "weight": 0.5
+    },
+    {
+      "name": "market_graph_h365_surface1",
+      "graph": "market_graph_h365_surface1",
+      "weight": 1.0
+    },
+    {
+      "name": "market_graph_h365_surface1_r4blend0.5",
+      "graph": "market_graph_h365_surface1",
+      "weight": 0.5
+    },
+    {
+      "name": "market_graph_hinf_surface0",
+      "graph": "market_graph_hinf_surface0",
+      "weight": 1.0
+    },
+    {
+      "name": "market_graph_hinf_surface0_r4blend0.5",
+      "graph": "market_graph_hinf_surface0",
+      "weight": 0.5
+    },
+    {
+      "name": "market_graph_hinf_surface1",
+      "graph": "market_graph_hinf_surface1",
+      "weight": 1.0
+    },
+    {
+      "name": "market_graph_hinf_surface1_r4blend0.5",
+      "graph": "market_graph_hinf_surface1",
+      "weight": 0.5
+    }
+  ],
+  "graph_settings": [
+    {
+      "name": "market_graph_h90_surface0",
+      "half_life": 90.0,
+      "other_surface": 1.0
+    },
+    {
+      "name": "market_graph_h90_surface1",
+      "half_life": 90.0,
+      "other_surface": 0.25
+    },
+    {
+      "name": "market_graph_h365_surface0",
+      "half_life": 365.0,
+      "other_surface": 1.0
+    },
+    {
+      "name": "market_graph_h365_surface1",
+      "half_life": 365.0,
+      "other_surface": 0.25
+    },
+    {
+      "name": "market_graph_hinf_surface0",
+      "half_life": null,
+      "other_surface": 1.0
+    },
+    {
+      "name": "market_graph_hinf_surface1",
+      "half_life": null,
+      "other_surface": 0.25
+    }
+  ],
+  "selectable_count": 13,
+  "graph_setting_count": 6,
+  "fixed_blends": 6,
+  "new_binary_classifier_fits": 0,
+  "source_years_read": [
+    2021,
+    2022,
+    2023
+  ],
+  "information_regime": "Past opening-market inputs with actual UTC T-21 cutoff",
+  "protocol_sha256": "2ffb7c7df5e168e7ce461e04ce545479ad4c98f655d63d032790cc27fa5b5360",
+  "source_code_sha256": "fb0215e98f3aaeb2a1783db87364465deef317f94a8750d96c81a65017faaeff",
+  "feature_code_sha256": "cea3d4e4eaa947af61ed3e1b927f94bcf1b17f7dee2f674419df0a7339ebe749",
+  "target_sha256": "9bcb3ad4b0fbe745b23b776a750256f92ab9acc9fd1cb57aed0a16cef86435d2",
+  "previous_artifact_sha256": {
+    "frozen_models.joblib": "34054f61c028aef9829567236f08704f341985c3878571dc0ec40d7b182e71ff",
+    "frozen_selection.json": "b82bb070cffabe55e62033f35c20482bc29b3be6df35505d97f291c140b501ea",
+    "search_registry.json": "e6da4d50f1c289b9417881d204fee5fc0e3ad930b67a3314452b4baba1b1a5a0",
+    "development_features.csv": "22f43ab601229c71bfd23fe3732801b510f8d1a198c69c090ab93e8ae991087e",
+    "validation_predictions.csv": "a2826e57586b49a9b3428e14224d64520be182e059ae963fe3f5796bdaea370f",
+    "validation_comparison.csv": "275e05f57eb8af10d81cccdef587389d33090c9ab2200ccd09c6eba67ff2ff5f",
+    "oof_predictions.csv": "48ac256c83ad0d479af95829b7db5054449744e0c263ea12ddc2a421a875724a",
+    "temporal_cv.csv": "939b30f3352841fb8390b9e29ad8cc4423a32e378bf91030562419f4b4304868",
+    "summary.json": "2982c337dce352c9634bf81882fbf29834cb5c57d4502cc491695511a8c2040f"
+  },
+  "source_manifest_sha256": "446272b84eaed74882777add59ad2058a6f6d267150d2272115b21a864bb44fc",
+  "linkage_sha256": "e4885dc5df1071537f1fb9a06b10cbb173e6d36d2c4c44f75a5439606ee0dd13",
+  "report_only_comparators": [
+    "previous_round5_exploration",
+    "previous_round5_best_loss",
+    "previous_round7_market_student",
+    "selected_graph_locked_pre2023"
+  ],
+  "source_outcomes_read": false,
+  "current_target_odds_used": false,
+  "cutoff": "source UTC <= tournament UTC midnight - 21 days",
+  "decision_threshold": 0.5,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

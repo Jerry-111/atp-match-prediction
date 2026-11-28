@@ -1,0 +1,9 @@
+{
+  "scope": "write_report prose only: branch-local choice and observed 2023 failure; no global replacement of prior Round4 probability recommendation.",
+  "original_fit_source_sha256": "f6b0b9d2b456c8dc96ee114785ed625cabac23aa2b8d2b5dc920d1c043d54f27",
+  "presentation_source_sha256": "cd2b697d30fb76d8a7f7293901049b7489fa281c6949526e4623ea5e025a9df2",
+  "all_code_outside_write_report_exactly_unchanged": true,
+  "models_features_probabilities_selections_changed": false,
+  "report_regenerated_without_fitting": true,
+  "final_test_evaluated": false
+}

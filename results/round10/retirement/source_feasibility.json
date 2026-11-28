@@ -1,0 +1,1184 @@
+{
+  "status": "semantic_audit_incomplete",
+  "source_years_read": [
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "source_rows_by_status": {
+    "retirement": 1387,
+    "walkover": 262,
+    "default": 6
+  },
+  "unique_ret_losers": 341,
+  "sample_rows": 30,
+  "ret_census_by_surface": {
+    "Hard": 787,
+    "Clay": 426,
+    "Grass": 164,
+    "Carpet": 10
+  },
+  "ret_census_by_round": {
+    "R32": 532,
+    "R64": 234,
+    "R128": 229,
+    "R16": 206,
+    "QF": 109,
+    "SF": 57,
+    "F": 14,
+    "RR": 6
+  },
+  "non_ret_statuses_not_pooled": true,
+  "observed_official_contradictions": 0,
+  "source_semantics_fully_verified": false,
+  "model_fitting_ready": false,
+  "root_limited_experiment_authorized": true,
+  "authorization_scope": "Three nested inactivity/RET experiments accepted with 10/30 official checks and 20 unresolved; this is not full source verification.",
+  "decision": "Partial source evidence retained; coordinator authorized a bounded provider-recorded-status experiment, not a validated injury model.",
+  "sample_distribution": {
+    "era": {
+      "2006-2011": 11,
+      "2018-2022": 10,
+      "2012-2017": 9
+    },
+    "surface": {
+      "Hard": 10,
+      "Grass": 10,
+      "Clay": 9,
+      "Carpet": 1
+    },
+    "round": {
+      "R16": 8,
+      "SF": 8,
+      "R32": 5,
+      "R128": 2,
+      "QF": 2,
+      "R64": 2,
+      "F": 2,
+      "RR": 1
+    },
+    "missing_technical_fields": {
+      "false": 27,
+      "true": 3
+    }
+  },
+  "review_counts": {
+    "verified": 10,
+    "unverified": 20
+  },
+  "sample_registry_sha256": "285accb1a21c9313abb8297ad249834e82a4b8bc6352da964a312e3cb5cccbe8",
+  "official_reviews_sha256": "a57d9afb7f5274e981aa90aa0c3890baccc09083dd99680b3710d04c8c51ca20",
+  "official_sources_sha256": "458a71536203189f08bb5e422f8f3472f71ee895b428acaacab6f2df62d91cab",
+  "official_verified_by_era": {
+    "2006-2011": 9,
+    "2018-2022": 1
+  },
+  "official_verified_by_surface": {
+    "Clay": 2,
+    "Hard": 5,
+    "Carpet": 1,
+    "Grass": 2
+  },
+  "coverage_pre2023": {
+    "2009": {
+      "targets": 2593,
+      "either_ret_loser_90": 574,
+      "either_ret_loser_364": 1625
+    },
+    "2010": {
+      "targets": 2549,
+      "either_ret_loser_90": 615,
+      "either_ret_loser_364": 1803
+    },
+    "2011": {
+      "targets": 2549,
+      "either_ret_loser_90": 571,
+      "either_ret_loser_364": 1705
+    },
+    "2012": {
+      "targets": 2480,
+      "either_ret_loser_90": 491,
+      "either_ret_loser_364": 1511
+    },
+    "2013": {
+      "targets": 2496,
+      "either_ret_loser_90": 539,
+      "either_ret_loser_364": 1603
+    },
+    "2014": {
+      "targets": 2473,
+      "either_ret_loser_90": 495,
+      "either_ret_loser_364": 1564
+    },
+    "2015": {
+      "targets": 2507,
+      "either_ret_loser_90": 535,
+      "either_ret_loser_364": 1494
+    },
+    "2016": {
+      "targets": 2506,
+      "either_ret_loser_90": 418,
+      "either_ret_loser_364": 1448
+    },
+    "2017": {
+      "targets": 2511,
+      "either_ret_loser_90": 359,
+      "either_ret_loser_364": 1332
+    },
+    "2018": {
+      "targets": 2537,
+      "either_ret_loser_90": 358,
+      "either_ret_loser_364": 1349
+    },
+    "2019": {
+      "targets": 2502,
+      "either_ret_loser_90": 354,
+      "either_ret_loser_364": 1189
+    },
+    "2020": {
+      "targets": 1214,
+      "either_ret_loser_90": 40,
+      "either_ret_loser_364": 405
+    },
+    "2021": {
+      "targets": 2388,
+      "either_ret_loser_90": 303,
+      "either_ret_loser_364": 865
+    },
+    "2022": {
+      "targets": 2528,
+      "either_ret_loser_90": 310,
+      "either_ret_loser_364": 1118
+    }
+  },
+  "coverage_2023": "Not measured: this source audit does not read 2023 annual raw data.",
+  "sampled_checks": [
+    {
+      "match_id": "2007-520:8",
+      "season": 2007,
+      "tourney_id": "2007-520",
+      "tourney_name": "Roland Garros",
+      "tourney_level": "G",
+      "date": "2007-05-28",
+      "surface": "Clay",
+      "round": "R128",
+      "winner_id": "Y061",
+      "winner_name": "Mikhail Youzhny",
+      "loser_id": "H442",
+      "loser_name": "Jan Hernych",
+      "score": "0-0 RET",
+      "status": "retirement",
+      "missing_technical_fields": true,
+      "era": "2006-2011",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2007/520/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-520-mds.pdf",
+        "sha256": "3b910a4db0745e262d10151bc1d878f4e40692c4065967a5573714f1d32a8418",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-520-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2007-520",
+        "source_sha256": "3b910a4db0745e262d10151bc1d878f4e40692c4065967a5573714f1d32a8418",
+        "winner_id": "Y061",
+        "loser_id": "H442",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "Positions 15 Hernych and 16 Youzhny feed the advancing M. Youzhny entry marked Ret. No numerical match score is supplied.",
+        "numerical_score_check": "not_confirmed_official_draw_has_status_only",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2007-8996:27",
+      "season": 2007,
+      "tourney_id": "2007-8996",
+      "tourney_name": "Vina del Mar",
+      "tourney_level": "250",
+      "date": "2007-01-29",
+      "surface": "Clay",
+      "round": "QF",
+      "winner_id": "M655",
+      "winner_name": "Nicolas Massu",
+      "loser_id": "R388",
+      "loser_name": "Sergio Roitman",
+      "score": "0-6 7-6(3) RET",
+      "status": "retirement",
+      "missing_technical_fields": true,
+      "era": "2006-2011",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2007/8996/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-8996-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 404"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical archive-ID draw returned 404. ITF event page is discoverable but its redirected results were inaccessible. Independent contemporary press corroborates the RET direction but is not an official draw or official report, so official verification remains unresolved.",
+        "supplementary_sources": [
+          {
+            "kind": "official_event_metadata_only",
+            "url": "https://www.itftennis.com/en/tournament/vina-del-mar/chi/2007/m-is-chi-01a-2007/draws-and-results/"
+          },
+          {
+            "kind": "non_official_contemporary_press_not_counted_as_official_verification",
+            "url": "https://www.europapress.es/deportes/tenis-00166/noticia-tenis-massu-horna-clasifican-semifinales-torneo-vina-mar-20070203003134.html",
+            "finding": "Report describes Massu advancing after Roitman withdrew at one set each; names and RET direction agree. No medical cause is imported."
+          }
+        ]
+      }
+    },
+    {
+      "match_id": "2007-433:27",
+      "season": 2007,
+      "tourney_id": "2007-433",
+      "tourney_name": "Las Vegas",
+      "tourney_level": "250",
+      "date": "2007-02-26",
+      "surface": "Hard",
+      "round": "RR",
+      "winner_id": "B676",
+      "winner_name": "James Blake",
+      "loser_id": "D683",
+      "loser_name": "Juan Martin del Potro",
+      "score": "6-1 3-1 RET",
+      "status": "retirement",
+      "missing_technical_fields": true,
+      "era": "2006-2011",
+      "round_group": "other",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2007/433/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-433-mds.pdf",
+        "sha256": "e6ac738a93fe3a344a0800b8d93816cf3d85e7fdbb41b0d8923f43aa88e77794",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-433-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2007-433",
+        "source_sha256": "e6ac738a93fe3a344a0800b8d93816cf3d85e7fdbb41b0d8923f43aa88e77794",
+        "winner_id": "B676",
+        "loser_id": "D683",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "Round-robin Group 1 records J. Blake advancing against J. del Potro with 61 31 and retirement. Standings and knockout bracket are distinct; no elimination chronology is inferred.",
+        "numerical_score_check": "confirmed",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2006-568:17",
+      "season": 2006,
+      "tourney_id": "2006-568",
+      "tourney_name": "St. Petersburg",
+      "tourney_level": "250",
+      "date": "2006-10-23",
+      "surface": "Carpet",
+      "round": "R16",
+      "winner_id": "M759",
+      "winner_name": "Wesley Moodie",
+      "loser_id": "D402",
+      "loser_name": "Nikolay Davydenko",
+      "score": "2-6 3-3 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2006-2011",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2006/568/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2006-568-mds.pdf",
+        "sha256": "58ef89f2bf12d9fdfb0fecfde3a797bda3364333526321bf6379e0aefefbe3f4",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2006-568-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2006-568",
+        "source_sha256": "58ef89f2bf12d9fdfb0fecfde3a797bda3364333526321bf6379e0aefefbe3f4",
+        "winner_id": "M759",
+        "loser_id": "D402",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "Davydenko and Moodie win their respective first-round matches; their R16 connector advances W. Moodie with 26 33 and retirement.",
+        "numerical_score_check": "confirmed",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2021-321:27",
+      "season": 2021,
+      "tourney_id": "2021-321",
+      "tourney_name": "Stuttgart",
+      "tourney_level": "250",
+      "date": "2021-06-07",
+      "surface": "Grass",
+      "round": "SF",
+      "winner_id": "C977",
+      "winner_name": "Marin Cilic",
+      "loser_id": "R09X",
+      "loser_name": "Jurij Rodionov",
+      "score": "6-3 1-0 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2021/321/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2021-321-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2015-6120:17",
+      "season": 2015,
+      "tourney_id": "2015-6120",
+      "tourney_name": "Nice",
+      "tourney_level": "250",
+      "date": "2015-05-17",
+      "surface": "Clay",
+      "round": "R16",
+      "winner_id": "TB69",
+      "winner_name": "Dominic Thiem",
+      "loser_id": "KE17",
+      "loser_name": "Nick Kyrgios",
+      "score": "4-3 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2015/6120/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2015-6120-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained.",
+        "supplementary_sources": [
+          {
+            "kind": "official_search_excerpt_only_not_counted_as_verification",
+            "url": "https://www.itftennis.com/media/4644/2021-australian-open-day-5-mens-match-notes.pdf",
+            "finding": "Search extract identifies Thiem winning Nice R16 2015 after Kyrgios retired; direct download returned non-PDF content, so full-source adjudication was not completed."
+          }
+        ]
+      }
+    },
+    {
+      "match_id": "2022-321:23",
+      "season": 2022,
+      "tourney_id": "2022-321",
+      "tourney_name": "Stuttgart",
+      "tourney_level": "250",
+      "date": "2022-06-06",
+      "surface": "Grass",
+      "round": "QF",
+      "winner_id": "KE17",
+      "winner_name": "Nick Kyrgios",
+      "loser_id": "F724",
+      "loser_name": "Marton Fucsovics",
+      "score": "7-6(3) 3-0 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2022/321/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2022-321-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2010-495:22",
+      "season": 2010,
+      "tourney_id": "2010-495",
+      "tourney_name": "Dubai",
+      "tourney_level": "500",
+      "date": "2010-02-22",
+      "surface": "Hard",
+      "round": "R16",
+      "winner_id": "B678",
+      "winner_name": "Michael Berrer",
+      "loser_id": "D402",
+      "loser_name": "Nikolay Davydenko",
+      "score": "6-3 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2006-2011",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2010/495/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-495-mds.pdf",
+        "sha256": "4aa256d77dbfe4a4fb534819e9f70ae68ef3c117a4d3a7f59244f3b3eed009ee",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-495-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2010-495",
+        "source_sha256": "4aa256d77dbfe4a4fb534819e9f70ae68ef3c117a4d3a7f59244f3b3eed009ee",
+        "winner_id": "B678",
+        "loser_id": "D402",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "Berrer and Davydenko advance from positions 21-24; their R16 connector advances M. Berrer with 63 00 and retirement.",
+        "numerical_score_check": "equivalent_with_unplayed_zero_zero_set_omitted_in_raw",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2021-416:7",
+      "season": 2021,
+      "tourney_id": "2021-416",
+      "tourney_name": "Rome Masters",
+      "tourney_level": "M",
+      "date": "2021-05-08",
+      "surface": "Clay",
+      "round": "R64",
+      "winner_id": "M0EJ",
+      "winner_name": "Lorenzo Musetti",
+      "loser_id": "HB71",
+      "loser_name": "Hubert Hurkacz",
+      "score": "6-4 2-0 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2021/416/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2021-416-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2018-375:26",
+      "season": 2018,
+      "tourney_id": "2018-375",
+      "tourney_name": "Montpellier",
+      "tourney_level": "250",
+      "date": "2018-02-05",
+      "surface": "Hard",
+      "round": "SF",
+      "winner_id": "PF39",
+      "winner_name": "Lucas Pouille",
+      "loser_id": "T786",
+      "loser_name": "Jo-Wilfried Tsonga",
+      "score": "1-6 5-5 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.atptour.com/-/media/a9e07c779c724fdd9d14b19facf48c52.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-montpellier-atp-notes.pdf",
+        "sha256": "7efc289d2109e0bb32e6f8a4d192896fd6f697037e8c320eeb67aedb6d00b14e",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-montpellier-atp-notes.txt",
+        "status": "fetched_and_adjudicated",
+        "description": "ATP Paris 2018 media-note bundle; PDF page 41 is Tuesday 30 October, printed page 4 of 9."
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2018-montpellier-atp-notes",
+        "source_sha256": "7efc289d2109e0bb32e6f8a4d192896fd6f697037e8c320eeb67aedb6d00b14e",
+        "winner_id": "PF39",
+        "loser_id": "T786",
+        "official_status": "retirement",
+        "visual_pages": [
+          41
+        ],
+        "bracket_or_report_evidence": "ATP media notes list Tsonga as Montpellier semifinalist losing to Pouille and explicitly say he retired in that semifinal. The same page names Pouille the Montpellier champion.",
+        "numerical_score_check": "not_confirmed_status_report_does_not_give_match_score",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2016-6242:37",
+      "season": 2016,
+      "tourney_id": "2016-6242",
+      "tourney_name": "Winston-Salem",
+      "tourney_level": "250",
+      "date": "2016-08-22",
+      "surface": "Hard",
+      "round": "R16",
+      "winner_id": "KB54",
+      "winner_name": "Andrey Kuznetsov",
+      "loser_id": "V708",
+      "loser_name": "Jiri Vesely",
+      "score": "5-5 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2016/6242/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2016-6242-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2020-9408:26",
+      "season": 2020,
+      "tourney_id": "2020-9408",
+      "tourney_name": "Sardinia",
+      "tourney_level": "250",
+      "date": "2020-10-12",
+      "surface": "Clay",
+      "round": "SF",
+      "winner_id": "DB63",
+      "winner_name": "Laslo Djere",
+      "loser_id": "M0EJ",
+      "loser_name": "Lorenzo Musetti",
+      "score": "2-6 6-2 4-1 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2020/9408/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2020-9408-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2017-7650:26",
+      "season": 2017,
+      "tourney_id": "2017-7650",
+      "tourney_name": "Antalya",
+      "tourney_level": "250",
+      "date": "2017-06-26",
+      "surface": "Grass",
+      "round": "SF",
+      "winner_id": "SE73",
+      "winner_name": "Yuichi Sugita",
+      "loser_id": "B837",
+      "loser_name": "Marcos Baghdatis",
+      "score": "6-3 6-7(7) 4-1 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2017/7650/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2017-7650-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2008-540:31",
+      "season": 2008,
+      "tourney_id": "2008-540",
+      "tourney_name": "Wimbledon",
+      "tourney_level": "G",
+      "date": "2008-06-23",
+      "surface": "Grass",
+      "round": "R128",
+      "winner_id": "R483",
+      "winner_name": "Bobby Reynolds",
+      "loser_id": "V254",
+      "loser_name": "Filippo Volandri",
+      "score": "6-2 6-2 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2006-2011",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2008/540/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2008-540-mds.pdf",
+        "sha256": "b9c738a9745aab7d194e7171e59b98fa918ab5f2ff77ea48f262405439f172c5",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2008-540-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2008-540",
+        "source_sha256": "b9c738a9745aab7d194e7171e59b98fa918ab5f2ff77ea48f262405439f172c5",
+        "winner_id": "R483",
+        "loser_id": "V254",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "Draw positions 61 Volandri and 62 Reynolds feed B. Reynolds in round two with 6/2 6/2 and retirement.",
+        "numerical_score_check": "confirmed",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2013-495:6",
+      "season": 2013,
+      "tourney_id": "2013-495",
+      "tourney_name": "Dubai",
+      "tourney_level": "500",
+      "date": "2013-02-25",
+      "surface": "Hard",
+      "round": "R32",
+      "winner_id": "H528",
+      "winner_name": "Victor Hanescu",
+      "loser_id": "TA46",
+      "loser_name": "Bernard Tomic",
+      "score": "3-2 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2013/495/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2013-495-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2016-301:27",
+      "season": 2016,
+      "tourney_id": "2016-301",
+      "tourney_name": "Auckland",
+      "tourney_level": "250",
+      "date": "2016-01-11",
+      "surface": "Hard",
+      "round": "F",
+      "winner_id": "BD06",
+      "winner_name": "Roberto Bautista Agut",
+      "loser_id": "SM25",
+      "loser_name": "Jack Sock",
+      "score": "6-1 1-0 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2016/301/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2016-301-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2018-500:4",
+      "season": 2018,
+      "tourney_id": "2018-500",
+      "tourney_name": "Halle",
+      "tourney_level": "500",
+      "date": "2018-06-18",
+      "surface": "Grass",
+      "round": "R32",
+      "winner_id": "K435",
+      "winner_name": "Philipp Kohlschreiber",
+      "loser_id": "F724",
+      "loser_name": "Marton Fucsovics",
+      "score": "4-6 6-3 2-1 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2018/500/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-500-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2006-475:30",
+      "season": 2006,
+      "tourney_id": "2006-475",
+      "tourney_name": "Sopot",
+      "tourney_level": "250",
+      "date": "2006-07-31",
+      "surface": "Clay",
+      "round": "SF",
+      "winner_id": "MB02",
+      "winner_name": "Florian Mayer",
+      "loser_id": "C478",
+      "loser_name": "Agustin Calleri",
+      "score": "6-2 4-3 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2006-2011",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2006/475/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2006-475-mds.pdf",
+        "sha256": "12f0a562d68dac620b19eb9ac4ab23f0847e7c184391a52ca20b665bf3224fef",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2006-475-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2006-475",
+        "source_sha256": "12f0a562d68dac620b19eb9ac4ab23f0847e7c184391a52ca20b665bf3224fef",
+        "winner_id": "MB02",
+        "loser_id": "C478",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "The lower-half semifinal connects A. Calleri and F. Mayer; F. Mayer advances with 62 43 and retirement.",
+        "numerical_score_check": "confirmed",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2022-341:3",
+      "season": 2022,
+      "tourney_id": "2022-341",
+      "tourney_name": "Metz",
+      "tourney_level": "250",
+      "date": "2022-09-19",
+      "surface": "Hard",
+      "round": "R32",
+      "winner_id": "BG23",
+      "winner_name": "Nikoloz Basilashvili",
+      "loser_id": "BU13",
+      "loser_name": "Zizou Bergs",
+      "score": "4-6 1-2 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2022/341/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2022-341-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2018-6932:24",
+      "season": 2018,
+      "tourney_id": "2018-6932",
+      "tourney_name": "Rio De Janeiro",
+      "tourney_level": "500",
+      "date": "2018-02-19",
+      "surface": "Clay",
+      "round": "R16",
+      "winner_id": "TB69",
+      "winner_name": "Dominic Thiem",
+      "loser_id": "A596",
+      "loser_name": "Pablo Andujar",
+      "score": "4-2 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2018/6932/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-6932-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2018-891:20",
+      "season": 2018,
+      "tourney_id": "2018-891",
+      "tourney_name": "Pune",
+      "tourney_level": "250",
+      "date": "2018-01-01",
+      "surface": "Hard",
+      "round": "R16",
+      "winner_id": "A678",
+      "winner_name": "Kevin Anderson",
+      "loser_id": "MJ08",
+      "loser_name": "Thiago Monteiro",
+      "score": "7-6(4) 3-2 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2018/891/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-891-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2014-773:25",
+      "season": 2014,
+      "tourney_id": "2014-773",
+      "tourney_name": "Bucharest",
+      "tourney_level": "250",
+      "date": "2014-04-21",
+      "surface": "Clay",
+      "round": "SF",
+      "winner_id": "D875",
+      "winner_name": "Grigor Dimitrov",
+      "loser_id": "MC65",
+      "loser_name": "Gael Monfils",
+      "score": "5-1 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2014/773/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2014-773-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2009-311:54",
+      "season": 2009,
+      "tourney_id": "2009-311",
+      "tourney_name": "Queen's Club",
+      "tourney_level": "250",
+      "date": "2009-06-08",
+      "surface": "Grass",
+      "round": "SF",
+      "winner_id": "B676",
+      "winner_name": "James Blake",
+      "loser_id": "R485",
+      "loser_name": "Andy Roddick",
+      "score": "4-4 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2006-2011",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2009/311/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2009-311-mds.pdf",
+        "sha256": "2e572da3be275a3d81c1bae81a63b0c9a720f8120e34da99b44c079f13adf342",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2009-311-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2009-311",
+        "source_sha256": "2e572da3be275a3d81c1bae81a63b0c9a720f8120e34da99b44c079f13adf342",
+        "winner_id": "B676",
+        "loser_id": "R485",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "The right-hand semifinal connects J. Blake and A. Roddick; J. Blake advances to the final with 44 and retirement.",
+        "numerical_score_check": "confirmed",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2010-580:99",
+      "season": 2010,
+      "tourney_id": "2010-580",
+      "tourney_name": "Australian Open",
+      "tourney_level": "G",
+      "date": "2010-01-18",
+      "surface": "Hard",
+      "round": "R32",
+      "winner_id": "V306",
+      "winner_name": "Fernando Verdasco",
+      "loser_id": "K310",
+      "loser_name": "Stefan Koubek",
+      "score": "6-1 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2006-2011",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2010/580/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-580-mds.pdf",
+        "sha256": "dbb0ec9de2d407bec375dcc9fd22ba1f9534bf7560f2c5618078fe21840c9131",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-580-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2010-580",
+        "source_sha256": "dbb0ec9de2d407bec375dcc9fd22ba1f9534bf7560f2c5618078fe21840c9131",
+        "winner_id": "V306",
+        "loser_id": "K310",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "Verdasco and Koubek advance through two rounds; their third-round connector advances Verdasco with 6-1 and RET.",
+        "numerical_score_check": "confirmed",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2010-407:31",
+      "season": 2010,
+      "tourney_id": "2010-407",
+      "tourney_name": "Rotterdam",
+      "tourney_level": "500",
+      "date": "2010-02-08",
+      "surface": "Hard",
+      "round": "F",
+      "winner_id": "SA49",
+      "winner_name": "Robin Soderling",
+      "loser_id": "Y061",
+      "loser_name": "Mikhail Youzhny",
+      "score": "6-4 2-0 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2006-2011",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2010/407/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-407-mds.pdf",
+        "sha256": "76225c209f3b4f8f78eedf6d2026e0ebdb7b95ddba2c4b2c9c6fa6230f8b81d2",
+        "status": "fetched_not_adjudicated",
+        "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-407-mds.txt"
+      },
+      "review": {
+        "status": "verified",
+        "source_key": "2010-407",
+        "source_sha256": "76225c209f3b4f8f78eedf6d2026e0ebdb7b95ddba2c4b2c9c6fa6230f8b81d2",
+        "winner_id": "SA49",
+        "loser_id": "Y061",
+        "official_status": "retirement",
+        "visual_pages": [
+          1
+        ],
+        "bracket_or_report_evidence": "The final joins M. Youzhny and R. Soderling; the champion box identifies Robin Soderling with 64 20 and retirement.",
+        "numerical_score_check": "confirmed",
+        "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+      }
+    },
+    {
+      "match_id": "2013-540:67",
+      "season": 2013,
+      "tourney_id": "2013-540",
+      "tourney_name": "Wimbledon",
+      "tourney_level": "G",
+      "date": "2013-06-24",
+      "surface": "Grass",
+      "round": "R64",
+      "winner_id": "L397",
+      "winner_name": "Feliciano Lopez",
+      "loser_id": "M850",
+      "loser_name": "Paul-Henri Mathieu",
+      "score": "6-3 5-1 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2013/540/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2013-540-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2012-360:5",
+      "season": 2012,
+      "tourney_id": "2012-360",
+      "tourney_name": "Casablanca",
+      "tourney_level": "250",
+      "date": "2012-04-09",
+      "surface": "Clay",
+      "round": "R32",
+      "winner_id": "H528",
+      "winner_name": "Victor Hanescu",
+      "loser_id": "J267",
+      "loser_name": "Malek Jaziri",
+      "score": "6-2 3-0 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "early",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2012/360/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2012-360-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2014-311:44",
+      "season": 2014,
+      "tourney_id": "2014-311",
+      "tourney_name": "Queen's Club",
+      "tourney_level": "250",
+      "date": "2014-06-09",
+      "surface": "Grass",
+      "round": "R16",
+      "winner_id": "D801",
+      "winner_name": "Alexandr Dolgopolov",
+      "loser_id": "N289",
+      "loser_name": "Jarkko Nieminen",
+      "score": "6-4 4-2 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2012-2017",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2014/311/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2014-311-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2011-315:23",
+      "season": 2011,
+      "tourney_id": "2011-315",
+      "tourney_name": "Newport",
+      "tourney_level": "250",
+      "date": "2011-07-04",
+      "surface": "Grass",
+      "round": "R16",
+      "winner_id": "Y070",
+      "winner_name": "Michael Yani",
+      "loser_id": "H355",
+      "loser_name": "Tommy Haas",
+      "score": "5-2 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2006-2011",
+      "round_group": "middle",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2011/315/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2011-315-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    },
+    {
+      "match_id": "2018-500:30",
+      "season": 2018,
+      "tourney_id": "2018-500",
+      "tourney_name": "Halle",
+      "tourney_level": "500",
+      "date": "2018-06-18",
+      "surface": "Grass",
+      "round": "SF",
+      "winner_id": "CG80",
+      "winner_name": "Borna Coric",
+      "loser_id": "BD06",
+      "loser_name": "Roberto Bautista Agut",
+      "score": "2-3 RET",
+      "status": "retirement",
+      "missing_technical_fields": false,
+      "era": "2018-2022",
+      "round_group": "late",
+      "official_source": {
+        "url": "https://www.protennislive.com/posting/2018/500/mds.pdf",
+        "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-500-mds.pdf",
+        "status": "unavailable",
+        "error": "curl: (56) The requested URL returned error: 429"
+      },
+      "review": {
+        "status": "unverified",
+        "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+      }
+    }
+  ],
+  "limitations": [
+    "RET is a source noncompletion status, not a clinical diagnosis.",
+    "W/O and DEF are separate; no status is silently relabelled and no original target is changed.",
+    "This purposive coverage sample cannot estimate a population error rate.",
+    "An unavailable official source stays unverified; source-to-source outcome agreement is insufficient.",
+    "Official name/bracket adjudication supports the existing IDs through the pinned raw row; official PDFs do not supply these archive IDs.",
+    "Official confirmation of RET need not confirm a numerical score; 2007 Roland Garros only states Ret.",
+    "RR remains a legitimate source status context; no knockout path or within-event chronology is inferred.",
+    "Coverage is a status/identity census under the existing nominal T-21 policy, not evidence of predictive value."
+  ],
+  "fitting_performed": false,
+  "target_outcomes_read": false,
+  "final_year_raw_read": false,
+  "audit_code_sha256": "ab3fe4238dc4bd6f201f78359a454d91969090134fb70615d2f032c3ae31c303"
+}

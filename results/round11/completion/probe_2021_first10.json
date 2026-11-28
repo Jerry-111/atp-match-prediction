@@ -1,0 +1,1325 @@
+{
+  "schema_version": "provisional_probe_2021_v1_not_unified_availability_ledger",
+  "scope": "First ten of the 57 existing 2021 source editions, ordered by nominal date then lexical edition ID; no predictive fitting.",
+  "recorded_at_utc": "2026-11-28T08:52:42Z",
+  "sampling_rule": "sort(source_nominal_date, source_tourney_id), first 10",
+  "source_editions_in_frame": 57,
+  "source_editions_probed": 10,
+  "source_editions_not_probed": 47,
+  "completion_day_supported_by_current_primary_full_text": 5,
+  "completion_day_unresolved": 5,
+  "historic_first_publication_snapshots_obtained": 0,
+  "admitted_for_prediction": 0,
+  "models_fitted": 0,
+  "input_read_columns": {
+    "source_frame": [
+      "season",
+      "source_season",
+      "source_tourney_id",
+      "source_nominal_date"
+    ],
+    "raw_2021": [
+      "tourney_id",
+      "tourney_name",
+      "tourney_date",
+      "surface"
+    ]
+  },
+  "input_sha256": {
+    "source_frame": "5ab34f830540fa79feec12eeee8e6f53b0a9d2acd09ad68bc0c4cc89c5ee507f",
+    "raw_2021": "74a0ed7fb4b22a17d1a666d4a5de010dd4766e8ce9862690df8d8aca182e604e"
+  },
+  "worklist": [
+    {
+      "sample_order": 1,
+      "source_tourney_id": "2021-499",
+      "source_nominal_date": "2021-01-04",
+      "tourney_name": "Delray Beach",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 2,
+      "source_tourney_id": "2021-8998",
+      "source_nominal_date": "2021-02-01",
+      "tourney_name": "Great Ocean Road Open",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 3,
+      "source_tourney_id": "2021-9428",
+      "source_nominal_date": "2021-02-01",
+      "tourney_name": "Murray River Open",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 4,
+      "source_tourney_id": "2021-580",
+      "source_nominal_date": "2021-02-08",
+      "tourney_name": "Australian Open",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 5,
+      "source_tourney_id": "2021-375",
+      "source_nominal_date": "2021-02-22",
+      "tourney_name": "Montpellier",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 6,
+      "source_tourney_id": "2021-9158",
+      "source_nominal_date": "2021-02-22",
+      "tourney_name": "Cordoba",
+      "surface": "Clay",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 7,
+      "source_tourney_id": "2021-9460",
+      "source_nominal_date": "2021-02-22",
+      "tourney_name": "Singapore",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 8,
+      "source_tourney_id": "2021-407",
+      "source_nominal_date": "2021-03-01",
+      "tourney_name": "Rotterdam",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 9,
+      "source_tourney_id": "2021-506",
+      "source_nominal_date": "2021-03-01",
+      "tourney_name": "Buenos Aires",
+      "surface": "Clay",
+      "selected_first10": true,
+      "review_status": "completion_date_unresolved",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 10,
+      "source_tourney_id": "2021-451",
+      "source_nominal_date": "2021-03-08",
+      "tourney_name": "Doha",
+      "surface": "Hard",
+      "selected_first10": true,
+      "review_status": "current_primary_completion_text_located",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 11,
+      "source_tourney_id": "2021-496",
+      "source_nominal_date": "2021-03-08",
+      "tourney_name": "Marseille",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 12,
+      "source_tourney_id": "2021-8996",
+      "source_nominal_date": "2021-03-08",
+      "tourney_name": "Santiago",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 13,
+      "source_tourney_id": "2021-495",
+      "source_nominal_date": "2021-03-15",
+      "tourney_name": "Dubai",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 14,
+      "source_tourney_id": "2021-807",
+      "source_nominal_date": "2021-03-15",
+      "tourney_name": "Acapulco",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 15,
+      "source_tourney_id": "2021-403",
+      "source_nominal_date": "2021-03-22",
+      "tourney_name": "Miami Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 16,
+      "source_tourney_id": "2021-9462",
+      "source_nominal_date": "2021-04-05",
+      "tourney_name": "Marbella",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 17,
+      "source_tourney_id": "2021-9481",
+      "source_nominal_date": "2021-04-05",
+      "tourney_name": "Cagliari",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 18,
+      "source_tourney_id": "2021-410",
+      "source_nominal_date": "2021-04-12",
+      "tourney_name": "Monte Carlo Masters",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 19,
+      "source_tourney_id": "2021-425",
+      "source_nominal_date": "2021-04-19",
+      "tourney_name": "Barcelona",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 20,
+      "source_tourney_id": "2021-5053",
+      "source_nominal_date": "2021-04-19",
+      "tourney_name": "Serbia",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 21,
+      "source_tourney_id": "2021-308",
+      "source_nominal_date": "2021-04-26",
+      "tourney_name": "Munich",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 22,
+      "source_tourney_id": "2021-7290",
+      "source_nominal_date": "2021-04-26",
+      "tourney_name": "Estoril",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 23,
+      "source_tourney_id": "2021-1536",
+      "source_nominal_date": "2021-05-01",
+      "tourney_name": "Madrid Masters",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 24,
+      "source_tourney_id": "2021-416",
+      "source_nominal_date": "2021-05-08",
+      "tourney_name": "Rome Masters",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 25,
+      "source_tourney_id": "2021-322",
+      "source_nominal_date": "2021-05-17",
+      "tourney_name": "Geneva",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 26,
+      "source_tourney_id": "2021-7694",
+      "source_nominal_date": "2021-05-17",
+      "tourney_name": "Lyon",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 27,
+      "source_tourney_id": "2021-9512",
+      "source_nominal_date": "2021-05-20",
+      "tourney_name": "Belgrade",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 28,
+      "source_tourney_id": "2021-9510",
+      "source_nominal_date": "2021-05-22",
+      "tourney_name": "Parma",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 29,
+      "source_tourney_id": "2021-520",
+      "source_nominal_date": "2021-05-31",
+      "tourney_name": "Roland Garros",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 30,
+      "source_tourney_id": "2021-321",
+      "source_nominal_date": "2021-06-07",
+      "tourney_name": "Stuttgart",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 31,
+      "source_tourney_id": "2021-311",
+      "source_nominal_date": "2021-06-12",
+      "tourney_name": "Queen's Club",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 32,
+      "source_tourney_id": "2021-500",
+      "source_nominal_date": "2021-06-12",
+      "tourney_name": "Halle",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 33,
+      "source_tourney_id": "2021-741",
+      "source_nominal_date": "2021-06-19",
+      "tourney_name": "Eastbourne",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 34,
+      "source_tourney_id": "2021-8994",
+      "source_nominal_date": "2021-06-19",
+      "tourney_name": "Mallorca",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 35,
+      "source_tourney_id": "2021-540",
+      "source_nominal_date": "2021-06-28",
+      "tourney_name": "Wimbledon",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 36,
+      "source_tourney_id": "2021-315",
+      "source_nominal_date": "2021-07-12",
+      "tourney_name": "Newport",
+      "surface": "Grass",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 37,
+      "source_tourney_id": "2021-316",
+      "source_nominal_date": "2021-07-12",
+      "tourney_name": "Bastad",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 38,
+      "source_tourney_id": "2021-414",
+      "source_nominal_date": "2021-07-12",
+      "tourney_name": "Hamburg",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 39,
+      "source_tourney_id": "2021-314",
+      "source_nominal_date": "2021-07-19",
+      "tourney_name": "Gstaad",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 40,
+      "source_tourney_id": "2021-439",
+      "source_nominal_date": "2021-07-19",
+      "tourney_name": "Umag",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 41,
+      "source_tourney_id": "2021-7480",
+      "source_nominal_date": "2021-07-19",
+      "tourney_name": "Los Cabos",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 42,
+      "source_tourney_id": "2021-319",
+      "source_nominal_date": "2021-07-26",
+      "tourney_name": "Kitzbuhel",
+      "surface": "Clay",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 43,
+      "source_tourney_id": "2021-6116",
+      "source_nominal_date": "2021-07-26",
+      "tourney_name": "Atlanta",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 44,
+      "source_tourney_id": "2021-418",
+      "source_nominal_date": "2021-08-02",
+      "tourney_name": "Washington",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 45,
+      "source_tourney_id": "2021-421",
+      "source_nominal_date": "2021-08-09",
+      "tourney_name": "Canada Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 46,
+      "source_tourney_id": "2021-422",
+      "source_nominal_date": "2021-08-16",
+      "tourney_name": "Cincinnati Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 47,
+      "source_tourney_id": "2021-6242",
+      "source_nominal_date": "2021-08-23",
+      "tourney_name": "Winston-Salem",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 48,
+      "source_tourney_id": "2021-341",
+      "source_nominal_date": "2021-09-20",
+      "tourney_name": "Metz",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 49,
+      "source_tourney_id": "2021-9410",
+      "source_nominal_date": "2021-09-20",
+      "tourney_name": "Nur-Sultan",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 50,
+      "source_tourney_id": "2021-7434",
+      "source_nominal_date": "2021-09-27",
+      "tourney_name": "Sofia",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 51,
+      "source_tourney_id": "2021-9569",
+      "source_nominal_date": "2021-09-27",
+      "tourney_name": "San Diego",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 52,
+      "source_tourney_id": "2021-404",
+      "source_nominal_date": "2021-10-04",
+      "tourney_name": "Indian Wells Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 53,
+      "source_tourney_id": "2021-438",
+      "source_nominal_date": "2021-10-18",
+      "tourney_name": "Moscow",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 54,
+      "source_tourney_id": "2021-7485",
+      "source_nominal_date": "2021-10-18",
+      "tourney_name": "Antwerp",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 55,
+      "source_tourney_id": "2021-337",
+      "source_nominal_date": "2021-10-25",
+      "tourney_name": "Vienna",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 56,
+      "source_tourney_id": "2021-568",
+      "source_nominal_date": "2021-10-25",
+      "tourney_name": "St. Petersburg",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    },
+    {
+      "sample_order": 57,
+      "source_tourney_id": "2021-352",
+      "source_nominal_date": "2021-11-01",
+      "tourney_name": "Paris Masters",
+      "surface": "Hard",
+      "selected_first10": false,
+      "review_status": "not_reviewed",
+      "admitted_for_prediction": false
+    }
+  ],
+  "cases": [
+    {
+      "sample_order": 1,
+      "source_tourney_id": "2021-499",
+      "source_nominal_date": "2021-01-04",
+      "tourney_name": "Delray Beach",
+      "surface": "Hard",
+      "review_status": "completion_date_unresolved",
+      "completed_by_day": null,
+      "displayed_publication_day": null,
+      "timezone": null,
+      "completion_evidence": [],
+      "target_start_evidence": [
+        {
+          "url": "https://www.atptour.com/en/scores/results-archive?year=2021",
+          "inspection": "indexed_only",
+          "summary": "Official archive search excerpt lists a historical event range and completed-event winner; the range is not itself a completion/publication certificate.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-01-07",
+          "reported_range_end": "2021-01-13",
+          "start_semantics": "indexed_historical_event_range"
+        }
+      ],
+      "other_located_sources": [
+        {
+          "url": "https://www.delraybeachopen.com/en/tournament/past-champions",
+          "inspection": "indexed_only",
+          "summary": "Official historical champions list corroborates the 2021 event, but supplies no independently checked completion/publication day. Not opened in this probe.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false
+        }
+      ],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    },
+    {
+      "sample_order": 2,
+      "source_tourney_id": "2021-8998",
+      "source_nominal_date": "2021-02-01",
+      "tourney_name": "Great Ocean Road Open",
+      "surface": "Hard",
+      "review_status": "current_primary_completion_text_located",
+      "completed_by_day": "2021-02-07",
+      "displayed_publication_day": "2021-02-07",
+      "timezone": null,
+      "completion_evidence": [
+        {
+          "url": "https://ausopen.com/articles/news/evans-sinner-winners-melbourne-summer-series-ends",
+          "inspection": "full_text",
+          "summary": "Official event report describes both named ATP 250 singles finals as completed on Sunday.",
+          "displayed_publication_day": "2021-02-07",
+          "completed_by_day": "2021-02-07",
+          "timezone": null,
+          "retrieved_at_utc": "2026-11-28T08:52:42Z",
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": true,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false
+        }
+      ],
+      "target_start_evidence": [
+        {
+          "url": "https://www.atptour.com/en/scores/results-archive?year=2021",
+          "inspection": "indexed_only",
+          "summary": "Official archive search excerpt lists a historical event range and completed-event winner; the range is not itself a completion/publication certificate.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-02-01",
+          "reported_range_end": "2021-02-07",
+          "start_semantics": "indexed_historical_event_range"
+        }
+      ],
+      "other_located_sources": [],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    },
+    {
+      "sample_order": 3,
+      "source_tourney_id": "2021-9428",
+      "source_nominal_date": "2021-02-01",
+      "tourney_name": "Murray River Open",
+      "surface": "Hard",
+      "review_status": "current_primary_completion_text_located",
+      "completed_by_day": "2021-02-07",
+      "displayed_publication_day": "2021-02-07",
+      "timezone": null,
+      "completion_evidence": [
+        {
+          "url": "https://ausopen.com/articles/news/evans-sinner-winners-melbourne-summer-series-ends",
+          "inspection": "full_text",
+          "summary": "Official event report describes both named ATP 250 singles finals as completed on Sunday.",
+          "displayed_publication_day": "2021-02-07",
+          "completed_by_day": "2021-02-07",
+          "timezone": null,
+          "retrieved_at_utc": "2026-11-28T08:52:42Z",
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": true,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false
+        }
+      ],
+      "target_start_evidence": [
+        {
+          "url": "https://www.atptour.com/en/scores/results-archive?year=2021",
+          "inspection": "indexed_only",
+          "summary": "Official archive search excerpt lists a historical event range and completed-event winner; the range is not itself a completion/publication certificate.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-02-01",
+          "reported_range_end": "2021-02-07",
+          "start_semantics": "indexed_historical_event_range"
+        }
+      ],
+      "other_located_sources": [],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    },
+    {
+      "sample_order": 4,
+      "source_tourney_id": "2021-580",
+      "source_nominal_date": "2021-02-08",
+      "tourney_name": "Australian Open",
+      "surface": "Hard",
+      "review_status": "current_primary_completion_text_located",
+      "completed_by_day": "2021-02-21",
+      "displayed_publication_day": "2021-02-21",
+      "timezone": null,
+      "completion_evidence": [
+        {
+          "url": "https://ausopen.com/articles/match-report/ninth-ao-title-supreme-novak-medvedev-humbled",
+          "inspection": "full_text",
+          "summary": "Official completed singles-final match report.",
+          "displayed_publication_day": "2021-02-21",
+          "completed_by_day": "2021-02-21",
+          "timezone": null,
+          "retrieved_at_utc": "2026-11-28T08:52:42Z",
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": true,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false
+        }
+      ],
+      "target_start_evidence": [
+        {
+          "url": "https://ausopen.com/articles/news/five-matches-watch-on-day-1-ao-2021",
+          "inspection": "full_text",
+          "summary": "Official Day 1 preview dated Sunday says play starts Monday, establishing the announced main-draw opening on 8 February.",
+          "displayed_publication_day": "2021-02-07",
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": "2026-11-28T08:52:42Z",
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": true,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_main_start_day": "2021-02-08",
+          "start_semantics": "explicit_Day_1_advance_announcement"
+        },
+        {
+          "url": "https://www.atptour.com/en/scores/results-archive?year=2021",
+          "inspection": "indexed_only",
+          "summary": "Official archive search excerpt lists a historical event range and completed-event winner; the range is not itself a completion/publication certificate.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-02-08",
+          "reported_range_end": "2021-02-21",
+          "start_semantics": "indexed_historical_event_range"
+        }
+      ],
+      "other_located_sources": [],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": true
+    },
+    {
+      "sample_order": 5,
+      "source_tourney_id": "2021-375",
+      "source_nominal_date": "2021-02-22",
+      "tourney_name": "Montpellier",
+      "surface": "Hard",
+      "review_status": "completion_date_unresolved",
+      "completed_by_day": null,
+      "displayed_publication_day": null,
+      "timezone": null,
+      "completion_evidence": [],
+      "target_start_evidence": [
+        {
+          "url": "https://www.tennistv.com/tournaments/375_2021/montpellier",
+          "inspection": "full_text",
+          "summary": "Edition page lists a date range and a singles final replay. Neither the replay description nor range establishes the actual completion or original publication day.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-02-22",
+          "reported_range_end": "2021-02-28",
+          "start_semantics": "historical_edition_range_not_independent_earliest_match_certificate"
+        },
+        {
+          "url": "https://www.atptour.com/en/scores/results-archive?year=2021",
+          "inspection": "indexed_only",
+          "summary": "Official archive search excerpt lists a historical event range and completed-event winner; the range is not itself a completion/publication certificate.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-02-22",
+          "reported_range_end": "2021-02-28",
+          "start_semantics": "indexed_historical_event_range"
+        },
+        {
+          "url": "https://www.fft.fr/actualites/montpellier-tsonga-va-de-nouveau-rugir",
+          "inspection": "full_text",
+          "summary": "Federation preview announces Monday main-draw matches and qualifying; does not independently exclude earlier main-draw play.",
+          "displayed_publication_day": "2021-02-22",
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": "2026-11-28T08:52:42Z",
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": true,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_main_start_day": "2021-02-22",
+          "start_semantics": "main_draw_matches_announced_on_day_not_proof_of_earliest_match"
+        }
+      ],
+      "other_located_sources": [
+        {
+          "url": "https://www.youtube.com/watch?v=W_PyZp9Q1RM",
+          "inspection": "indexed_only",
+          "summary": "Official verified Tennis TV final-highlights search metadata displays 28 February. Video/page not opened in this probe; no admission based on this metadata.",
+          "displayed_publication_day": "2021-02-28",
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false
+        }
+      ],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    },
+    {
+      "sample_order": 6,
+      "source_tourney_id": "2021-9158",
+      "source_nominal_date": "2021-02-22",
+      "tourney_name": "Cordoba",
+      "surface": "Clay",
+      "review_status": "completion_date_unresolved",
+      "completed_by_day": null,
+      "displayed_publication_day": null,
+      "timezone": null,
+      "completion_evidence": [],
+      "target_start_evidence": [
+        {
+          "url": "https://www.tennistv.com/tournaments/9158_2021/cordoba",
+          "inspection": "full_text",
+          "summary": "Edition page lists a date range and a singles final replay. Neither the replay description nor range establishes the actual completion or original publication day.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-02-22",
+          "reported_range_end": "2021-02-28",
+          "start_semantics": "historical_edition_range_not_independent_earliest_match_certificate"
+        },
+        {
+          "url": "https://www.atptour.com/en/scores/results-archive?year=2021",
+          "inspection": "indexed_only",
+          "summary": "Official archive search excerpt lists a historical event range and completed-event winner; the range is not itself a completion/publication certificate.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-02-22",
+          "reported_range_end": "2021-02-28",
+          "start_semantics": "indexed_historical_event_range"
+        }
+      ],
+      "other_located_sources": [],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    },
+    {
+      "sample_order": 7,
+      "source_tourney_id": "2021-9460",
+      "source_nominal_date": "2021-02-22",
+      "tourney_name": "Singapore",
+      "surface": "Hard",
+      "review_status": "current_primary_completion_text_located",
+      "completed_by_day": "2021-02-28",
+      "displayed_publication_day": "2021-02-28",
+      "timezone": null,
+      "completion_evidence": [
+        {
+          "url": "https://www.tennis.com.au/fan-zone/news/2021/02/28/popyrin-makes-an-atp-title-breakthrough-in-singapore",
+          "inspection": "full_text",
+          "summary": "National federation report says the singles final was completed today.",
+          "displayed_publication_day": "2021-02-28",
+          "completed_by_day": "2021-02-28",
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "later_retrieval_attempt": {
+            "at_utc": "2026-11-28T08:52:42Z",
+            "status": "timeout_400",
+            "note": "Earlier full text was successfully opened; a later provenance-timestamp refresh failed. No additional retry."
+          }
+        }
+      ],
+      "target_start_evidence": [
+        {
+          "url": "https://www.atptour.com/en/scores/results-archive?year=2021",
+          "inspection": "indexed_only",
+          "summary": "Official archive search excerpt lists a historical event range and completed-event winner; the range is not itself a completion/publication certificate.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-02-22",
+          "reported_range_end": "2021-02-28",
+          "start_semantics": "indexed_historical_event_range"
+        }
+      ],
+      "other_located_sources": [],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    },
+    {
+      "sample_order": 8,
+      "source_tourney_id": "2021-407",
+      "source_nominal_date": "2021-03-01",
+      "tourney_name": "Rotterdam",
+      "surface": "Hard",
+      "review_status": "completion_date_unresolved",
+      "completed_by_day": null,
+      "displayed_publication_day": null,
+      "timezone": null,
+      "completion_evidence": [],
+      "target_start_evidence": [],
+      "other_located_sources": [
+        {
+          "url": "https://www.atptour.com/en/news/rublev-fucsovics-rotterdam-2021-sunday",
+          "inspection": "access_denied",
+          "summary": "A historical ATP final-report URL was located through a citation. Its first open returned 403; no retries or workaround.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false
+        }
+      ],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    },
+    {
+      "sample_order": 9,
+      "source_tourney_id": "2021-506",
+      "source_nominal_date": "2021-03-01",
+      "tourney_name": "Buenos Aires",
+      "surface": "Clay",
+      "review_status": "completion_date_unresolved",
+      "completed_by_day": null,
+      "displayed_publication_day": null,
+      "timezone": null,
+      "completion_evidence": [],
+      "target_start_evidence": [
+        {
+          "url": "https://www.tennistv.com/tournaments/506_2021/buenos-aires",
+          "inspection": "full_text",
+          "summary": "Edition page lists a date range and a singles final replay. Neither the replay description nor range establishes the actual completion or original publication day.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-03-01",
+          "reported_range_end": "2021-03-07",
+          "start_semantics": "historical_edition_range_not_independent_earliest_match_certificate"
+        }
+      ],
+      "other_located_sources": [],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    },
+    {
+      "sample_order": 10,
+      "source_tourney_id": "2021-451",
+      "source_nominal_date": "2021-03-08",
+      "tourney_name": "Doha",
+      "surface": "Hard",
+      "review_status": "current_primary_completion_text_located",
+      "completed_by_day": "2021-03-13",
+      "displayed_publication_day": "2021-03-13",
+      "timezone": null,
+      "completion_evidence": [
+        {
+          "url": "https://www.olympic.qa/index.php/media-center/basilashvili-defeats-bautista-agut-lift-qatar-exxonmobil-open-2021-trophy",
+          "inspection": "full_text",
+          "summary": "National Olympic Committee report says the event ended on Saturday with a completed singles final.",
+          "displayed_publication_day": "2021-03-13",
+          "completed_by_day": "2021-03-13",
+          "timezone": null,
+          "retrieved_at_utc": "2026-11-28T08:52:42Z",
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": true,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false
+        },
+        {
+          "url": "https://www.diwan.gov.qa/briefing-room/news/activities-and-occasions/2021/march/13/hh-the-amir-attends-the-qatar-exxonmobil-open-tennis-championship-final?sc_lang=en",
+          "inspection": "full_text",
+          "summary": "Government attendance account explicitly says the final ended; displayed clock time has no stated timezone.",
+          "displayed_publication_day": "2021-03-13",
+          "completed_by_day": "2021-03-13",
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "displayed_publication_clock": "21:26",
+          "publication_clock_timezone_verified": false
+        }
+      ],
+      "target_start_evidence": [
+        {
+          "url": "https://www.itftennis.com/en/tournament/doha/qat/2021/m-250-qat-01a-2021/draws-and-results/",
+          "inspection": "indexed_only",
+          "summary": "ITF search excerpt gives 8-14 March; full open redirects to an inaccessible world.tennis page. The 14 March range end conflicts with completed-final reporting on 13 March.",
+          "displayed_publication_day": null,
+          "completed_by_day": null,
+          "timezone": null,
+          "retrieved_at_utc": null,
+          "retrieval_observed_utc_day": "2026-11-28",
+          "exact_retrieval_time_recorded": false,
+          "cached_content_sha256": null,
+          "archive_snapshot": null,
+          "admitted_for_prediction": false,
+          "reported_range_start": "2021-03-08",
+          "reported_range_end": "2021-03-14",
+          "start_semantics": "indexed_historical_event_range",
+          "access_detail": "open failed with 500 non-retryable redirect; not retried"
+        }
+      ],
+      "other_located_sources": [],
+      "admitted_for_prediction": false,
+      "earliest_main_start_supported_by_explicit_Day_1_announcement": false
+    }
+  ],
+  "initial_independent_routes": [
+    {
+      "id": "A",
+      "idea": "Official annual results archive as edition index plus dated completed-final reports.",
+      "risk": "Annual ranges or retrospective results do not prove original completion/publication timestamps; access and extraction may fail."
+    },
+    {
+      "id": "B",
+      "idea": "Official Tennis TV yearly/edition catalog as a scalable discovery index, with separate completion and main-start certificates.",
+      "risk": "Dynamic catalogs differ from indexed text; replay existence alone does not date completion or publication."
+    }
+  ],
+  "scalable_sources": [
+    {
+      "url": "https://www.atptour.com/en/scores/results-archive?year=2021",
+      "inspection": "access_denied",
+      "summary": "Search index shows a broad 2021 calendar with winners, but direct page open returned 403; no retry. Indexed-only dates are leads, not qualified availability.",
+      "displayed_publication_day": null,
+      "completed_by_day": null,
+      "timezone": null,
+      "retrieved_at_utc": null,
+      "retrieval_observed_utc_day": "2026-11-28",
+      "exact_retrieval_time_recorded": false,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false
+    },
+    {
+      "url": "https://www.tennistv.com/classics/2021",
+      "inspection": "full_text",
+      "summary": "The current page exposes category headings and a 2021 archive entry; search-index text lists many finals but current extracted page lacks their links. Discovery route only.",
+      "displayed_publication_day": null,
+      "completed_by_day": null,
+      "timezone": null,
+      "retrieved_at_utc": null,
+      "retrieval_observed_utc_day": "2026-11-28",
+      "exact_retrieval_time_recorded": false,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false
+    },
+    {
+      "url": "https://www.tennis.com.au/content/dam/tennisaustralia/documents/reports/annual-reports/tennis-australia-annual-report-2020-2021.pdf.coredownload.pdf",
+      "inspection": "indexed_only",
+      "summary": "A federation annual report with several Australian editions was located, but not downloaded or visually inspected. Retrospective date ranges do not establish historical publication by future targets.",
+      "displayed_publication_day": null,
+      "completed_by_day": null,
+      "timezone": null,
+      "retrieved_at_utc": null,
+      "retrieval_observed_utc_day": "2026-11-28",
+      "exact_retrieval_time_recorded": false,
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "admitted_for_prediction": false
+    }
+  ],
+  "access_and_parse_limits": [
+    "No ATP yearbook or protennislive URL was opened or retried; their earlier denial/rate-limit constraints were preserved.",
+    "The ATP 2022 yearbook appeared incidentally in search with inconsistent extracted score columns; neither PDF nor extracted rows were adopted as date evidence.",
+    "Current full-text reports provide conditional historical-date evidence, not independently archived first-publication snapshots.",
+    "No unknown publication timezone is replaced with a venue timezone; the displayed Doha 21:26 clock remains timezone=null.",
+    "The first successful reads were not clock-stamped to the second; retrieved_at_utc is null for those observations. A later explicitly timed refresh is recorded where successful, and the Singapore timeout is preserved.",
+    "No original response body was downloaded to disk; every cached_content_sha256 is null. These summaries must not be hashed and presented as source-content hashes.",
+    "No technical-statistic availability or individual-match timestamp is inferred. No labels or prediction CSVs were read; completion semantics necessarily inspect historical final descriptions."
+  ],
+  "next_decision": "Review the shared evidence schema before any further source batches or prediction. Preserve all 47 unreviewed candidates and all unresolved first-ten cases.",
+  "review_document_sha256": "a8d75c6a9a6b5c537d29824a34adfb176da01c8ca4f8034035993e4d77ede819",
+  "target_start_evidence": [
+    {
+      "target_tourney_id": "2021-451",
+      "target_lower_day": "2021-03-08",
+      "source_url": "https://www.tennistv.com/tournaments/451_2021/doha",
+      "assessment": "Official Tennis TV 2021 edition page explicitly starts its historical tournament range on Monday 8 March. Use as a conservative event-start lower day only under schedule consistency; not a timed first-match certificate or completion evidence.",
+      "inspection": "full_text",
+      "timezone": null,
+      "displayed_publication_day": null,
+      "retrieved_at_utc": "2026-11-28T09:08:51Z",
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "evidence_kind": "official_historical_event_range_start",
+      "admitted_for_prediction": false
+    },
+    {
+      "target_tourney_id": "2021-496",
+      "target_lower_day": "2021-03-08",
+      "source_url": "https://www.tennistv.com/tournaments/496_2021/marseille",
+      "assessment": "Official Tennis TV 2021 edition page explicitly starts its historical tournament range on Monday 8 March. Use as a conservative event-start lower day only under schedule consistency; not a timed first-match certificate or completion evidence.",
+      "inspection": "full_text",
+      "timezone": null,
+      "displayed_publication_day": null,
+      "retrieved_at_utc": "2026-11-28T09:08:51Z",
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "evidence_kind": "official_historical_event_range_start",
+      "admitted_for_prediction": false
+    },
+    {
+      "target_tourney_id": "2021-8996",
+      "target_lower_day": "2021-03-08",
+      "source_url": "https://www.tennistv.com/tournaments/8996_2021/santiago",
+      "assessment": "Official Tennis TV 2021 edition page explicitly starts its historical tournament range on Monday 8 March. Use as a conservative event-start lower day only under schedule consistency; not a timed first-match certificate or completion evidence.",
+      "inspection": "full_text",
+      "timezone": null,
+      "displayed_publication_day": null,
+      "retrieved_at_utc": "2026-11-28T09:08:51Z",
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "evidence_kind": "official_historical_event_range_start",
+      "admitted_for_prediction": false
+    },
+    {
+      "target_tourney_id": "2021-403",
+      "target_lower_day": "2021-03-22",
+      "source_url": "https://www.miamiopen.com/latest-news/2021-player-announcement/",
+      "assessment": "Official advance notice dated 25 February gives overall event start 22 March, qualifying 22-23 March and first round of the mens main draw 24 March. Retain the earlier 22 March overall-event start as a conservative lower day under schedule consistency, rather than silently using the later mens start.",
+      "inspection": "full_text",
+      "timezone": null,
+      "displayed_publication_day": "2021-02-25",
+      "retrieved_at_utc": "2026-11-28T09:09:17Z",
+      "cached_content_sha256": null,
+      "archive_snapshot": null,
+      "evidence_kind": "official_advance_overall_start_with_separate_main_draw_date",
+      "announced_mens_main_draw_start": "2021-03-24",
+      "admitted_for_prediction": false
+    }
+  ],
+  "target_start_followup": {
+    "recorded_at_utc": "2026-11-28T09:09:17Z",
+    "previous_probe_sha256": "d151e22d3236f99698b603f3e02c221044c04104160bba9fd75985b30f79cd70",
+    "scope": "Only target editions from the five already-supported first-ten source editions with nominal-day minus max(completed_by_day, displayed_publication_day) >= 3.",
+    "candidate_pair_count": 4,
+    "candidate_target_count": 4,
+    "full_text_target_lower_days_recorded": 4,
+    "unresolved_targets": [],
+    "source_editions_added": 0,
+    "models_fitted": 0,
+    "prediction_admission_changes": 0,
+    "global_bound_rule_unchanged": "source date 00:00 UTC +36h < target lower day 00:00 UTC -14h",
+    "pairs": [
+      {
+        "source_tourney_id": "2021-9460",
+        "target_tourney_id": "2021-451",
+        "target_nominal_date": "2021-03-08",
+        "source_available_day": "2021-02-28",
+        "nominal_day_gap": 8,
+        "evidenced_target_lower_day": "2021-03-08",
+        "global_bound_clearance_hours": 142
+      },
+      {
+        "source_tourney_id": "2021-9460",
+        "target_tourney_id": "2021-496",
+        "target_nominal_date": "2021-03-08",
+        "source_available_day": "2021-02-28",
+        "nominal_day_gap": 8,
+        "evidenced_target_lower_day": "2021-03-08",
+        "global_bound_clearance_hours": 142
+      },
+      {
+        "source_tourney_id": "2021-9460",
+        "target_tourney_id": "2021-8996",
+        "target_nominal_date": "2021-03-08",
+        "source_available_day": "2021-02-28",
+        "nominal_day_gap": 8,
+        "evidenced_target_lower_day": "2021-03-08",
+        "global_bound_clearance_hours": 142
+      },
+      {
+        "source_tourney_id": "2021-451",
+        "target_tourney_id": "2021-403",
+        "target_nominal_date": "2021-03-22",
+        "source_available_day": "2021-03-13",
+        "nominal_day_gap": 9,
+        "evidenced_target_lower_day": "2021-03-22",
+        "global_bound_clearance_hours": 166
+      }
+    ],
+    "access_failures": [
+      {
+        "url": "https://www.tennistv.com/tournaments/403_2021/miami",
+        "retrieved_at_utc": "2026-11-28T09:08:51Z",
+        "assessment": "Not accessible via the web tool; not retried. Used an independent publicly accessible organizer notice instead."
+      }
+    ],
+    "limits": [
+      "Calendar-start use depends on schedule consistency; no exact start times or webpage publication timezones are inferred.",
+      "The target dates alone do not turn source reports into proven first-publication snapshots.",
+      "No old completion evidence, source cases, worklist statuses or admission state was changed."
+    ]
+  }
+}

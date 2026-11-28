@@ -1,0 +1,84 @@
+[1/6] tabicl_context2048 fold2020: 8.4s
+[1/6] tabicl_context2048 fold2021: 9.0s
+[1/6] tabicl_context2048 fold2022: 9.9s
+CV tabicl_context2048: accuracy=0.660196 loss=0.607452
+[2/6] logistic_context2048 fold2020: 0.0s
+[2/6] logistic_context2048 fold2021: 0.0s
+[2/6] logistic_context2048 fold2022: 0.0s
+CV logistic_context2048: accuracy=0.659706 loss=0.605491
+[3/6] catboost_context2048 fold2020: 2.2s
+[3/6] catboost_context2048 fold2021: 1.0s
+[3/6] catboost_context2048 fold2022: 1.1s
+CV catboost_context2048: accuracy=0.654160 loss=0.612793
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/scripts/train_foundation_round7.py", line 426, in <module>
+    canonical_main()
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/scripts/train_foundation_round7.py", line 356, in main
+    model = SymmetricContextClassifier(spec, checkpoint).fit(x.loc[indices], rows.loc[indices])
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/scripts/train_foundation_round7.py", line 163, in fit
+    self.backend_.fit(xx.to_numpy(), yy)
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_sklearn/classifier.py", line 526, in fit
+    self._build_kv_cache()
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_sklearn/classifier.py", line 550, in _build_kv_cache
+    self.model_.forward_with_cache(
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/tabicl.py", line 745, in forward_with_cache
+    representations = self.row_interactor(
+                      ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/interaction.py", line 283, in forward
+    representations = self._inference_forward(embeddings, mgr_config)
+                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/interaction.py", line 249, in _inference_forward
+    representations = self.inference_mgr(
+                      ^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/inference.py", line 1347, in __call__
+    out = self._run_forward(forward_fn, self._prepare_inputs(inputs))
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/inference.py", line 1232, in _run_forward
+    return forward_fn(**inputs)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/interaction.py", line 149, in _aggregate_embeddings
+    embeddings = block(embeddings, key_padding_mask=key_mask, rope=rope)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/layers.py", line 456, in forward
+    attn_result = self._attn_block(
+                  ^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/layers.py", line 508, in _attn_block
+    result = self.attn(
+             ^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1787, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1798, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/layers.py", line 269, in forward
+    return multi_head_attention_forward(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/attention.py", line 248, in multi_head_attention_forward
+    q = rope.rotate_queries_or_keys(q)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/rope.py", line 310, in rotate_queries_or_keys
+    return apply_rotary_emb(freqs, t, scale=default(scale, 1.0), seq_dim=seq_dim, interleaved=self.interleaved)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/torch/amp/autocast_mode.py", line 44, in decorate_autocast
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/yizhangwu/Documents/ChatGPT/sota 158/atp-match-prediction/.venv-foundation/lib/python3.12/site-packages/tabicl/_model/rope.py", line 127, in apply_rotary_emb
+    t_transformed = (t_middle * cos_freq) + (rotate_half_contiguous(t_middle) * sin_freq)
+                     ~~~~~~~~~^~~~~~~~~~
+RuntimeError: MPS backend out of memory (MPS allocated: 6.24 GiB, other allocations: 4.35 GiB, max allowed: 10.66 GiB). Tried to allocate 272.00 MiB on shared pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).

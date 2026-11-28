@@ -1,0 +1,52 @@
+{
+  "round": 12,
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "shared_static_residual",
+      "correct": 2383,
+      "selection_rows": 3602,
+      "accuracy": 0.6615769017212659,
+      "mean_log_loss": 0.6072150419499674,
+      "loss_limit": 0.614177070959239,
+      "eligible_models": [
+        "previous_probability_recommendation",
+        "shared_dynamic_residual",
+        "shared_only",
+        "shared_static_residual"
+      ],
+      "mixture_search": false
+    },
+    "gate_season": 2022,
+    "gate_rows": 2528,
+    "reference_correct": 1697,
+    "candidate_correct": 1701,
+    "net_correct": 4,
+    "required_net_correct": 13,
+    "reference_log_loss": 0.5946582163399363,
+    "candidate_log_loss": 0.5917390607546947,
+    "allowed_loss_increase": 0.005
+  },
+  "pooled_selection": {
+    "choice": "shared_dynamic_residual",
+    "correct": 4094,
+    "selection_rows": 6130,
+    "accuracy": 0.667862969004894,
+    "mean_log_loss": 0.6028907478074392,
+    "loss_limit": 0.60818952373614,
+    "eligible_models": [
+      "previous_probability_recommendation",
+      "shared_dynamic_residual",
+      "shared_only",
+      "shared_static_residual"
+    ],
+    "mixture_search": false
+  },
+  "recommendation": "previous_probability_recommendation",
+  "frozen_at_utc": "2026-11-28T09:55:52.454913+00:00",
+  "decision_threshold": 0.5,
+  "protocol_sha256": "54fbc7f95d8419cde22d0d26a1f14d5f6e01acd748a72f73959f365dacc45e34",
+  "historical_lag_days": 21,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

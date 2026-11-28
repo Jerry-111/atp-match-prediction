@@ -1,0 +1,8 @@
+{
+  "reload_max_error": 0.0,
+  "swap_max_error": 2.220446049250313e-16,
+  "original326_csv_values_max_error": 0.0,
+  "prior_linear_validation_max_error": 3.135003368015532e-11,
+  "prior_linear_oof_max_error": 2.5383029012004954e-12,
+  "validation_scoring_only_after_freeze": true
+}

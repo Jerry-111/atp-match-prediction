@@ -1,0 +1,15 @@
+{
+  "choice": "round4_reference",
+  "selection_season": 2021,
+  "selection_rows": 2388,
+  "accuracy": 0.6557788944723618,
+  "mean_log_loss": 0.6104844670308204,
+  "eligible_entries": [
+    "equal_mix",
+    "global_mix",
+    "conditional_mix",
+    "round4_reference"
+  ],
+  "loss_limit": 0.6154844670308204,
+  "decision_threshold": 0.5
+}

@@ -1,0 +1,6 @@
+# Optional, isolated TabICLv2 environment. Tested with CPython 3.12 on Apple M4 Pro.
+# Do not install this into the existing .venv modeling environment.
+# python3.12 -m venv .venv-foundation
+# .venv-foundation/bin/python -m pip install -r requirements-foundation.txt
+# The full resolved snapshot pins the exact versions used by the saved run.
+-r results/round7/foundation/dependencies.txt

@@ -1,0 +1,43 @@
+{
+  "round": 11,
+  "branch": "bounded_completed_event_freshness",
+  "early_selection": {
+    "selection_season": 2021,
+    "selection_rows": 2388,
+    "choice": null,
+    "candidates": [
+      {
+        "algorithm": "overall_elo",
+        "accuracy_improvement": -0.0012562814070351536,
+        "log_loss_change": -0.00010063972669449583,
+        "eligible": false
+      },
+      {
+        "algorithm": "rank_rating_logistic",
+        "accuracy_improvement": 0.0,
+        "log_loss_change": -4.6059278515975244e-05,
+        "eligible": false
+      }
+    ]
+  },
+  "procedure_gate": {
+    "selected_algorithm": null,
+    "selection_season": 2021,
+    "gate_season": 2022,
+    "required_accuracy_improvement": 0.005,
+    "allowed_loss_increase": 0.005,
+    "gate_passed": false,
+    "procedure": "retain_original_history_recommendation"
+  },
+  "recommendation": "previous_probability_recommendation",
+  "pooled_selection_performed": false,
+  "frozen_at_utc": "2026-11-28T09:17:05.789590+00:00",
+  "decision_threshold": 0.5,
+  "fit_end_season": 2022,
+  "protocol_sha256": "690c60196e3b8700157036c5632e5b17190c86c102843530d7f48c972eed1ce7",
+  "qualified_manifest_sha256": "54281191164bdcfae2cc3cc71cc53db080653d4b6137686f960581517b10dc9d",
+  "information_regime": "Tier B completed-edition historical outcomes under explicit publication assumptions",
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false,
+  "context_references_selection_eligible": false
+}

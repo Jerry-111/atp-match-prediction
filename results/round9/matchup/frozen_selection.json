@@ -1,0 +1,55 @@
+{
+  "round": 9,
+  "branch": "antisymmetric_style_matchup",
+  "recommendation": "previous_probability_recommendation",
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "matchup_surface",
+      "selected_accuracy": 0.6590782898389783,
+      "selected_log_loss": 0.6052669820751218,
+      "loss_limit": 0.614177070959239,
+      "eligible_models": [
+        "previous_probability_recommendation",
+        "matchup_no_new_interaction",
+        "matchup_shared",
+        "matchup_surface"
+      ],
+      "selection_rows": 3602,
+      "mixture_search": false
+    },
+    "reference": "previous_probability_recommendation",
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6712816455696202,
+    "accuracy_improvement": 0.0,
+    "required_accuracy_improvement": 0.005,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5914873609122031,
+    "allowed_loss_increase": 0.005,
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022
+  },
+  "pooled_selection": {
+    "choice": "matchup_shared",
+    "selected_accuracy": 0.664600326264274,
+    "selected_log_loss": 0.599539656763746,
+    "loss_limit": 0.60818952373614,
+    "eligible_models": [
+      "previous_probability_recommendation",
+      "matchup_no_new_interaction",
+      "matchup_shared",
+      "matchup_surface"
+    ],
+    "selection_rows": 6130,
+    "mixture_search": false
+  },
+  "decision_threshold": 0.5,
+  "frozen_at_utc": "2026-11-28T07:30:59.522005+00:00",
+  "historical_lag_days": 21,
+  "fit_end_season": 2022,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

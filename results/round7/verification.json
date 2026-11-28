@@ -1,0 +1,22 @@
+{
+  "test_command": ".venv/bin/python -m pytest -q",
+  "passed_tests": 243,
+  "passed_subtests": 97,
+  "final_test_evaluated": false,
+  "full_validation_matches": 2588,
+  "branches": {
+    "margin": {
+      "status": "passed"
+    },
+    "distillation": {
+      "status": "passed"
+    },
+    "foundation": {
+      "status": "passed"
+    },
+    "event": {
+      "status": "passed"
+    }
+  },
+  "note": "Artifacts independently reloaded by agents other than branch implementation owners; full refit limitations are recorded in each audit."
+}

@@ -1,0 +1,184 @@
+{
+  "round": 5,
+  "information_regime": "Opening prematch market plus frozen historical model; separate from T-21 baseline",
+  "seed": 158,
+  "candidates": [
+    {
+      "name": "history_only",
+      "kind": "history",
+      "family": "history"
+    },
+    {
+      "name": "opening_market",
+      "kind": "opening",
+      "family": "opening"
+    },
+    {
+      "name": "probability_blend_market0.25",
+      "kind": "blend",
+      "mode": "probability",
+      "weight": 0.25,
+      "family": "probability_blend"
+    },
+    {
+      "name": "probability_blend_market0.5",
+      "kind": "blend",
+      "mode": "probability",
+      "weight": 0.5,
+      "family": "probability_blend"
+    },
+    {
+      "name": "probability_blend_market0.75",
+      "kind": "blend",
+      "mode": "probability",
+      "weight": 0.75,
+      "family": "probability_blend"
+    },
+    {
+      "name": "logit_blend_market0.25",
+      "kind": "blend",
+      "mode": "logit",
+      "weight": 0.25,
+      "family": "logit_blend"
+    },
+    {
+      "name": "logit_blend_market0.5",
+      "kind": "blend",
+      "mode": "logit",
+      "weight": 0.5,
+      "family": "logit_blend"
+    },
+    {
+      "name": "logit_blend_market0.75",
+      "kind": "blend",
+      "mode": "logit",
+      "weight": 0.75,
+      "family": "logit_blend"
+    },
+    {
+      "name": "market_calibrated_C0.01",
+      "kind": "calibrated",
+      "design": "market",
+      "C": 0.01,
+      "family": "market_calibrated"
+    },
+    {
+      "name": "market_calibrated_C0.1",
+      "kind": "calibrated",
+      "design": "market",
+      "C": 0.1,
+      "family": "market_calibrated"
+    },
+    {
+      "name": "market_calibrated_C1",
+      "kind": "calibrated",
+      "design": "market",
+      "C": 1.0,
+      "family": "market_calibrated"
+    },
+    {
+      "name": "market_calibrated_C10",
+      "kind": "calibrated",
+      "design": "market",
+      "C": 10.0,
+      "family": "market_calibrated"
+    },
+    {
+      "name": "fusion_calibrated_C0.01",
+      "kind": "calibrated",
+      "design": "fusion",
+      "C": 0.01,
+      "family": "fusion_calibrated"
+    },
+    {
+      "name": "fusion_calibrated_C0.1",
+      "kind": "calibrated",
+      "design": "fusion",
+      "C": 0.1,
+      "family": "fusion_calibrated"
+    },
+    {
+      "name": "fusion_calibrated_C1",
+      "kind": "calibrated",
+      "design": "fusion",
+      "C": 1.0,
+      "family": "fusion_calibrated"
+    },
+    {
+      "name": "fusion_calibrated_C10",
+      "kind": "calibrated",
+      "design": "fusion",
+      "C": 10.0,
+      "family": "fusion_calibrated"
+    },
+    {
+      "name": "context_calibrated_C0.01",
+      "kind": "calibrated",
+      "design": "context",
+      "C": 0.01,
+      "family": "context_calibrated"
+    },
+    {
+      "name": "context_calibrated_C0.1",
+      "kind": "calibrated",
+      "design": "context",
+      "C": 0.1,
+      "family": "context_calibrated"
+    },
+    {
+      "name": "context_calibrated_C1",
+      "kind": "calibrated",
+      "design": "context",
+      "C": 1.0,
+      "family": "context_calibrated"
+    },
+    {
+      "name": "context_calibrated_C10",
+      "kind": "calibrated",
+      "design": "context",
+      "C": 10.0,
+      "family": "context_calibrated"
+    }
+  ],
+  "market_metadata": {
+    "source": "Valuebetennis",
+    "source_url": "https://www.valuebetennis.com/en/donnees.htm",
+    "license": "CC BY 4.0",
+    "quote_timestamps_present": false,
+    "information_regime": "Provider-described opening and last prematch prices, not tournament-start T-21 history",
+    "coverage_by_season": {
+      "2021": {
+        "targets": 2388,
+        "matched": 2381,
+        "opening_available": 2374,
+        "closing_available": 0
+      },
+      "2022": {
+        "targets": 2528,
+        "matched": 2495,
+        "opening_available": 2480,
+        "closing_available": 1859
+      },
+      "2023": {
+        "targets": 2588,
+        "matched": 2502,
+        "opening_available": 2487,
+        "closing_available": 2477
+      }
+    },
+    "match_status_counts": {
+      "matched": 7378,
+      "name_unmatched_or_ambiguous": 93,
+      "no_pair_date_surface_round_candidate": 33
+    },
+    "linkage": "Bijective unique reviewed/full names; consistent calendar/source season; same players, surface, round family, UTC day -1..15; >=3 distinct unanimous source-match event anchors; one-to-one source match IDs",
+    "outcomes_read_for_linkage": false,
+    "final_test_evaluated": false,
+    "missing_policy": "All target rows retained; zero logit/overround plus availability0. Downstream probability must fall back explicitly to frozen historical model."
+  },
+  "base_model": "add_age_spline_C0.01",
+  "source_manifest_sha256": "446272b84eaed74882777add59ad2058a6f6d267150d2272115b21a864bb44fc",
+  "selection": "2021H2 chronological selection;2022accuracy/loss gate; pooled temporal refit; fixed.5threshold",
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

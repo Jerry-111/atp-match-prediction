@@ -1,0 +1,102 @@
+{
+  "status": "passed",
+  "auditor": "independent features agent",
+  "validation_matches": 2588,
+  "prediction_columns": 14,
+  "oof_prediction_columns": 11,
+  "probability_cells_verified": 36232,
+  "max_reload_error": 0.0,
+  "max_exchange_error": 2.220446049250313e-16,
+  "max_metric_error": 0.0,
+  "max_cv_metric_error": 0.0,
+  "max_matched_control_error": 0.0,
+  "max_paired_interval_error": 0,
+  "full_rebuild_feature_rows": 36421,
+  "new_feature_columns": 50,
+  "max_rebuilt_feature_error": 0.0,
+  "max_feature_swap_error": 0.0,
+  "old326_feature_error": 0.0,
+  "source_seasons_opened": [
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022
+  ],
+  "source_outcome_used_for_feature_construction": false,
+  "early_selected": "venue_surface_linear",
+  "pooled_selected": "venue_strength_linear",
+  "recommendation": "previous_probability_recommendation",
+  "gate_accuracy_improvement": 0.0035601265822785555,
+  "gate_loss_increase": -0.004050078396505952,
+  "temporal_populations": [
+    {
+      "year": 2020,
+      "train": 27703,
+      "valid": 1214,
+      "cutoff": "2019-12-16"
+    },
+    {
+      "year": 2021,
+      "train": 28917,
+      "valid": 2388,
+      "cutoff": "2020-12-14"
+    },
+    {
+      "year": 2022,
+      "train": 31305,
+      "valid": 2528,
+      "cutoff": "2021-12-13"
+    },
+    {
+      "year": 2023,
+      "train": 33833,
+      "valid": 2588,
+      "cutoff": "2022-12-12"
+    }
+  ],
+  "base_spline_matches_prior_max_error": 0.0,
+  "independent_synthetic_probes": [
+    "weighted exposure",
+    "venue rename isolation",
+    "future source rejection",
+    "source order",
+    "player exchange"
+  ],
+  "at_fit_source_sha256": "8c404889a7b5481bda7ee7f52c67816654fe9d340228f394ad30515f4d221cda",
+  "current_runner_sha256": "5756ff334db68b20e206bc63e127ad8a4478decf0b47185e48fa98acc0795571",
+  "at_fit_computation_ast_equivalent": true,
+  "source_revision_note": "Only write_report rendering and validation-scoring metadata key changed after fit; exact at-fit source hash verified.",
+  "oof_models_refit_during_audit": false,
+  "final_test_outcomes_evaluated": false,
+  "final_test_raw_files_opened": false,
+  "elapsed_seconds": 6.317971874959767,
+  "artifact_sha256": {
+    "summary.json": "cf1fa13aface91d1dfa53c170ce474c6ba4990599a1136e2a07cf40197ed26c0",
+    "matched_controls.csv": "c8d7cb18f05cc1d8a949e549fb4f582d7ff6a265cdc2c64df9591bfcae3087ca",
+    "self_check.json": "e897d6fbaa808332da3d0e720f3ad86fa62f829771f9b7d01852fa1790e3c9d2",
+    "validation_predictions.csv": "804ae74a44534167bd7c6570ef71495ec5866e4f7a1eb3287371ec1dd9547b91",
+    "search_registry.json": "fae5db3a8687ee4578dd7d1b5500f5dba317042331a6a46a44388c6d5d05de5e",
+    "oof_predictions.csv": "cf113d206b87d1576d33de858a521aa46df3d574138ed10541d2185da17a87d5",
+    "frozen_models.joblib": "33a97935538e7329a06764515d5071e33d776b594307f457dc79a245893eebc8",
+    "frozen_selection.json": "7bae0c07463a817c6ad4015e1ab62372ea2d543738010ce5845e80722d0aab74",
+    "report_revision.json": "fc0a8052e37035574927cee7f5d15ad96ff11d8cdfe82479b432bc75e1ad7b07",
+    "development_features.csv": "d4e2fc2c9999aceac5e10ad65b4e6a93d88a4a81265c0b0a071b837d22e8ccf6",
+    "temporal_cv.csv": "1752f186bfb88fd5295e251830a5db7a0702530e42ecd51013c7ed07557f4bba",
+    "report_summary.md": "89094d2efbcaae1e4ec1ef3f98bfb1cf2ed8a1c5fd690b3b217e41bb5a04c0c1",
+    "validation_comparison.csv": "d159118f899a673fcf085e335ec3fd5c39dbdf4fbe609b982ad0540d28ca2b39",
+    "coverage_by_season.csv": "9df1c078bbb22ec30cfc56b9a7fc5bf04b325f53f8510420ebaaaab1cd4f7c97"
+  }
+}

@@ -1,0 +1,413 @@
+{
+  "round": 11,
+  "branch": "bounded_completed_event_freshness",
+  "recommendation": "previous_probability_recommendation",
+  "procedure_gate": {
+    "selected_algorithm": null,
+    "selection_season": 2021,
+    "gate_season": 2022,
+    "required_accuracy_improvement": 0.005,
+    "allowed_loss_increase": 0.005,
+    "gate_passed": false,
+    "procedure": "retain_original_history_recommendation"
+  },
+  "total_fits": 3,
+  "paired_algorithms": 2,
+  "new_probability_columns": 4,
+  "all_prediction_rows": 7504,
+  "oof_matches": 4916,
+  "validation_matches": 2588,
+  "qualified_pairs": 15,
+  "feature_metadata": {
+    "version": "bounded-completed-edition-elo-v1",
+    "columns": [
+      "log_rank_diff",
+      "elo_k32_diff",
+      "shrunk_surface_elo_k32_diff"
+    ],
+    "old_elo_rebuild_max_abs_error": 0.0,
+    "qualified_pairs": 15,
+    "target_editions_with_extra_history": 12,
+    "extra_unique_match_ids": 241,
+    "replays": [
+      {
+        "target_tourney_id": "2021-403",
+        "baseline_cutoff_day": "2021-03-01",
+        "last_included_nominal_day": "2021-03-08",
+        "extra_source_matches": 24,
+        "extra_source_editions": 1,
+        "history_rows": 37101,
+        "history_match_ids_sha256": "7286751a1ce12bba951b0254a733547d25e0e72b6689f7a05893045ef294b7ab"
+      },
+      {
+        "target_tourney_id": "2021-451",
+        "baseline_cutoff_day": "2021-02-15",
+        "last_included_nominal_day": "2021-02-22",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 36966,
+        "history_match_ids_sha256": "83b7d25ce5cc1dddcb8f6ce1f00e4703516c47201f9b188b3e47f042b3ce17f3"
+      },
+      {
+        "target_tourney_id": "2021-496",
+        "baseline_cutoff_day": "2021-02-15",
+        "last_included_nominal_day": "2021-02-22",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 36966,
+        "history_match_ids_sha256": "83b7d25ce5cc1dddcb8f6ce1f00e4703516c47201f9b188b3e47f042b3ce17f3"
+      },
+      {
+        "target_tourney_id": "2021-8996",
+        "baseline_cutoff_day": "2021-02-15",
+        "last_included_nominal_day": "2021-02-22",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 36966,
+        "history_match_ids_sha256": "83b7d25ce5cc1dddcb8f6ce1f00e4703516c47201f9b188b3e47f042b3ce17f3"
+      },
+      {
+        "target_tourney_id": "2022-495",
+        "baseline_cutoff_day": "2022-01-31",
+        "last_included_nominal_day": "2022-02-07",
+        "extra_source_matches": 57,
+        "extra_source_editions": 2,
+        "history_rows": 39411,
+        "history_match_ids_sha256": "d53985b7d1f8e51e4059633f9cf811454c725bdaf9c9672dd09c7e292af40a9d"
+      },
+      {
+        "target_tourney_id": "2022-580",
+        "baseline_cutoff_day": "2021-12-27",
+        "last_included_nominal_day": "2022-01-03",
+        "extra_source_matches": 25,
+        "extra_source_editions": 1,
+        "history_rows": 39073,
+        "history_match_ids_sha256": "9f8bfabd778354c6b3a12c272b1567823af8de1dfa8515e7037cf9b5013c1405"
+      },
+      {
+        "target_tourney_id": "2022-807",
+        "baseline_cutoff_day": "2022-01-31",
+        "last_included_nominal_day": "2022-02-07",
+        "extra_source_matches": 57,
+        "extra_source_editions": 2,
+        "history_rows": 39411,
+        "history_match_ids_sha256": "d53985b7d1f8e51e4059633f9cf811454c725bdaf9c9672dd09c7e292af40a9d"
+      },
+      {
+        "target_tourney_id": "2023-495",
+        "baseline_cutoff_day": "2023-02-06",
+        "last_included_nominal_day": "2023-02-13",
+        "extra_source_matches": 30,
+        "extra_source_editions": 1,
+        "history_rows": 41909,
+        "history_match_ids_sha256": "382706e54d8fca0f9a8f707e0b05adc8ca5cfabafeff250a374ac2092d812cb5"
+      },
+      {
+        "target_tourney_id": "2023-496",
+        "baseline_cutoff_day": "2023-01-30",
+        "last_included_nominal_day": "2023-02-06",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 41830,
+        "history_match_ids_sha256": "a2bf4dfcecebe3634426ce64818acfac0b398df039e67b65c29357e47a4cc5bc"
+      },
+      {
+        "target_tourney_id": "2023-580",
+        "baseline_cutoff_day": "2022-12-26",
+        "last_included_nominal_day": "2023-01-02",
+        "extra_source_matches": 53,
+        "extra_source_editions": 2,
+        "history_rows": 41629,
+        "history_match_ids_sha256": "5d6e3d9268cedfab44286c000f1864f06defa6c163912b0e4c70ab9ba4b03b19"
+      },
+      {
+        "target_tourney_id": "2023-6932",
+        "baseline_cutoff_day": "2023-01-30",
+        "last_included_nominal_day": "2023-02-06",
+        "extra_source_matches": 26,
+        "extra_source_editions": 1,
+        "history_rows": 41830,
+        "history_match_ids_sha256": "a2bf4dfcecebe3634426ce64818acfac0b398df039e67b65c29357e47a4cc5bc"
+      },
+      {
+        "target_tourney_id": "2023-807",
+        "baseline_cutoff_day": "2023-02-06",
+        "last_included_nominal_day": "2023-02-13",
+        "extra_source_matches": 30,
+        "extra_source_editions": 1,
+        "history_rows": 41909,
+        "history_match_ids_sha256": "382706e54d8fca0f9a8f707e0b05adc8ca5cfabafeff250a374ac2092d812cb5"
+      }
+    ],
+    "source_population": "unchanged completed ranked Tour inventory",
+    "nominal_date_batching": true,
+    "full_target_count": 36421,
+    "information_regime": "Tier B completed-edition historical outcomes under explicit publication assumptions",
+    "inventory_id_mapping": "Strip exactly one tour: prefix after Tour/development-year filtering; source population unchanged.",
+    "inventory_id_mapping_sha256": "81d9caace28a11a9cb8c18a490cb54a0ebeac9c846016e674c57c503f5f48a27",
+    "source_namespace_prefix_rows": 44164,
+    "pair_identity_sha256": "3f059b4d7389c3fce9f3a5062a03d3f4d807ec7f5239bb57c317d45fabf1d551"
+  },
+  "comparisons": {
+    "2021": {
+      "overall_elo": {
+        "accuracy": {
+          "accuracy_improvement": -0.001256281407035176,
+          "net_correct": -3,
+          "corrected": 0,
+          "newly_wrong": 3,
+          "ci95": [
+            -0.00429021031650102,
+            0.0
+          ],
+          "date_blocks": 38,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.00010063972669449873,
+          "ci95": [
+            0.0,
+            0.0002568309525395491
+          ],
+          "date_blocks": 38,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "rank_rating_logistic": {
+        "accuracy": {
+          "accuracy_improvement": 0.0,
+          "net_correct": 0,
+          "corrected": 0,
+          "newly_wrong": 0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "date_blocks": 38,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 4.605927851595409e-05,
+          "ci95": [
+            0.0,
+            0.00014826239085256637
+          ],
+          "date_blocks": 38,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      }
+    },
+    "2022": {
+      "overall_elo": {
+        "accuracy": {
+          "accuracy_improvement": 0.0015822784810126582,
+          "net_correct": 4,
+          "corrected": 4,
+          "newly_wrong": 0,
+          "ci95": [
+            0.0,
+            0.0039078911399882945
+          ],
+          "date_blocks": 36,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0004076732441934557,
+          "ci95": [
+            0.0,
+            0.001045490895949593
+          ],
+          "date_blocks": 36,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "rank_rating_logistic": {
+        "accuracy": {
+          "accuracy_improvement": 0.00039556962025316455,
+          "net_correct": 1,
+          "corrected": 1,
+          "newly_wrong": 0,
+          "ci95": [
+            0.0,
+            0.0012468827930174563
+          ],
+          "date_blocks": 36,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.00025535933774676386,
+          "ci95": [
+            0.0,
+            0.000647093302275191
+          ],
+          "date_blocks": 36,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      }
+    },
+    "2023": {
+      "overall_elo": {
+        "accuracy": {
+          "accuracy_improvement": 0.0007727975270479134,
+          "net_correct": 2,
+          "corrected": 2,
+          "newly_wrong": 0,
+          "ci95": [
+            0.0,
+            0.0023953293413173644
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.0008041740241203565,
+          "ci95": [
+            0.0,
+            0.00204718687512509
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      },
+      "rank_rating_logistic": {
+        "accuracy": {
+          "accuracy_improvement": 0.0,
+          "net_correct": 0,
+          "corrected": 0,
+          "newly_wrong": 0,
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; no correction for repeated search."
+        },
+        "log_loss": {
+          "mean_log_loss_reduction": 0.000529656546376625,
+          "ci95": [
+            0.0,
+            0.001344821610190347
+          ],
+          "date_blocks": 35,
+          "repetitions": 2000,
+          "interpretation": "Exploratory paired date-block interval; does not account for model search."
+        }
+      }
+    }
+  },
+  "matched_controls": [
+    {
+      "season": 2021,
+      "algorithm": "overall_elo",
+      "matches": 2388,
+      "stale_correct": 1498,
+      "fresh_correct": 1495,
+      "accuracy_improvement": -0.0012562814070351536,
+      "log_loss_change": -0.00010063972669449583,
+      "edition_covered_rows": 168,
+      "direct_player_covered_rows": 42,
+      "rating_changed_rows": 42,
+      "probability_changed_rows": 42,
+      "probability_changed_over_1e12_rows": 42,
+      "classification_changed_rows": 3,
+      "exact_fallback_rows": 2220
+    },
+    {
+      "season": 2021,
+      "algorithm": "rank_rating_logistic",
+      "matches": 2388,
+      "stale_correct": 1519,
+      "fresh_correct": 1519,
+      "accuracy_improvement": 0.0,
+      "log_loss_change": -4.6059278515975244e-05,
+      "edition_covered_rows": 168,
+      "direct_player_covered_rows": 42,
+      "rating_changed_rows": 42,
+      "probability_changed_rows": 42,
+      "probability_changed_over_1e12_rows": 42,
+      "classification_changed_rows": 0,
+      "exact_fallback_rows": 2220
+    },
+    {
+      "season": 2022,
+      "algorithm": "overall_elo",
+      "matches": 2528,
+      "stale_correct": 1635,
+      "fresh_correct": 1639,
+      "accuracy_improvement": 0.0015822784810126667,
+      "log_loss_change": -0.00040767324419355155,
+      "edition_covered_rows": 183,
+      "direct_player_covered_rows": 90,
+      "rating_changed_rows": 90,
+      "probability_changed_rows": 90,
+      "probability_changed_over_1e12_rows": 90,
+      "classification_changed_rows": 4,
+      "exact_fallback_rows": 2345
+    },
+    {
+      "season": 2022,
+      "algorithm": "rank_rating_logistic",
+      "matches": 2528,
+      "stale_correct": 1657,
+      "fresh_correct": 1658,
+      "accuracy_improvement": 0.0003955696202532222,
+      "log_loss_change": -0.00025535933774678554,
+      "edition_covered_rows": 183,
+      "direct_player_covered_rows": 90,
+      "rating_changed_rows": 90,
+      "probability_changed_rows": 90,
+      "probability_changed_over_1e12_rows": 90,
+      "classification_changed_rows": 1,
+      "exact_fallback_rows": 2345
+    },
+    {
+      "season": 2023,
+      "algorithm": "overall_elo",
+      "matches": 2588,
+      "stale_correct": 1640,
+      "fresh_correct": 1642,
+      "accuracy_improvement": 0.0007727975270479526,
+      "log_loss_change": -0.0008041740241203632,
+      "edition_covered_rows": 234,
+      "direct_player_covered_rows": 118,
+      "rating_changed_rows": 118,
+      "probability_changed_rows": 118,
+      "probability_changed_over_1e12_rows": 118,
+      "classification_changed_rows": 2,
+      "exact_fallback_rows": 2354
+    },
+    {
+      "season": 2023,
+      "algorithm": "rank_rating_logistic",
+      "matches": 2588,
+      "stale_correct": 1678,
+      "fresh_correct": 1678,
+      "accuracy_improvement": 0.0,
+      "log_loss_change": -0.0005296565463766001,
+      "edition_covered_rows": 234,
+      "direct_player_covered_rows": 118,
+      "rating_changed_rows": 118,
+      "probability_changed_rows": 118,
+      "probability_changed_over_1e12_rows": 118,
+      "classification_changed_rows": 0,
+      "exact_fallback_rows": 2354
+    }
+  ],
+  "correct_required_for_70": 1812,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false,
+  "pooled_selection_performed": false,
+  "information_regime": "Tier B completed-edition historical outcomes under explicit publication assumptions",
+  "context_reference_caveat": "R4/R5 were selected in prior exploration; their earlier-year reference rows are descriptive and excluded from this mechanism selector."
+}

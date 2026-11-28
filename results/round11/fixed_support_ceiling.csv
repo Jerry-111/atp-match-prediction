@@ -1,0 +1,3 @@
+algorithm,modifiable_rows,optimistic_correct_bound,optimistic_accuracy_bound
+overall_elo,118,1669,0.6448995363214838
+rank_rating_logistic,118,1705,0.6588098918083463

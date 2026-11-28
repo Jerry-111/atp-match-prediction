@@ -1,0 +1,181 @@
+{
+  "status": "protocol_review_pass_with_explicit_source_reverification_limits",
+  "reviewed_at_utc": "2026-11-28T09:07:34.732935+00:00",
+  "models_fitted": 0,
+  "prediction_files_read": 0,
+  "individual_2023_errors_inspected": false,
+  "final_year_raw_opened": false,
+  "independent_primary_completion_reports_reopened": 5,
+  "reported_primary_completion_reports": 6,
+  "independent_target_sources_reopened": 4,
+  "reported_target_sources": 5,
+  "source_reviews": [
+    {
+      "source_tourney_id": "2023-2843",
+      "url": "https://novakdjokovic.com/en/news/tennis/nole-begins-the-new-season-with-a-triumph-in-adelaide/",
+      "completed_by_day": "2023-01-08",
+      "displayed_publication_day": "2023-01-08",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Dated participant report explicitly describes the completed final and trophy ceremony.",
+      "tier_b_policy_compatible": true,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-891",
+      "url": "https://www.atptour.com/en/news/griekspoor-bonzi-pune-2023-final",
+      "completed_by_day": "2023-01-07",
+      "displayed_publication_day": "2023-01-07",
+      "independent_status": "independent_open_403_no_retry",
+      "interpretation": "Retain root original full-text observation only; not independently reopened by this reviewer.",
+      "tier_b_policy_compatible": true,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-301",
+      "url": "https://www.fft.fr/actualites/heroique-richard-gasquet-titre-victoire-finale-auckland",
+      "completed_by_day": "2023-01-14",
+      "displayed_publication_day": "2023-01-14",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Dated federation report describes completed final and post-match press conference.",
+      "tier_b_policy_compatible": true,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-8998",
+      "url": "https://www.tennis.com.au/adelaide-international/news/2023/01/soonwoo-kwon-claims-historic-title-adelaide",
+      "completed_by_day": "2023-01-14",
+      "displayed_publication_day": "2023-01-14",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Dated event report describes completed singles final; do not substitute its separate doubles section.",
+      "tier_b_policy_compatible": true,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-375",
+      "independent_status": "not_requested_existing_unresolved_preserved",
+      "tier_b_policy_compatible": false,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-424",
+      "url": "https://www.dallasopen.com/en/media/news/isner-wu-dallas-2023-sunday-final",
+      "completed_by_day": "2023-02-12",
+      "displayed_publication_day": "2023-02-12",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Dated tournament report describes the completed Sunday singles final.",
+      "tier_b_policy_compatible": true,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-9158",
+      "independent_status": "not_requested_existing_unresolved_preserved",
+      "tier_b_policy_compatible": false,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-407",
+      "url": "https://www.abnamro-open.nl/en/news/headlines/50th-edition/magical-medvedev-extinguishes-sparkling-sinner",
+      "completed_by_day": "2023-02-19",
+      "displayed_publication_day": "2023-02-19",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Dated tournament report describes the completed singles final and post-match remarks.",
+      "tier_b_policy_compatible": true,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-499",
+      "independent_status": "not_requested_existing_unresolved_preserved",
+      "tier_b_policy_compatible": false,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "source_tourney_id": "2023-506",
+      "independent_status": "not_requested_existing_unresolved_preserved",
+      "tier_b_policy_compatible": false,
+      "pair_admitted_by_this_review": false
+    }
+  ],
+  "target_reviews": [
+    {
+      "target_tourney_id": "2023-580",
+      "url": "https://ausopen.com/articles/news/australian-open-set-three-week-tennis-extravaganza",
+      "target_lower_day": "2023-01-16",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Explicit announced qualifying/main-draw distinction; Jan16 lower day conditional on schedule consistency.",
+      "tier_b_policy_compatible": true,
+      "actual_opening_claim": "historical_or_announced_day_with_disclosed_assumptions",
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "target_tourney_id": "2023-496",
+      "url": "https://www.fft.fr/actualites/open-13-bonzi-domine-van-assche",
+      "target_lower_day": "2023-02-20",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Dated federation account explicitly names the first main-draw day; retrospective historical-date inference.",
+      "tier_b_policy_compatible": true,
+      "actual_opening_claim": "historical_or_announced_day_with_disclosed_assumptions",
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "target_tourney_id": "2023-6932",
+      "url": "https://www.rioopen.com/pt-br/noticias/news/23_02_15_maior-torneio-de-tenis-da-america-do-sul-rio-open-chega-a-sua-nona-edicao",
+      "target_lower_day": "2023-02-20",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Advance official schedule lists qualifying Feb18-19, rounds1/2 Feb20-23; lower day conditional on schedule consistency.",
+      "tier_b_policy_compatible": true,
+      "actual_opening_claim": "historical_or_announced_day_with_disclosed_assumptions",
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "target_tourney_id": "2023-495",
+      "url": "https://dubaidutyfreetennischampionships.com/mens-draw-for-2023-dubai-duty-free-tennis-championships-revealed-on-saturday/",
+      "target_lower_day": "2023-02-25",
+      "independent_status": "reopened_full_text",
+      "interpretation": "Feb25 official draw confirms all16 opening R32 matches and director describes competition as still future; accepted conservative draw-day lower, not actual opening.",
+      "tier_b_policy_compatible": true,
+      "actual_opening_claim": false,
+      "pair_admitted_by_this_review": false
+    },
+    {
+      "target_tourney_id": "2023-807",
+      "url": "https://abiertomexicanodetenis.com/2023/01/31/cinco-top-10-encabezan-el-30-aniversario-del-amt/",
+      "target_lower_day": "2023-02-27",
+      "independent_status": "root_original_observation_only",
+      "interpretation": "Independent initial open exposed page framing; follow-up body retrieval timed out. Root observed Jan31 announcement Feb27-Mar4. Schedule-consistency assumption only; not independently reverified actual opening.",
+      "tier_b_policy_compatible": true,
+      "actual_opening_claim": false,
+      "pair_admitted_by_this_review": false
+    }
+  ],
+  "protocol_checks": {
+    "fixed_first10_per_year_before_scores": true,
+    "unknown_publication_zone_keeps_global_upper": true,
+    "strict_upper_less_than_lower": true,
+    "explicit_tier_b_publicity_stability_assumptions": true,
+    "no_social_timestamp_admission": true,
+    "two_algorithms_three_shared_fits_four_probabilities": true,
+    "2021_only_choice_2022_gate_no_pooled_reselection": true,
+    "all_targets_preserved_and_exact_stale_fallback": true,
+    "symmetric_three_odd_inputs_scaler_on_mirrored_training": true,
+    "not_an_upgrade_of_current_models_by_definition": true
+  },
+  "limits": [
+    "No historic immutable publication capture obtained.",
+    "No pair admitted here: the separate frozen qualification ledger determines eligibility.",
+    "Pune retains the original reviewer observation; independent retrieval was denied and not retried.",
+    "Acapulco retains the original reviewer observation and explicit schedule-consistency assumption; independent body retrieval did not complete.",
+    "No source outcome rows were audited or corrected, no probability metrics computed, and no learner fitted."
+  ],
+  "hashes_as_reviewed": {
+    "probe_2023": "898935a2601e6fd7a47340ba1217b72c28af326b527f915724dc0b942855be08",
+    "protocol": "f8d6dd3c07c82a1374c3380511320ddedb3309676699a57d67b0292aa6d8cb7a"
+  },
+  "review_document_sha256": "e5a51cefc9f19921c84999a5dc9905ce18876ef565ae5b6a61d658fdce6873c8",
+  "pre_fit_protocol_clarification_review": {
+    "previous_protocol_sha256": "f8d6dd3c07c82a1374c3380511320ddedb3309676699a57d67b0292aa6d8cb7a",
+    "current_protocol_sha256": "690c60196e3b8700157036c5632e5b17190c86c102843530d7f48c972eed1ce7",
+    "reviewed": true,
+    "clarification": "Target lower bounds may use advance or retrospective official event-period statements under explicit schedule-consistency assumption. Source completion still requires primary completed-result text; global strict bound unchanged. This does not upgrade current catalog dates to archived or actual-start evidence.",
+    "fits_or_predictions_used_for_clarification": false
+  }
+}

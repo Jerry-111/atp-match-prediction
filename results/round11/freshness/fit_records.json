@@ -1,0 +1,68 @@
+[
+  {
+    "validation_season": 2021,
+    "train_rows": 28917,
+    "train_max_date": "2020-11-09 00:00:00",
+    "validation_min_date": "2021-01-04 00:00:00",
+    "training_match_ids_sha256": "32fd9355165f8cbd882b6384794fa857ede64686dfbf474bc44cc028ccec4dcb",
+    "training_input_sha256": "987d45fae32d22683019cc410efc60563b078794d1e632a390550c0e1e51068f",
+    "training_inputs": "stale only",
+    "spec": {
+      "name": "shared_rank_rating_logistic_C0.01",
+      "kind": "logistic",
+      "columns": [
+        "log_rank_diff",
+        "elo_k32_diff",
+        "shrunk_surface_elo_k32_diff"
+      ],
+      "params": {
+        "C": 0.01
+      },
+      "half_life": null
+    }
+  },
+  {
+    "validation_season": 2022,
+    "train_rows": 31305,
+    "train_max_date": "2021-11-08 00:00:00",
+    "validation_min_date": "2022-01-03 00:00:00",
+    "training_match_ids_sha256": "6e12813ef15dafef8805f102f8516ed6733b54e8cf67ebb6ea9c98f9bef4b7db",
+    "training_input_sha256": "8806495dbff61ad5129239e022fca371b761eb9e6aa24c09d81f0e60de1e7b14",
+    "training_inputs": "stale only",
+    "spec": {
+      "name": "shared_rank_rating_logistic_C0.01",
+      "kind": "logistic",
+      "columns": [
+        "log_rank_diff",
+        "elo_k32_diff",
+        "shrunk_surface_elo_k32_diff"
+      ],
+      "params": {
+        "C": 0.01
+      },
+      "half_life": null
+    }
+  },
+  {
+    "validation_season": 2023,
+    "train_rows": 33833,
+    "train_max_date": "2022-10-31 00:00:00",
+    "validation_min_date": "2023-01-02 00:00:00",
+    "training_match_ids_sha256": "c0d14b6128ff13266647ab483d963c855d4b424ad19ff817f935351081b0c9e3",
+    "training_input_sha256": "79a90acf425a798d31ecab3f3ca7b46440ff4c96d1f1b71fcb5c3d116540c74c",
+    "training_inputs": "stale only",
+    "spec": {
+      "name": "shared_rank_rating_logistic_C0.01",
+      "kind": "logistic",
+      "columns": [
+        "log_rank_diff",
+        "elo_k32_diff",
+        "shrunk_surface_elo_k32_diff"
+      ],
+      "params": {
+        "C": 0.01
+      },
+      "half_life": null
+    }
+  }
+]
