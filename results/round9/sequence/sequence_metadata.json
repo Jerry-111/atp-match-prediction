@@ -1,0 +1,136 @@
+{
+  "version": "player-date-sequence-1.0",
+  "source_files": [
+    {
+      "season": 2006,
+      "url": "https://stats.tennismylife.org/data/2006.csv",
+      "sha256": "ba376218f92ff132822e991d90c7769325e9c3dc7ed23eaa9b0c9b7a615d196d"
+    },
+    {
+      "season": 2007,
+      "url": "https://stats.tennismylife.org/data/2007.csv",
+      "sha256": "f2b61a1186ad0b22b519855fcd85d3893627dc16cef7087e6e1476370013f43d"
+    },
+    {
+      "season": 2008,
+      "url": "https://stats.tennismylife.org/data/2008.csv",
+      "sha256": "3f989026653856a2184a9a3af6e34df77b67b9c9eefaef7033e50b47d330985d"
+    },
+    {
+      "season": 2009,
+      "url": "https://stats.tennismylife.org/data/2009.csv",
+      "sha256": "a0e89d7be77ab799786d7c62877b5302e0ce2932cb295ce5a6019e5acf5a34b9"
+    },
+    {
+      "season": 2010,
+      "url": "https://stats.tennismylife.org/data/2010.csv",
+      "sha256": "4e7194c8d152ffd1d05eed290b4f0b37afe649b58b20c786117eb5bfac1e5e97"
+    },
+    {
+      "season": 2011,
+      "url": "https://stats.tennismylife.org/data/2011.csv",
+      "sha256": "85da1df99ac8a192ccafd5a42514f10561d7afcd01f3260174e6722a9d8b90cf"
+    },
+    {
+      "season": 2012,
+      "url": "https://stats.tennismylife.org/data/2012.csv",
+      "sha256": "c3f7711c0a9607774a6f11c35d2137aaba2e5f547d495810d0ba4031259359da"
+    },
+    {
+      "season": 2013,
+      "url": "https://stats.tennismylife.org/data/2013.csv",
+      "sha256": "e57b7e0febec6506d91972bfe1bf48d974785bc77d60a01a5c25deca3fee9249"
+    },
+    {
+      "season": 2014,
+      "url": "https://stats.tennismylife.org/data/2014.csv",
+      "sha256": "9375237531f4a42bce6969ea141daa941d5672db796c84d0055e971042bd7b02"
+    },
+    {
+      "season": 2015,
+      "url": "https://stats.tennismylife.org/data/2015.csv",
+      "sha256": "fb6329e3cb04cfc51f5666608f45b0d48f6b262cc417e8279db303f82af39ebf"
+    },
+    {
+      "season": 2016,
+      "url": "https://stats.tennismylife.org/data/2016.csv",
+      "sha256": "ae88fa5107343c1b66c0bc73002c3b7ba91fa4ef4957b863a58fff0043532e88"
+    },
+    {
+      "season": 2017,
+      "url": "https://stats.tennismylife.org/data/2017.csv",
+      "sha256": "8401b7175bf116d2dc7ba15db834fa58e2a390d2a64dbbf17d3649e174877546"
+    },
+    {
+      "season": 2018,
+      "url": "https://stats.tennismylife.org/data/2018.csv",
+      "sha256": "28de0e46489a8b85d252dce8fbeefbf8b503de69023d732e7f6c0c0058a30ae6"
+    },
+    {
+      "season": 2019,
+      "url": "https://stats.tennismylife.org/data/2019.csv",
+      "sha256": "e582e8ab570a8e6d16ddb9e2892d94d05d360af8bcb9bacfc05856b25359f3e2"
+    },
+    {
+      "season": 2020,
+      "url": "https://stats.tennismylife.org/data/2020.csv",
+      "sha256": "357fdba3f6c75d09f5b9d223fdb4c5eaa508e6cc4362830d5ab16cc40e392325"
+    },
+    {
+      "season": 2021,
+      "url": "https://stats.tennismylife.org/data/2021.csv",
+      "sha256": "74a0ed7fb4b22a17d1a666d4a5de010dd4766e8ce9862690df8d8aca182e604e"
+    },
+    {
+      "season": 2022,
+      "url": "https://stats.tennismylife.org/data/2022.csv",
+      "sha256": "927a86c0a058861df9a9959c2bb9582a4189f4d26be9b5f9db5f31f739c2d70d"
+    },
+    {
+      "season": 2023,
+      "url": "https://stats.tennismylife.org/data/2023.csv",
+      "sha256": "fb4ad5ed014945bb7270dd073fc3319dde6e1ca18cd5cbc80f2823f0abc344c5"
+    }
+  ],
+  "injected_raw_rows": false,
+  "source_years": [
+    2006,
+    2007,
+    2008,
+    2009,
+    2010,
+    2011,
+    2012,
+    2013,
+    2014,
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "historical_matches": 43998,
+  "valid_statistic_matches": 43919,
+  "missing_statistic_matches": 79,
+  "player_date_groups": 45924,
+  "max_tokens": 16,
+  "window_days": 1460,
+  "lag_days": 21,
+  "grouped_tied_dates": true,
+  "zero_history_appearances": 1039,
+  "median_history_length": 16.0,
+  "earliest_window_bound": "2004-12-15",
+  "latest_window_bound": "2023-10-16",
+  "earliest_loaded_history": "2006-01-02",
+  "latest_loaded_history": "2023-10-16",
+  "final_test_raw_opened": false,
+  "target_outcome_used": false,
+  "target_sha256": "9bcb3ad4b0fbe745b23b776a750256f92ab9acc9fd1cb57aed0a16cef86435d2",
+  "inventory_sha256": "6bbd220cdc1a7bc90427f31fb897fd1a4314c2aa4b352f80385b91401fb20613",
+  "feature_code_sha256": "bedbd38b1b6f50e76235330e469c2146e3758cc1750dd5891eab37b96685ad41",
+  "sequence_sha256": "30bbe0f849b348744bae4eb520b20cb953c8ca009db7b356bf47ba36b5b10899"
+}

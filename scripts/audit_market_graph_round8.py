@@ -1,6 +1,8 @@
 """Independent frozen-artifact checks; never fit classifiers or inspect holdout."""
 from __future__ import annotations
 
+import ast
+import hashlib
 import json
 from unittest.mock import patch
 
@@ -100,12 +102,57 @@ def dense_queries(targets,history,graph,settings):
     return max_error,checks
 
 
+def verify_text_revision(out, registry):
+    """Reconstruct at-fit bytes and verify non-report computation is identical."""
+    revision_path = out/'text_revision.json'
+    if not revision_path.exists():
+        assert registry['source_code_sha256'] == sha256(ROOT/'scripts/train_market_graph_round8.py')
+        assert registry['protocol_sha256'] == sha256(ROOT/'docs/research/round8_market_graph.md')
+        return dict(present=False)
+    revision = json.loads(revision_path.read_text())
+    reconstructed = {}
+    for change in revision['changes']:
+        path = ROOT/change['path']
+        assert sha256(path) == change['new_sha256'], change['path']
+        text = path.read_text()
+        for edit in reversed(change['replacements']):
+            assert text.count(edit['new']) == edit['count'], change['path']
+            text = text.replace(edit['new'], edit['old'], edit['count'])
+        assert hashlib.sha256(text.encode()).hexdigest() == change['old_sha256']
+        reconstructed[change['path']] = text
+    trainer = 'scripts/train_market_graph_round8.py'
+    protocol = 'docs/research/round8_market_graph.md'
+    assert hashlib.sha256(reconstructed[trainer].encode()).hexdigest() == registry['source_code_sha256']
+    assert hashlib.sha256(reconstructed[protocol].encode()).hexdigest() == registry['protocol_sha256']
+    assert sha256(out/'search_registry.json') == revision['preserved_original_registry_sha256']
+    for name, expected in revision['preserved_artifact_sha256'].items():
+        assert sha256(out/name) == expected, name
+    class IgnorePresentation(ast.NodeTransformer):
+        def visit_Constant(self, node):
+            if isinstance(node.value, str) and node.value in (
+                'Past opening-market inputs with actual UTC T-21 cutoff',
+                'Past opening-market inputs filtered by provider-reported UTC at T-21'):
+                node.value = 'INFORMATION_REGIME_DESCRIPTION'
+            return node
+    def computation(text):
+        tree = ast.parse(text)
+        tree.body = [n for n in tree.body if not (isinstance(n, ast.FunctionDef) and n.name == 'write_report')]
+        return ast.dump(IgnorePresentation().visit(tree), include_attributes=False)
+    assert computation(reconstructed[trainer]) == computation((ROOT/trainer).read_text())
+    timing = json.loads((out/'timing_audit.json').read_text())
+    assert timing['periods']['all_development']['violating_snapshot_edge_uses'] == 0
+    assert timing['periods']['exploratory_2023']['target_rows'] == 2588
+    return dict(present=True, at_fit_source_and_protocol_reconstructed=True,
+                computational_ast_unchanged=True, frozen_artifacts_sha256_unchanged=True,
+                text_revision_sha256=sha256(revision_path),
+                timing_audit_sha256=sha256(out/'timing_audit.json'))
+
+
 def main():
     out=ROOT/'results/round8/market_graph'
     registry=json.loads((out/'search_registry.json').read_text())
-    assert registry['source_code_sha256']==sha256(ROOT/'scripts/train_market_graph_round8.py')
+    text_provenance=verify_text_revision(out,registry)
     assert registry['feature_code_sha256']==sha256(ROOT/'scripts/market_graph_features.py')
-    assert registry['protocol_sha256']==sha256(ROOT/'docs/research/round8_market_graph.md')
     rows=pd.read_csv(ROOT/'results/round3/development_targets.csv')
     old=pd.read_csv(ROOT/'results/round5/development_features.csv')
     targets=rows.drop(columns=['a_won']).assign(best_of=np.where(old.format_best_of_five,5,3))
@@ -219,8 +266,11 @@ def main():
         paired_date_block_intervals_recomputed=17,
         limitations=['No old binary classifiers or OOF heads refitted; graph estimates and historical graph predictions were fully rebuilt.',
           'Historical opening-price inputs and updates from earlier2023 edges are a distinct information condition from pure history or the static market student.',
-          'Actual match UTC is an upper bound only under provider prematch provenance; no quote capture timestamps independently verified.',
+          'Provider-reported UTC is not independently verified actual start/completion or a quote-availability upper bound. The timing audit found contradictory own-round times but zero violations of the original nominal tournament-date T-21 guard.',
           '2023 remains exploratory; no2024/25 source or final evaluation opened.'],
+        text_revision_verification=text_provenance,
+        current_source_code_sha256=sha256(ROOT/'scripts/train_market_graph_round8.py'),
+        current_protocol_sha256=sha256(ROOT/'docs/research/round8_market_graph.md'),
         source_code_sha256=registry['source_code_sha256'],feature_code_sha256=registry['feature_code_sha256'],
         protocol_sha256=registry['protocol_sha256'],
         audit_code_sha256=sha256(ROOT/'scripts/audit_market_graph_round8.py'),

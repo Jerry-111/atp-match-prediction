@@ -52,7 +52,7 @@ author code adds a 0.001 squared-rating penalty; we retain that fixed value.
 
 This is a **method adaptation**, not a direct reproduction: one permitted
 bookmaker rather than the paper's averaged odds, different years and population,
-strict T−21 actual-UTC filtering, sparse exact solves rather than numerical
+strict T−21 provider-reported-UTC filtering, sparse exact solves rather than numerical
 optimization, a conservative identity linkage, no unknown-as-worst assignment,
 and full-cohort original-model fallback. Hyperparameters are not taken from
 the authors' 2024–2025 selection or results.
@@ -76,8 +76,10 @@ the authors' 2024–2025 selection or results.
   than midnight UTC at T−21, **inclusive**. This conservative boundary excludes
   quotes later on that boundary day. It is stricter than treating the entire
   date as available. The provider calls quotes prematch but has no capture
-  timestamps; match UTC is an upper bound under that claim, not independent
-  proof that a historical quote was archived then.
+  timestamps. Its match UTC is a provider field, not an independently verified
+  actual start, finish or quote-availability upper bound. Later metadata checks
+  found contradictory own-round times; the post-result clarification below
+  records their limits without modifying the frozen numerical experiment.
 - Create the graph roster solely from valid edges already available at that
   cutoff. Never use a future appearance to initialize a player. Sort and batch
   equal timestamps deterministically. Same-cutoff queries share identical state.
@@ -182,3 +184,26 @@ stopped because ATP alphanumeric IDs were incorrectly parsed as numeric
 provider IDs. The namespaces now remain separate, with the same strict
 bidirectional identity check and a regression fixture using real-form ATP
 codes. No target, edge eligibility rule or experiment setting changed.
+
+## Post-result timestamp clarification (2026-11-27)
+
+A subsequent chronology investigation found eight same-player/event groups
+with different knockout rounds at identical provider UTC and 14 nonincreasing
+own-round transitions in the 7,341 frozen edges. The provider field therefore
+cannot certify universal actual start/completion time. It is not a quote-capture
+or historical publication timestamp. These are metadata checks, not a new
+performance-dependent filter.
+
+The [persisted timing audit](../../results/round8/market_graph/timing_audit.json)
+checks all 36,421 original development queries: every admitted edge also has
+its linked corrected tournament date at or before T−21. There are zero nominal
+date violations among 374,716 logical snapshot-edge uses, including all 2,588
+2023 targets. An additional dual cutoff would remove no existing edge; no such
+algorithm change is made here. This establishes the original nominal date guard,
+not independently certified real-time quote/result availability.
+
+The original registry and all numerical/model artifacts remain frozen.
+[Reversible text provenance](../../results/round8/market_graph/text_revision.json)
+records the exact explanatory changes and reconstructs the at-fit source/protocol
+hashes. The [freshness feasibility note](round9_freshness_feasibility.md) links
+primary counterexamples and explains why a shorter history lag is not yet approved.

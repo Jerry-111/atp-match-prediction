@@ -1,0 +1,54 @@
+{
+  "synthetic_only": true,
+  "rows": 8192,
+  "mirrored_rows": 16384,
+  "columns": 326,
+  "validation_rows": 1024,
+  "epochs": 8,
+  "torch": "2.15.0",
+  "platform": "macOS-26.5-arm64-arm-64bit",
+  "runs": [
+    {
+      "device": "cpu",
+      "kind": "realmlp",
+      "seconds": 0.8319114159676246,
+      "parameter_count": 216136
+    },
+    {
+      "device": "cpu",
+      "kind": "plain",
+      "seconds": 0.5099817920126952,
+      "parameter_count": 215810
+    },
+    {
+      "device": "mps",
+      "kind": "realmlp",
+      "seconds": 1.4820195839856751,
+      "parameter_count": 216136,
+      "driver_allocated_bytes": 11223040,
+      "recommended_max_bytes": 19069665280
+    },
+    {
+      "device": "mps",
+      "kind": "plain",
+      "seconds": 0.5451266249874607,
+      "parameter_count": 215810,
+      "driver_allocated_bytes": 11223040,
+      "recommended_max_bytes": 19069665280
+    }
+  ],
+  "upstream": {
+    "commit.txt": {
+      "sha256": "c4a93e24193cf6d5095ce5cd8780792839e215aaaf238cc966c370a05615da51"
+    },
+    "mlp.py": {
+      "sha256": "072031d99685ef02e6c20307d750a397eb3a178f891120a7199390a47885d3c7"
+    },
+    "preprocessing.py": {
+      "sha256": "b51eaf0656f75094b99088ef6f5e7a29b3bb3efec56fd9d18108f9bc43ef6c78"
+    },
+    "LICENSE.txt": {
+      "sha256": "1c27cbc578c477f4219a29d9c7e02f2212cbe69fafd31205cdc27da68f1e1d4b"
+    }
+  }
+}

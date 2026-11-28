@@ -78,7 +78,7 @@ def write_report(out, summary, frozen, table, cv):
     gate = frozen['procedure_gate']
     chosen_row = table.set_index('model').loc[chosen]
     lines = ['# Round 8：历史开盘赔率的动态实力图', '',
-        '这是独立的“历史市场输入、T−21”条件：每场只使用截止日前已发生比赛的开盘赔率，'
+        '这是独立的“历史市场输入、T−21”条件：每场按供应方所报比赛UTC≤T−21筛选历史开盘赔率，'
         '不使用当前比赛赔率。2023 年较早比赛的历史报价允许更新图；R7 学生只使用 2021–2022 '
         '市场监督且推理不读市场，两者信息条件不同。全部结果仍为反复使用 2023 后的探索，2024–2025 未打开。', '',
         f"本分支推荐：`{frozen['recommendation']}`。2021H2 早选 `{gate['early_selection']['choice']}`；"
@@ -107,11 +107,12 @@ def write_report(out, summary, frozen, table, cv):
         f" [{ci[0]:.6f}, {ci[1]:.6f}]。区间未计入多轮搜索、重复门槛或全部球员相关性。", '',
         '方法改编自 Penn/Michael/Bhatt 的赔率加权图：统一BO3尺度，固定0.001正则的稀疏最小二乘，'
         '按目标局数还原。数据来自获准Valuebetennis/Pinnacle历史开盘单一来源；不复现论文原始数据、'
-        '超参数或剔除未知球员的评价。提供方无逐条采集时间，实际比赛UTC只是在其赛前声明下的保守上界。', '',
+        '超参数或剔除未知球员的评价。提供方无逐条采集时间；其比赛UTC不是独立核实的实际开赛、完成或报价可得时间。补充审计发现轮次时间矛盾，但所有已用边同时满足已纠正赛事日期≤T−21；此次仅修正文案，预测和选择保持冻结。', '',
         '比较表的2023排序不改变冻结选择；此结果不能证明SOTA或独立测试达到70%。', '',
         '复跑：`.venv/bin/python -m scripts.train_market_graph_round8`。',
         '仅重载：同一命令追加 `--predict-features results/round8/market_graph/inference_features.csv`。',
-        '研究协议：[round8_market_graph.md](../../../docs/research/round8_market_graph.md)。', '']
+        '研究协议：[round8_market_graph.md](../../../docs/research/round8_market_graph.md)。',
+        '时间审计与限制：[freshness feasibility](../../../docs/research/round9_freshness_feasibility.md)。', '']
     (out/'report_summary.md').write_text('\n'.join(lines))
 
 
@@ -149,7 +150,7 @@ def main():
     registry = dict(round=8, experiment='historical_opening_market_graph', candidates=specs,
         graph_settings=graph_specs(), selectable_count=13, graph_setting_count=6,
         fixed_blends=6, new_binary_classifier_fits=0, source_years_read=[2021,2022,2023],
-        information_regime='Past opening-market inputs with actual UTC T-21 cutoff',
+        information_regime='Past opening-market inputs filtered by provider-reported UTC at T-21',
         protocol_sha256=sha256(protocol), source_code_sha256=sha256(Path(__file__)),
         feature_code_sha256=sha256(ROOT/'scripts/market_graph_features.py'),
         target_sha256=sha256(rows_path), previous_artifact_sha256=audit['artifact_sha256'],

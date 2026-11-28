@@ -1,5 +1,58 @@
 # Strong-model validation protocol
 
+## Ninth round: full-data neural learning and matched history controls
+
+The next completed round tests eight structures/recipes plus15 fixed mixtures,
+with all2,588 original2023 targets, threshold0.5 and T−21 history unchanged.
+No new market input or supervision is added. The frozen choices score:
+RealMLP/R4 mixture **1,697 /65.57% /loss0.607936**, history GRU
+**1,703 /65.80% /0.608496**, and shared style matchup
+**1,709 /66.04% /0.606459**. Only RealMLP passes its reused2022 branch gate,
+but that gain does not persist in2023. Raw TD-S fails to beat the matched-width
+plain MLP; GRU fails to beat same-input mean pooling. Preserve those results
+and prior R4/R5/R7 comparator roles; no global superiority or70% is established.
+[Full table and interpretation](../results/round9/overview.md) ·
+[Frozen protocols](research/round9_protocol.md).
+
+Rebuild earlier audited inputs first. Use the existing isolated
+`requirements-foundation.txt` environment for Torch; keep base dependencies
+unchanged. Both neural routes use CPU with four threads. All neural seeds and
+fold states are retained locally; epochs are chosen by an earlier purged inner
+tail and then refitted on the full outer training population.
+
+```sh
+.venv/bin/python -m scripts.train_matchup_round9
+.venv-foundation/bin/python -m scripts.train_sequence_round9 --device cpu
+.venv-foundation/bin/python -m scripts.train_neural_round9
+.venv/bin/python -m scripts.audit_matchup_round9
+.venv-foundation/bin/python -m scripts.audit_sequence_source_round9
+.venv-foundation/bin/python -m scripts.audit_sequence_round9
+.venv-foundation/bin/python -m scripts.audit_neural_round9
+.venv/bin/python -m scripts.report_round9
+```
+
+The neural runner supports `--predict-features` and optional
+`--reference-predictions`, requiring IDs aligned to the fixed R4/R5 references.
+The sequence runner additionally requires `--predict-sequences`; its complete
+development archive is aligned to R5 features, but inference on old training
+rows is not OOF evaluation. Matchup uses its saved feature schema. Use only
+trusted locally rebuilt model bundles. See branch reports for exact commands.
+
+Base verification passes298 tests with8 optional-Torch skips and97 subtests.
+The isolated Torch suite passes23 focused tests (7 overlap the base suite).
+Independent audits verify36 probability columns, all48 saved neural seed/fold
+states and the chronological selections. Reload errors are zero; independent
+NumPy forward errors are below1.26e−7 and batch changes alter no classes.
+Full gradient trajectories are not replayed. TD-S inner probe scalers were
+discarded; only their required deterministic reconstruction and source path
+can be checked, not comparison to an unsaved object.
+
+The later timing audit also corrects R8's source wording: provider UTC is not
+verified actual start, completion or quote publication. Every used edge still
+meets the corrected nominal tournament-date T−21 guard, so no numerical
+prediction changes. Do not shorten the lag using those timestamps alone.
+[Evidence and completed-event feasibility](research/round9_freshness_feasibility.md).
+
 ## Eighth round: structural alternatives and active 70% goal
 
 The user requested continued optimization and a persistent goal on 2026-11-27.

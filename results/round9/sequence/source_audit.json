@@ -1,0 +1,727 @@
+{
+  "status": "passed",
+  "scope": "Full archive identity/mask/time/age/gap checks; independently recomputed all 22 channels for a diverse metadata-selected sample, not the full token archive",
+  "targets": 36421,
+  "sampled_targets": 55,
+  "sampled_tokens": 1518,
+  "distinct_sampled_source_matches": 2747,
+  "max_abs_channel_error": 0.0,
+  "full_archive_age_error": 0.0,
+  "full_archive_gap_error": 0.0,
+  "eligible_history_matches": 43998,
+  "valid_statistic_matches": 43919,
+  "missing_statistic_matches": 79,
+  "player_date_groups": 45924,
+  "zero_history_appearances": 1039,
+  "edge_case_population_counts": {
+    "zero_history": 1016,
+    "missing_statistics": 1501,
+    "tied_date_multiple_matches": 36333,
+    "short_nonzero_history": 8583,
+    "exact_cutoff": 14028,
+    "exact_window_boundary": 0,
+    "carpet_history": 0,
+    "corrected_2019_washington_date": 1906
+  },
+  "samples": [
+    {
+      "match_id": "2009-339:1",
+      "season": 2009,
+      "surface": "Hard",
+      "cutoff": "2008-12-14",
+      "reasons": [
+        "2009_Hard_endpoint",
+        "tied_date_multiple_matches"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 90,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-339:10",
+      "season": 2009,
+      "surface": "Hard",
+      "cutoff": "2008-12-14",
+      "reasons": [
+        "short_nonzero_history"
+      ],
+      "valid_tokens": 25,
+      "historical_match_appearances": 41,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-339:5",
+      "season": 2009,
+      "surface": "Hard",
+      "cutoff": "2008-12-14",
+      "reasons": [
+        "zero_history"
+      ],
+      "valid_tokens": 16,
+      "historical_match_appearances": 45,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-339:7",
+      "season": 2009,
+      "surface": "Hard",
+      "cutoff": "2008-12-14",
+      "reasons": [
+        "missing_statistics"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 66,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-2276:1",
+      "season": 2009,
+      "surface": "Hard",
+      "cutoff": "2009-01-12",
+      "reasons": [
+        "exact_cutoff"
+      ],
+      "valid_tokens": 17,
+      "historical_match_appearances": 40,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-8996:1",
+      "season": 2009,
+      "surface": "Clay",
+      "cutoff": "2009-01-12",
+      "reasons": [
+        "2009_Clay_endpoint"
+      ],
+      "valid_tokens": 23,
+      "historical_match_appearances": 34,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-311:1",
+      "season": 2009,
+      "surface": "Grass",
+      "cutoff": "2009-05-18",
+      "reasons": [
+        "2009_Grass_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 56,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-315:8",
+      "season": 2009,
+      "surface": "Grass",
+      "cutoff": "2009-06-15",
+      "reasons": [
+        "2009_Grass_endpoint"
+      ],
+      "valid_tokens": 30,
+      "historical_match_appearances": 51,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-773:9",
+      "season": 2009,
+      "surface": "Clay",
+      "cutoff": "2009-08-31",
+      "reasons": [
+        "2009_Clay_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 52,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2009-352:9",
+      "season": 2009,
+      "surface": "Hard",
+      "cutoff": "2009-10-18",
+      "reasons": [
+        "2009_Hard_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 55,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2016-339:1",
+      "season": 2016,
+      "surface": "Hard",
+      "cutoff": "2015-12-14",
+      "reasons": [
+        "2016_Hard_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 54,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2016-7161:1",
+      "season": 2016,
+      "surface": "Clay",
+      "cutoff": "2016-01-11",
+      "reasons": [
+        "2016_Clay_endpoint"
+      ],
+      "valid_tokens": 28,
+      "historical_match_appearances": 35,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2016-321:1",
+      "season": 2016,
+      "surface": "Grass",
+      "cutoff": "2016-05-16",
+      "reasons": [
+        "2016_Grass_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 46,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2016-315:27",
+      "season": 2016,
+      "surface": "Grass",
+      "cutoff": "2016-06-20",
+      "reasons": [
+        "2016_Grass_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 66,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2016-439:27",
+      "season": 2016,
+      "surface": "Clay",
+      "cutoff": "2016-06-27",
+      "reasons": [
+        "2016_Clay_endpoint"
+      ],
+      "valid_tokens": 20,
+      "historical_match_appearances": 35,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2016-352:47",
+      "season": 2016,
+      "surface": "Hard",
+      "cutoff": "2016-10-10",
+      "reasons": [
+        "2016_Hard_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 115,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2019-6242:1",
+      "season": 2019,
+      "surface": "Hard",
+      "cutoff": "2019-07-29",
+      "reasons": [
+        "corrected_2019_washington_date"
+      ],
+      "valid_tokens": 27,
+      "historical_match_appearances": 40,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2020-451:1",
+      "season": 2020,
+      "surface": "Hard",
+      "cutoff": "2019-12-16",
+      "reasons": [
+        "2020_Hard_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 61,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2020-9158:1",
+      "season": 2020,
+      "surface": "Clay",
+      "cutoff": "2020-01-13",
+      "reasons": [
+        "2020_Clay_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 53,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2020-9408:27",
+      "season": 2020,
+      "surface": "Clay",
+      "cutoff": "2020-09-21",
+      "reasons": [
+        "2020_Clay_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 45,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2020-7434:27",
+      "season": 2020,
+      "surface": "Hard",
+      "cutoff": "2020-10-19",
+      "reasons": [
+        "2020_Hard_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 65,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2021-499:1",
+      "season": 2021,
+      "surface": "Hard",
+      "cutoff": "2020-12-14",
+      "reasons": [
+        "2021_Hard_endpoint"
+      ],
+      "valid_tokens": 16,
+      "historical_match_appearances": 32,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2021-9158:1",
+      "season": 2021,
+      "surface": "Clay",
+      "cutoff": "2021-02-01",
+      "reasons": [
+        "2021_Clay_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 52,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2021-321:1",
+      "season": 2021,
+      "surface": "Grass",
+      "cutoff": "2021-05-17",
+      "reasons": [
+        "2021_Grass_endpoint"
+      ],
+      "valid_tokens": 28,
+      "historical_match_appearances": 47,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2021-315:27",
+      "season": 2021,
+      "surface": "Grass",
+      "cutoff": "2021-06-21",
+      "reasons": [
+        "2021_Grass_endpoint"
+      ],
+      "valid_tokens": 19,
+      "historical_match_appearances": 35,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2021-319:27",
+      "season": 2021,
+      "surface": "Clay",
+      "cutoff": "2021-07-05",
+      "reasons": [
+        "2021_Clay_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 72,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2021-429:27",
+      "season": 2021,
+      "surface": "Hard",
+      "cutoff": "2021-10-18",
+      "reasons": [
+        "2021_Hard_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 66,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2022-8998:1",
+      "season": 2022,
+      "surface": "Hard",
+      "cutoff": "2021-12-13",
+      "reasons": [
+        "2022_Hard_endpoint"
+      ],
+      "valid_tokens": 22,
+      "historical_match_appearances": 37,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2022-9158:1",
+      "season": 2022,
+      "surface": "Clay",
+      "cutoff": "2022-01-10",
+      "reasons": [
+        "2022_Clay_endpoint"
+      ],
+      "valid_tokens": 18,
+      "historical_match_appearances": 35,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2022-321:1",
+      "season": 2022,
+      "surface": "Grass",
+      "cutoff": "2022-05-16",
+      "reasons": [
+        "2022_Grass_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 51,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2022-315:27",
+      "season": 2022,
+      "surface": "Grass",
+      "cutoff": "2022-06-20",
+      "reasons": [
+        "2022_Grass_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 59,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2022-439:27",
+      "season": 2022,
+      "surface": "Clay",
+      "cutoff": "2022-07-04",
+      "reasons": [
+        "2022_Clay_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 106,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2022-352:55",
+      "season": 2022,
+      "surface": "Hard",
+      "cutoff": "2022-10-10",
+      "reasons": [
+        "2022_Hard_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 105,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-2843:1",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2022-12-12",
+      "reasons": [
+        "2023_Hard_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 66,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-9158:1",
+      "season": 2023,
+      "surface": "Clay",
+      "cutoff": "2023-01-16",
+      "reasons": [
+        "2023_Clay_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 51,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-407:24",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-01-23",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 105,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-807:30",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-02-06",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 83,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-404:30",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-02-13",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 18,
+      "historical_match_appearances": 37,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-403:83",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-02-27",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 77,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-322:2",
+      "season": 2023,
+      "surface": "Clay",
+      "cutoff": "2023-05-01",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 53,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-7694:1",
+      "season": 2023,
+      "surface": "Clay",
+      "cutoff": "2023-05-01",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 16,
+      "historical_match_appearances": 26,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-321:1",
+      "season": 2023,
+      "surface": "Grass",
+      "cutoff": "2023-05-22",
+      "reasons": [
+        "2023_Grass_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 56,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-315:27",
+      "season": 2023,
+      "surface": "Grass",
+      "cutoff": "2023-06-26",
+      "reasons": [
+        "2023_Grass_endpoint"
+      ],
+      "valid_tokens": 17,
+      "historical_match_appearances": 35,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-439:2",
+      "season": 2023,
+      "surface": "Clay",
+      "cutoff": "2023-07-03",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 17,
+      "historical_match_appearances": 30,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-319:27",
+      "season": 2023,
+      "surface": "Clay",
+      "cutoff": "2023-07-10",
+      "reasons": [
+        "2023_Clay_endpoint"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 60,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-418:24",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-07-10",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 75,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-7480:18",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-07-10",
+      "reasons": [
+        "corrected_2019_washington_date"
+      ],
+      "valid_tokens": 27,
+      "historical_match_appearances": 48,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-422:2",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-07-24",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 75,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-560:110",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-08-07",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 16,
+      "historical_match_appearances": 46,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-7581:21",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-08-30",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 65,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-5014:21",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-09-11",
+      "reasons": [
+        "fixed_random_2023"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 59,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-7485:11",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-09-25",
+      "reasons": [
+        "missing_statistics"
+      ],
+      "valid_tokens": 25,
+      "historical_match_appearances": 40,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-7434:18",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-10-16",
+      "reasons": [
+        "zero_history"
+      ],
+      "valid_tokens": 16,
+      "historical_match_appearances": 35,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-7434:24",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-10-16",
+      "reasons": [
+        "short_nonzero_history"
+      ],
+      "valid_tokens": 21,
+      "historical_match_appearances": 42,
+      "max_abs_channel_error": 0.0
+    },
+    {
+      "match_id": "2023-7434:27",
+      "season": 2023,
+      "surface": "Hard",
+      "cutoff": "2023-10-16",
+      "reasons": [
+        "2023_Hard_endpoint",
+        "tied_date_multiple_matches",
+        "exact_cutoff"
+      ],
+      "valid_tokens": 32,
+      "historical_match_appearances": 74,
+      "max_abs_channel_error": 0.0
+    }
+  ],
+  "source_sha256": {
+    "feature_code": "bedbd38b1b6f50e76235330e469c2146e3758cc1750dd5891eab37b96685ad41",
+    "learner": "2bacf7eab85b413755724af5847610d75dc390fbb6d4bb4565773ee03906fe2e",
+    "target": "9bcb3ad4b0fbe745b23b776a750256f92ab9acc9fd1cb57aed0a16cef86435d2",
+    "sequence": "30bbe0f849b348744bae4eb520b20cb953c8ca009db7b356bf47ba36b5b10899"
+  },
+  "raw_sha256": {
+    "2006": "ba376218f92ff132822e991d90c7769325e9c3dc7ed23eaa9b0c9b7a615d196d",
+    "2007": "f2b61a1186ad0b22b519855fcd85d3893627dc16cef7087e6e1476370013f43d",
+    "2008": "3f989026653856a2184a9a3af6e34df77b67b9c9eefaef7033e50b47d330985d",
+    "2009": "a0e89d7be77ab799786d7c62877b5302e0ce2932cb295ce5a6019e5acf5a34b9",
+    "2010": "4e7194c8d152ffd1d05eed290b4f0b37afe649b58b20c786117eb5bfac1e5e97",
+    "2011": "85da1df99ac8a192ccafd5a42514f10561d7afcd01f3260174e6722a9d8b90cf",
+    "2012": "c3f7711c0a9607774a6f11c35d2137aaba2e5f547d495810d0ba4031259359da",
+    "2013": "e57b7e0febec6506d91972bfe1bf48d974785bc77d60a01a5c25deca3fee9249",
+    "2014": "9375237531f4a42bce6969ea141daa941d5672db796c84d0055e971042bd7b02",
+    "2015": "fb6329e3cb04cfc51f5666608f45b0d48f6b262cc417e8279db303f82af39ebf",
+    "2016": "ae88fa5107343c1b66c0bc73002c3b7ba91fa4ef4957b863a58fff0043532e88",
+    "2017": "8401b7175bf116d2dc7ba15db834fa58e2a390d2a64dbbf17d3649e174877546",
+    "2018": "28de0e46489a8b85d252dce8fbeefbf8b503de69023d732e7f6c0c0058a30ae6",
+    "2019": "e582e8ab570a8e6d16ddb9e2892d94d05d360af8bcb9bacfc05856b25359f3e2",
+    "2020": "357fdba3f6c75d09f5b9d223fdb4c5eaa508e6cc4362830d5ab16cc40e392325",
+    "2021": "74a0ed7fb4b22a17d1a666d4a5de010dd4766e8ce9862690df8d8aca182e604e",
+    "2022": "927a86c0a058861df9a9959c2bb9582a4189f4d26be9b5f9db5f31f739c2d70d",
+    "2023": "fb4ad5ed014945bb7270dd073fc3319dde6e1ca18cd5cbc80f2823f0abc344c5"
+  },
+  "audit_script_sha256": "d80a0ccece395d0e6f7bc7fec0e250828cadcdc6036e44afb173a4999a8a5c12",
+  "outcome_scores_computed": false,
+  "model_fits": 0,
+  "final_test_raw_opened": false,
+  "independence_notes": [
+    "No production sequence builder/token/technical_pair used.",
+    "Known corrected_tour_row metadata policy reused; its historical provenance was audited in prior rounds, not re-sourced here.",
+    "Raw identities/outcomes/date/surface independently checked against fixed eligible inventory for all source rows.",
+    "Neural learner read-only review: shared normalization, masks, antisymmetric head, fixed shuffle and chronological stopping conform to protocol; model-state replay is a separate audit."
+  ]
+}
