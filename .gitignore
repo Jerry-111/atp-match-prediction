@@ -11,6 +11,16 @@ results/round7/foundation/checkpoints/
 results/round7/event/feature_lineage.csv
 results/round7/distillation/training_teacher.csv
 results/round7/margin/training_targets.csv
+results/round8/**/development_features.csv
+results/round8/**/development_targets.csv
+results/round8/**/oof_predictions.csv
+results/round8/**/frozen_models.joblib
+results/round8/**/frozen_model.joblib
+results/round8/**/inference_predictions.csv
+results/round8/**/inference_features.csv
+results/round8/joint_points/raw_development_predictions.csv
+results/round8/market_graph/graph_features.csv
+results/round8/market_graph/opening_history.csv
 __pycache__/
 .ipynb_checkpoints/
 data/raw/

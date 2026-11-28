@@ -1,0 +1,261 @@
+{
+  "round": 8,
+  "branch": "joint_points",
+  "fit_candidates": 5,
+  "selection_entries": 21,
+  "specs": [
+    {
+      "name": "serve_only_recent",
+      "opponent": false,
+      "half_life": 364.0,
+      "surface": false,
+      "event": false,
+      "history_days": 1460,
+      "prior_sd": {
+        "intercept": 0.5,
+        "baseline": 0.2,
+        "serve": 0.2,
+        "return": 0.15,
+        "preference": 0.08,
+        "event": 0.08
+      }
+    },
+    {
+      "name": "joint_static",
+      "opponent": true,
+      "half_life": null,
+      "surface": false,
+      "event": false,
+      "history_days": 1460,
+      "prior_sd": {
+        "intercept": 0.5,
+        "baseline": 0.2,
+        "serve": 0.2,
+        "return": 0.15,
+        "preference": 0.08,
+        "event": 0.08
+      }
+    },
+    {
+      "name": "joint_recent",
+      "opponent": true,
+      "half_life": 364.0,
+      "surface": false,
+      "event": false,
+      "history_days": 1460,
+      "prior_sd": {
+        "intercept": 0.5,
+        "baseline": 0.2,
+        "serve": 0.2,
+        "return": 0.15,
+        "preference": 0.08,
+        "event": 0.08
+      }
+    },
+    {
+      "name": "joint_surface",
+      "opponent": true,
+      "half_life": 364.0,
+      "surface": true,
+      "event": false,
+      "history_days": 1460,
+      "prior_sd": {
+        "intercept": 0.5,
+        "baseline": 0.2,
+        "serve": 0.2,
+        "return": 0.15,
+        "preference": 0.08,
+        "event": 0.08
+      }
+    },
+    {
+      "name": "joint_surface_event",
+      "opponent": true,
+      "half_life": 364.0,
+      "surface": true,
+      "event": true,
+      "history_days": 1460,
+      "prior_sd": {
+        "intercept": 0.5,
+        "baseline": 0.2,
+        "serve": 0.2,
+        "return": 0.15,
+        "preference": 0.08,
+        "event": 0.08
+      }
+    }
+  ],
+  "blends": {
+    "serve_only_recent_r4blend0.25": {
+      "model": "serve_only_recent",
+      "model_weight": 0.25
+    },
+    "serve_only_recent_r4blend0.5": {
+      "model": "serve_only_recent",
+      "model_weight": 0.5
+    },
+    "serve_only_recent_r4blend0.75": {
+      "model": "serve_only_recent",
+      "model_weight": 0.75
+    },
+    "joint_static_r4blend0.25": {
+      "model": "joint_static",
+      "model_weight": 0.25
+    },
+    "joint_static_r4blend0.5": {
+      "model": "joint_static",
+      "model_weight": 0.5
+    },
+    "joint_static_r4blend0.75": {
+      "model": "joint_static",
+      "model_weight": 0.75
+    },
+    "joint_recent_r4blend0.25": {
+      "model": "joint_recent",
+      "model_weight": 0.25
+    },
+    "joint_recent_r4blend0.5": {
+      "model": "joint_recent",
+      "model_weight": 0.5
+    },
+    "joint_recent_r4blend0.75": {
+      "model": "joint_recent",
+      "model_weight": 0.75
+    },
+    "joint_surface_r4blend0.25": {
+      "model": "joint_surface",
+      "model_weight": 0.25
+    },
+    "joint_surface_r4blend0.5": {
+      "model": "joint_surface",
+      "model_weight": 0.5
+    },
+    "joint_surface_r4blend0.75": {
+      "model": "joint_surface",
+      "model_weight": 0.75
+    },
+    "joint_surface_event_r4blend0.25": {
+      "model": "joint_surface_event",
+      "model_weight": 0.25
+    },
+    "joint_surface_event_r4blend0.5": {
+      "model": "joint_surface_event",
+      "model_weight": 0.5
+    },
+    "joint_surface_event_r4blend0.75": {
+      "model": "joint_surface_event",
+      "model_weight": 0.75
+    }
+  },
+  "history_lag_days": 21,
+  "calibration_first_season": 2017,
+  "decision_threshold": 0.5,
+  "source": {
+    "source_files": [
+      {
+        "season": 2006,
+        "url": "https://stats.tennismylife.org/data/2006.csv",
+        "sha256": "ba376218f92ff132822e991d90c7769325e9c3dc7ed23eaa9b0c9b7a615d196d"
+      },
+      {
+        "season": 2007,
+        "url": "https://stats.tennismylife.org/data/2007.csv",
+        "sha256": "f2b61a1186ad0b22b519855fcd85d3893627dc16cef7087e6e1476370013f43d"
+      },
+      {
+        "season": 2008,
+        "url": "https://stats.tennismylife.org/data/2008.csv",
+        "sha256": "3f989026653856a2184a9a3af6e34df77b67b9c9eefaef7033e50b47d330985d"
+      },
+      {
+        "season": 2009,
+        "url": "https://stats.tennismylife.org/data/2009.csv",
+        "sha256": "a0e89d7be77ab799786d7c62877b5302e0ce2932cb295ce5a6019e5acf5a34b9"
+      },
+      {
+        "season": 2010,
+        "url": "https://stats.tennismylife.org/data/2010.csv",
+        "sha256": "4e7194c8d152ffd1d05eed290b4f0b37afe649b58b20c786117eb5bfac1e5e97"
+      },
+      {
+        "season": 2011,
+        "url": "https://stats.tennismylife.org/data/2011.csv",
+        "sha256": "85da1df99ac8a192ccafd5a42514f10561d7afcd01f3260174e6722a9d8b90cf"
+      },
+      {
+        "season": 2012,
+        "url": "https://stats.tennismylife.org/data/2012.csv",
+        "sha256": "c3f7711c0a9607774a6f11c35d2137aaba2e5f547d495810d0ba4031259359da"
+      },
+      {
+        "season": 2013,
+        "url": "https://stats.tennismylife.org/data/2013.csv",
+        "sha256": "e57b7e0febec6506d91972bfe1bf48d974785bc77d60a01a5c25deca3fee9249"
+      },
+      {
+        "season": 2014,
+        "url": "https://stats.tennismylife.org/data/2014.csv",
+        "sha256": "9375237531f4a42bce6969ea141daa941d5672db796c84d0055e971042bd7b02"
+      },
+      {
+        "season": 2015,
+        "url": "https://stats.tennismylife.org/data/2015.csv",
+        "sha256": "fb6329e3cb04cfc51f5666608f45b0d48f6b262cc417e8279db303f82af39ebf"
+      },
+      {
+        "season": 2016,
+        "url": "https://stats.tennismylife.org/data/2016.csv",
+        "sha256": "ae88fa5107343c1b66c0bc73002c3b7ba91fa4ef4957b863a58fff0043532e88"
+      },
+      {
+        "season": 2017,
+        "url": "https://stats.tennismylife.org/data/2017.csv",
+        "sha256": "8401b7175bf116d2dc7ba15db834fa58e2a390d2a64dbbf17d3649e174877546"
+      },
+      {
+        "season": 2018,
+        "url": "https://stats.tennismylife.org/data/2018.csv",
+        "sha256": "28de0e46489a8b85d252dce8fbeefbf8b503de69023d732e7f6c0c0058a30ae6"
+      },
+      {
+        "season": 2019,
+        "url": "https://stats.tennismylife.org/data/2019.csv",
+        "sha256": "e582e8ab570a8e6d16ddb9e2892d94d05d360af8bcb9bacfc05856b25359f3e2"
+      },
+      {
+        "season": 2020,
+        "url": "https://stats.tennismylife.org/data/2020.csv",
+        "sha256": "357fdba3f6c75d09f5b9d223fdb4c5eaa508e6cc4362830d5ab16cc40e392325"
+      },
+      {
+        "season": 2021,
+        "url": "https://stats.tennismylife.org/data/2021.csv",
+        "sha256": "74a0ed7fb4b22a17d1a666d4a5de010dd4766e8ce9862690df8d8aca182e604e"
+      },
+      {
+        "season": 2022,
+        "url": "https://stats.tennismylife.org/data/2022.csv",
+        "sha256": "927a86c0a058861df9a9959c2bb9582a4189f4d26be9b5f9db5f31f739c2d70d"
+      },
+      {
+        "season": 2023,
+        "url": "https://stats.tennismylife.org/data/2023.csv",
+        "sha256": "fb4ad5ed014945bb7270dd073fc3319dde6e1ca18cd5cbc80f2823f0abc344c5"
+      }
+    ],
+    "eligible_history_matches": 44164,
+    "valid_history_matches": 44085,
+    "missing_statistics_matches": 79,
+    "injected_raw_rows": false,
+    "service_observations": 88170,
+    "event_identity": "year-stripped code + normalized name + surface",
+    "final_test_evaluated": false
+  },
+  "inventory_sha256": "6bbd220cdc1a7bc90427f31fb897fd1a4314c2aa4b352f80385b91401fb20613",
+  "target_sha256": "9bcb3ad4b0fbe745b23b776a750256f92ab9acc9fd1cb57aed0a16cef86435d2",
+  "protocol_sha256": "a6505835d2c45fec1b0cb5ba2e7e552bc0f0849732c2ef1977184358bf43f9be",
+  "source_code_sha256": "cd08bae0bd44ac061d42613729179257a6462ddf9b541ecd5750d7a5b4b8083f",
+  "engine_sha256": "9a3069061bd5ed4927bb2734a59a5bf285b17f398df65a7ed780e5425b5481a6",
+  "smoke_sha256": "547ec630cbf66a390b70cab2a7abde9cce6545400b2d1baf988fcae04076270f",
+  "final_test_evaluated": false
+}

@@ -1,0 +1,33 @@
+{
+  "condition": "latest",
+  "recommendation": "raw_market",
+  "procedure_gate": {
+    "early_selection": {
+      "choice": "history_linear_C0.003_alpha1",
+      "selection_rows": 911,
+      "accuracy": 0.6827661909989023,
+      "mean_log_loss": 0.6048441805904896,
+      "loss_limit": 0.608684290330981,
+      "eligible_models": 26
+    },
+    "accuracy_improvement": -0.0011867088607595555,
+    "loss_change": 0.0024367602571548908,
+    "procedure": "retain_raw_market",
+    "reference_2022_accuracy": 0.6823575949367089,
+    "candidate_2022_accuracy": 0.6811708860759493,
+    "reference_2022_loss": 0.5775201212316984,
+    "candidate_2022_loss": 0.5799568814888533
+  },
+  "pooled_selection": {
+    "choice": "price_cat_d3_alpha1",
+    "selection_rows": 3439,
+    "accuracy": 0.6824658330910148,
+    "mean_log_loss": 0.5866355903488252,
+    "loss_limit": 0.5894510773379638,
+    "eligible_models": 26
+  },
+  "fit_end_season": 2022,
+  "decision_threshold": 0.5,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

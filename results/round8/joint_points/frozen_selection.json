@@ -1,0 +1,44 @@
+{
+  "round": 8,
+  "branch": "joint_points",
+  "recommendation": "round4_reference",
+  "procedure_gate": {
+    "procedure": "retain_round4",
+    "early_selection": {
+      "choice": "joint_recent_r4blend0.5",
+      "accuracy": 0.6563020544142143,
+      "mean_log_loss": 0.6109014085673379,
+      "selection_rows": 3602,
+      "eligible_models": 9,
+      "loss_limit": 0.614177070959239
+    },
+    "reference": "round4_reference",
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022,
+    "accuracy_improvement": -0.001977848101265778,
+    "loss_increase": 0.00454593968785677,
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6693037974683544,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5992041560277931,
+    "required_accuracy_improvement": 0.005,
+    "allowed_loss_increase": 0.005
+  },
+  "pooled_selection": {
+    "choice": "joint_recent_r4blend0.25",
+    "accuracy": 0.6629690048939642,
+    "mean_log_loss": 0.6031129545533914,
+    "selection_rows": 6130,
+    "eligible_models": 9,
+    "loss_limit": 0.60818952373614
+  },
+  "history_lag_days": 21,
+  "threshold": 0.5,
+  "fit_end_season": 2022,
+  "latent_state_updates": "Past observations up to query T-21; structural choices and calibration frozen",
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

@@ -1,5 +1,69 @@
 # Strong-model validation protocol
 
+## Eighth round: structural alternatives and active 70% goal
+
+The user requested continued optimization and a persistent goal on 2026-11-27.
+Success requires at least **1,812 correct on all 2,588 original 2023 targets**,
+the unchanged 0.5 threshold, legitimate prematch inputs, audited artifacts and
+reproduction. The goal remains active. Repeatedly inspected 2023 results are
+exploratory even if they later cross 70%; 2024–2025 remain sealed. No
+task-completion tracking automation was created.
+
+Round 8 compares five joint point structures, ten historical event-environment
+learners, six historical-market graph settings, and eighteen current-price
+residual learners. Fixed blends and repeated as-of/fold fits are counted
+separately. All five branch/quote-condition upgrade gates fail. The frozen
+historical graph scores **66.27% / 0.607183**; the opening and latest-price
+pooled residual choices score **66.96% / 0.591239** and **67.00% / 0.590046**.
+The unselected opening-history setting scores **68.01% / 0.596723**, still
+52 correct short and worse in loss than raw opening. It is not an adopted
+upgrade. [Full comparison](../results/round8/overview.md) ·
+[Protocol and evidence](research/round8_protocol.md).
+
+After the earlier rounds, especially the audited Round 5 market files and
+Round 7 event/distillation/foundation reference outputs, have been rebuilt:
+
+```sh
+.venv/bin/python -m scripts.train_joint_points_round8
+.venv/bin/python -m scripts.train_venue_round8
+.venv/bin/python -m scripts.train_market_graph_round8
+.venv/bin/python -m scripts.train_market_residual_round8
+.venv/bin/python -m scripts.report_market_residual_round8
+.venv/bin/python -m scripts.audit_joint_points_round8
+.venv/bin/python -m scripts.audit_market_graph_round8
+.venv/bin/python -m scripts.audit_market_residual_round8
+.venv/bin/python -m scripts.report_round8
+.venv/bin/python -m pytest -q
+```
+
+The joint runner requires its committed synthetic timing/gradient smoke record
+before any fit. It saves all 175 validation latent-state snapshots and a
+frozen calibration map; reload with `--predict-targets results/round8/joint_points/inference_targets.csv`.
+Unseen cutoffs require rebuilding an as-of state under the fixed protocol,
+not changing calibration. The venue and graph runners support `--predict-features`
+on their saved local inference matrices. The residual runner also requires
+`--condition opening` or `--condition latest`. Joblib bundles and large feature/OOF
+files stay local; regenerate them using these commands. Use only trusted locally
+rebuilt bundles.
+
+Historical points and market graphs may update from earlier 2023 observations
+once T−21 eligible; calibration and model choices remain fixed before 2023.
+The graph reads opening identity/price fields only and uses exact R4 fallback
+for 176 disconnected/unknown pairs. The venue builder reads raw seasons only
+through 2022 and keeps all 256 targets without venue history. Current-price
+residuals have 101 exact R4 fallback rows; latest means closing if available,
+otherwise opening. Opening names a quote field, not a verified decision time:
+earlier-round features may postdate its capture, so that combination is a
+later-prematch opening-price condition. [Timing details](research/round8_market_residual.md).
+
+Verification: **282 tests, 97 subtests**; five independent branch audits cover
+**116 probability columns × 2,588 targets**, with zero serialization error
+and maximum A/B complement error 7.78e−15. The joint audit independently
+reconstructs all validation raw forecasts, checks 15/175 gradients and all
+20 calibration fits; it does not claim a complete independent OOF refit.
+The venue and graph audits rebuild every new feature. The report-only
+modules render the executed notebook/HTML without changing selections.
+
 ## Seventh round: alternative learning mechanisms
 
 The 2026-11-27 continuation compares four explicitly separate branches:

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "scope": "author self-check; independent audit is separate",
+  "rows": 2588,
+  "columns": 29,
+  "max_reload_error": 0.0,
+  "max_exchange_complement_error": 7.771561172376096e-15,
+  "max_permutation_error": 0.0,
+  "max_target_poison_error": 0.0,
+  "max_chunk_error": 0.0,
+  "max_metric_error": 0.0,
+  "source_sha256": "cd08bae0bd44ac061d42613729179257a6462ddf9b541ecd5750d7a5b4b8083f",
+  "engine_sha256": "9a3069061bd5ed4927bb2734a59a5bf285b17f398df65a7ed780e5425b5481a6",
+  "probability_sha256": "116a2518c053436e245e408bec6274b1d84cddf37e0ca1e92b999ae72ea1bd81",
+  "final_test_evaluated": false
+}

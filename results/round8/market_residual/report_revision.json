@@ -1,0 +1,10 @@
+{
+  "reason": "Clarify opening price field versus unverified decision/capture time, especially event-history variants",
+  "at_fit_protocol_sha256": "65e3f20ff60a74e12ad49f7e01b5257537da86b3b072287a2397aac6825671a9",
+  "current_protocol_sha256": "89e125e11a6e17694883cbf5dcf16c487abb84c25bd9e54dac93c84e1a1d6b2d",
+  "previous_report_generator_sha256": "54ce9f2cc50b983fe0b10db5ed0173bf57a6a4b49d02ad72cc5e859018ab3526",
+  "current_report_generator_sha256": "77d261ad682d00e56e2c822eca07bc7b76f88c0d33d1f36529f0596c887bd777",
+  "runner_unchanged_sha256": "a5a18449558a3f39dfd6fca228c5ee626b50676c7caac5f549b4c71406f9e9c8",
+  "all_numerical_artifact_hashes_unchanged": true,
+  "no_refit_no_new_selection": true
+}
