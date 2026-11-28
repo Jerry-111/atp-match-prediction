@@ -558,3 +558,114 @@ Independent artifact audits cover the [main experiment](../results/round6/artifa
 They check saved probabilities, full-cohort metrics, chronological selections
 and feature/inference contracts. Prior artifacts and predictions remain intact.
 The completed six-round suite passes **207 tests and 91 subtests**.
+
+## Eleventh round: bounded completed-event freshness
+
+The [fixed protocol](research/round11_freshness_protocol.md) tests whether a
+small, evidenced addition of more recent completed-event results helps two
+unchanged algorithms. All 2,388 / 2,528 / 2,588 targets in 2021 / 2022 / 2023
+remain, with threshold 0.5. The original T−21 history is the stale control;
+fresh queries add only disjoint eligible match IDs from individually qualified
+completed source editions. This is a separate, later-information experiment,
+not an improvement under the original T−21 information set. No current target
+edition, new ranking, technical statistic, auxiliary match or extra target is
+introduced. The 2024–2025 final test remains sealed.
+
+The source sample is the first ten editions by nominal date and lexical ID in
+each of 2021, 2022 and 2023, fixed without consulting individual prediction
+errors. The [qualification ledger](../results/round11/completion/qualified_pairs.json)
+admits 15 source–target pairs using nine distinct source editions. Their target
+editions contain 168 / 183 / 234 rows; direct source-player overlap covers
+42 / 90 / 118 rows. These are coverage counts, not reduced accuracy denominators
+or claims about the number of changed predictions. Unqualified, overlapping and
+unreviewed pairs remain recorded; targets without added history return their
+own stale input and probability exactly.
+
+Qualification is **Tier B under explicit public-result availability, stability
+and schedule-consistency assumptions**. Let D be the later of the supported
+completed-by day and displayed publication day. Its conservative upper bound,
+D at 00:00 UTC plus 36 hours, must be strictly before the independently
+supported target lower day at 00:00 UTC minus 14 hours. Unknown publication
+timezones remain unknown. A readable completed-final report supports the
+edition under the stated assumptions; it neither certifies every historical
+row nor makes today's page an immutable as-of snapshot. Official event-period
+starts are lower bounds under schedule consistency, not observed match clocks.
+See the [independent evidence review](research/round11_availability_review.md).
+
+The two paired algorithms are K=32 overall Elo and a shared rank/rating
+logistic model. The latter uses only `log_rank_diff`, `elo_k32_diff` and
+`shrunk_surface_elo_k32_diff`, C=.01, no intercept, training-only scaling and
+mirrored half-weight rows. There is one stale-only fit for each prediction
+year, with training from 2009 and the original 21-day purge: **three fits in
+total, four new probability columns**. Each fitted scaler and coefficient
+vector is applied unchanged to both stale and fresh inputs. This tests
+transport to fresher inputs, not a pipeline retrained on fresh covariates.
+Elo updates retain nominal-date batches and the original 20-match surface
+shrinkage; there is no invented within-event ordering or tuning sweep.
+
+Only 2021 selects the algorithm: fresh accuracy must increase and log loss
+may worsen by at most .005 against its own stale control. The single selected
+algorithm must then gain at least .005 accuracy on all 2022 rows under the same
+loss guard. Choice and gate are saved before the 2023 fit and evaluation; there
+is no pooled reselection. R4 and R5 are contextual references excluded from
+this mechanism selector. All 2023 results remain repeatedly inspected
+exploration, and the reused 2022 gate is development evidence, not an
+independent confirmation.
+
+The completed run selects **no freshness algorithm**: on 2021, fresh Elo loses
+three correct predictions and the shared logistic has no accuracy change, so
+neither satisfies the first-stage rule. The gate therefore fails and the R4
+historical recommendation remains. The 2022 descriptive paired changes are
++4 correct for Elo and +1 for logistic; they do not trigger a new selection.
+On the full 2023 cohort:
+
+| Algorithm | Stale correct / 2,588 | Fresh correct / 2,588 | Stale log loss | Fresh log loss |
+| --- | ---: | ---: | ---: | ---: |
+| Overall Elo | 1,640 (63.37%) | 1,642 (63.45%) | 0.639146 | 0.638342 |
+| Shared rank/rating logistic | 1,678 (64.84%) | 1,678 (64.84%) | 0.622797 | 0.622267 |
+
+Both methods change probabilities on 118 rows. Elo flips two classifications,
+both becoming correct; logistic flips none. The 2,354 rows without extra
+history reproduce their own stale predictions exactly. The date-block paired
+intervals include zero; they are conditional exploratory intervals without
+search correction. The modest loss decreases do not establish a broad
+freshness benefit, and neither new method exceeds R4 (1,696 correct) or the
+frozen R5 exploration (1,715). Reaching 70% still requires at least 1,812 correct.
+The bounded source coverage cannot answer whether a complete season of
+independently supported fresh history would help. Numerical details are saved
+in [matched controls](../results/round11/freshness/matched_controls.csv),
+[the frozen choice](../results/round11/freshness/frozen_selection.json) and
+[the summary](../results/round11/freshness/summary.json).
+
+The actual run started before an independent pre-score request to pause for
+an integer net-correct tie fix reached the runner. It used the original
+floating-mean selector, whose exact source snapshot is retained. Only
+`choose_procedure` subsequently changed; both versions select no method on
+this run's −3 / 0 gains. All 17 original artifact hashes remain unchanged,
+and no model or probability was refitted or modified. The
+[selection correction record](../results/round11/freshness/selection_correction.json)
+documents this execution-order deviation. The completed base suite passes
+343 tests and 109 subtests, with eight optional-dependency skips; see
+[verification](../results/round11/verification.json). Independent artifact
+audit completion is recorded separately rather than inferred from those tests.
+
+After rebuilding the existing environment and prerequisite artifacts through
+Round 5, reproduce into a new directory rather than overwrite the frozen run:
+
+```sh
+.venv/bin/python -m scripts.train_freshness_round11 \
+  --output /tmp/atp-round11-reproduction \
+  --approved-protocol-sha256 690c60196e3b8700157036c5632e5b17190c86c102843530d7f48c972eed1ce7 \
+  --approved-manifest-sha256 54281191164bdcfae2cc3cc71cc53db080653d4b6137686f960581517b10dc9d
+.venv/bin/python -m scripts.audit_freshness_round11
+.venv/bin/python -m scripts.report_round11
+```
+
+The first command checks both approved hashes and all ledger-bound inputs
+before fitting. No fresh web lookup is required. The audit and report commands
+default to the original `results/round11/freshness` artifacts; they do not
+automatically switch to the reproduction directory. Keep the existing frozen
+outputs intact. Current source uses the corrected integer selector; the
+original run's source is preserved in its correction record. Saved models are
+`model_2021.joblib`, `model_2022.joblib` and
+`frozen_models.joblib`; the matrices and probabilities retain every target row.

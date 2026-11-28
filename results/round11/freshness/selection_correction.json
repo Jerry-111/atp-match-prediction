@@ -1,0 +1,131 @@
+{
+  "recorded_at_utc": "2026-11-28T09:19:37.771059+00:00",
+  "issue": "Subtraction of two floating accuracies could spuriously break equal-net-correct ties before the specified loss/name tie-break.",
+  "discovered_by": "Independent audit agent during pre-score code review.",
+  "timing": "Coordinator launched and completed the three fixed fits before the hold message arrived; the patch landed after the actual run. This is an explicitly disclosed post-run protocol-implementation correction, not a claim that the run used corrected source.",
+  "original_source_snapshot": "original_train_freshness_round11.py",
+  "original_runner_sha256": "adf32c966f291db9d8e974a14eca0bb4571d59c055a88a4e86f190859de262f5",
+  "registry_runner_sha256": "adf32c966f291db9d8e974a14eca0bb4571d59c055a88a4e86f190859de262f5",
+  "corrected_runner_path": "scripts/train_freshness_round11.py",
+  "corrected_runner_sha256": "b427535a7dd2547e0d78bbbe7499e9c3ece8423901c9c9065d9947a86d912045",
+  "changed_definitions": [
+    "choose_procedure"
+  ],
+  "other_module_ast_unchanged": true,
+  "exact_reversible_replacements": [
+    {
+      "original": "        gain = accuracy(y[early], fresh) - accuracy(y[early], stale)",
+      "corrected": "        net_correct = int(((fresh >= .5) == y[early]).sum() - ((stale >= .5) == y[early]).sum())\n        gain = net_correct / int(early.sum())"
+    },
+    {
+      "original": "        scores.append({'algorithm': algorithm, 'accuracy_improvement': gain,",
+      "corrected": "        scores.append({'algorithm': algorithm, 'net_correct': net_correct, 'accuracy_improvement': gain,"
+    },
+    {
+      "original": "    chosen = min(eligible, key=lambda s: (-s['accuracy_improvement'], s['log_loss_change'], s['algorithm'])) if eligible else None",
+      "corrected": "    chosen = min(eligible, key=lambda s: (-s['net_correct'], s['log_loss_change'], s['algorithm'])) if eligible else None"
+    },
+    {
+      "original": "        passed = after - before >= ACCURACY_GATE - 1e-12 and after_loss - before_loss <= LOSS_GUARD + 1e-12",
+      "corrected": "        net_correct = int(((fresh >= .5) == y[held]).sum() - ((stale >= .5) == y[held]).sum())\n        improvement = net_correct / int(held.sum())\n        passed = improvement >= ACCURACY_GATE - 1e-12 and after_loss - before_loss <= LOSS_GUARD + 1e-12"
+    },
+    {
+      "original": "            accuracy_improvement=after-before, log_loss_change=after_loss-before_loss,",
+      "corrected": "            net_correct=net_correct, accuracy_improvement=improvement, log_loss_change=after_loss-before_loss,"
+    }
+  ],
+  "original_selection_recomputed": {
+    "early_selection": {
+      "selection_season": 2021,
+      "selection_rows": 2388,
+      "choice": null,
+      "candidates": [
+        {
+          "algorithm": "overall_elo",
+          "accuracy_improvement": -0.0012562814070351536,
+          "log_loss_change": -0.00010063972669449583,
+          "eligible": false
+        },
+        {
+          "algorithm": "rank_rating_logistic",
+          "accuracy_improvement": 0.0,
+          "log_loss_change": -4.6059278515975244e-05,
+          "eligible": false
+        }
+      ]
+    },
+    "procedure_gate": {
+      "selected_algorithm": null,
+      "selection_season": 2021,
+      "gate_season": 2022,
+      "required_accuracy_improvement": 0.005,
+      "allowed_loss_increase": 0.005,
+      "gate_passed": false,
+      "procedure": "retain_original_history_recommendation"
+    },
+    "recommendation": "previous_probability_recommendation",
+    "pooled_selection_performed": false
+  },
+  "corrected_selection_recomputed": {
+    "early_selection": {
+      "selection_season": 2021,
+      "selection_rows": 2388,
+      "choice": null,
+      "candidates": [
+        {
+          "algorithm": "overall_elo",
+          "net_correct": -3,
+          "accuracy_improvement": -0.001256281407035176,
+          "log_loss_change": -0.00010063972669449583,
+          "eligible": false
+        },
+        {
+          "algorithm": "rank_rating_logistic",
+          "net_correct": 0,
+          "accuracy_improvement": 0.0,
+          "log_loss_change": -4.6059278515975244e-05,
+          "eligible": false
+        }
+      ]
+    },
+    "procedure_gate": {
+      "selected_algorithm": null,
+      "selection_season": 2021,
+      "gate_season": 2022,
+      "required_accuracy_improvement": 0.005,
+      "allowed_loss_increase": 0.005,
+      "gate_passed": false,
+      "procedure": "retain_original_history_recommendation"
+    },
+    "recommendation": "previous_probability_recommendation",
+    "pooled_selection_performed": false
+  },
+  "decision_matches_saved_frozen_selection": true,
+  "reason_no_effect_this_run": "2021 overall Elo net correct=-3; shared logistic=0. Neither satisfies strictly positive gain, so no candidate/tie reaches the 2022 gate.",
+  "saved_models_retrained": false,
+  "saved_probabilities_or_metrics_modified": false,
+  "saved_frozen_selection_modified": false,
+  "original_artifact_hashes_verified": {
+    "all_predictions.csv": "4a85efacda3329f089da145c1259701fc203da3712276c178b95895f72e4feca",
+    "coverage_by_match.csv": "bdffb38bc519adb0ac75053241890f10910c0b26521516a3877e0cb6a9ba8212",
+    "development_features.csv": "bd518f9af2ee1db338f7bad29162f537d64233a8a23261708c7740de3d1e3781",
+    "feature_metadata.json": "4e8bc25fd71efc8b576f7f54907af6d470f1dbc9869fa39eddf723f865e22d8d",
+    "feature_smoke.json": "ead62ad582fa67be1a64a7de2fd9a8e8661a279c035b69dd77223239a4e7d59c",
+    "fit_records.json": "aa042f49a0837cee2ecee542f8c8d2b65fa64d4adff008c2217e1c4adf1271fa",
+    "frozen_models.joblib": "f113cfceb7b8b085f3d538fb1dd9c031ffb045f5b109e1504b5b843c96e79075",
+    "frozen_selection.json": "a6b33ab008bbe5201d5195948b352630f0c90f63349dab58b7c474cb976b2b5a",
+    "matched_controls.csv": "3a8f6b05b6c01671135c6beb151ad990f34a44d7d5012e0f5e273bb98fa213d1",
+    "model_2021.joblib": "1a0927a9751d2d0b6c09b40678433a23319d7273a4fe3820baa18cb654acf56c",
+    "model_2022.joblib": "53e553b29babedef26fa255e3d2cd6926c9e5f6c4d55c2b1ce5907eed0db2086",
+    "oof_predictions.csv": "93172eac489aacf72b1064ae59149daec314e02b61be8c8a44a0f94c46d89ef2",
+    "search_registry.json": "45071c9545f3ad3ed482b547c5cc996f10cb1472ad5701cc16ea95fd0fd01999",
+    "summary.json": "955409b54fd1b73bc14559c7159f06d40232f64ebdf5b9ea20d997a15c1d9464",
+    "temporal_cv.csv": "4056a17b3be650cd6c6252c960592d1a2f8acda65d3141a3c47724db960369de",
+    "validation_comparison.csv": "b261c243dd8664985cbaf3570c9f35fc30ff076f81057f7a1b275d4b8aa324dd",
+    "validation_predictions.csv": "ee444f2ac75fb31e5b32107d5c645ecc237a4d0311d16de759445385ef73ca40"
+  },
+  "self_check_sha256": "768b70b7f3edef998ac3834d5a097f336d65f97efd2f3a5f0d4384bf1e1ca6a9",
+  "regression_tests": "14 tests and 12 subtests passed; new regression gives both algorithms +1/11 net gain at different stale accuracy levels and requires the smaller loss delta to win.",
+  "tests_sha256": "1af6e93a945b9ef57e00b2926537c8cf01f63661f927a8688eaf6eb246f44e3e",
+  "rerun_semantics": "Current source has the corrected integer selector. Run into a fresh output directory; do not overwrite this disclosed original run."
+}

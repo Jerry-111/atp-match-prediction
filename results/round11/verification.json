@@ -1,0 +1,19 @@
+{
+  "recorded_at_utc": "2026-11-28T09:19:02.687437+00:00",
+  "command": ".venv/bin/python -m pytest -q",
+  "status": "passed",
+  "passed": 343,
+  "skipped": 8,
+  "subtests_passed": 109,
+  "focused_freshness_tests": 14,
+  "focused_tests_included_in_full_count": true,
+  "log_path": "/tmp/atp-round11-base-tests-final.log",
+  "log_sha256": "5a782af090043ff43da8de4361fefbe7855981b537fd11103c9e679323b6c623",
+  "skip_reason": "Optional Torch tests in the base environment; unchanged isolated neural implementation not rerun.",
+  "final_test_evaluated": false,
+  "report_code_cells_executed": 3,
+  "report_cells_with_errors": 0,
+  "local_markdown_links_checked": 208,
+  "broken_local_links": 0,
+  "chart_visually_inspected": true
+}
