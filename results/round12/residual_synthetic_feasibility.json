@@ -1,0 +1,163 @@
+{
+  "recorded_at_utc": "2026-11-28T09:51:09.663607+00:00",
+  "synthetic_only": true,
+  "real_ATP_features_loaded": false,
+  "real_ATP_labels_loaded": false,
+  "first_small_smoke": {
+    "static": {
+      "rows": 10000,
+      "shared_width": 256,
+      "states": 500,
+      "joint_seconds": 0.029006833967287093,
+      "joint_success": true,
+      "joint_iterations": 42,
+      "joint_max_gradient": 8.447918439715706e-08,
+      "directional_gradient_max_error": 9.041295056383403e-12,
+      "state_seconds": 0.001533334027044475,
+      "state_success": true,
+      "state_iterations": 5,
+      "state_max_gradient": 8.685409244418852e-08
+    },
+    "quarterly": {
+      "rows": 10000,
+      "shared_width": 256,
+      "states": 4000,
+      "joint_seconds": 0.1367440419853665,
+      "joint_success": true,
+      "joint_iterations": 156,
+      "joint_max_gradient": 9.027507031771353e-08,
+      "directional_gradient_max_error": 5.772203028053813e-12,
+      "state_seconds": 0.028424624993931502,
+      "state_success": true,
+      "state_iterations": 59,
+      "state_max_gradient": 6.663044295514564e-08
+    }
+  },
+  "fullsize_two_setting_sensitivity": {
+    "synthetic_only": true,
+    "seed": 8158,
+    "rows": 33833,
+    "features": 256,
+    "players": 925,
+    "states": 12894,
+    "threads": 4,
+    "solves": [
+      {
+        "name": "default",
+        "seconds": 2.9708748330012895,
+        "success": true,
+        "iterations": 1075,
+        "objective_scaled": 0.21756377835012083,
+        "max_gradient_scaled": 9.780869130627898e-08,
+        "max_gradient_unscaled": 0.003309161452965337,
+        "options": {
+          "maxiter": 2000,
+          "maxcor": 20,
+          "ftol": 1e-12,
+          "gtol": 1e-07
+        }
+      },
+      {
+        "name": "strict",
+        "seconds": 1.6367709580226801,
+        "success": true,
+        "iterations": 519,
+        "objective_scaled": 0.21756377510814984,
+        "max_gradient_scaled": 5.492030805875062e-09,
+        "max_gradient_unscaled": 0.00018581187825517098,
+        "options": {
+          "maxiter": 5000,
+          "maxcor": 30,
+          "ftol": 1e-15,
+          "gtol": 1e-10
+        }
+      }
+    ],
+    "prediction_max_difference": 0.00040640749581932756,
+    "classification_changes": 0,
+    "query_rows": 2000
+  },
+  "strict_independent_zero_start": {
+    "status": "failed_closed",
+    "initialization": "independent_zero",
+    "success": true,
+    "iterations": 1627,
+    "function_evaluations": 1702,
+    "seconds": 5.161873708013445,
+    "objective_scaled": 0.21756377510817557,
+    "objective_unscaled": 7360.835203234904,
+    "max_gradient_scaled": 1.220553151249717e-08,
+    "max_gradient_unscaled": 0.00041294974766231674,
+    "failure_reason": "L-BFGS-B relative-function success did not meet scaled-gradient <= 1e-8",
+    "options": {
+      "maxiter": 5000,
+      "maxcor": 30,
+      "ftol": 1e-15,
+      "gtol": 1e-10
+    }
+  },
+  "final_ftol_zero_independent_start": {
+    "status": "passed",
+    "diagnostics": {
+      "optimizer": "L-BFGS-B",
+      "success": true,
+      "status": 0,
+      "message": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH",
+      "iterations": 1993,
+      "function_evaluations": 2090,
+      "seconds": 6.312632041983306,
+      "rows": 33833,
+      "parameters": 13150,
+      "objective_scaled": 0.2175637751077262,
+      "objective_unscaled": 7360.835203219701,
+      "max_gradient_scaled": 1.749916611816103e-09,
+      "max_gradient_unscaled": 5.920492872757421e-05,
+      "accepted_gradient_tolerance": 1e-08,
+      "initial_objective_scaled": 0.23020515177423762,
+      "mode": "joint_beta_and_u",
+      "shared_ridge_constant_omitted": false,
+      "solver_options": {
+        "maxiter": 5000,
+        "maxcor": 30,
+        "ftol": 0.0,
+        "gtol": 1e-10
+      }
+    }
+  },
+  "small_fixture_ftol_one_e_minus15": {
+    "rows": 120,
+    "status": "failed_closed",
+    "max_gradient_scaled": 2.4681212978013476e-08
+  },
+  "small_fixture_ftol_zero": {
+    "rows": 120,
+    "status": "passed",
+    "max_gradient_scaled": 7.764833914736258e-11
+  },
+  "final_solver": {
+    "method": "L-BFGS-B",
+    "maxiter": 5000,
+    "maxcor": 30,
+    "ftol": 0.0,
+    "gtol": 1e-10,
+    "accepted_scaled_gradient": 1e-08,
+    "require_optimizer_success": true,
+    "require_finite_values": true,
+    "failure_policy": "stop_without_prediction",
+    "newton_polishing": false,
+    "prior_whitening": false
+  },
+  "reproducible_generator": "tests/test_residual_state_round12.py:synthetic_fullsize_problem",
+  "generator_seed": 8158,
+  "source_sha256": {
+    "scripts/residual_state_round12.py": "f505fa892ba075cb174c63a87fce42f5164467a1798e4ba87c61985147f45522",
+    "tests/test_residual_state_round12.py": "0b770b041d3f9b7b4fe4667f93dbec3d74fccdaf79a58741aaa3168ec111ee6b"
+  },
+  "interpretation": [
+    "All outcomes and features in these numerical checks were generated without reading ATP data.",
+    "The maximum probability difference compares the originally proposed solver with a stricter continuation, not two empirical models.",
+    "Zero synthetic classification changes do not imply zero changes on real matches.",
+    "The final independent-zero check preserves the same objective and priors and passes a tighter gradient gate.",
+    "Numerical timings do not predict end-to-end feature, artifact or real optimization runtime."
+  ]
+}

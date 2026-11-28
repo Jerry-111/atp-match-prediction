@@ -1,0 +1,216 @@
+{
+  "status": "passed",
+  "development_rows": 36421,
+  "oof_rows": 6130,
+  "validation_rows": 2588,
+  "global_optimizations_replayed": 0,
+  "saved_global_models_checked": 12,
+  "saved_state_snapshots_checked": 256,
+  "independent_selection": {
+    "early_selected": "shared_static_residual",
+    "pooled_selected": "shared_dynamic_residual",
+    "gate_passed": false,
+    "recommended": "previous_probability_recommendation",
+    "gate_matches": 2528,
+    "required_additional_correct": 13,
+    "additional_correct": 4,
+    "gate_loss_delta": -0.002919155585241695,
+    "early_metrics": {
+      "shared_only": {
+        "matches": 3602,
+        "correct": 2373,
+        "accuracy": 0.6588006662965019,
+        "mean_log_loss": 0.6054689235833486
+      },
+      "shared_static_residual": {
+        "matches": 3602,
+        "correct": 2383,
+        "accuracy": 0.6615769017212659,
+        "mean_log_loss": 0.6072150419499674
+      },
+      "shared_dynamic_residual": {
+        "matches": 3602,
+        "correct": 2380,
+        "accuracy": 0.6607440310938367,
+        "mean_log_loss": 0.6094501123479031
+      },
+      "previous_probability_recommendation": {
+        "matches": 3602,
+        "correct": 2362,
+        "accuracy": 0.6557468073292615,
+        "mean_log_loss": 0.6091770709592391
+      }
+    },
+    "pooled_metrics": {
+      "shared_only": {
+        "matches": 6130,
+        "correct": 4081,
+        "accuracy": 0.6657422512234911,
+        "mean_log_loss": 0.5991530219237343
+      },
+      "shared_static_residual": {
+        "matches": 6130,
+        "correct": 4084,
+        "accuracy": 0.666231647634584,
+        "mean_log_loss": 0.6008327776005956
+      },
+      "shared_dynamic_residual": {
+        "matches": 6130,
+        "correct": 4094,
+        "accuracy": 0.667862969004894,
+        "mean_log_loss": 0.6028907478074392
+      },
+      "previous_probability_recommendation": {
+        "matches": 6130,
+        "correct": 4059,
+        "accuracy": 0.6621533442088091,
+        "mean_log_loss": 0.60318952373614
+      }
+    }
+  },
+  "maximum_errors": {
+    "probability": 0.0,
+    "old_control": 0.0,
+    "symmetry": 2.220446049250313e-16,
+    "permutation": 0.0,
+    "batching": 0.0,
+    "transform": 0.0,
+    "objective": 9.094947017729282e-13,
+    "joint_gradient_unscaled": 0.00014372967369524758,
+    "state_gradient_unscaled": 4.318713440421007e-06,
+    "interval": 9.893344823930228e-19
+  },
+  "model_checks": [
+    {
+      "year": 2020,
+      "model": "shared_static_residual",
+      "global_rows": 27703,
+      "snapshots": 19,
+      "max_absolute_residual_logit": 0.6505053592253963,
+      "mean_absolute_residual_logit": 0.16625353346944693,
+      "objective_error": 0.0,
+      "max_gradient_unscaled": 2.1351826851034872e-05,
+      "max_gradient_scaled": 7.707406003333528e-10,
+      "nodes": 800
+    },
+    {
+      "year": 2020,
+      "model": "shared_dynamic_residual",
+      "global_rows": 27703,
+      "snapshots": 19,
+      "max_absolute_residual_logit": 1.005824208618762,
+      "mean_absolute_residual_logit": 0.24819539990571626,
+      "objective_error": 0.0,
+      "max_gradient_unscaled": 5.9465943722303294e-05,
+      "max_gradient_scaled": 2.1465524933149225e-09,
+      "nodes": 8006
+    },
+    {
+      "year": 2021,
+      "model": "shared_static_residual",
+      "global_rows": 28917,
+      "snapshots": 38,
+      "max_absolute_residual_logit": 0.8240275619779471,
+      "mean_absolute_residual_logit": 0.17575761494946185,
+      "objective_error": 0.0,
+      "max_gradient_unscaled": 3.0630044808965806e-05,
+      "max_gradient_scaled": 1.0592400597906354e-09,
+      "nodes": 832
+    },
+    {
+      "year": 2021,
+      "model": "shared_dynamic_residual",
+      "global_rows": 28917,
+      "snapshots": 38,
+      "max_absolute_residual_logit": 1.2309688379069175,
+      "mean_absolute_residual_logit": 0.25946246196093703,
+      "objective_error": 0.0,
+      "max_gradient_unscaled": 0.00014372967369524758,
+      "max_gradient_scaled": 4.9704213333073136e-09,
+      "nodes": 8481
+    },
+    {
+      "year": 2022,
+      "model": "shared_static_residual",
+      "global_rows": 31305,
+      "snapshots": 36,
+      "max_absolute_residual_logit": 0.8086808453476453,
+      "mean_absolute_residual_logit": 0.1842546460238477,
+      "objective_error": 0.0,
+      "max_gradient_unscaled": 2.317263216555787e-05,
+      "max_gradient_scaled": 7.402214395642189e-10,
+      "nodes": 877
+    },
+    {
+      "year": 2022,
+      "model": "shared_dynamic_residual",
+      "global_rows": 31305,
+      "snapshots": 36,
+      "max_absolute_residual_logit": 1.183545611272162,
+      "mean_absolute_residual_logit": 0.26743394247351965,
+      "objective_error": 0.0,
+      "max_gradient_unscaled": 8.709585223387606e-05,
+      "max_gradient_scaled": 2.782170651138031e-09,
+      "nodes": 9231
+    },
+    {
+      "year": 2023,
+      "model": "shared_static_residual",
+      "global_rows": 33833,
+      "snapshots": 35,
+      "max_absolute_residual_logit": 0.9736114286412102,
+      "mean_absolute_residual_logit": 0.18366900152486573,
+      "objective_error": 0.0,
+      "max_gradient_unscaled": 2.145301155964674e-05,
+      "max_gradient_scaled": 6.340854065452883e-10,
+      "nodes": 925
+    },
+    {
+      "year": 2023,
+      "model": "shared_dynamic_residual",
+      "global_rows": 33833,
+      "snapshots": 35,
+      "max_absolute_residual_logit": 1.5325885228153409,
+      "mean_absolute_residual_logit": 0.26569342215819636,
+      "objective_error": 9.094947017729282e-13,
+      "max_gradient_unscaled": 6.387623148365607e-05,
+      "max_gradient_scaled": 1.8879860338620894e-09,
+      "nodes": 9964
+    }
+  ],
+  "future_label_and_feature_poisoning": "passed",
+  "final_test_evaluated": false,
+  "artifact_sha256": {
+    "control_reproduction.json": "c4879947016a6735ea32e0e6904aa2b19f72948f27f3f98bd7218b50f6678237",
+    "fit_populations.csv": "8d151b5fdead32154e47e0a816bf1b53e7bfcce38e68cd54aeab0de0dfa97b49",
+    "frozen_models.joblib": "b53b41f694e11fe3de7cb5407dacc2697713cb7fcbf0376b645fd492ce4ec8d5",
+    "frozen_selection.json": "3b4b5f7563e62c87a3b67b9eb4699b8122632a913d30df6f2be7fa73d5ce2f2a",
+    "matched_controls.csv": "6efcd6427201608be31b4dcdd8c6c425c1549960a3bb35c46e31e30d9ff83abe",
+    "model_2020.joblib": "ce308798f022446af962347146581a3a0041412532d2a7ddb38abe9fb6936318",
+    "model_2021.joblib": "204d0b0467ae9347481e9c5630720be228f6265f3059096a68e43f879a020f09",
+    "model_2022.joblib": "040f1a3dc762e3cb8957b655062dbf5a0908128a405ac9d3d494a74933ce30f4",
+    "model_2023.joblib": "b53b41f694e11fe3de7cb5407dacc2697713cb7fcbf0376b645fd492ce4ec8d5",
+    "oof_predictions.csv": "fa7365c2e5928748f550a46010ae715b259f51712b37df11c94b4ec2e021db6d",
+    "optimizer_diagnostics.csv": "d74015a6cc2260dd6b1ad7e5eeae8622edb6b12760027649afda4f4e3169486e",
+    "pre2023_freeze.json": "b07ac48280341baa320586108366b4c060fdd93b6277a837b8019dfb0d0aa6be",
+    "residual_contributions.csv": "fa80a1b9f776775f45df1f10b65893862f23667c812e8e056639b9c33e0c6740",
+    "search_registry.json": "f2f3330dabffff28d9c1a8482866316be2b01f8aa95210c48224e7f6611e0ef1",
+    "summary.json": "17ae6cb892a3cded4bccd505f394bf2f01f56722548d6752f4de610d5a0e81af",
+    "temporal_cv.csv": "0e0eb955d61cc6a5d81ac3854b7bdfdeb5c9bb609acaa4e9b4faa6825c31a4ba",
+    "validation_comparison.csv": "4880e8c84e639c767c6205c240e564cc63b70c3aa0ee7382599b18a107bc1911",
+    "validation_predictions.csv": "97916a83ee98fd101cb564f5dbadf43c4e776d5d4c320f549e76383cd7e6cde9"
+  },
+  "source_sha256": {
+    "docs/research/round12_residual_state_protocol.md": "54fbc7f95d8419cde22d0d26a1f14d5f6e01acd748a72f73959f365dacc45e34",
+    "scripts/train_residual_state_round12.py": "cbd545bd9330943b08568262d558afd5916e43ff9fbe4f286da7de51c53e33ab",
+    "scripts/residual_state_round12.py": "f505fa892ba075cb174c63a87fce42f5164467a1798e4ba87c61985147f45522",
+    "scripts/round2_learning.py": "1cb73e8a9247b3132d8d9c5656ccc138580ee8414afcf13405458e432b0e93c4",
+    "scripts/train_models.py": "f472f7dc94a440c8e542dca3802cee86d9ee9dc3a066745f907a0318d2f754c2"
+  },
+  "audit_script_sha256": "75faccc56d77a3f34e2dbb79c361c03d9dbf4c60716c8e3f62e811a70cf8a87b",
+  "limits": [
+    "No optimizer trajectory or real-data fit was replayed; saved objectives and gradients were recomputed.",
+    "Old 326 input fields were hash-bound, not reconstructed from raw match sources.",
+    "MAP forecasts do not integrate state uncertainty; reused gate and 2023 remain exploratory."
+  ]
+}

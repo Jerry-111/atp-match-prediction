@@ -669,3 +669,71 @@ outputs intact. Current source uses the corrected integer selector; the
 original run's source is preserved in its correction record. Saved models are
 `model_2021.joblib`, `model_2022.joblib` and
 `frozen_models.joblib`; the matrices and probabilities retain every target row.
+
+## Twelfth round: conditional binary player residuals
+
+This pure-history experiment keeps the full2,588 targets, threshold.5 and
+T−21 availability. It reuses the exact R5 `all_inputs_spline_C0.01` transform
+and compares shared-only, static player residuals, and quarterly dynamic
+residuals. Shared coefficients and states are jointly fitted on each outer
+training population; later within-year queries freeze coefficients and
+preprocessing and condition only states on the eligible prefix. The initial
+SD.35 and annual innovation SD.15 are fixed pragmatic log-odds priors, not
+validated ATP hyperparameters from the papers. No market or charting data enter.
+
+The shared-only control reproduces all6,130 OOF and2,588 final development
+probabilities exactly. There are12 global optimization stages and256 separate
+state solves. The early selector chooses static residuals, but its2022 gain is
+only4 correct over R4, below the fixed13-match gate. The pooled exploratory
+choice is dynamic; gate failure preserves R4. On the full2023 cohort:
+
+| Model | Correct /2,588 | Accuracy | Mean log loss |
+| --- | ---: | ---: | ---: |
+| Original shared control |1,706|65.9196%|.606453|
+| Static player residuals |1,711|66.1128%|.608872|
+| Dynamic player residuals |1,692|65.3787%|.611061|
+
+Both extensions worsen matched log loss in every forward year. Static's
+five additional correct predictions have a date-block interval containing
+zero; dynamic loses14 against the same control. No candidate reaches1,812.
+All repeated2023 comparisons remain exploratory;2024–2025 stay sealed.
+[Full report](../results/round12/overview.md) ·
+[Protocol](research/round12_residual_state_protocol.md) ·
+[Primary literature and limits](research/round12_residual_state_proposal.md).
+
+Rebuild the existing environment and R5 prerequisite artifacts, then use a
+new directory so the original outputs remain intact:
+
+```sh
+.venv/bin/python -m scripts.train_residual_state_round12 \
+  --output /tmp/atp-round12-reproduction \
+  --approved-protocol-sha256 54fbc7f95d8419cde22d0d26a1f14d5f6e01acd748a72f73959f365dacc45e34
+.venv/bin/python -m scripts.audit_residual_state_round12
+.venv/bin/python -m scripts.report_round12
+```
+
+The latter commands default to the original frozen artifacts, not the temporary
+reproduction. Pre-fit readiness binds the reviewed code/protocol; the run
+registry binds inputs, and selection is written and hashed before2023 scoring.
+There is one fixed numerical solver, with a separate strict gradient check;
+failed synthetic precision trials remain documented. No failed real fit was
+silently replaced. Saved `model_2020.joblib` through `model_2023.joblib` and
+`frozen_models.joblib` include complete states and eligible identities, and
+are local reproducible artifacts rather than committed binary weights.
+
+For an already saved cutoff, inference requires the original finite feature
+columns plus a separate label-free CSV with `match_id`, `season`,
+`tourney_date`, `player_a_id`, `player_b_id`:
+
+```sh
+.venv/bin/python -m scripts.train_residual_state_round12 \
+  --predict-features /absolute/path/to/features.csv \
+  --query-metadata /absolute/path/to/query_metadata.csv
+```
+
+This writes `inference_predictions.csv` and performs no optimization. The
+`predict_asof` engine API can build a new permitted cutoff from explicitly
+provided, unchanged2009+ historical features and labels; it filters by cutoff
+before reading history outcomes. Existing snapshots reject changed eligible
+history. Query years are bounded to the bundle's frozen development year;
+this command does not authorize or run the sealed final evaluation.

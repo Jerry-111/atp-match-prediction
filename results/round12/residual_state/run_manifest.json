@@ -1,0 +1,24 @@
+{
+  "completed_at_utc": "2026-11-28T09:56:51.201749+00:00",
+  "artifact_sha256": {
+    "control_reproduction.json": "c4879947016a6735ea32e0e6904aa2b19f72948f27f3f98bd7218b50f6678237",
+    "fit_populations.csv": "8d151b5fdead32154e47e0a816bf1b53e7bfcce38e68cd54aeab0de0dfa97b49",
+    "frozen_models.joblib": "b53b41f694e11fe3de7cb5407dacc2697713cb7fcbf0376b645fd492ce4ec8d5",
+    "frozen_selection.json": "3b4b5f7563e62c87a3b67b9eb4699b8122632a913d30df6f2be7fa73d5ce2f2a",
+    "matched_controls.csv": "6efcd6427201608be31b4dcdd8c6c425c1549960a3bb35c46e31e30d9ff83abe",
+    "model_2020.joblib": "ce308798f022446af962347146581a3a0041412532d2a7ddb38abe9fb6936318",
+    "model_2021.joblib": "204d0b0467ae9347481e9c5630720be228f6265f3059096a68e43f879a020f09",
+    "model_2022.joblib": "040f1a3dc762e3cb8957b655062dbf5a0908128a405ac9d3d494a74933ce30f4",
+    "model_2023.joblib": "b53b41f694e11fe3de7cb5407dacc2697713cb7fcbf0376b645fd492ce4ec8d5",
+    "oof_predictions.csv": "fa7365c2e5928748f550a46010ae715b259f51712b37df11c94b4ec2e021db6d",
+    "optimizer_diagnostics.csv": "d74015a6cc2260dd6b1ad7e5eeae8622edb6b12760027649afda4f4e3169486e",
+    "pre2023_freeze.json": "b07ac48280341baa320586108366b4c060fdd93b6277a837b8019dfb0d0aa6be",
+    "residual_contributions.csv": "fa80a1b9f776775f45df1f10b65893862f23667c812e8e056639b9c33e0c6740",
+    "search_registry.json": "f2f3330dabffff28d9c1a8482866316be2b01f8aa95210c48224e7f6611e0ef1",
+    "summary.json": "17ae6cb892a3cded4bccd505f394bf2f01f56722548d6752f4de610d5a0e81af",
+    "temporal_cv.csv": "0e0eb955d61cc6a5d81ac3854b7bdfdeb5c9bb609acaa4e9b4faa6825c31a4ba",
+    "validation_comparison.csv": "4880e8c84e639c767c6205c240e564cc63b70c3aa0ee7382599b18a107bc1911",
+    "validation_predictions.csv": "97916a83ee98fd101cb564f5dbadf43c4e776d5d4c320f549e76383cd7e6cde9"
+  },
+  "source_registry_sha256": "f2f3330dabffff28d9c1a8482866316be2b01f8aa95210c48224e7f6611e0ef1"
+}

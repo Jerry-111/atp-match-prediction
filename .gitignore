@@ -42,6 +42,9 @@ results/round11/**/development_features.csv
 results/round11/**/oof_predictions.csv
 results/round11/**/inference_features.csv
 results/round11/**/inference_predictions.csv
+results/round12/**/*.joblib
+results/round12/**/inference_features.csv
+results/round12/**/inference_predictions.csv
 __pycache__/
 .ipynb_checkpoints/
 data/raw/
