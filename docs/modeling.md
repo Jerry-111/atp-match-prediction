@@ -1,5 +1,54 @@
 # Strong-model validation protocol
 
+## Tenth round: honest conditional mixtures and historical RET controls
+
+The original full 2,588 targets, threshold 0.5 and T−21 condition remain fixed.
+Four frozen primitive forecast streams supply 6,130 OOF rows. Three meta
+procedures compare equal, global and conditional weighting; only the latter
+two fit parameters. Train on 2020 and select on 2021, evaluate that procedure
+on 2022, then refit with all prior OOF. There is no fake 2020 meta test or
+pooled reselection. The 2021 choice is R4. Global and conditional mixtures
+both score 1,684 correct in 2023; conditional loss is slightly worse.
+
+The separate I/R/RC branch shares ordinary inactivity in all three structures.
+R/RC add provider-recorded past RET status, using 332/336/336 inputs respectively.
+Early selection chooses R, but its 2022 gain is only 5/2,528; pooled development
+selection chooses I. The 2023 counts are 1,704/1,707/1,708. No retrospective
+selection of RC is made. The 30-source sample has 10 official confirmations
+and 20 unresolved records, with early-era bias; limited exploration was
+authorized with those uncertainties retained. RET is not a medical variable.
+[Comparison and limitations](../results/round10/overview.md) ·
+[Exact decisions](research/round10_protocol.md).
+
+Rebuild the earlier audited R4/R5 and R9 primitive OOF caches first. The current
+meta stage needs no new Torch fit. Use only trusted locally rebuilt bundles.
+
+```sh
+.venv/bin/python -m scripts.train_gating_round10
+.venv/bin/python -m scripts.audit_gating_round10
+.venv/bin/python -m scripts.train_retirement_round10
+.venv/bin/python -m scripts.audit_retirement_round10
+.venv/bin/python -m scripts.audit_completion_round10
+.venv/bin/python -m scripts.report_round10
+```
+
+Reload the gate with `--predict-inputs results/round10/gating/inference_inputs.csv`.
+Its four expert probabilities and five context columns must have the exact
+frozen schema and aligned IDs. RET uses `--predict-features` and its saved
+338-column union matrix, internally selecting the declared candidate columns.
+The source audit is separately reproducible with `audit_retirement_source_round10`;
+official PDF caches and hashes are required to recheck manual adjudications.
+It does not automatically replace the human interpretation of a draw.
+
+Six meta optimization calls plus twelve spline fits are **18 optimization
+stages**, not eighteen independently selected configurations. The base suite
+passes 329 tests and 97 subtests, with eight optional-Torch skips; unchanged
+neural training and its isolated tests were not repeated. The completion pilot
+is source/metadata-only: four of six transitions pass conservative date bounds,
+three add source editions and directly cover 204/544 pilot targets. No global
+lag reduction or freshness model is implemented; historical publication
+evidence remains qualified. Final years stay sealed and the goal stays active.
+
 ## Ninth round: full-data neural learning and matched history controls
 
 The next completed round tests eight structures/recipes plus15 fixed mixtures,

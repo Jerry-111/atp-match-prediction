@@ -1,0 +1,193 @@
+{
+  "2006-475": {
+    "url": "https://www.protennislive.com/posting/2006/475/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2006-475-mds.pdf",
+    "sha256": "12f0a562d68dac620b19eb9ac4ab23f0847e7c184391a52ca20b665bf3224fef",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2006-475-mds.txt"
+  },
+  "2006-568": {
+    "url": "https://www.protennislive.com/posting/2006/568/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2006-568-mds.pdf",
+    "sha256": "58ef89f2bf12d9fdfb0fecfde3a797bda3364333526321bf6379e0aefefbe3f4",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2006-568-mds.txt"
+  },
+  "2007-433": {
+    "url": "https://www.protennislive.com/posting/2007/433/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-433-mds.pdf",
+    "sha256": "e6ac738a93fe3a344a0800b8d93816cf3d85e7fdbb41b0d8923f43aa88e77794",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-433-mds.txt"
+  },
+  "2007-520": {
+    "url": "https://www.protennislive.com/posting/2007/520/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-520-mds.pdf",
+    "sha256": "3b910a4db0745e262d10151bc1d878f4e40692c4065967a5573714f1d32a8418",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-520-mds.txt"
+  },
+  "2007-8996": {
+    "url": "https://www.protennislive.com/posting/2007/8996/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2007-8996-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 404"
+  },
+  "2008-540": {
+    "url": "https://www.protennislive.com/posting/2008/540/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2008-540-mds.pdf",
+    "sha256": "b9c738a9745aab7d194e7171e59b98fa918ab5f2ff77ea48f262405439f172c5",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2008-540-mds.txt"
+  },
+  "2009-311": {
+    "url": "https://www.protennislive.com/posting/2009/311/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2009-311-mds.pdf",
+    "sha256": "2e572da3be275a3d81c1bae81a63b0c9a720f8120e34da99b44c079f13adf342",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2009-311-mds.txt"
+  },
+  "2010-407": {
+    "url": "https://www.protennislive.com/posting/2010/407/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-407-mds.pdf",
+    "sha256": "76225c209f3b4f8f78eedf6d2026e0ebdb7b95ddba2c4b2c9c6fa6230f8b81d2",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-407-mds.txt"
+  },
+  "2010-495": {
+    "url": "https://www.protennislive.com/posting/2010/495/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-495-mds.pdf",
+    "sha256": "4aa256d77dbfe4a4fb534819e9f70ae68ef3c117a4d3a7f59244f3b3eed009ee",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-495-mds.txt"
+  },
+  "2010-580": {
+    "url": "https://www.protennislive.com/posting/2010/580/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-580-mds.pdf",
+    "sha256": "dbb0ec9de2d407bec375dcc9fd22ba1f9534bf7560f2c5618078fe21840c9131",
+    "status": "fetched_not_adjudicated",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2010-580-mds.txt"
+  },
+  "2011-315": {
+    "url": "https://www.protennislive.com/posting/2011/315/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2011-315-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2012-360": {
+    "url": "https://www.protennislive.com/posting/2012/360/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2012-360-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2013-495": {
+    "url": "https://www.protennislive.com/posting/2013/495/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2013-495-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2013-540": {
+    "url": "https://www.protennislive.com/posting/2013/540/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2013-540-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2014-311": {
+    "url": "https://www.protennislive.com/posting/2014/311/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2014-311-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2014-773": {
+    "url": "https://www.protennislive.com/posting/2014/773/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2014-773-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2015-6120": {
+    "url": "https://www.protennislive.com/posting/2015/6120/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2015-6120-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2016-301": {
+    "url": "https://www.protennislive.com/posting/2016/301/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2016-301-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2016-6242": {
+    "url": "https://www.protennislive.com/posting/2016/6242/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2016-6242-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2017-7650": {
+    "url": "https://www.protennislive.com/posting/2017/7650/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2017-7650-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2018-375": {
+    "url": "https://www.protennislive.com/posting/2018/375/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-375-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2018-500": {
+    "url": "https://www.protennislive.com/posting/2018/500/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-500-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2018-6932": {
+    "url": "https://www.protennislive.com/posting/2018/6932/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-6932-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2018-891": {
+    "url": "https://www.protennislive.com/posting/2018/891/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-891-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2020-9408": {
+    "url": "https://www.protennislive.com/posting/2020/9408/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2020-9408-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2021-321": {
+    "url": "https://www.protennislive.com/posting/2021/321/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2021-321-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2021-416": {
+    "url": "https://www.protennislive.com/posting/2021/416/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2021-416-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2022-321": {
+    "url": "https://www.protennislive.com/posting/2022/321/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2022-321-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2022-341": {
+    "url": "https://www.protennislive.com/posting/2022/341/mds.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2022-341-mds.pdf",
+    "status": "unavailable",
+    "error": "curl: (56) The requested URL returned error: 429"
+  },
+  "2018-montpellier-atp-notes": {
+    "url": "https://www.atptour.com/-/media/a9e07c779c724fdd9d14b19facf48c52.pdf",
+    "cache_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-montpellier-atp-notes.pdf",
+    "sha256": "7efc289d2109e0bb32e6f8a4d192896fd6f697037e8c320eeb67aedb6d00b14e",
+    "text_path": "/var/folders/cz/mnvbv1dj67n0xtgmkk5rrlkh0000gn/T/atp-round10-retirement/2018-montpellier-atp-notes.txt",
+    "status": "fetched_and_adjudicated",
+    "description": "ATP Paris 2018 media-note bundle; PDF page 41 is Tuesday 30 October, printed page 4 of 9."
+  }
+}

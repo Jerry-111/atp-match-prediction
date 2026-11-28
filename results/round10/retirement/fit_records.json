@@ -1,0 +1,98 @@
+[
+  {
+    "model": "ret_I_spline",
+    "validation_season": 2020,
+    "train_rows": 27703,
+    "train_max_date": "2019-10-28 00:00:00",
+    "validation_min_date": "2020-01-06 00:00:00",
+    "training_match_ids_sha256": "0d0a1e56527b4c6fb542254c47d80306b9a6f62dbba727c3c186764c80e86a46"
+  },
+  {
+    "model": "ret_I_spline",
+    "validation_season": 2021,
+    "train_rows": 28917,
+    "train_max_date": "2020-11-09 00:00:00",
+    "validation_min_date": "2021-01-04 00:00:00",
+    "training_match_ids_sha256": "32fd9355165f8cbd882b6384794fa857ede64686dfbf474bc44cc028ccec4dcb"
+  },
+  {
+    "model": "ret_I_spline",
+    "validation_season": 2022,
+    "train_rows": 31305,
+    "train_max_date": "2021-11-08 00:00:00",
+    "validation_min_date": "2022-01-03 00:00:00",
+    "training_match_ids_sha256": "6e12813ef15dafef8805f102f8516ed6733b54e8cf67ebb6ea9c98f9bef4b7db"
+  },
+  {
+    "model": "ret_R_spline",
+    "validation_season": 2020,
+    "train_rows": 27703,
+    "train_max_date": "2019-10-28 00:00:00",
+    "validation_min_date": "2020-01-06 00:00:00",
+    "training_match_ids_sha256": "0d0a1e56527b4c6fb542254c47d80306b9a6f62dbba727c3c186764c80e86a46"
+  },
+  {
+    "model": "ret_R_spline",
+    "validation_season": 2021,
+    "train_rows": 28917,
+    "train_max_date": "2020-11-09 00:00:00",
+    "validation_min_date": "2021-01-04 00:00:00",
+    "training_match_ids_sha256": "32fd9355165f8cbd882b6384794fa857ede64686dfbf474bc44cc028ccec4dcb"
+  },
+  {
+    "model": "ret_R_spline",
+    "validation_season": 2022,
+    "train_rows": 31305,
+    "train_max_date": "2021-11-08 00:00:00",
+    "validation_min_date": "2022-01-03 00:00:00",
+    "training_match_ids_sha256": "6e12813ef15dafef8805f102f8516ed6733b54e8cf67ebb6ea9c98f9bef4b7db"
+  },
+  {
+    "model": "ret_RC_spline",
+    "validation_season": 2020,
+    "train_rows": 27703,
+    "train_max_date": "2019-10-28 00:00:00",
+    "validation_min_date": "2020-01-06 00:00:00",
+    "training_match_ids_sha256": "0d0a1e56527b4c6fb542254c47d80306b9a6f62dbba727c3c186764c80e86a46"
+  },
+  {
+    "model": "ret_RC_spline",
+    "validation_season": 2021,
+    "train_rows": 28917,
+    "train_max_date": "2020-11-09 00:00:00",
+    "validation_min_date": "2021-01-04 00:00:00",
+    "training_match_ids_sha256": "32fd9355165f8cbd882b6384794fa857ede64686dfbf474bc44cc028ccec4dcb"
+  },
+  {
+    "model": "ret_RC_spline",
+    "validation_season": 2022,
+    "train_rows": 31305,
+    "train_max_date": "2021-11-08 00:00:00",
+    "validation_min_date": "2022-01-03 00:00:00",
+    "training_match_ids_sha256": "6e12813ef15dafef8805f102f8516ed6733b54e8cf67ebb6ea9c98f9bef4b7db"
+  },
+  {
+    "model": "ret_I_spline",
+    "validation_season": 2023,
+    "train_rows": 33833,
+    "train_max_date": "2022-10-31 00:00:00",
+    "validation_min_date": "2023-01-02 00:00:00",
+    "training_match_ids_sha256": "c0d14b6128ff13266647ab483d963c855d4b424ad19ff817f935351081b0c9e3"
+  },
+  {
+    "model": "ret_R_spline",
+    "validation_season": 2023,
+    "train_rows": 33833,
+    "train_max_date": "2022-10-31 00:00:00",
+    "validation_min_date": "2023-01-02 00:00:00",
+    "training_match_ids_sha256": "c0d14b6128ff13266647ab483d963c855d4b424ad19ff817f935351081b0c9e3"
+  },
+  {
+    "model": "ret_RC_spline",
+    "validation_season": 2023,
+    "train_rows": 33833,
+    "train_max_date": "2022-10-31 00:00:00",
+    "validation_min_date": "2023-01-02 00:00:00",
+    "training_match_ids_sha256": "c0d14b6128ff13266647ab483d963c855d4b424ad19ff817f935351081b0c9e3"
+  }
+]

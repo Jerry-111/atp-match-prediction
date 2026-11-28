@@ -1,0 +1,19 @@
+{
+  "base_passed": 329,
+  "base_skipped": 8,
+  "base_subtests": 97,
+  "base_seconds": 3.5,
+  "base_command": ".venv/bin/python -m pytest -q",
+  "base_log_sha256": "d3bcb9e24bff30b322b0f327cf93da98367768cb33f299b7b5404a5bd15d5236",
+  "new_focused_tests": 31,
+  "prior_base_passed": 298,
+  "torch_training_changed": false,
+  "prior_torch_suite_tests": 23,
+  "prior_torch_suite_repeated": false,
+  "notes": [
+    "The 8 skips concern optional Torch in the base environment.",
+    "No unchanged old neural training or isolated Torch tests were rerun.",
+    "New synthetic tests cover conditional objectives/selection, RET state/source gates and the matched input schema.",
+    "Artifact audits are separate from this unit-test count."
+  ]
+}

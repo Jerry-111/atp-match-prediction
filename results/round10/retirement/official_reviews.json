@@ -1,0 +1,240 @@
+{
+  "2007-520:8": {
+    "status": "verified",
+    "source_key": "2007-520",
+    "source_sha256": "3b910a4db0745e262d10151bc1d878f4e40692c4065967a5573714f1d32a8418",
+    "winner_id": "Y061",
+    "loser_id": "H442",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "Positions 15 Hernych and 16 Youzhny feed the advancing M. Youzhny entry marked Ret. No numerical match score is supplied.",
+    "numerical_score_check": "not_confirmed_official_draw_has_status_only",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2007-433:27": {
+    "status": "verified",
+    "source_key": "2007-433",
+    "source_sha256": "e6ac738a93fe3a344a0800b8d93816cf3d85e7fdbb41b0d8923f43aa88e77794",
+    "winner_id": "B676",
+    "loser_id": "D683",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "Round-robin Group 1 records J. Blake advancing against J. del Potro with 61 31 and retirement. Standings and knockout bracket are distinct; no elimination chronology is inferred.",
+    "numerical_score_check": "confirmed",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2006-568:17": {
+    "status": "verified",
+    "source_key": "2006-568",
+    "source_sha256": "58ef89f2bf12d9fdfb0fecfde3a797bda3364333526321bf6379e0aefefbe3f4",
+    "winner_id": "M759",
+    "loser_id": "D402",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "Davydenko and Moodie win their respective first-round matches; their R16 connector advances W. Moodie with 26 33 and retirement.",
+    "numerical_score_check": "confirmed",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2010-495:22": {
+    "status": "verified",
+    "source_key": "2010-495",
+    "source_sha256": "4aa256d77dbfe4a4fb534819e9f70ae68ef3c117a4d3a7f59244f3b3eed009ee",
+    "winner_id": "B678",
+    "loser_id": "D402",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "Berrer and Davydenko advance from positions 21-24; their R16 connector advances M. Berrer with 63 00 and retirement.",
+    "numerical_score_check": "equivalent_with_unplayed_zero_zero_set_omitted_in_raw",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2008-540:31": {
+    "status": "verified",
+    "source_key": "2008-540",
+    "source_sha256": "b9c738a9745aab7d194e7171e59b98fa918ab5f2ff77ea48f262405439f172c5",
+    "winner_id": "R483",
+    "loser_id": "V254",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "Draw positions 61 Volandri and 62 Reynolds feed B. Reynolds in round two with 6/2 6/2 and retirement.",
+    "numerical_score_check": "confirmed",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2006-475:30": {
+    "status": "verified",
+    "source_key": "2006-475",
+    "source_sha256": "12f0a562d68dac620b19eb9ac4ab23f0847e7c184391a52ca20b665bf3224fef",
+    "winner_id": "MB02",
+    "loser_id": "C478",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "The lower-half semifinal connects A. Calleri and F. Mayer; F. Mayer advances with 62 43 and retirement.",
+    "numerical_score_check": "confirmed",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2009-311:54": {
+    "status": "verified",
+    "source_key": "2009-311",
+    "source_sha256": "2e572da3be275a3d81c1bae81a63b0c9a720f8120e34da99b44c079f13adf342",
+    "winner_id": "B676",
+    "loser_id": "R485",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "The right-hand semifinal connects J. Blake and A. Roddick; J. Blake advances to the final with 44 and retirement.",
+    "numerical_score_check": "confirmed",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2010-407:31": {
+    "status": "verified",
+    "source_key": "2010-407",
+    "source_sha256": "76225c209f3b4f8f78eedf6d2026e0ebdb7b95ddba2c4b2c9c6fa6230f8b81d2",
+    "winner_id": "SA49",
+    "loser_id": "Y061",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "The final joins M. Youzhny and R. Soderling; the champion box identifies Robin Soderling with 64 20 and retirement.",
+    "numerical_score_check": "confirmed",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2010-580:99": {
+    "status": "verified",
+    "source_key": "2010-580",
+    "source_sha256": "dbb0ec9de2d407bec375dcc9fd22ba1f9534bf7560f2c5618078fe21840c9131",
+    "winner_id": "V306",
+    "loser_id": "K310",
+    "official_status": "retirement",
+    "visual_pages": [
+      1
+    ],
+    "bracket_or_report_evidence": "Verdasco and Koubek advance through two rounds; their third-round connector advances Verdasco with 6-1 and RET.",
+    "numerical_score_check": "confirmed",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2018-375:26": {
+    "status": "verified",
+    "source_key": "2018-montpellier-atp-notes",
+    "source_sha256": "7efc289d2109e0bb32e6f8a4d192896fd6f697037e8c320eeb67aedb6d00b14e",
+    "winner_id": "PF39",
+    "loser_id": "T786",
+    "official_status": "retirement",
+    "visual_pages": [
+      41
+    ],
+    "bracket_or_report_evidence": "ATP media notes list Tsonga as Montpellier semifinalist losing to Pouille and explicitly say he retired in that semifinal. The same page names Pouille the Montpellier champion.",
+    "numerical_score_check": "not_confirmed_status_report_does_not_give_match_score",
+    "review_scope": "Identity names, winner/retiring-loser direction, event/round and explicit RET status; no clinical inference."
+  },
+  "2007-8996:27": {
+    "status": "unverified",
+    "reason": "Canonical archive-ID draw returned 404. ITF event page is discoverable but its redirected results were inaccessible. Independent contemporary press corroborates the RET direction but is not an official draw or official report, so official verification remains unresolved.",
+    "supplementary_sources": [
+      {
+        "kind": "official_event_metadata_only",
+        "url": "https://www.itftennis.com/en/tournament/vina-del-mar/chi/2007/m-is-chi-01a-2007/draws-and-results/"
+      },
+      {
+        "kind": "non_official_contemporary_press_not_counted_as_official_verification",
+        "url": "https://www.europapress.es/deportes/tenis-00166/noticia-tenis-massu-horna-clasifican-semifinales-torneo-vina-mar-20070203003134.html",
+        "finding": "Report describes Massu advancing after Roitman withdrew at one set each; names and RET direction agree. No medical cause is imported."
+      }
+    ]
+  },
+  "2021-321:27": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2015-6120:17": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained.",
+    "supplementary_sources": [
+      {
+        "kind": "official_search_excerpt_only_not_counted_as_verification",
+        "url": "https://www.itftennis.com/media/4644/2021-australian-open-day-5-mens-match-notes.pdf",
+        "finding": "Search extract identifies Thiem winning Nice R16 2015 after Kyrgios retired; direct download returned non-PDF content, so full-source adjudication was not completed."
+      }
+    ]
+  },
+  "2022-321:23": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2021-416:7": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2016-6242:37": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2020-9408:26": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2017-7650:26": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2013-495:6": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2016-301:27": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2018-500:4": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2022-341:3": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2018-6932:24": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2018-891:20": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2014-773:25": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2013-540:67": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2012-360:5": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2014-311:44": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2011-315:23": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  },
+  "2018-500:30": {
+    "status": "unverified",
+    "reason": "Canonical official draw unavailable; no independently inspected official status source obtained within bounded audit. Frozen sample retained."
+  }
+}

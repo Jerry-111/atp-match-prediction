@@ -1,0 +1,20 @@
+branch,model,role,information_regime,matches,correct,accuracy,mean_log_loss,brier,display,plot_label,selected_current_round,additional_correct_for_70
+prior,rank_reference,排名 logistic 原基准,原历史输入 / 旧基准,2588,1640,0.633693972179289,0.629795675429261,0.22015601161403017,True,Ranking baseline,False,172
+prior,previous_probability_recommendation,R4：保留的纯历史概率推荐,原历史输入 / 旧基准,2588,1696,0.6553323029366306,0.6094069006143001,0.21149308142611395,True,R4 historical reference,False,116
+prior,previous_round5_exploration,R5：冻结准确率探索组合,原历史输入 / 旧基准,2588,1715,0.6626738794435858,0.6098708358424767,0.21165778805762117,True,R5 accuracy exploration,False,97
+prior,previous_round5_best_loss,R5：此前最低观察 loss 对照,原历史输入 / 旧基准,2588,1706,0.6591962905718701,0.6064532068148539,0.21032297846926845,False,R5 lowest observed loss,False,106
+prior,raw_elo_k32_diff,整体 Elo 原基准（开发期选 K=32）,原历史输入 / 旧基准,2588,1640,0.633693972179289,0.6391464853890776,0.22331200877638904,True,Overall Elo baseline,False,172
+prior,market_lambda1,R7：市场监督学生,历史输入；训练期市场监督,2588,1712,0.6615146831530139,0.604598645945859,0.20954901107686855,True,R7 market-supervised student,False,100
+prior,history_linear_C0.03_alpha1,2023最高观察准确率，未选中，loss更差,当前开盘价＋T−21历史修正；缺失回退R4,2588,1760,0.6800618238021638,0.5967230897774881,0.20638697383868954,True,Opening history (unselected),False,52
+prior,raw_market,固定对照 / 既有模型；分支保留推荐,当前末盘价优先；缺失用开盘或R4回退,2588,1752,0.6769706336939721,0.5876907045270375,0.20276613380419536,True,Raw latest available price,False,60
+gating,round4_reference,既有参考；2021冻结选择；分支保留/采用,T−21纯历史：固定专家组合,2588,1696,0.6553323029366306,0.6094069006143001,0.21149308142611395,False,,True,116
+gating,equal_mix,预设新对照,T−21纯历史：固定专家组合,2588,1687,0.651854714064915,0.6065115934334495,0.21035504911420597,True,Equal expert mixture,False,125
+gating,global_mix,预设新对照,T−21纯历史：固定专家组合,2588,1684,0.6506955177743431,0.6070137469079308,0.21062415639576718,True,Global expert mixture,False,128
+gating,conditional_mix,预设新对照,T−21纯历史：固定专家组合,2588,1684,0.6506955177743431,0.6070239855900158,0.21063265760173552,True,Conditional expert mixture,False,128
+retirement,previous_round5_exploration,既有参考,T−21纯历史对照/旧参考,2588,1715,0.6626738794435858,0.6098708358424767,0.21165778805762117,False,,False,97
+retirement,ret_RC_spline,预设新对照,T−21历史；含提供方RET状态，来源部分核验,2588,1708,0.6599690880989181,0.6057073195722561,0.20999093947675035,True,Inactivity + RET return state,False,104
+retirement,ret_R_spline,预设新对照,T−21历史；含提供方RET状态，来源部分核验,2588,1707,0.6595826893353941,0.6058556290194054,0.21003954144497045,True,Inactivity + recorded RET,False,105
+retirement,previous_round5_best_loss,既有参考,T−21纯历史对照/旧参考,2588,1706,0.6591962905718701,0.6064532068148539,0.21032297846926845,False,,False,106
+retirement,ret_I_spline,预设新对照；pooled开发期冻结选择,T−21纯历史对照/旧参考,2588,1704,0.6584234930448223,0.6062941644464088,0.21025990673991518,True,Ordinary inactivity control,True,108
+retirement,previous_probability_recommendation,既有参考；分支保留/采用,T−21纯历史对照/旧参考,2588,1696,0.6553323029366306,0.6094069006143001,0.21149308142611395,False,,False,116
+retirement,rank_reference,既有参考,T−21纯历史对照/旧参考,2588,1640,0.633693972179289,0.629795675429261,0.22015601161403017,False,,False,172

@@ -30,6 +30,13 @@ results/round9/**/oof_predictions.csv
 results/round9/**/oof_seed_predictions.csv
 results/round9/**/inference_features.csv
 results/round9/**/inference_predictions.csv
+results/round10/**/*.joblib
+results/round10/**/development_features.csv
+results/round10/**/development_targets.csv
+results/round10/**/oof_predictions.csv
+results/round10/**/inference_features.csv
+results/round10/**/inference_predictions.csv
+results/round10/gating/primitive_oof_inputs.csv
 __pycache__/
 .ipynb_checkpoints/
 data/raw/

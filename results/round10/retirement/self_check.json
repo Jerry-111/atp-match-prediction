@@ -1,0 +1,7 @@
+{
+  "reload_max_error": 0.0,
+  "swap_max_error": 2.220446049250313e-16,
+  "old_features_max_error": 0.0,
+  "feature_sha256": "54533d03af797f229be36b81db0a58ac6043b2e823addaee49025034a741e1aa",
+  "validation_scoring_only_after_freeze": true
+}
