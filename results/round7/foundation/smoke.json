@@ -1,0 +1,21 @@
+{
+  "synthetic_only": true,
+  "outcome_scores_computed": false,
+  "context_rows": 1024,
+  "query_rows": 64,
+  "features": 64,
+  "n_estimators": 1,
+  "device": "mps",
+  "torch_version": "2.15.0",
+  "mps_available": true,
+  "fit_seconds": 2.7657785000046715,
+  "predict_seconds": 0.21666912498767488,
+  "max_chunk_difference": 6.854534149169922e-07,
+  "max_permutation_difference": 0.0,
+  "max_swap_error": 5.960464477539063e-08,
+  "finite_probabilities": true,
+  "mps_allocated_bytes": 189115648,
+  "mps_driver_bytes": 1832599552,
+  "mps_recommended_bytes": 19069665280,
+  "platform": "macOS-26.5-arm64-arm-64bit"
+}

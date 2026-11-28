@@ -1,0 +1,43 @@
+{
+  "round": 7,
+  "branch": "foundation",
+  "recommendation": "tabicl_context4096_r4blend0.75",
+  "procedure_gate": {
+    "procedure": "adopt_foundation",
+    "early_selection": {
+      "choice": "tabicl_context4096_r4blend0.75",
+      "accuracy": 0.6599111604664075,
+      "mean_log_loss": 0.6056066609866992,
+      "eligible_models": 12,
+      "selection_rows": 3602,
+      "loss_limit": 0.614177070959239
+    },
+    "reference": "round4_reference",
+    "accuracy_improvement": 0.010284810126582333,
+    "loss_increase": -0.0001340711948332185,
+    "required_accuracy_improvement": 0.005,
+    "allowed_loss_increase": 0.005,
+    "selection_seasons": [
+      2020,
+      2021
+    ],
+    "gate_season": 2022,
+    "reference_2022_accuracy": 0.6712816455696202,
+    "candidate_2022_accuracy": 0.6815664556962026,
+    "reference_2022_loss": 0.5946582163399363,
+    "candidate_2022_loss": 0.5945241451451031
+  },
+  "pooled_selection": {
+    "choice": "tabicl_context4096_r4blend0.75",
+    "accuracy": 0.6688417618270799,
+    "mean_log_loss": 0.6010362531485989,
+    "eligible_models": 12,
+    "selection_rows": 6130,
+    "loss_limit": 0.60818952373614
+  },
+  "decision_threshold": 0.5,
+  "fit_end_season": 2022,
+  "history_lag_days": 21,
+  "exploratory_after_2023": true,
+  "final_test_evaluated": false
+}

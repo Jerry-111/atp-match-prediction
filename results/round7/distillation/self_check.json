@@ -1,0 +1,14 @@
+{
+  "status": "passed",
+  "auditor": "implementation_agent_self_check_not_independent",
+  "probability_columns": 10,
+  "validation_matches": 2588,
+  "max_reload_error": 0.0,
+  "max_swap_error": 2.220446049250313e-16,
+  "poisoned_columns_exact": true,
+  "hard_control_vs_prior_exact": true,
+  "final_test_evaluated": false,
+  "implementation_sha256": "e5c239e62242cff2e1b2a92b6fa4893078e6ad84f89f26b874fd60d5bcee2fac",
+  "fit_time_source_sha256": "7dea93783b1f3714bc7cf42161b97f145ff99e18d35c355c13fa2b43ae039280",
+  "postfit_source_change": "Only report prose: branch-specific recommendation and matched-control uncertainty; no probability or fit logic changed."
+}

@@ -1,5 +1,16 @@
 .DS_Store
 .venv/
+.venv-foundation/
+results/round7/**/development_features.csv
+results/round7/**/oof_predictions.csv
+results/round7/**/frozen_models.joblib
+results/round7/**/inference_predictions.csv
+results/round7/**/inference_features.csv
+results/round7/**/development_targets.csv
+results/round7/foundation/checkpoints/
+results/round7/event/feature_lineage.csv
+results/round7/distillation/training_teacher.csv
+results/round7/margin/training_targets.csv
 __pycache__/
 .ipynb_checkpoints/
 data/raw/

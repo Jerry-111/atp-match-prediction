@@ -1,0 +1,196 @@
+{
+  "status": "passed",
+  "auditor": "independent audit agent /root/audit",
+  "validation_matches": 2588,
+  "prediction_columns": 17,
+  "probability_cells_verified": 43996,
+  "max_reload_probability_error": 0.0,
+  "max_exchange_complement_error": 2.220446049250313e-16,
+  "max_shared_metric_error": 0.0,
+  "feature_order_and_poisoned_label_error": 0.0,
+  "prior_probabilities_error": {
+    "previous_probability_recommendation": 0.0,
+    "previous_round5_exploration": 0.0,
+    "previous_round5_best_loss": 0.0,
+    "rank_reference": 0.0
+  },
+  "oof_rows": 6130,
+  "oof_candidates": 13,
+  "max_oof_metric_error": 0.0,
+  "independent_early_selection": {
+    "choice": "accuracy_grid_blend",
+    "best_single": "event_load_spline",
+    "selected_by_family": {
+      "base_linear": "event_base_linear",
+      "base_spline": "event_base_spline",
+      "combined_linear": "event_combined_linear",
+      "combined_spline": "event_combined_spline",
+      "context_linear": "event_context_linear",
+      "context_spline": "event_context_spline",
+      "event_catboost": "event_all_cat_d6",
+      "load_linear": "event_load_linear",
+      "load_spline": "event_load_spline",
+      "performance_linear": "event_performance_linear",
+      "performance_spline": "event_performance_spline",
+      "previous_reference": "previous_probability_recommendation"
+    },
+    "components": [
+      "event_load_spline",
+      "event_load_linear",
+      "event_all_cat_d6",
+      "previous_probability_recommendation"
+    ],
+    "weights": [
+      0.7,
+      0.1,
+      0.1,
+      0.1
+    ],
+    "eligible_models": 13,
+    "selected_accuracy": 0.6654636313159356,
+    "selected_log_loss": 0.6071909431801379,
+    "loss_limit": 0.614177070959239,
+    "selection_rows": 3602,
+    "grid_units": 10
+  },
+  "independent_pooled_selection": {
+    "choice": "accuracy_grid_blend",
+    "best_single": "event_load_spline",
+    "selected_by_family": {
+      "base_linear": "event_base_linear",
+      "base_spline": "event_base_spline",
+      "combined_linear": "event_combined_linear",
+      "combined_spline": "event_combined_spline",
+      "context_linear": "event_context_linear",
+      "context_spline": "event_context_spline",
+      "event_catboost": "event_all_cat_d6",
+      "load_linear": "event_load_linear",
+      "load_spline": "event_load_spline",
+      "performance_linear": "event_performance_linear",
+      "performance_spline": "event_performance_spline",
+      "previous_reference": "previous_probability_recommendation"
+    },
+    "components": [
+      "event_load_spline",
+      "event_performance_linear",
+      "event_all_cat_d6",
+      "previous_probability_recommendation"
+    ],
+    "weights": [
+      0.2,
+      0.3,
+      0.3,
+      0.2
+    ],
+    "eligible_models": 13,
+    "selected_accuracy": 0.6691680261011419,
+    "selected_log_loss": 0.6003883394041397,
+    "loss_limit": 0.60818952373614,
+    "selection_rows": 6130,
+    "grid_units": 10
+  },
+  "independent_gate": {
+    "procedure": "retain_round4",
+    "accuracy_improvement": 0.002768987341772222,
+    "reference_loss": 0.5946582163399363,
+    "candidate_loss": 0.591950298243826
+  },
+  "recommendation": "previous_probability_recommendation",
+  "chronological_folds": [
+    {
+      "year": 2020,
+      "training_rows": 27703,
+      "validation_rows": 1214,
+      "latest_training_date": "2019-10-28",
+      "earliest_validation_date": "2020-01-06",
+      "cutoff": "2019-12-16"
+    },
+    {
+      "year": 2021,
+      "training_rows": 28917,
+      "validation_rows": 2388,
+      "latest_training_date": "2020-11-09",
+      "earliest_validation_date": "2021-01-04",
+      "cutoff": "2020-12-14"
+    },
+    {
+      "year": 2022,
+      "training_rows": 31305,
+      "validation_rows": 2528,
+      "latest_training_date": "2021-11-08",
+      "earliest_validation_date": "2022-01-03",
+      "cutoff": "2021-12-13"
+    },
+    {
+      "year": 2023,
+      "training_rows": 33833,
+      "validation_rows": 2588,
+      "latest_training_date": "2022-10-31",
+      "earliest_validation_date": "2023-01-02",
+      "cutoff": "2022-12-12"
+    }
+  ],
+  "numeric_features": 353,
+  "old326features_exact": true,
+  "new_features": 27,
+  "full_feature_rebuild_error": 0.0,
+  "full_feature_exchange_error": 0.0,
+  "target_labels_and_score_poisoning_ignored": true,
+  "prior_lineage_rows": 61458,
+  "distinct_prior_sources": 36241,
+  "all_prior_rows_same_player_edition_strictly_earlier_knockout": true,
+  "all_prior_rows_player_won": true,
+  "current_future_other_player_rounds_excluded": true,
+  "excluded_source_ids_absent_from_all_lineage": true,
+  "neutralized_real_target_count": 0,
+  "validation_fallback_rows": 1143,
+  "final_model_and_blend_fallback_exact": {
+    "event_base_linear": true,
+    "event_base_spline": true,
+    "event_context_linear": true,
+    "event_context_spline": true,
+    "event_load_linear": true,
+    "event_load_spline": true,
+    "event_performance_linear": true,
+    "event_performance_spline": true,
+    "event_combined_linear": true,
+    "event_combined_spline": true,
+    "event_all_cat_d4": true,
+    "event_all_cat_d6": true,
+    "accuracy_grid_blend": true
+  },
+  "oof_fallback_rows": 2774,
+  "oof_base_fallback_exact": true,
+  "oof_all_simplex_grids_rounding_check": {
+    "oof_fallback_rows": 2774,
+    "minimum_reference_distance_to_half": 3.6328122661410944e-05,
+    "reference_half_ties": 0,
+    "grid_shapes_checked": 364,
+    "max_fallback_rounding_error": 2.220446049250313e-16,
+    "classification_changes": 0
+  },
+  "max_bootstrap_interval_error": 0.0,
+  "final_test_evaluated": false,
+  "information_regime": "Later actual-prematch own earlier rounds; distinct from original T-21",
+  "artifact_sha256": {
+    "summary.json": "743b9e30da33a510fd45c406b95a5566103c7569e2f7120c87cfd473ad5f90f3",
+    "validation_predictions.csv": "d9894981333188aa5d1fff349c0350e1716752518bc4500ccdfe1f4a0b53cfd8",
+    "feature_lineage.csv": "d27493356c1f6fc8c2243ce8f11e7e16d39a3b19840176c954757426201ea553",
+    "search_registry.json": "10d8fd9eb57a905f83ffeab19b76b822e399ea8d78069a9fe0be11b5188d2144",
+    "oof_predictions.csv": "3c6cb49c80f698ed1a0cff0c7314baa84894b2f9b88338bd2fec15cb78bac763",
+    "frozen_models.joblib": "571d1b1a9bc483d18b24b91746a3c73fbacd75965c8fdbebff826ab9f95cf4d1",
+    "frozen_selection.json": "df9f57f98c71731bfdfecb136ce83a62903114e4f12d2f253fb87f20ca3f9cc2",
+    "development_features.csv": "c63f34f26e86e465778ffdc9d4c94a90a17a2274fa9ec6e6e6d1997543cfab95",
+    "temporal_cv.csv": "847bba2cf1ad322a7df46350b12c40b8463f77d4bef2c02064fad91e272dc9ee",
+    "validation_comparison.csv": "be08a41574abebd2e226f76474bd1b0858bed1c7ead428443bc9ed7c62ebba7b"
+  },
+  "implementation_sha256": {
+    "event_state_features.py": "ac9bf2d4dad7d425de0da6f7a3d19e4dad45caad9f43fae7dd7f374ca6a8b466",
+    "train_event_round7.py": "cdeed2c824c2395b16f059598155d9e51e622b89f69d1cc28f4c94500ffa6c87"
+  },
+  "limitations": [
+    "Did not refit the 36 outer-fold models; independently recomputed all stored OOF metrics, selections and mixtures.",
+    "Chronology is only own earlier knockout rounds. No actual completion timestamps or cross-player temporal ordering are inferred.",
+    "Repeated 2023 inspection and reused 2022 gate limit predictive interpretation; this audit establishes artifact/protocol consistency."
+  ]
+}

@@ -1,5 +1,62 @@
 # Strong-model validation protocol
 
+## Seventh round: alternative learning mechanisms
+
+The 2026-11-27 continuation compares four explicitly separate branches:
+synthetic-pretrained TabICLv2, point/game-supervised targets, training-only
+market distillation, and own earlier knockout-round state. The latter uses
+later prematch information than the original T−21 task; the distillation
+student has historical inference inputs but additional market supervision.
+Read the [protocol](research/round7_protocol.md) and
+[full comparison](../results/round7/overview.md) before comparing their scores.
+All retain the same 2,588 validation targets, fixed labels and threshold 0.5.
+2023 and the practical 2022 gates have been reused; these are exploratory
+results, and 2024–2025 remain unopened.
+
+After rebuilding the earlier rounds and their audited local artifacts:
+
+```sh
+.venv/bin/python -m scripts.train_margin_round7
+.venv/bin/python -m scripts.train_distillation_round7
+.venv/bin/python -m scripts.train_event_round7
+python3.12 -m venv .venv-foundation
+.venv-foundation/bin/python -m pip install -r requirements-foundation.txt
+.venv-foundation/bin/python -m scripts.setup_foundation_round7
+.venv-foundation/bin/python -m scripts.train_foundation_round7
+.venv/bin/python -m scripts.report_round7
+```
+
+Foundation inference was measured on an Apple M4 Pro with 24 GiB unified
+memory. It uses MPS float32, four members, and a SHA-pinned official checkpoint;
+its isolated environment does not change the base modeling dependencies.
+The local fitted bundle is approximately 2.5 GB and is not committed. A
+memory-scheduling repair after three CV settings, but before new 2023 scores,
+is disclosed in its protocol and computational-deviation record. Rebuilding
+on another device may produce small numerical differences and must be audited.
+
+Every runner supports `--predict-features`. Margin and distillation require
+the existing 326-column R5 matrix; the foundation bundle expects the 337-column
+R6 transfer inference schema and internally selects its frozen 64 columns;
+the event bundle expects 353 columns. Use trusted locally rebuilt joblib
+artifacts. The event runner has an exact R4 fallback when neither player has
+an earlier round; the feature builder validates each own knockout path and
+reconciles raw duplicates before aggregating, without changing old targets.
+[Source audit](research/round7_event_source_audit.md).
+
+The selected market-supervised student scores **1,712/2,588 = 66.15%** with
+**0.604599** log loss, compared with the same hard-label learner's 0.606453.
+Its conditional paired loss-improvement interval spans zero
+[-0.000299, 0.003986]; this is a promising probability comparison, not a
+confirmed gain or a 70% result. Heavy uniform smoothing reaches 1,716 correct
+as an unselected observation but worsens loss to 0.622271. Preserve this
+negative probability result rather than selecting it after viewing 2023.
+
+The foundation branch passed its predeclared 2022 gate but its frozen choice
+scores only 1,686/2,588 (65.15%, loss 0.614779) on 2023. Keep the frozen choice
+and negative result as recorded; do not retrospectively change its blend.
+The original pure-history probability recommendation remains a separate R4
+reference. Branch-local adoption rules do not establish global superiority.
+
 Adopted 2026-11-24 under the user's request to optimize beyond the initial
 course baseline. The claim to test is improved probability estimation on the
 same completed ATP Tour/major matches. This is a strong-model search, not an

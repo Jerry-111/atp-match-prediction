@@ -1,0 +1,14 @@
+{
+  "synthetic_only": true,
+  "outcome_scores_computed": false,
+  "original_context_rows": 1024,
+  "mirrored_context_rows": 2048,
+  "ensemble_members": 4,
+  "max_reload_difference": 0.0,
+  "max_chunk_difference": 1.385807991027832e-06,
+  "max_swap_error": 0.0,
+  "model_file_bytes": 511248266,
+  "model_parameter_count": 27552258,
+  "elapsed_seconds": 7.075279540993506,
+  "mps_driver_bytes": 3480961024
+}
